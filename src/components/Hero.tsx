@@ -44,10 +44,10 @@ const Hero = () => {
           {/* Main Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-3xl 2xl:text-4xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-light mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-xl 2xl:text-2xl">
+            <span className="block text-teal-light mt-2 sm:mt-3 text-sm sm:text-base md:text-lg lg:text-lg xl:text-base 2xl:text-lg">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-light text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-xl 2xl:text-2xl">
+            <span className="block text-coral-light text-sm sm:text-base md:text-lg lg:text-lg xl:text-base 2xl:text-lg">
               Techniques & Smart Computing
             </span>
           </h1>
