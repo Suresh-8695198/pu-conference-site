@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-4 sm:space-y-8">
             <div>
               <h3 className="font-display font-bold text-2xl text-navy mb-6">
                 Conference Secretariat
@@ -29,9 +29,9 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-start gap-4 bg-slate p-5 rounded-xl">
-                <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center shrink-0">
-                  <MapPin className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-navy rounded-xl flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Address</h4>
@@ -44,9 +44,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-slate p-5 rounded-xl">
-                <div className="w-12 h-12 bg-teal rounded-xl flex items-center justify-center shrink-0">
-                  <Mail className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal rounded-xl flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Email</h4>
@@ -56,9 +56,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-slate p-5 rounded-xl">
-                <div className="w-12 h-12 bg-coral rounded-xl flex items-center justify-center shrink-0">
-                  <Phone className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-coral rounded-xl flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Phone</h4>
@@ -69,9 +69,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-slate p-5 rounded-xl">
-                <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center shrink-0">
-                  <Clock className="w-6 h-6 text-navy" />
+              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gold rounded-xl flex items-center justify-center shrink-0">
+                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-navy" />
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Office Hours</h4>
@@ -89,7 +89,7 @@ const Contact = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-6">
               Send us a Message
             </h3>
-            <form className="space-y-5">
+            <form className="space-y-3 sm:space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-navy mb-2">Name</label>
@@ -136,7 +136,7 @@ const Contact = () => {
         </div>
 
         {/* Map Placeholder */}
-        <div className="mt-16 bg-slate rounded-2xl p-4 h-80 flex items-center justify-center">
+        <div className="mt-16 bg-slate rounded-2xl p-4 h-64 sm:h-80 flex items-center justify-center">
           <div className="text-center">
             <MapPin className="w-12 h-12 text-navy mx-auto mb-4" />
             <p className="text-muted-foreground">
