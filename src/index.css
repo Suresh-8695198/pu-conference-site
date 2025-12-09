@@ -56,9 +56,11 @@
   img {
     max-width: 100%;
     height: auto;
-}
+  }
 
-  .dark {
+  * {
+    overflow-wrap: break-word;
+  }  .dark {
     --background: 210 40% 8%;
     --foreground: 0 0% 98%;
     --card: 210 40% 12%;

@@ -85,12 +85,12 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate rounded-2xl p-8">
+          <div className="bg-slate rounded-2xl p-4 sm:p-8">
             <h3 className="font-display font-bold text-2xl text-navy mb-6">
               Send us a Message
             </h3>
             <form className="space-y-5">
-              <div className="grid md:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-navy mb-2">Name</label>
                   <input

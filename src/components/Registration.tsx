@@ -114,8 +114,8 @@ const Registration = () => {
         </div>
 
         {/* Bank Details */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-teal rounded-2xl p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-teal rounded-2xl p-4 sm:p-8">
             <h3 className="font-display font-bold text-2xl mb-6 text-primary-foreground">
               Bank Transfer Details
             </h3>
@@ -135,7 +135,7 @@ const Registration = () => {
             </div>
           </div>
 
-          <div className="bg-coral rounded-2xl p-8 flex flex-col justify-center items-center text-center">
+          <div className="bg-coral rounded-2xl p-4 sm:p-8 flex flex-col justify-center items-center text-center">
             <h3 className="font-display font-bold text-2xl mb-4 text-primary-foreground">
               Ready to Register?
             </h3>
