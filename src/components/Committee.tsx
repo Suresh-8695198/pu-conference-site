@@ -6,6 +6,20 @@ const Committee = () => {
     { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
   ];
 
+  const internationalAdvisoryCommittee = [
+    { name: "Dr. M. Ashok Kumar", role: "Controller of Examination & HOD – OpenLabs, Associate Professor, BlueCrest University, Liberia" },
+    { name: "Dr. Nithya Rekha Sivakumar", role: "Associate Professor, Princess Nourah Bint Abdulrahman University, Saudi Arabia" },
+    { name: "Luis Martinez", role: "Professor (Full), University of Jaén, Spain" },
+    { name: "Muthmainnah Yakin", role: "Assistant Professor, Universitas Al Asyariah Mandar, West Sulawesi, Indonesia" },
+    { name: "Preethi Ananthachari", role: "Assistant Professor, Ahlia University, Manama, Bahrain" },
+    { name: "Prof. Lai Khin Wee", role: "Associate Professor, Department of Biomedical Engineering, Faculty of Engineering, University of Malaya, Kuala Lumpur" },
+    { name: "Prof. Massimo Ficco", role: "Full Professor, University of Campania Luigi Vanvitelli, Italy" },
+    { name: "Prof. Valentina E. Balas", role: "Professor, Faculty of Engineering, Department of Automation and Applied Informatics, “Aurel Vlaicu” University of Arad, Romania" },
+    { name: "Prof. Xiao-Zhi Gao", role: "Professor, School of Computing, Faculty of Science, Forestry and Technology, University of Eastern Finland, Finland" },
+    { name: "Prof. Yui Wing Leung", role: "Professor, Department of Computer Science, Hong Kong Baptist University, Hong Kong" },
+    { name: "Prof. Yuval Shavitt", role: "Professor, School of Electrical Engineering, Tel Aviv University, Israel" },
+  ];
+
   const committees = [
     {
       title: "Chief Patron",
@@ -169,6 +183,29 @@ const Committee = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* International Advisory Committee */}
+        <div className="bg-background rounded-2xl p-8 mt-16">
+          <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
+            International Advisory Committee
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {internationalAdvisoryCommittee.map((member, index) => (
+              <div
+                key={member.name}
+                className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+              >
+                <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                </div>
+                <div>
+                  <p className="font-display font-bold text-navy">{member.name}</p>
+                  <p className="text-sm text-muted-foreground">{member.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Publishing Partner & Keynote Speaker */}
