@@ -1,6 +1,11 @@
 import { User, Users, Award, Briefcase } from "lucide-react";
 
 const Committee = () => {
+  const organizingCommittee = [
+    { name: "Dr. R. Rathipriya", role: "Professor of Computer Science, Periyar University" },
+    { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
+  ];
+
   const committees = [
     {
       title: "Chief Patron",
@@ -8,6 +13,9 @@ const Committee = () => {
       color: "bg-gold",
       members: [
         { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+        { name: "Prof. R. Subramani", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+        { name: "Dr. S. Jayanthi", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+
       ],
     },
     {
@@ -15,8 +23,7 @@ const Committee = () => {
       icon: User,
       color: "bg-navy",
       members: [
-        { name: "Prof. R. Subramani", role: "Syndicate Member, Periyar University, Salem - 636 011" },
-        { name: "Dr. S. Jayanthi", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+        { name: "Dr. V. Raj", role: "Registrar(FAC), Periyar University Salem" },
       ],
     },
     {
@@ -24,28 +31,24 @@ const Committee = () => {
       icon: Briefcase,
       color: "bg-coral",
       members: [
-        { name: "DR. C. CHANDRASEKAR", role: "Senior Professor & Head of Computer Science, Periyar University" },
+        { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University" },
       ],
     },
     {
       title: "General Chair",
       icon: Users,
-      color: "bg-teal",
+      color: "bg-navy",
       members: [
         { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
-        { name: "Dr.I. laurence Aroquiaraj", role: "Professor of Computer Science, Periyar University" },
+        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor of Computer Science, Periyar University" },
       ],
     },
-  ];
-
-  const organizingCommittee = [
-    { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University" },
-    { name: "Dr.I. laurence aroquiaraj", role: "Professor of Computer Science, Periyar University" },
-    { name: "Dr.Saikat Gochhait", role: "Associate Professor, Symbiosis Institute of Telecom Management, Symbiosis International University" },
-    { name: "Dr. Fabrício Moraes de Almeida", role: "Electrical Engineering Department - UFRO (Brazil)" },
-    { name: "DR. C. CHANDRASEKAR", role: "Senior Professor & Head of Computer Science, Periyar University" },
-    { name: "Dr.R.Rathipriya", role: "Professor of Computer Science, Periyar University" },
-    { name: "DR. S. SATHISH", role: "Associate Professor of Computer Science, Periyar University" },
+    {
+      title: "Organizing Committee",
+      icon: Users,
+      color: "bg-coral",
+      members: organizingCommittee,
+    },
   ];
 
   return (
@@ -63,8 +66,8 @@ const Committee = () => {
         </div>
 
         {/* Main Committee Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {committees.map((committee) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {committees.slice(0, 3).map((committee) => (
             <div
               key={committee.title}
               className="bg-background rounded-2xl overflow-hidden card-hover"
@@ -84,17 +87,26 @@ const Committee = () => {
                       {member.name === "Prof. R. Subramani" && (
                         <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-20 h-20 object-cover border border-slate" />
                       )}
-                      {member.name === "DR. C. CHANDRASEKAR" && (
-                        <img src="/chandrasekar.jpeg" alt="DR. C. CHANDRASEKAR" className="w-20 h-20 object-cover border border-slate" />
+                      {member.name === "Dr. C. Chandrasekar" && (
+                        <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-20 h-20 object-cover border border-slate" />
                       )}
                       {member.name === "Dr. H. Hannah Inbarani" && (
                         <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-20 h-20 object-cover border border-slate" />
                       )}
-                      {member.name === "Dr.I. laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
-                        <img src="/laurence.jpeg" alt="Dr.I. laurence Aroquiaraj" className="w-20 h-20 object-cover border border-slate" />
+                      {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
+                        <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-20 h-20 object-cover border border-slate" />
                       ) : null}
                       {member.name.includes("Sundaravalli") && (
                         <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. V. Raj" && (
+                        <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. R. Rathipriya" && (
+                        <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. S. Sathish" && (
+                        <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-20 h-20 object-cover border border-slate" />
                       )}
                     <div>
                       <p className="font-display font-bold text-navy">{member.name}</p>
@@ -106,28 +118,57 @@ const Committee = () => {
             </div>
           ))}
         </div>
-
-        {/* Organizing Committee */}
-        <div className="bg-background rounded-2xl p-8">
-          <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
-            Organizing Committee
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {organizingCommittee.map((member) => (
-              <div
-                key={member.name}
-                className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-              >
-                <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                  <User className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <p className="font-display font-bold text-navy">{member.name}</p>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {committees.slice(3).map((committee) => (
+            <div
+              key={committee.title}
+              className="bg-background rounded-2xl overflow-hidden card-hover"
+            >
+              <div className={`${committee.color} p-6`}>
+                <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
+                <h3 className="font-display font-bold text-xl text-primary-foreground">
+                  {committee.title}
+                </h3>
               </div>
-            ))}
-          </div>
+              <div className="p-6 space-y-4">
+                {committee.members.map((member) => (
+                  <div key={member.name} className="flex items-center gap-3">
+                      {member.name === "Dr. S. Jayanthi" && (
+                        <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Prof. R. Subramani" && (
+                        <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. C. Chandrasekar" && (
+                        <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. H. Hannah Inbarani" && (
+                        <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
+                        <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-20 h-20 object-cover border border-slate" />
+                      ) : null}
+                      {member.name.includes("Sundaravalli") && (
+                        <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. V. Raj" && (
+                        <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. R. Rathipriya" && (
+                        <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-20 h-24 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. S. Sathish" && (
+                        <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="text-sm text-muted-foreground">{member.role}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Publishing Partner & Keynote Speaker */}
