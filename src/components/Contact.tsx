@@ -35,7 +35,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Address</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground break-words">
                     Department of Computer Science<br />
                     Periyar University<br />
                     Salem - 636011<br />
@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Email</h4>
-                  <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-teal hover:underline">
+                  <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-teal hover:underline break-words">
                     icaitsc2026@periyaruniversity.ac.in
                   </a>
                 </div>

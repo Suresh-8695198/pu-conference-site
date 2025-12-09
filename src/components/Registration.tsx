@@ -127,9 +127,9 @@ const Registration = () => {
                 { label: "Branch", value: "Periyar University Campus" },
                 { label: "IFSC Code", value: "SBIN0001234" },
               ].map((item) => (
-                <div key={item.label} className="flex justify-between items-center border-b border-primary-foreground/20 pb-3">
-                  <span className="text-primary-foreground/70">{item.label}</span>
-                  <span className="font-display font-semibold text-primary-foreground">{item.value}</span>
+                <div key={item.label} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-primary-foreground/20 pb-3 gap-1">
+                  <span className="text-primary-foreground/70 break-words">{item.label}</span>
+                  <span className="font-display font-semibold text-primary-foreground break-words">{item.value}</span>
                 </div>
               ))}
             </div>
