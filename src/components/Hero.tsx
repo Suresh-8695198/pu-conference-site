@@ -42,12 +42,12 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-light mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl">
+            <span className="block text-teal-light mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-7xl">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl">
+            <span className="block text-coral-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-7xl">
               Techniques & Smart Computing
             </span>
           </h1>
@@ -68,10 +68,10 @@ const Hero = () => {
           {/* University Info */}
           <div className="mb-10 sm:mb-12 xl:mb-12 2xl:mb-14 animate-fade-in px-4" style={{ animationDelay: "0.4s" }}>
             <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mb-3">Organized by</p>
-            <p className="text-xl sm:text-2xl xl:text-2xl 2xl:text-3xl text-primary-foreground font-display font-semibold mb-2">
+            <p className="text-xl sm:text-2xl xl:text-xl 2xl:text-3xl text-primary-foreground font-display font-semibold mb-2">
               Department of Computer Science
             </p>
-            <p className="text-lg sm:text-xl xl:text-xl 2xl:text-2xl text-teal-light font-medium">
+            <p className="text-lg sm:text-xl xl:text-lg 2xl:text-2xl text-teal-light font-medium">
               Periyar University
             </p>
           </div>
@@ -96,7 +96,7 @@ const Hero = () => {
               { number: "500+", label: "Attendees" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-display font-bold text-teal">{stat.number}</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-teal">{stat.number}</p>
                 <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2">{stat.label}</p>
               </div>
             ))}
