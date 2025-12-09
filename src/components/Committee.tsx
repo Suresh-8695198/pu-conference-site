@@ -77,9 +77,29 @@ const Committee = () => {
               </div>
               <div className="p-6 space-y-4">
                 {committee.members.map((member) => (
-                  <div key={member.name}>
-                    <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  <div key={member.name} className="flex items-center gap-3">
+                      {member.name === "Dr. S. Jayanthi" && (
+                        <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Prof. R. Subramani" && (
+                        <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "DR. C. CHANDRASEKAR" && (
+                        <img src="/chandrasekar.jpeg" alt="DR. C. CHANDRASEKAR" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr. H. Hannah Inbarani" && (
+                        <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                      {member.name === "Dr.I. laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
+                        <img src="/laurence.jpeg" alt="Dr.I. laurence Aroquiaraj" className="w-20 h-20 object-cover border border-slate" />
+                      ) : null}
+                      {member.name.includes("Sundaravalli") && (
+                        <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-20 h-20 object-cover border border-slate" />
+                      )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="text-sm text-muted-foreground">{member.role}</p>
+                    </div>
                   </div>
                 ))}
               </div>
