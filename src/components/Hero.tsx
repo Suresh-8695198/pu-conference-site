@@ -21,33 +21,33 @@ const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 mb-7 pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 md:pb-16 relative z-10">
+      <div className="container mx-auto px-4 mb-7 pt-16 sm:pt-20 md:pt-24 xl:pt-24 pb-8 sm:pb-12 md:pb-16 xl:pb-16 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/30 text-teal-light px-4 sm:px-6 py-3 rounded-full mb-8 sm:mb-10 animate-fade-in text-sm sm:text-base">
+          <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/30 text-teal-light px-4 sm:px-6 xl:px-6 py-3 rounded-full mb-8 sm:mb-10 xl:mb-10 animate-fade-in text-sm sm:text-base xl:text-base">
             <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
             <span className="font-medium">International Conference 2026</span>
           </div>
 
 
           {/* Logo + ICAITSC 2026 Card */}
-          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 bg-white rounded-xl shadow-lg px-6 py-8 sm:px-8 sm:py-10 md:px-8 md:py-10 mb-6 sm:mb-8 md:mb-10 animate-fade-in max-w-full sm:max-w-lg md:max-w-xl mx-auto">
+          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 bg-white rounded-xl shadow-lg px-6 py-8 sm:px-8 sm:py-10 md:px-8 md:py-10 xl:px-8 xl:py-10 mb-6 sm:mb-8 md:mb-10 xl:mb-10 animate-fade-in max-w-full sm:max-w-lg md:max-w-xl xl:max-w-xl mx-auto">
             {/* Logos Row */}
-            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 mb-4 sm:mb-6">
-              <img src="/logo.jpg" alt="Periyar University Logo" className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 object-contain" />
-              <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 object-contain" />
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 xl:gap-6 mb-4 sm:mb-6">
+              <img src="/logo.jpg" alt="Periyar University Logo" className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 object-contain" />
+              <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 object-contain" />
             </div>
             {/* Title */}
-            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-navy text-center block">ICAITSC 2026</span>
+            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl font-bold text-navy text-center block">ICAITSC 2026</span>
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-light mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <span className="block text-teal-light mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <span className="block text-coral-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
               Techniques & Smart Computing
             </span>
           </h1>
@@ -66,29 +66,29 @@ const Hero = () => {
           </div>
 
           {/* University Info */}
-          <div className="mb-10 sm:mb-12 animate-fade-in px-4" style={{ animationDelay: "0.4s" }}>
-            <p className="text-primary-foreground/60 text-sm sm:text-base uppercase tracking-wider mb-3">Organized by</p>
-            <p className="text-xl sm:text-2xl text-primary-foreground font-display font-semibold mb-2">
+          <div className="mb-10 sm:mb-12 xl:mb-12 animate-fade-in px-4" style={{ animationDelay: "0.4s" }}>
+            <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base uppercase tracking-wider mb-3">Organized by</p>
+            <p className="text-xl sm:text-2xl xl:text-2xl text-primary-foreground font-display font-semibold mb-2">
               Department of Computer Science
             </p>
-            <p className="text-lg sm:text-xl text-teal-light font-medium">
+            <p className="text-lg sm:text-xl xl:text-xl text-teal-light font-medium">
               Periyar University
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 animate-fade-in px-4" style={{ animationDelay: "0.5s" }}>
-            <a href="#registration" className="btn-accent flex items-center justify-center gap-2 group text-base sm:text-lg px-8 py-4 sm:px-10 sm:py-5 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 xl:gap-6 animate-fade-in px-4" style={{ animationDelay: "0.5s" }}>
+            <a href="#registration" className="btn-accent flex items-center justify-center gap-2 group text-base sm:text-lg xl:text-lg px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 w-full sm:w-auto">
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#call-for-papers" className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 sm:px-10 sm:py-5 font-display font-semibold text-base sm:text-lg rounded-lg transition-all duration-300 hover:bg-primary-foreground/20 hover:border-primary-foreground/50 text-center w-full sm:w-auto">
+            <a href="#call-for-papers" className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 font-display font-semibold text-base sm:text-lg xl:text-lg rounded-lg transition-all duration-300 hover:bg-primary-foreground/20 hover:border-primary-foreground/50 text-center w-full sm:w-auto">
               Submit Paper
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 sm:mt-20 animate-fade-in px-4" style={{ animationDelay: "0.6s" }}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 xl:gap-8 mt-16 sm:mt-20 xl:mt-20 animate-fade-in px-4" style={{ animationDelay: "0.6s" }}>
             {[
               { number: "50+", label: "Speakers" },
               { number: "200+", label: "Papers" },
@@ -96,8 +96,8 @@ const Hero = () => {
               { number: "500+", label: "Attendees" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-teal">{stat.number}</p>
-                <p className="text-primary-foreground/60 text-sm sm:text-base uppercase tracking-wider mt-2">{stat.label}</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-5xl font-display font-bold text-teal">{stat.number}</p>
+                <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base uppercase tracking-wider mt-2">{stat.label}</p>
               </div>
             ))}
           </div>
