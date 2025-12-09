@@ -7,7 +7,7 @@ const Committee = () => {
       icon: Award,
       color: "bg-gold",
       members: [
-        { name: "Dr. R. Sankar", role: "Vice-Chancellor, Periyar University" },
+        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Syndicate Member, Periyar University, Salem - 636 011" },
       ],
     },
     {
@@ -15,7 +15,16 @@ const Committee = () => {
       icon: User,
       color: "bg-navy",
       members: [
-        { name: "Dr. K. Sethuraman", role: "Registrar, Periyar University" },
+        { name: "Prof. R. Subramani", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+        { name: "Dr. S. Jayanthi", role: "Syndicate Member, Periyar University, Salem - 636 011" },
+      ],
+    },
+    {
+      title: "Co-Patron",
+      icon: Briefcase,
+      color: "bg-coral",
+      members: [
+        { name: "DR. C. CHANDRASEKAR", role: "Senior Professor & Head of Computer Science, Periyar University" },
       ],
     },
     {
@@ -23,27 +32,20 @@ const Committee = () => {
       icon: Users,
       color: "bg-teal",
       members: [
-        { name: "Dr. M. Sundaramurthy", role: "Head, Dept. of Computer Science" },
-      ],
-    },
-    {
-      title: "Conference Chair",
-      icon: Briefcase,
-      color: "bg-coral",
-      members: [
-        { name: "Dr. A. Rajesh Kumar", role: "Associate Professor" },
-        { name: "Dr. S. Priya", role: "Assistant Professor" },
+        { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
+        { name: "Dr.I. laurence Aroquiaraj", role: "Professor of Computer Science, Periyar University" },
       ],
     },
   ];
 
   const organizingCommittee = [
-    { name: "Dr. P. Venkatesh", role: "Professor" },
-    { name: "Dr. S. Lakshmi", role: "Associate Professor" },
-    { name: "Dr. R. Karthik", role: "Assistant Professor" },
-    { name: "Dr. M. Deepa", role: "Assistant Professor" },
-    { name: "Dr. K. Ramesh", role: "Assistant Professor" },
-    { name: "Dr. T. Saranya", role: "Assistant Professor" },
+    { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University" },
+    { name: "Dr.I. laurence aroquiaraj", role: "Professor of Computer Science, Periyar University" },
+    { name: "Dr.Saikat Gochhait", role: "Associate Professor, Symbiosis Institute of Telecom Management, Symbiosis International University" },
+    { name: "Dr. Fabrício Moraes de Almeida", role: "Electrical Engineering Department - UFRO (Brazil)" },
+    { name: "DR. C. CHANDRASEKAR", role: "Senior Professor & Head of Computer Science, Periyar University" },
+    { name: "Dr.R.Rathipriya", role: "Professor of Computer Science, Periyar University" },
+    { name: "DR. S. SATHISH", role: "Associate Professor of Computer Science, Periyar University" },
   ];
 
   return (
@@ -108,14 +110,16 @@ const Committee = () => {
           </div>
         </div>
 
-        {/* Advisory Board Note */}
-        <div className="mt-12 text-center">
-          <p className="text-muted-foreground">
-            For the complete list of Advisory Board and Technical Program Committee members,{" "}
-            <a href="#contact" className="text-teal font-medium hover:underline">
-              contact us
-            </a>
-          </p>
+        {/* Publishing Partner & Keynote Speaker */}
+        <div className="mt-12 text-center space-y-6">
+          <div className="bg-background rounded-2xl p-6 shadow">
+            <h4 className="font-display font-bold text-xl text-navy mb-2">Publishing Partner</h4>
+            <p className="text-muted-foreground text-base">All peer-reviewed full papers will be published in the edited book <b>“Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity”</b>, CRC Press, Taylor & Francis Group.</p>
+          </div>
+          <div className="bg-background rounded-2xl p-6 shadow">
+            <h4 className="font-display font-bold text-xl text-navy mb-2">Keynote Speaker</h4>
+            <p className="text-muted-foreground text-base">(Add keynote speaker details here as needed)</p>
+          </div>
         </div>
       </div>
     </section>
