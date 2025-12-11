@@ -7,9 +7,9 @@ const Committee = () => {
   ];
 
    const internationalAdvisoryCommittee = [
-    { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/committee-placeholder.jpg" },
-    { name: "Dr. Ganesh R. Naik", university: "Torrens University / Flinders University", country: "Australia", image: "/committee-placeholder.jpg" },
-    { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/Ahmed.jpeg" },
+    { name: "Dr. Ganesh R. Naik", university: "Torrens University / Flinders University", country: "Australia", image: "/Ganesh Naik.jpeg" },
+    { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/Gunasekaran Thangavel.jpeg" },
     { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
     { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpg" },
     { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
@@ -17,7 +17,7 @@ const Committee = () => {
     { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
     { name: "Prof. Luis Martinez Lopez", university: "University of Jaén", country: "Spain", image: "/Luis Martinez Lopez.jpg" },
     { name: "Prof. Massimo Ficco", university: "University of Campania Luigi Vanvitelli", country: "Italy", image: "/Massimo Ficco.jpg" },
-    { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/Sudhir Dixit.jpg" },
     { name: "Prof. Valentina E. Balas", university: "Aurel Vlaicu University of Arad", country: "Romania", image: "/Balas.jpg" },
     { name: "Prof. Xiao-Zhi Gao", university: "University of Eastern Finland", country: "Finland", image: "/Xiao-Zhi Gao.jpg" },
     { name: "Prof. Yui Wing Leung", university: "Hong Kong Baptist University", country: "Hong Kong", image: "/Yui Wing Leung.jpg" },
@@ -37,11 +37,12 @@ const Committee = () => {
     { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", country: "India", image: "/Saikat Gochhait.jpg" },
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.", country: "India", image: "/Senthilkumar.jpg" },
-    { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", country: "India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", country: "India", image: "/Sipra Das Bit.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", country: "India", image: "/Veerakumar.jpg" },
-    { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", country: "India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", country: "India", image: "/Tanmay De.jpg" },
     { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", country: "India", image: "/Nivas.jpg" },
+    { name: "Salom Jerlin", university: "Managing Director, Hitakey Tech solution", country: "India", image: "/Salom Jerlin.jpg" },
   ];
 
   const academicLeadership = [
@@ -71,7 +72,7 @@ const Committee = () => {
     { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
     { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
     { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
-    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India", image: "/Velayutham.jpg" },
+    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India", image: "/Velayutham.jpeg" },
   ];
 
   const committees = [
@@ -456,9 +457,6 @@ const Committee = () => {
                     <p><strong>Senior Director, HoD-Research & Development</strong></p>
                     <p><strong>Scientist-G, ERNET India</strong></p>
                     <p>Ministry of Electronics & IT, Government of India</p>
-                    <p><strong>Vice Chancellor - SR University</strong></p>
-                    <p><strong>Director - leadingindia.ai</strong></p>
-                    <p><strong>Director, Chair, IEEE Computer Society, India Council</strong></p>
                   </div>
                 </div>
               </div>
