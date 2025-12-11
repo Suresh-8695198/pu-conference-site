@@ -7,67 +7,71 @@ const Committee = () => {
   ];
 
    const internationalAdvisoryCommittee = [
-    { name: "Dr. M. Ashok Kumar", role: "BlueCrest University, Liberia", image: "/Ashok Kumar.jpg" },
-    { name: "Dr. Nithya Rekha Sivakumar", role: "Princess Nourah Bint Abdulrahman University, Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
-    { name: "Luis Martinez", role: "University of Jaén, Spain", image: "/Luis Martinez Lopez.jpg" },
-    { name: "Muthmainnah Yakin", role: "Universitas Al Asyariah Mandar, Indonesia", image: "/Muthmainnah Yakin.jpg" },
-    { name: "Preethi Ananthachari", role: "Ahlia University, Bahrain", image: "/Preethi Ananthachari.jpg" },
-    { name: "Prof. Lai Khin Wee", role: "University of Malaya, Malaysia", image: "/Lai Khin Wee.jpg" },
-    { name: "Prof. Massimo Ficco", role: "University of Campania Luigi Vanvitelli, Italy", image: "/Massimo Ficco.jpg" },
-    { name: "Prof. Valentina E. Balas", role: "\"Aurel Vlaicu\" University of Arad, Romania", image: "/Balas.jpg" },
-    { name: "Prof. Xiao-Zhi Gao", role: "University of Eastern Finland, Finland", image: "/Xiao-Zhi Gao.jpg" },
-    { name: "Prof. Yui Wing Leung", role: "Hong Kong Baptist University, Hong Kong", image: "/Yui Wing Leung.jpg" },
-    { name: "Prof. Yuval Shavitt", role: "Tel Aviv University, Israel", image: "/Yuval Shavitt.jpg" },
-  ].sort((a, b) => a.name.localeCompare(b.name));
+    { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Ganesh R. Naik", university: "Torrens University / Flinders University", country: "Australia", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/committee-placeholder.jpg" },
+    { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
+    { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpg" },
+    { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
+    { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
+    { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
+    { name: "Prof. Luis Martinez Lopez", university: "University of Jaén", country: "Spain", image: "/Luis Martinez Lopez.jpg" },
+    { name: "Prof. Massimo Ficco", university: "University of Campania Luigi Vanvitelli", country: "Italy", image: "/Massimo Ficco.jpg" },
+    { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Valentina E. Balas", university: "Aurel Vlaicu University of Arad", country: "Romania", image: "/Balas.jpg" },
+    { name: "Prof. Xiao-Zhi Gao", university: "University of Eastern Finland", country: "Finland", image: "/Xiao-Zhi Gao.jpg" },
+    { name: "Prof. Yui Wing Leung", university: "Hong Kong Baptist University", country: "Hong Kong", image: "/Yui Wing Leung.jpg" },
+    { name: "Prof. Yuval Shavitt", university: "Tel Aviv University", country: "Israel", image: "/Yuval Shavitt.jpg" },
+  ];
 
   const nationalAdvisoryCommittee = [
-    { name: "Dr. (Mrs.) R. Leela Velusamy", role: "National Institute of Technology Tiruchirappalli, India", image: "/Leela Velusamy.jpg" },
-    { name: "Dr. B. Surendiran", role: "National Institute of Technology Puducherry, India", image: "/Surendiran.jpg" },
-    { name: "Dr. Abdul Nazeer K. A", role: "National Institute of Technology Calicut, India", image: "/Abdul Nazeer.jpg" },
-    { name: "Dr. T. Veerakumar", role: "National Institute of Technology Goa, India", image: "/Veerakumar.jpg" },
-    { name: "Dr. S. Selvakumar", role: "National Institute of Technology Tiruchirappalli, India", image: "/Selvakumar.jpg" },
-    { name: "Dr. Namita Mittal", role: "Malaviya National Institute of Technology Jaipur, India", image: "/Namita Mittal.jpg" },
-    { name: "Dr. Neeta Nain", role: "Malaviya National Institute of Technology Jaipur, India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. HIMABINDU", role: "National Institute of Technology Andhra Pradesh, India", image: "/Prasanth.jpg" },
-    { name: "Dr. A. Prasanth", role: "Vel Tech University, India", image: "/Prasanth.jpg" },
-    { name: "Dr. Choudhary Shyam Prakash", role: "National Institute of Technology Andhra Pradesh, India", image: "/Choudhary Shyam Prakash.jpg" },
-    { name: "Dr. Saikat Gochhait", role: "SYMBIOSIS INTERNATIONAL UNIVERSITY, India", image: "/Saikat Gochhait.jpg" },
-    { name: "Dr. Mushtaq Ahmed (Head)", role: "MNIT, India", image: "/Mushtaq Ahmed.jpg" },
-    { name: "Senthilkumar Sengottaiyan", role: "Ant Philosophy Technology & Services Private Limited, India", image: "/Senthilkumar.jpg" },
-    { name: "Nivas K", role: "Sify technologies pvt, India", image: "/Nivas.jpg" },
-    { name: "Dr.K.S.Sowmiya Rani", role: "Indian Institute of Engineering Science and Technology, India", image: "/sowmiya.jpg" },
-    { name: "Dr. Sweta Jain", role: "NIT Bhopal (MANIT), India", image: "/Sweta Jain.jpg" },
-  ].sort((a, b) => a.name.localeCompare(b.name));
+    { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut", country: "India", image: "/Abdul Nazeer.jpg" },
+    { name: "Dr. A. Prasanth", university: "Vel Tech University", country: "India", image: "/Prasanth.jpg" },
+    { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
+    { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", country: "India", image: "/Leela Velusamy.jpg" },
+    { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", country: "India", image: "/HIMABINDU.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", country: "India", image: "/Mushtaq Ahmed.jpg" },
+    { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", country: "India", image: "/Namita Mittal.jpg" },
+    { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur", country: "India", image: "/Neeta Nain.jpg" },
+    { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", country: "India", image: "/Saikat Gochhait.jpg" },
+    { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", country: "India", image: "/Selvakumar.jpg" },
+    { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.", country: "India", image: "/Senthilkumar.jpg" },
+    { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", country: "India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", country: "India", image: "/Sweta Jain.jpg" },
+    { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", country: "India", image: "/Veerakumar.jpg" },
+    { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", country: "India", image: "/committee-placeholder.jpg" },
+    { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", country: "India", image: "/Nivas.jpg" },
+  ];
 
   const academicLeadership = [
-    { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India" },
-    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India" },
-    { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India" },
-    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India" },
-    { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India" },
-    { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India" },
-    { name: "Dr. M. Bagyamathi", role: "—" },
-    { name: "Dr. B. Lavanya", role: "—" },
-    { name: "Dr. Renugadevi K", role: "NKR Government Arts College for Women, Namakkal, Tamil Nadu, India" },
-    { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India" },
-    { name: "Dr. S. Angelin Sophy", role: "—" },
-    { name: "Dr. G. Kavitha", role: "—" },
-    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India" },
-    { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India", image: "/Arul Pon Daniel.jpg" },
+    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
+    { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India", image: "/Sasirekha.jpg" },
+    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
+    { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Gowthamarayathirumal.jpg" },
+    { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Jothi.jpg" },
+    { name: "Dr. M. Bagyamathi", role: "—", image: "/Bagyamathi.jpg" },
+    { name: "Dr. B. Lavanya", role: "—", image: "/Lavanya.jpg" },
+    { name: "Dr. Renugadevi K", role: "NKR Government Arts College for Women, Namakkal, Tamil Nadu, India", image: "/Renugadevi.jpg" },
+    { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India", image: "/Sudhakar.jpg" },
+    { name: "Dr. S. Angelin Sophy", role: "—", image: "/Angelin Sophy.jpg" },
+    { name: "Dr. G. Kavitha", role: "—", image: "/Kavitha.jpg" },
+    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
+    { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
   ];
 
   const technicalLeadership = [
-    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India" },
-    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India" },
-    { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
-    { name: "Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
-    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
-    { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India" },
-    { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India" },
-    { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India" },
-    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India" },
+    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
+    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
+    { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Ramyachitra.jpg" },
+    { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
+    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
+    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
+    { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
+    { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
+    { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
+    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India", image: "/Velayutham.jpg" },
   ];
 
   const committees = [
@@ -240,7 +244,11 @@ const Committee = () => {
                         )}
                       <div>
                         <p className="font-display font-bold text-navy">{member.name}</p>
-                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                        {"university" in member && "country" in member ? (
+                          <p className="text-sm text-muted-foreground">{(member as any).university}, {(member as any).country}</p>
+                        ) : (
+                          <p className="text-sm text-muted-foreground">{member.role}</p>
+                        )}
                       </div>
                     </div>
                   ))}
@@ -298,7 +306,11 @@ const Committee = () => {
                       )}
                     <div>
                       <p className="font-display font-bold text-navy">{member.name}</p>
-                      <p className="text-sm text-muted-foreground">{member.role}</p>
+                      {"university" in member && "country" in member ? (
+                        <p className="text-sm text-muted-foreground">{(member as any).university}, {(member as any).country}</p>
+                      ) : (
+                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -330,7 +342,7 @@ const Committee = () => {
                   />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                    <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
                   </div>
                 </div>
               ))}
@@ -353,7 +365,7 @@ const Committee = () => {
                   />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                    <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
                   </div>
                 </div>
               ))}
