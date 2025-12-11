@@ -1,4 +1,4 @@
-import { Check, Users, GraduationCap, Briefcase, Globe } from "lucide-react";
+import { Check, Users, GraduationCap, Briefcase, Globe, MapPin, Plane, Train, Bus, Camera } from "lucide-react";
 
 const Registration = () => {
   const categories = [
@@ -38,7 +38,9 @@ const Registration = () => {
   ];
 
   return (
-    <section id="registration" className="py-24 bg-navy text-primary-foreground">
+    <>
+      {/* Registration Section */}
+      <section id="registration" className="py-24 bg-navy text-primary-foreground">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -157,10 +159,132 @@ const Registration = () => {
 
         {/* Note */}
         <p className="text-center text-primary-foreground/60 text-sm mt-8">
-          * All fees are inclusive of 18% GST for Indian delegates
+          Conference registration will commence on 20 January 2026 and close on 20 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper to be included in the conference proceedings.
         </p>
       </div>
     </section>
+
+      {/* Travel Section */}
+      <section id="travel" className="py-24 bg-slate">
+        <div className="container mx-auto px-4">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+              Plan Your Visit
+            </span>
+            <h2 className="section-title">
+              Travel & <span className="text-coral">Venue</span>
+            </h2>
+            <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          </div>
+
+          {/* Conference Venue */}
+          <div className="bg-background rounded-2xl p-8 mb-12 shadow-lg">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-teal rounded-lg flex items-center justify-center">
+                <MapPin className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <h3 className="font-display font-bold text-2xl text-navy">Conference Venue</h3>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (HORIZON-AI 2026) will be held at:
+            </p>
+            <div className="bg-slate p-6 rounded-xl">
+              <h4 className="font-display font-bold text-lg text-navy mb-2">Department of Computer Science, Seminar Hall-II Floor</h4>
+              <p className="text-muted-foreground font-medium">Periyar University</p>
+              <p className="text-muted-foreground">Salem – 636011, Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          {/* How to Reach */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* By Air */}
+            <div className="bg-background rounded-2xl p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+                  <Plane className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <h4 className="font-display font-bold text-lg text-navy">By Air</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
+                <li>• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
+                <li>• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
+              </ul>
+            </div>
+
+            {/* By Train */}
+            <div className="bg-background rounded-2xl p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+                  <Train className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <h4 className="font-display font-bold text-lg text-navy">By Train</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Salem Junction (SA) – Major railway junction with connections to all metro cities.</li>
+                <li>• From the station, Periyar University is 15–20 minutes by taxi, auto, or bus.</li>
+              </ul>
+            </div>
+
+            {/* By Road */}
+            <div className="bg-background rounded-2xl p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+                  <Bus className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <h4 className="font-display font-bold text-lg text-navy">By Road</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
+                <li>• Frequent state and private buses operate from all major cities.</li>
+                <li>• From Salem bus stands, the University is 15–20 minutes away by bus, auto, or taxi.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Places to Visit */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-coral rounded-lg flex items-center justify-center">
+                <Camera className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <h3 className="font-display font-bold text-2xl text-navy">Important Places to Visit</h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>Yercaud Hills</strong> – Scenic hill station with viewpoints, lake, and coffee estates.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>1008 Lingam Temple</strong> – Famous spiritual site with 1008 Shiva lingams.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>Kurumbapatti Zoological Park</strong> – Mini zoo at the foothills of Yercaud.</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>Kailasanathar Temple, Tharamangalam</strong> – Renowned for its intricate stone carvings.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>Mettur Dam</strong> – One of India's largest dams with beautiful reservoir views.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
+                  <p className="text-muted-foreground"><strong>ISKCON Salem</strong> – Peaceful spiritual and cultural center.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

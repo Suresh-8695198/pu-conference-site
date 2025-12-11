@@ -2,15 +2,15 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen bg-navy overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-5 sm:top-20 sm:left-10 w-36 h-36 sm:w-72 sm:h-72 border border-primary-foreground rounded-full" />
-        <div className="absolute top-20 right-10 sm:top-40 sm:right-20 w-48 h-48 sm:w-96 sm:h-96 border border-primary-foreground rounded-full" />
-        <div className="absolute bottom-10 left-1/4 sm:bottom-20 sm:left-1/4 w-24 h-24 sm:w-48 sm:h-48 border border-primary-foreground rounded-full" />
-        <div className="absolute -bottom-10 right-1/3 sm:-bottom-20 sm:right-1/3 w-32 h-32 sm:w-64 sm:h-64 bg-teal rounded-full blur-2xl sm:blur-3xl opacity-20" />
-        <div className="absolute top-1/4 -left-10 sm:-left-20 w-40 h-40 sm:w-80 sm:h-80 bg-coral rounded-full blur-2xl sm:blur-3xl opacity-10" />
-      </div>
+    <section id="home" className="relative min-h-screen bg-navy overflow-hidden"
+      style={{
+        backgroundImage: `url('/herobg.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-navy/70"></div>
 
       {/* Grid Pattern */}
       <div className="absolute inset-0 opacity-5" 
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 mb-7 pt-16 sm:pt-20 md:pt-24 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/30 text-teal-light px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-8 sm:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg">
+          <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-8 sm:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
             <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
             <span className="font-medium">International Conference 2026</span>
           </div>
@@ -42,12 +42,12 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-display font-bold text-primary-foreground mb-0 leading-tight animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-display font-bold text-white mb-0 leading-tight animate-fade-in px-2 drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-light mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl">
+            <span className="block text-teal-300 mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl drop-shadow-lg">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-light mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl">
+            <span className="block text-coral-300 mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl drop-shadow-lg">
               Beyond Algorithms
             </span>
           </h1>
@@ -55,23 +55,23 @@ const Hero = () => {
          
           {/* Info Cards */}
           <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 animate-fade-in px-4" style={{ animationDelay: "0.3s" }}>
-            <div className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-primary-foreground/20 w-full sm:w-auto">
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
               <Calendar className="w-5 h-5 text-coral flex-shrink-0" />
-              <span className="text-primary-foreground font-medium text-base">26-27 February 2026</span>
+              <span className="text-white font-medium text-base drop-shadow-sm">26-27 February 2026</span>
             </div>
-            <div className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-primary-foreground/20 w-full sm:w-auto">
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
               <MapPin className="w-5 h-5 text-teal flex-shrink-0" />
-              <span className="text-primary-foreground font-medium text-base">Salem, Tamil Nadu, India</span>
+              <span className="text-white font-medium text-base drop-shadow-sm">Salem, Tamil Nadu, India</span>
             </div>
           </div>
 
           {/* University Info */}
           <div className="mb-10 sm:mb-12 xl:mb-12 2xl:mb-14 animate-fade-in px-4" style={{ animationDelay: "0.4s" }}>
-            <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mb-3">Organized by</p>
-            <p className="text-xl sm:text-2xl xl:text-xl 2xl:text-3xl text-primary-foreground font-display font-semibold mb-2">
+            <p className="text-white/80 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mb-3 drop-shadow-sm">Organized by</p>
+            <p className="text-xl sm:text-2xl xl:text-xl 2xl:text-3xl text-white font-display font-semibold mb-2 drop-shadow-lg">
               Department of Computer Science
             </p>
-            <p className="text-lg sm:text-xl xl:text-lg 2xl:text-2xl text-teal-light font-medium">
+            <p className="text-lg sm:text-xl xl:text-lg 2xl:text-2xl text-teal-300 font-medium drop-shadow-lg">
               Periyar University
             </p>
           </div>
@@ -82,7 +82,7 @@ const Hero = () => {
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#call-for-papers" className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 font-display font-semibold text-base sm:text-lg xl:text-lg 2xl:text-xl rounded-lg transition-all duration-300 hover:bg-primary-foreground/20 hover:border-primary-foreground/50 text-center w-full sm:w-auto">
+            <a href="#call-for-papers" className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 font-display font-semibold text-base sm:text-lg xl:text-lg 2xl:text-xl rounded-lg transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-center w-full sm:w-auto drop-shadow-lg">
               Submit Paper
             </a>
           </div>
@@ -96,8 +96,8 @@ const Hero = () => {
               { number: "500+", label: "Attendees" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-teal">{stat.number}</p>
-                <p className="text-primary-foreground/60 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2">{stat.label}</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-teal drop-shadow-lg">{stat.number}</p>
+                <p className="text-white/90 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2 drop-shadow-sm">{stat.label}</p>
               </div>
             ))}
           </div>

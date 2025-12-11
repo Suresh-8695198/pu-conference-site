@@ -1,4 +1,4 @@
-import { User, Users, Award, Briefcase } from "lucide-react";
+import { User, Users, Award, Briefcase, Mic } from "lucide-react";
 import { useState } from "react";
 
 const Committee = () => {
@@ -439,15 +439,93 @@ const Committee = () => {
           </div>
         </div>
 
-        {/* Publishing Partner & Keynote Speaker */}
-        <div className="mt-12 text-center space-y-6">
+        {/* Key Speakers */}
+        <div className="bg-background rounded-2xl p-4 md:p-8 mt-16">
+          <div className="text-center mb-8">
+            <Mic className="w-12 h-12 text-teal mx-auto mb-4" />
+            <h3 className="font-display font-bold text-2xl text-navy">
+              Key Speakers
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Speaker 1 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold text-xl">AP</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. A. Paventhan</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Senior Director, HoD-Research & Development</strong></p>
+                    <p><strong>Scientist-G, ERNET India</strong></p>
+                    <p>Ministry of Electronics & IT, Government of India</p>
+                    <p><strong>Vice Chancellor - SR University</strong></p>
+                    <p><strong>Director - leadingindia.ai</strong></p>
+                    <p><strong>Director, Chair, IEEE Computer Society, India Council</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker 2 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold text-xl">PP</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Assistant Professor</strong></p>
+                    <p><strong>Chan Zuckerberg Imaging Scientist</strong></p>
+                    <p>Assistant Professor at the Center for Magnetic Resonance Research (CMRR)</p>
+                    <p>University of Minnesota (UMN)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker 3 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold text-xl">SR</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. K. S. Sowmiya Rani</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Founder Editor & Reviewer</strong></p>
+                    <p>Sowmis_AWW</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker 4 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold text-xl">MY</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Muthmainnah Yakin</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Assistant Professor</strong></p>
+                    <p>Universitas Al Asyariah Mandar</p>
+                    <p>West Sulawesi, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Publishing Partner */}
+        <div className="mt-12 text-center">
           <div className="bg-background rounded-2xl p-4 md:p-6 shadow">
             <h4 className="font-display font-bold text-xl text-navy mb-2">Publishing Partner</h4>
-            <p className="text-muted-foreground text-base">All peer-reviewed full papers will be published in the edited book <b>“Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity”</b>, CRC Press, Taylor & Francis Group.</p>
-          </div>
-          <div className="bg-background rounded-2xl p-4 md:p-6 shadow">
-            <h4 className="font-display font-bold text-xl text-navy mb-2">Keynote Speaker</h4>
-            <p className="text-muted-foreground text-base">(Add keynote speaker details here as needed)</p>
+            <p className="text-muted-foreground text-base">All peer-reviewed full papers will be published in the edited book <b>"Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity"</b>, CRC Press, Taylor & Francis Group.</p>
           </div>
         </div>
       </div>
