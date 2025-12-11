@@ -1,8 +1,6 @@
 import { User, Users, Award, Briefcase, Mic } from "lucide-react";
-import { useState } from "react";
 
 const Committee = () => {
-  const [activeTab, setActiveTab] = useState<'academic' | 'technical'>('academic');
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor of Computer Science, Periyar University" },
     { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
@@ -365,77 +363,46 @@ const Committee = () => {
             Academic & Technical Leadership
           </h3>
 
-          {/* Tab Navigation */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-slate rounded-lg p-1 flex">
-              <button
-                onClick={() => setActiveTab('academic')}
-                className={`px-6 py-3 rounded-lg font-display font-semibold transition-all duration-300 ${
-                  activeTab === 'academic'
-                    ? 'bg-teal text-primary-foreground shadow-lg'
-                    : 'text-navy hover:bg-slate-200'
-                }`}
-              >
-                Academic Leadership
-              </button>
-              <button
-                onClick={() => setActiveTab('technical')}
-                className={`px-6 py-3 rounded-lg font-display font-semibold transition-all duration-300 ${
-                  activeTab === 'technical'
-                    ? 'bg-teal text-primary-foreground shadow-lg'
-                    : 'text-navy hover:bg-slate-200'
-                }`}
-              >
-                Technical Leadership
-              </button>
+          {/* Academic Leadership */}
+          <div className="mb-12">
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {academicLeadership.map((member, index) => (
+                <div
+                  key={member.name}
+                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                >
+                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-navy">{member.name}</p>
+                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Tab Content */}
+          {/* Technical Leadership */}
           <div>
-            {activeTab === 'academic' && (
-              <div>
-                <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {academicLeadership.map((member, index) => (
-                    <div
-                      key={member.name}
-                      className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                    >
-                      <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                        <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                      </div>
-                      <div>
-                        <p className="font-display font-bold text-navy">{member.name}</p>
-                        <p className="text-sm text-muted-foreground">{member.role}</p>
-                      </div>
-                    </div>
-                  ))}
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {technicalLeadership.map((member, index) => (
+                <div
+                  key={member.name}
+                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                >
+                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-navy">{member.name}</p>
+                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  </div>
                 </div>
-              </div>
-            )}
-
-            {activeTab === 'technical' && (
-              <div>
-                <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {technicalLeadership.map((member, index) => (
-                    <div
-                      key={member.name}
-                      className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                    >
-                      <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                        <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                      </div>
-                      <div>
-                        <p className="font-display font-bold text-navy">{member.name}</p>
-                        <p className="text-sm text-muted-foreground">{member.role}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+              ))}
+            </div>
           </div>
         </div>
 
