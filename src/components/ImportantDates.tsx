@@ -3,7 +3,7 @@ import { Calendar, FileText, Bell, CheckCircle, CreditCard } from "lucide-react"
 const ImportantDates = () => {
   const dates = [
     {
-      date: "15 September 2025",
+      date: "16 December 2025",
       title: "Paper Submission Opens",
       description: "Start submitting your research papers",
       icon: FileText,
@@ -11,7 +11,7 @@ const ImportantDates = () => {
       side: "left",
     },
     {
-      date: "15 December 2025",
+      date: "31 January 2026",
       title: "Paper Submission Deadline",
       description: "Last date for paper submission",
       icon: Calendar,
@@ -19,7 +19,7 @@ const ImportantDates = () => {
       side: "right",
     },
     {
-      date: "15 January 2026",
+      date: "15 February 2026",
       title: "Acceptance Notification",
       description: "Notification of acceptance/rejection",
       icon: Bell,
@@ -27,7 +27,7 @@ const ImportantDates = () => {
       side: "left",
     },
     {
-      date: "31 January 2026",
+      date: "28 February 2026",
       title: "Camera Ready Submission",
       description: "Final paper submission deadline",
       icon: CheckCircle,
@@ -35,7 +35,7 @@ const ImportantDates = () => {
       side: "right",
     },
     {
-      date: "10 February 2026",
+      date: "28 February 2026",
       title: "Registration Deadline",
       description: "Last date for registration",
       icon: CreditCard,
@@ -43,7 +43,7 @@ const ImportantDates = () => {
       side: "left",
     },
     {
-      date: "26-27 February 2026",
+      date: "14-15 March 2026",
       title: "Conference Dates",
       description: "Main conference event",
       icon: Calendar,

@@ -2,14 +2,14 @@ import { FileText, CheckCircle, AlertCircle, Send } from "lucide-react";
 
 const CallForPapers = () => {
   const guidelines = [
-    "Full length original research contributions not exceeding six pages as per IEEE format",
-    "The manuscript should contribute original research ideas, findings, results, and conclusions",
-    "The manuscript should not have been published in any journals or conference proceedings",
-    "Manuscript should contain the corresponding author name with e-mail id and affiliation",
-    "A paper may contain a maximum of 4 authors",
-    "All submitted manuscripts will be sent for peer review process",
-    "Authors of accepted papers are eligible to receive certificates",
-    "Selected papers will be published in reputed international journals",
+    "Papers must be full-length original research or review articles and must not exceed six (6) pages in length.",
+    "The manuscript must clearly present original research ideas, methodology or analysis, results and findings, and conclusions.",
+    "The manuscript must not have been published previously and must not be under review elsewhere at the time of submission.",
+    "A paper may have a maximum of four (4) authors and must clearly mention the corresponding author's name, email ID, and affiliations of all authors.",
+    "All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.",
+    "Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.",
+    "Selected high-quality and accepted papers will be published as book chapters in the edited volume titled 'Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity', subject to the publisher's scope, quality, and editorial requirements.",
+    "Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings.",
   ];
 
   return (
@@ -36,24 +36,50 @@ const CallForPapers = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-xl">Author Guidelines</h3>
-                  <p className="text-primary-foreground/60 text-sm">Follow these submission guidelines</p>
+                  <p className="text-primary-foreground/90 text-sm">Follow these submission guidelines</p>
                 </div>
               </div>
 
-              <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                ICAITSC 2026 invites full length original research contributions from engineering professionals 
-                from industries, R&D organizations, academic institutions, government departments and research 
-                scholars from across the world.
+              <p className="text-primary-foreground/90 mb-6 leading-relaxed">
+                HORIZON-AI 2025 (HORIZON25) invites full-length original research contributions from engineering professionals, industry experts, R&D organizations, academic institutions, government departments, and research scholars from across the world.
+                All submissions must be original, unpublished, ethically compliant, and prepared in accordance with CRC Press (Taylor & Francis) editorial guidelines.
               </p>
 
-              <ul className="space-y-4">
-                {guidelines.map((guideline, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-teal shrink-0 mt-0.5" />
-                    <span className="text-primary-foreground/80 text-sm">{guideline}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="space-y-3">
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Manuscript Preparation</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• Papers must be full-length original research or review articles and must not exceed six (6) pages in length.</li>
+                  <li>• The manuscript must clearly present original research ideas, methodology or analysis, results and findings, and conclusions.</li>
+                </ul>
+
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Originality Policy</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• The manuscript must not have been published previously and must not be under review elsewhere at the time of submission.</li>
+                </ul>
+
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Authorship Rules</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• A paper may have a maximum of four (4) authors and must clearly mention the corresponding author's name, email ID, and affiliations of all authors.</li>
+                </ul>
+
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Review Process</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.</li>
+                </ul>
+
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Registration, Presentation & Certificate</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.</li>
+                </ul>
+
+                <h4 className="font-display font-bold text-lg text-primary-foreground">Publications</h4>
+                <ul className="space-y-2 text-sm text-primary-foreground/90">
+                  <li>• Selected high-quality and accepted papers will be published as book chapters in the edited volume titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to the publisher's scope, quality, and editorial requirements.</li>
+                  <li>• Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings.</li>
+                  <li>• Final publication decisions will be based on peer-review outcomes, technical quality, relevance, and originality.</li>
+                  <li>• An additional publication charge will apply.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -95,11 +121,56 @@ const CallForPapers = () => {
               </div>
             </div>
 
+            {/* Research Tracks */}
+            <div className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-8">
+              <h3 className="font-display font-bold text-2xl mb-6 text-primary-foreground">
+                Research Tracks
+              </h3>
+              <div className="grid gap-4">
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">AI for Healthcare</h4>
+                  <p className="text-primary-foreground/90 text-sm">Medical imaging, diagnostics, drug discovery, personalized medicine, telemedicine</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Genomic Computing</h4>
+                  <p className="text-primary-foreground/90 text-sm">Genomics, bioinformatics, computational biology, DNA sequencing analysis</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Computer Vision</h4>
+                  <p className="text-primary-foreground/90 text-sm">Image recognition, object detection, video analysis, autonomous systems</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Signal Processing</h4>
+                  <p className="text-primary-foreground/90 text-sm">Audio processing, speech recognition, sensor data analysis, time-series analysis</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">ML Intelligence</h4>
+                  <p className="text-primary-foreground/90 text-sm">Deep learning, neural networks, reinforcement learning, natural language processing</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Smart Agriculture</h4>
+                  <p className="text-primary-foreground/90 text-sm">Precision farming, crop monitoring, yield prediction, agricultural robotics</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Edge AI</h4>
+                  <p className="text-primary-foreground/90 text-sm">IoT applications, edge computing, real-time processing, resource-constrained AI</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Data Science</h4>
+                  <p className="text-primary-foreground/90 text-sm">Big data analytics, data mining, statistical modeling, predictive analytics</p>
+                </div>
+                <div className="bg-primary-foreground/10 rounded-lg p-4">
+                  <h4 className="font-display font-bold text-lg text-primary-foreground mb-2">Human-Centric AI</h4>
+                  <p className="text-primary-foreground/90 text-sm">Human-AI interaction, ethics, fairness, explainable AI, social impact</p>
+                </div>
+              </div>
+            </div>
+
             {/* Submit Button */}
             <div className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-2xl p-8 text-center">
               <AlertCircle className="w-12 h-12 text-gold mx-auto mb-4" />
               <h3 className="font-display font-bold text-xl mb-2">Ready to Submit?</h3>
-              <p className="text-primary-foreground/60 mb-6 text-sm">
+              <p className="text-primary-foreground/80 mb-6 text-sm">
                 Submit your paper through our online submission portal
               </p>
               <a 

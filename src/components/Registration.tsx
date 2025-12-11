@@ -5,26 +5,26 @@ const Registration = () => {
     {
       title: "Faculty / Research Scholar",
       icon: GraduationCap,
-      indian: "₹5,000",
-      foreign: "$150",
+      indian: "₹6,000",
+      foreign: "$180",
     },
     {
       title: "UG / PG Students",
       icon: Users,
-      indian: "₹3,000",
-      foreign: "$100",
+      indian: "₹4,000",
+      foreign: "$120",
     },
     {
       title: "Industry Professionals",
       icon: Briefcase,
-      indian: "₹7,000",
-      foreign: "$200",
+      indian: "₹8,000",
+      foreign: "$240",
     },
     {
       title: "Attendees (Non-Author)",
       icon: Globe,
-      indian: "₹2,000",
-      foreign: "$75",
+      indian: "₹3,000",
+      foreign: "$90",
     },
   ];
 
