@@ -481,7 +481,7 @@ const Committee = () => {
                 <img
                   src="/sowmiya.jpg"
                   alt="Dr. K. S. Sowmiya Rani"
-                  className="w-40 h-40  object-cover shrink-0"
+                  className="w-44 h-52 object-cover shrink-0"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
@@ -506,7 +506,7 @@ const Committee = () => {
                 <img
                   src="/muthmainnah.png"
                   alt="Muthmainnah Yakin"
-                  className="w-36 h-42 object-cover shrink-0"
+                  className="w-36 h-41 object-cover shrink-0"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
