@@ -86,6 +86,36 @@ const About = () => {
           </div>
         </div>
 
+        {/* SDG Images */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="font-display font-bold text-2xl text-navy mb-4">
+              Aligned with UN Sustainable Development Goals
+            </h3>
+            <p className="text-lg text-slate-700">
+              Our conference focuses on key SDGs to drive positive change through AI and technology.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <img src="/good%20health.jpg" alt="Good Health" className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover shadow-lg hover:scale-105 transition-transform" />
+              <h4 className="font-semibold text-navy">Good Health</h4>
+            </div>
+            <div className="text-center">
+              <img src="/quality%20education.jpg" alt="Quality Education" className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover shadow-lg hover:scale-105 transition-transform" />
+              <h4 className="font-semibold text-navy">Quality Education</h4>
+            </div>
+            <div className="text-center">
+              <img src="/decent%20work.jpg" alt="Decent Work" className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover shadow-lg hover:scale-105 transition-transform" />
+              <h4 className="font-semibold text-navy">Decent Work</h4>
+            </div>
+            <div className="text-center">
+              <img src="/industry.jpg" alt="Industry" className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover shadow-lg hover:scale-105 transition-transform" />
+              <h4 className="font-semibold text-navy">Industry</h4>
+            </div>
+          </div>
+        </div>
+
         {/* University Info */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-slate rounded-2xl p-8">

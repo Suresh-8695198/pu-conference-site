@@ -2,8 +2,8 @@ import { User, Users, Award, Briefcase, Mic } from "lucide-react";
 
 const Committee = () => {
   const organizingCommittee = [
-    { name: "Dr. R. Rathipriya", role: "Professor of Computer Science, Periyar University" },
-    { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
+    { name: "Dr. R. Rathipriya", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
+    { name: "Dr. S. Sathish", role: "Associate Professor, Periyar University, Salem, Tamilnadu, India" },
   ];
 
    const internationalAdvisoryCommittee = [
@@ -109,7 +109,7 @@ const Committee = () => {
       color: "bg-navy",
       members: [
         { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
-        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor of Computer Science, Periyar University" },
+        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
       ],
     },
     {
@@ -171,7 +171,7 @@ const Committee = () => {
                           <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
                         ) : null}
                         {member.name.includes("Sundaravalli") && (
-                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
+                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-30 object-cover border border-slate" />
                         )}
                         {member.name === "Dr. V. Raj" && (
                           <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
