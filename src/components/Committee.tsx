@@ -376,9 +376,11 @@ const Committee = () => {
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
                 >
-                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                  </div>
+                  <img
+                    src={member.image || "/committee-placeholder.jpg"}
+                    alt={member.name}
+                    className="w-14 h-14 object-cover shrink-0"
+                  />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.role}</p>
@@ -397,9 +399,11 @@ const Committee = () => {
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
                 >
-                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                  </div>
+                  <img
+                    src={member.image || "/committee-placeholder.jpg"}
+                    alt={member.name}
+                    className="w-14 h-14 object-cover shrink-0"
+                  />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.role}</p>
