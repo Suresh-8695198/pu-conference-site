@@ -440,6 +440,32 @@ const Committee = () => {
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
               <div className="flex items-center gap-4">
                 <img
+                  src="/Deepak Garg.jpeg"
+                  alt="DR. DEEPAK GARG"
+                  className="w-40 h-40 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                  <span className="text-primary-foreground font-bold text-xl">DG</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">DR. DEEPAK GARG</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Vice Chancellor - SR University</strong></p>
+                    <p><strong>Director - leadingindia.ai</strong></p>
+                    <p>Director, Chair, IEEE Computer Society, India Council</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker 2 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+              <div className="flex items-center gap-4">
+                <img
                   src="/paventhan.jpg"
                   alt="Dr. A. Paventhan"
                   className="w-40 h-40 object-cover shrink-0"
@@ -462,7 +488,7 @@ const Committee = () => {
               </div>
             </div>
 
-            {/* Speaker 2 */}
+            {/* Speaker 3 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
               <div className="flex items-center gap-4">
                 <img
@@ -474,7 +500,7 @@ const Committee = () => {
                     (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                   }}
                 />
-                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                <div className="w-44 h-52 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                   <span className="text-primary-foreground font-bold text-xl">PP</span>
                 </div>
                 <div className="flex-1">
@@ -489,7 +515,7 @@ const Committee = () => {
               </div>
             </div>
 
-            {/* Speaker 3 */}
+            {/* Speaker 4 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
               <div className="flex items-center gap-4">
                 <img
@@ -514,7 +540,7 @@ const Committee = () => {
               </div>
             </div>
 
-            {/* Speaker 4 */}
+            {/* Speaker 5 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
               <div className="flex items-center gap-4">
                 <img
