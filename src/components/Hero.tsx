@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 mb-0 pt-16 sm:pt-10 md:pt-14 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-1 sm:mb-2 xl:mb-10 2xl:mb-8 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
+          <div className="inline-flex items-center gap-2 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-1 sm:mb-2 xl:mb-10 2xl:mb-8 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
             <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
             <span className="font-medium">International Conference 2026</span>
           </div>
@@ -44,7 +44,7 @@ const Hero = () => {
           {/* Main Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-display font-bold text-white mb-0 leading-tight animate-fade-in px-2 drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-300 mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl drop-shadow-lg">
+            <span className="block text-teal-300 mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl drop-shadow-lg">
               Artificial Intelligence
             </span>
             <span className="block text-coral-300 mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl drop-shadow-lg">

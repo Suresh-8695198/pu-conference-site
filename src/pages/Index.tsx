@@ -6,6 +6,7 @@ import CallForPapers from "@/components/CallForPapers";
 import ImportantDates from "@/components/ImportantDates";
 import Tracks from "@/components/Tracks";
 import Committee from "@/components/Committee";
+import Speakers from "@/components/Speakers";
 import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -33,6 +34,7 @@ const Index = () => {
           <CallForPapers />
           <ImportantDates />
           <Tracks />
+          <Speakers />
           <Committee />
           <Registration />
           <Contact />
