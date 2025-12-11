@@ -96,8 +96,8 @@ const Hero = () => {
               { number: "500+", label: "Attendees" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-teal drop-shadow-lg">{stat.number}</p>
-                <p className="text-white/90 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2 drop-shadow-sm">{stat.label}</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-white drop-shadow-lg">{stat.number}</p>
+                <p className="text-teal-300 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2 drop-shadow-sm font-semibold">{stat.label}</p>
               </div>
             ))}
           </div>

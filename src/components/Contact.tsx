@@ -135,13 +135,30 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map Placeholder */}
-        <div className="mt-16 bg-slate rounded-2xl p-4 h-64 sm:h-80 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-navy mx-auto mb-4" />
+        {/* University Location Map */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="font-display font-bold text-2xl text-navy mb-4">
+              University Location
+            </h3>
             <p className="text-muted-foreground">
               Periyar University, Salem, Tamil Nadu, India
             </p>
+          </div>
+          <div className="bg-slate rounded-2xl p-4 overflow-hidden">
+            <div className="aspect-[4/3] w-full max-w-4xl mx-auto">
+              <iframe
+                src="https://maps.google.com/maps?q=Periyar%20University%2C%20Salem%2C%20Tamil%20Nadu%20636011%2C%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Periyar University Location Map"
+                className="rounded-xl"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
