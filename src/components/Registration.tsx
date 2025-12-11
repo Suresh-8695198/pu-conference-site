@@ -3,28 +3,28 @@ import { Check, Users, GraduationCap, Briefcase, Globe } from "lucide-react";
 const Registration = () => {
   const categories = [
     {
-      title: "Faculty / Research Scholar",
+      title: "Faculty/Scientist from Academic/Research institutions",
       icon: GraduationCap,
-      indian: "₹6,000",
-      foreign: "$180",
+      indian: "₹7,500",
+      foreign: "",
     },
     {
-      title: "UG / PG Students",
+      title: "Full-time Research Scholars (Post-Doctoral/Ph.D) / PG Students",
       icon: Users,
-      indian: "₹4,000",
-      foreign: "$120",
+      indian: "₹6,000",
+      foreign: "",
     },
     {
-      title: "Industry Professionals",
-      icon: Briefcase,
-      indian: "₹8,000",
-      foreign: "$240",
-    },
-    {
-      title: "Attendees (Non-Author)",
+      title: "Participants (non-authors)",
       icon: Globe,
-      indian: "₹3,000",
-      foreign: "$90",
+      indian: "₹1,500",
+      foreign: "",
+    },
+    {
+      title: "Onsite Faculty/Scientist from Academic/Research institutions",
+      icon: Briefcase,
+      indian: "",
+      foreign: "$150",
     },
   ];
 
@@ -71,22 +71,26 @@ const Registration = () => {
                 </h3>
                 
                 <div className="space-y-3">
-                  <div className={`p-3 rounded-lg ${
-                    index === 0 ? "bg-primary-foreground/20" : "bg-primary-foreground/10"
-                  }`}>
-                    <p className="text-sm text-primary-foreground/70">Indian Delegates</p>
-                    <p className="font-display font-bold text-2xl text-primary-foreground">
-                      {category.indian}
-                    </p>
-                  </div>
-                  <div className={`p-3 rounded-lg ${
-                    index === 0 ? "bg-primary-foreground/20" : "bg-primary-foreground/10"
-                  }`}>
-                    <p className="text-sm text-primary-foreground/70">Foreign Delegates</p>
-                    <p className="font-display font-bold text-2xl text-primary-foreground">
-                      {category.foreign}
-                    </p>
-                  </div>
+                  {category.indian && (
+                    <div className={`p-3 rounded-lg ${
+                      index === 0 ? "bg-primary-foreground/20" : "bg-primary-foreground/10"
+                    }`}>
+                      <p className="text-sm text-primary-foreground/70">Indian Participants</p>
+                      <p className="font-display font-bold text-2xl text-primary-foreground">
+                        {category.indian}
+                      </p>
+                    </div>
+                  )}
+                  {category.foreign && (
+                    <div className={`p-3 rounded-lg ${
+                      index === 0 ? "bg-primary-foreground/20" : "bg-primary-foreground/10"
+                    }`}>
+                      <p className="text-sm text-primary-foreground/70">International Participants (Outside India)</p>
+                      <p className="font-display font-bold text-2xl text-primary-foreground">
+                        {category.foreign}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

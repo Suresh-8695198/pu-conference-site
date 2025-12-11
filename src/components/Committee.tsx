@@ -8,68 +8,68 @@ const Committee = () => {
     { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
   ];
 
-    const internationalAdvisoryCommittee = [
-    { name: "Dr. M. Ashok Kumar", role: "Controller of Examination & HOD – OpenLabs, Associate Professor, BlueCrest University, Liberia" },
-    { name: "Dr. Nithya Rekha Sivakumar", role: "Associate Professor, Princess Nourah Bint Abdulrahman University, Saudi Arabia" },
-    { name: "Luis Martinez", role: "Professor (Full), University of Jaén, Spain" },
-    { name: "Muthmainnah Yakin", role: "Assistant Professor, Universitas Al Asyariah Mandar, West Sulawesi, Indonesia" },
-    { name: "Preethi Ananthachari", role: "Assistant Professor, Ahlia University, Manama, Bahrain" },
-    { name: "Prof. Lai Khin Wee", role: "Associate Professor, Department of Biomedical Engineering, Faculty of Engineering, University of Malaya, Kuala Lumpur" },
-    { name: "Prof. Massimo Ficco", role: "Full Professor, University of Campania Luigi Vanvitelli, Italy" },
-    { name: "Prof. Valentina E. Balas", role: "Professor, Faculty of Engineering, Department of Automation and Applied Informatics, \"Aurel Vlaicu\" University of Arad, Romania" },
-    { name: "Prof. Xiao-Zhi Gao", role: "Professor, School of Computing, Faculty of Science, Forestry and Technology, University of Eastern Finland, Finland" },
-    { name: "Prof. Yui Wing Leung", role: "Professor, Department of Computer Science, Hong Kong Baptist University, Hong Kong" },
-    { name: "Prof. Yuval Shavitt", role: "Professor, School of Electrical Engineering, Tel Aviv University, Israel" },
+   const internationalAdvisoryCommittee = [
+    { name: "Dr. M. Ashok Kumar", role: "BlueCrest University, Liberia" },
+    { name: "Dr. Nithya Rekha Sivakumar", role: "Princess Nourah Bint Abdulrahman University, Saudi Arabia" },
+    { name: "Luis Martinez", role: "University of Jaén, Spain" },
+    { name: "Muthmainnah Yakin", role: "Universitas Al Asyariah Mandar, Indonesia" },
+    { name: "Preethi Ananthachari", role: "Ahlia University, Bahrain" },
+    { name: "Prof. Lai Khin Wee", role: "University of Malaya, Malaysia" },
+    { name: "Prof. Massimo Ficco", role: "University of Campania Luigi Vanvitelli, Italy" },
+    { name: "Prof. Valentina E. Balas", role: "\"Aurel Vlaicu\" University of Arad, Romania" },
+    { name: "Prof. Xiao-Zhi Gao", role: "University of Eastern Finland, Finland" },
+    { name: "Prof. Yui Wing Leung", role: "Hong Kong Baptist University, Hong Kong" },
+    { name: "Prof. Yuval Shavitt", role: "Tel Aviv University, Israel" },
   ];
 
   const nationalAdvisoryCommittee = [
-    { name: "Dr. (Mrs.) R. Leela Velusamy", role: "Professor, Computer Science and Engineering, National Institute of Technology Tiruchirappalli, Tiruchirappalli, Tamil Nadu, India" },
-    { name: "Dr. B. Surendiran", role: "Professor, Computer Science and Engineering, National Institute of Technology Puducherry, Karaikal, Puducherry, India" },
-    { name: "Dr. Abdul Nazeer K. A", role: "Professor, Computer Science and Engineering, National Institute of Technology Calicut, Calicut, Kerala, India" },
-    { name: "Dr. T. Veerakumar", role: "Associate Professor, Electronics and Communication Engineering, National Institute of Technology Goa, Goa, India" },
-    { name: "Dr. S. Selvakumar", role: "Professor (HAG), Computer Science and Engineering, National Institute of Technology Tiruchirappalli, Tiruchirappalli, Tamil Nadu, India" },
-    { name: "Dr. Namita Mittal", role: "Associate Professor, Computer Science and Engineering, Malaviya National Institute of Technology Jaipur, Jaipur, Rajasthan, India" },
-    { name: "Dr. Neeta Nain", role: "Associate Professor, Computer Science and Engineering, Malaviya National Institute of Technology Jaipur, Jaipur, Rajasthan, India" },
-    { name: "Dr. K. HIMABINDU", role: "Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology Andhra Pradesh, Tadepalligudem – 534101, Andhra Pradesh, India" },
-    { name: "Dr. A. Prasanth", role: "Assistant Dean (Research) & Associate Professor, Computer Science and Engineering, Vel Tech University, Chennai, Tamil Nadu, India" },
-    { name: "Dr. Choudhary Shyam Prakash", role: "Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology Andhra Pradesh, Tadepalligudem – 534101, Andhra Pradesh, India" },
-    { name: "Dr. Saikat Gochhait", role: "Associate Professor, SYMBIOSIS INTERNATIONAL UNIVERSITY, Lavale, Pune" },
-    { name: "Dr. Mushtaq Ahmed (Head)", role: "Associate Professor, Dept. of Computer Science and Engineering, MNIT, Jaipur India-302017" },
-    { name: "Senthilkumar Sengottaiyan", role: "Senior Developer Analyst, Ant Philosophy Technology & Services Private Limited, Bangalore" },
-    { name: "Nivas K", role: "Sify technologies pvt, Tidel park, tharamani" },
-    { name: "Dr.K.S.Sowmiya Rani", role: "Professor, Computer Science and Technology, Indian Institute of Engineering Science and Technology, Shibpur (IIEST)" },
-    { name: "Dr. Sweta Jain", role: "Associate Professor, NIT Bhopal (MANIT)" },
+    { name: "Dr. (Mrs.) R. Leela Velusamy", role: "National Institute of Technology Tiruchirappalli, India" },
+    { name: "Dr. B. Surendiran", role: "National Institute of Technology Puducherry, India" },
+    { name: "Dr. Abdul Nazeer K. A", role: "National Institute of Technology Calicut, India" },
+    { name: "Dr. T. Veerakumar", role: "National Institute of Technology Goa, India" },
+    { name: "Dr. S. Selvakumar", role: "National Institute of Technology Tiruchirappalli, India" },
+    { name: "Dr. Namita Mittal", role: "Malaviya National Institute of Technology Jaipur, India" },
+    { name: "Dr. Neeta Nain", role: "Malaviya National Institute of Technology Jaipur, India" },
+    { name: "Dr. K. HIMABINDU", role: "National Institute of Technology Andhra Pradesh, India" },
+    { name: "Dr. A. Prasanth", role: "Vel Tech University, India" },
+    { name: "Dr. Choudhary Shyam Prakash", role: "National Institute of Technology Andhra Pradesh, India" },
+    { name: "Dr. Saikat Gochhait", role: "SYMBIOSIS INTERNATIONAL UNIVERSITY, India" },
+    { name: "Dr. Mushtaq Ahmed (Head)", role: "MNIT, India" },
+    { name: "Senthilkumar Sengottaiyan", role: "Ant Philosophy Technology & Services Private Limited, India" },
+    { name: "Nivas K", role: "Sify technologies pvt, India" },
+    { name: "Dr.K.S.Sowmiya Rani", role: "Indian Institute of Engineering Science and Technology, India" },
+    { name: "Dr. Sweta Jain", role: "NIT Bhopal (MANIT), India" },
   ];
 
   const academicLeadership = [
-    { sno: 1, name: "Dr. D. Arul Pon Daniel", designation: "Assistant Professor", department: "Computer Science", affiliation: "Jayarani College", location: "Salem, Tamil Nadu, India" },
-    { sno: 2, name: "Dr. P. S. Raja", designation: "Assistant Professor", department: "Computer Science", affiliation: "Government Arts College", location: "Dharmapuri, Tamil Nadu, India" },
-    { sno: 3, name: "Dr. K. Sasirekha", designation: "Assistant Professor", department: "MCA", affiliation: "Sona College of Technology", location: "Salem, Tamil Nadu, India" },
-    { sno: 4, name: "Dr. D. Rajeswari", designation: "Assistant Professor", department: "Computer Science", affiliation: "Sona College of Arts & Science", location: "Salem, Tamil Nadu, India" },
-    { sno: 5, name: "Dr. Gowthamarayathirumal P", designation: "Assistant Professor", department: "Computer Science", affiliation: "Government Arts College", location: "Dharmapuri, Tamil Nadu, India" },
-    { sno: 6, name: "Dr. G. Jothi", designation: "Assistant Professor", department: "Computer Science", affiliation: "Sona College of Arts & Science", location: "Salem, Tamil Nadu, India" },
-    { sno: 7, name: "Dr. M. Bagyamathi", designation: "—", department: "—", affiliation: "—", location: "—" },
-    { sno: 8, name: "Dr. B. Lavanya", designation: "—", department: "—", affiliation: "—", location: "—" },
-    { sno: 9, name: "Dr. Renugadevi K", designation: "Assistant Professor", department: "Computer Science", affiliation: "NKR Government Arts College for Women", location: "Namakkal, Tamil Nadu, India" },
-    { sno: 10, name: "Dr. T. Sudhakar", designation: "Assistant Professor", department: "Computer Science", affiliation: "CHRIST (Deemed to be University)", location: "Bengaluru, Karnataka, India" },
-    { sno: 11, name: "Dr. S. Angelin Sophy", designation: "—", department: "—", affiliation: "—", location: "—" },
-    { sno: 12, name: "Dr. G. Kavitha", designation: "—", department: "—", affiliation: "—", location: "—" },
-    { sno: 13, name: "Dr. T. Dharani", designation: "Assistant Professor", department: "Information Science and Engineering", affiliation: "RRCE", location: "Bengaluru, Karnataka, India" },
-    { sno: 14, name: "Mageshwari V", designation: "Assistant Professor", department: "—", affiliation: "Amrita Vishwa Vidyapeetham", location: "Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India" },
+    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India" },
+    { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India" },
+    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India" },
+    { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India" },
+    { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India" },
+    { name: "Dr. M. Bagyamathi", role: "—" },
+    { name: "Dr. B. Lavanya", role: "—" },
+    { name: "Dr. Renugadevi K", role: "NKR Government Arts College for Women, Namakkal, Tamil Nadu, India" },
+    { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India" },
+    { name: "Dr. S. Angelin Sophy", role: "—" },
+    { name: "Dr. G. Kavitha", role: "—" },
+    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India" },
+    { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India" },
   ];
 
   const technicalLeadership = [
-    { sno: 1, name: "Dr. N. Suresh Kumar", designation: "Director & Professor", department: "Computer Science and Engineering", affiliation: "Chettinad Academy of Research and Education (Deemed to be University), CIT", location: "Chengalpattu, Tamil Nadu, India" },
-    { sno: 2, name: "Dr. T. Kalaiselvi", designation: "Associate Professor", department: "Computer Science and Technologies", affiliation: "Gandhigram Rural Institute (Deemed to be University)", location: "Dindigul, Tamil Nadu, India" },
-    { sno: 3, name: "Dr. D. Ramyachitra", designation: "Associate Professor", department: "Computer Science", affiliation: "Bharathiar University", location: "Coimbatore, Tamil Nadu, India" },
-    { sno: 4, name: "Dr. R. Vadivel", designation: "Associate Professor & Head (i/c)", department: "Information Technology", affiliation: "Bharathiar University", location: "Coimbatore, Tamil Nadu, India" },
-    { sno: 5, name: "Dr. M. Sumathi", designation: "Head & Associate Professor", department: "PG & Research Department of Computer Science", affiliation: "Sri Meenakshi Government Arts College for Women (Autonomous)", location: "Madurai, Tamil Nadu, India" },
-    { sno: 6, name: "Vijaya A", designation: "Professor", department: "Computer Science", affiliation: "Sri Meenakshi Government Arts College for Women (Autonomous)", location: "Madurai, Tamil Nadu, India" },
-    { sno: 7, name: "Professor Vijaya A", designation: "Professor", department: "Computer Science", affiliation: "Sri Meenakshi Government Arts College for Women (Autonomous)", location: "Madurai, Tamil Nadu, India" },
-    { sno: 8, name: "Dr. K. Akilandeswari", designation: "Associate Professor", department: "Computer Science", affiliation: "Government Arts College", location: "Salem, Tamil Nadu, India" },
-    { sno: 9, name: "Dr. E. George Dharma Prakash Raj", designation: "Professor & Head", department: "School of Computer Science, Engineering and Applications", affiliation: "Bharathidasan University", location: "Tiruchirappalli, Tamil Nadu, India" },
-    { sno: 10, name: "Dr. S. Janakiraman", designation: "Professor & Placement Coordinator", department: "Banking Technology, School of Management", affiliation: "Pondicherry University (Central University)", location: "Puducherry, India" },
-    { sno: 11, name: "Dr. C. Velayutham", designation: "Associate Professor", department: "Computer Science", affiliation: "Aditanar College of Arts and Science", location: "Tiruchendur, Tamil Nadu, India" },
+    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India" },
+    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India" },
+    { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
+    { name: "Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
+    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India" },
+    { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India" },
+    { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India" },
+    { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India" },
+    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India" },
   ];
 
   const committees = [
@@ -118,10 +118,10 @@ const Committee = () => {
   ];
 
   return (
-    <section id="committee" className="py-24 bg-slate">
+    <section id="committee" className="py-16 md:py-24 bg-slate">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Meet Our Team
           </span>
@@ -133,19 +133,15 @@ const Committee = () => {
 
         {/* Main Committee Cards */}
         {/* First Row: Chief Patron and Patron */}
-        <div className="flex justify-center mb-8">
-          <div className="flex gap-6">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-6 md:mb-8">
+          <div className="flex flex-col md:flex-row gap-6">
             {committees.slice(0, 2).map((committee) => (
               <div
                 key={committee.title}
-                className={`rounded-2xl overflow-hidden card-hover ${
-                  committee.title === 'Chief Patron' ? 'border-4 border-yellow-300 shadow-2xl bg-yellow-50' : 
-                  committee.title === 'Patron' ? 'border-4 border-blue-300 shadow-xl bg-blue-50' : 
-                  committee.title === 'Co-Patron' ? 'bg-pink-50' : 'bg-green-50'
-                }`}
-                style={{ maxWidth: '400px', width: '100%' }}
+                className="bg-white rounded-2xl overflow-hidden card-hover border border-gray-200 shadow-lg"
+                style={{ maxWidth: '100%', width: '100%' }}
               >
-                <div className={`p-6 ${committee.title === 'Chief Patron' ? 'bg-gradient-to-r from-yellow-200 to-yellow-300' : committee.title === 'Patron' ? 'bg-gradient-to-r from-blue-200 to-blue-300' : committee.title === 'Co-Patron' ? 'bg-gradient-to-r from-pink-200 to-pink-300' : 'bg-gradient-to-r from-green-200 to-green-300'}`}>
+                <div className={`p-4 md:p-6 ${committee.title === 'Chief Patron' ? 'bg-gradient-to-r from-amber-600 to-yellow-600' : committee.title === 'Patron' ? 'bg-gradient-to-r from-blue-700 to-blue-800' : committee.title === 'Co-Patron' ? 'bg-gradient-to-r from-teal-600 to-teal-700' : 'bg-gradient-to-r from-emerald-600 to-emerald-700'}`}>
                   <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
                   <h3 className={`font-display font-bold text-xl text-primary-foreground ${
                     committee.title === 'Chief Patron' ? 'text-2xl' : ''
@@ -200,12 +196,13 @@ const Committee = () => {
         </div>
 
         {/* Second Row: Co-Patron Centered */}
-        <div className="flex justify-center mb-8">
-          <div style={{ maxWidth: '400px', width: '100%' }}>
+        <div className="flex justify-center mb-6 md:mb-8">
+          <div style={{ maxWidth: '500px', width: '100%' }}>
             {committees.slice(2, 3).map((committee) => (
               <div
                 key={committee.title}
                 className="bg-background rounded-2xl overflow-hidden card-hover"
+                style={{ minHeight: '450px' }}
               >
                 <div className={`${committee.color} p-6`}>
                   <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
@@ -257,13 +254,13 @@ const Committee = () => {
 
 
         {/* Third Row: General Chair and Organizing Committee */}
-        <div className="flex justify-center mb-16">
-          <div className="grid md:grid-cols-2 gap-6" style={{ maxWidth: '850px' }}>
+        <div className="flex justify-center mb-12 md:mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
             {committees.slice(3).map((committee) => (
               <div
                 key={committee.title}
                 className="bg-background rounded-2xl overflow-hidden card-hover"
-                style={{ maxWidth: '400px' }}
+                style={{ maxWidth: '100%' }}
               >
               <div className={`${committee.color} p-6`}>
                 <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
@@ -314,7 +311,7 @@ const Committee = () => {
         </div>
 
         {/* Advisory Committee */}
-        <div className="bg-background rounded-2xl p-8 mt-16">
+        <div className="bg-background rounded-2xl p-4 md:p-8 mt-16">
           <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
             Advisory Committee
           </h3>
@@ -363,7 +360,7 @@ const Committee = () => {
         </div>
 
         {/* Academic & Technical Leadership */}
-        <div className="bg-background rounded-2xl p-8 mt-16">
+        <div className="bg-background rounded-2xl p-4 md:p-8 mt-16">
           <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
             Academic & Technical Leadership
           </h3>
@@ -395,64 +392,48 @@ const Committee = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="overflow-x-auto">
+          <div>
             {activeTab === 'academic' && (
               <div>
                 <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
-                <table className="w-full border-collapse border border-slate-300 rounded-lg overflow-hidden">
-                  <thead>
-                    <tr className="bg-navy text-primary-foreground">
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">S.No</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Name</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Designation</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Department</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Affiliation (Institution)</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Location</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {academicLeadership.map((member, index) => (
-                      <tr key={member.sno} className={index % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
-                        <td className="border border-slate-300 px-4 py-3 text-navy font-medium">{member.sno}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-navy font-medium">{member.name}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.designation}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.department}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.affiliation}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.location}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {academicLeadership.map((member, index) => (
+                    <div
+                      key={member.name}
+                      className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                    >
+                      <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                        <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                      </div>
+                      <div>
+                        <p className="font-display font-bold text-navy">{member.name}</p>
+                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
             {activeTab === 'technical' && (
               <div>
                 <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
-                <table className="w-full border-collapse border border-slate-300 rounded-lg overflow-hidden">
-                  <thead>
-                    <tr className="bg-navy text-primary-foreground">
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">S.No</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Name</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Designation</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Department / Role</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Affiliation (Institution)</th>
-                      <th className="border border-slate-300 px-4 py-3 text-left font-display font-bold">Location</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {technicalLeadership.map((member, index) => (
-                      <tr key={member.sno} className={index % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
-                        <td className="border border-slate-300 px-4 py-3 text-navy font-medium">{member.sno}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-navy font-medium">{member.name}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.designation}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.department}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.affiliation}</td>
-                        <td className="border border-slate-300 px-4 py-3 text-muted-foreground">{member.location}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {technicalLeadership.map((member, index) => (
+                    <div
+                      key={member.name}
+                      className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                    >
+                      <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                        <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                      </div>
+                      <div>
+                        <p className="font-display font-bold text-navy">{member.name}</p>
+                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -460,11 +441,11 @@ const Committee = () => {
 
         {/* Publishing Partner & Keynote Speaker */}
         <div className="mt-12 text-center space-y-6">
-          <div className="bg-background rounded-2xl p-6 shadow">
+          <div className="bg-background rounded-2xl p-4 md:p-6 shadow">
             <h4 className="font-display font-bold text-xl text-navy mb-2">Publishing Partner</h4>
             <p className="text-muted-foreground text-base">All peer-reviewed full papers will be published in the edited book <b>“Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity”</b>, CRC Press, Taylor & Francis Group.</p>
           </div>
-          <div className="bg-background rounded-2xl p-6 shadow">
+          <div className="bg-background rounded-2xl p-4 md:p-6 shadow">
             <h4 className="font-display font-bold text-xl text-navy mb-2">Keynote Speaker</h4>
             <p className="text-muted-foreground text-base">(Add keynote speaker details here as needed)</p>
           </div>
