@@ -204,9 +204,9 @@ const Registration = () => {
                 <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
                   <Plane className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <h4 className="font-display font-bold text-lg text-navy">By Air</h4>
+                <h4 className="font-display font-bold text-xl text-navy">By Air</h4>
               </div>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-base text-muted-foreground">
                 <li>• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
                 <li>• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
                 <li>• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
@@ -219,9 +219,9 @@ const Registration = () => {
                 <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
                   <Train className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <h4 className="font-display font-bold text-lg text-navy">By Train</h4>
+                <h4 className="font-display font-bold text-xl text-navy">By Train</h4>
               </div>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-base text-muted-foreground">
                 <li>• Salem Junction (SA) – Major railway junction with connections to all metro cities.</li>
                 <li>• From the station, Periyar University is 15–20 minutes by taxi, auto, or bus.</li>
               </ul>
@@ -233,9 +233,9 @@ const Registration = () => {
                 <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
                   <Bus className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <h4 className="font-display font-bold text-lg text-navy">By Road</h4>
+                <h4 className="font-display font-bold text-xl text-navy">By Road</h4>
               </div>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-base text-muted-foreground">
                 <li>• Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
                 <li>• Frequent state and private buses operate from all major cities.</li>
                 <li>• From Salem bus stands, the University is 15–20 minutes away by bus, auto, or taxi.</li>
@@ -255,29 +255,29 @@ const Registration = () => {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>Yercaud Hills</strong> – Scenic hill station with viewpoints, lake, and coffee estates.</p>
+                  <p className="text-muted-foreground text-base"><strong>Yercaud Hills</strong> – Scenic hill station with viewpoints, lake, and coffee estates.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>1008 Lingam Temple</strong> – Famous spiritual site with 1008 Shiva lingams.</p>
+                  <p className="text-muted-foreground text-base"><strong>1008 Lingam Temple</strong> – Famous spiritual site with 1008 Shiva lingams.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>Kurumbapatti Zoological Park</strong> – Mini zoo at the foothills of Yercaud.</p>
+                  <p className="text-muted-foreground text-base"><strong>Kurumbapatti Zoological Park</strong> – Mini zoo at the foothills of Yercaud.</p>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>Kailasanathar Temple, Tharamangalam</strong> – Renowned for its intricate stone carvings.</p>
+                  <p className="text-muted-foreground text-base"><strong>Kailasanathar Temple, Tharamangalam</strong> – Renowned for its intricate stone carvings.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>Mettur Dam</strong> – One of India's largest dams with beautiful reservoir views.</p>
+                  <p className="text-muted-foreground text-base"><strong>Mettur Dam</strong> – One of India's largest dams with beautiful reservoir views.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                  <p className="text-muted-foreground"><strong>ISKCON Salem</strong> – Peaceful spiritual and cultural center.</p>
+                  <p className="text-muted-foreground text-base"><strong>ISKCON Salem</strong> – Peaceful spiritual and cultural center.</p>
                 </div>
               </div>
             </div>

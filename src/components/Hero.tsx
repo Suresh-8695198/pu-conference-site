@@ -21,10 +21,10 @@ const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 mb-7 pt-16 sm:pt-20 md:pt-24 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
+      <div className="container mx-auto px-4 mb-0 pt-16 sm:pt-10 md:pt-14 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-8 sm:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-1 sm:mb-2 xl:mb-10 2xl:mb-8 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
             <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
             <span className="font-medium">International Conference 2026</span>
           </div>
@@ -60,7 +60,7 @@ const Hero = () => {
               <span className="text-white font-medium text-base drop-shadow-sm">26-27 February 2026</span>
             </div>
             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
-              <MapPin className="w-5 h-5 text-teal flex-shrink-0" />
+              <MapPin className="w-5 h-5 text-coral flex-shrink-0" />
               <span className="text-white font-medium text-base drop-shadow-sm">Salem, Tamil Nadu, India</span>
             </div>
           </div>

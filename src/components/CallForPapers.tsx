@@ -45,39 +45,16 @@ const CallForPapers = () => {
                 All submissions must be original, unpublished, ethically compliant, and prepared in accordance with CRC Press (Taylor & Francis) editorial guidelines.
               </p>
 
+              <p className="text-primary-foreground text-base leading-normal text-justify mb-6">
+                Authors are invited to submit original and unpublished research articles that are not under review in any other conference or journal. Only accepted and registered papers will be scheduled for presentation. For inclusion in the book proceedings, at least one author of each accepted paper must complete the conference registration. Papers without a registered author will not be considered for publication in the book proceedings.
+              </p>
+
               <div className="space-y-4">
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Manuscript Preparation</h4>
+                <h4 className="font-display font-bold text-xl text-primary-foreground">Key Information</h4>
                 <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
                   <li>• Papers must be full-length original research or review articles and must not exceed six (6) pages in length.</li>
-                  <li>• The manuscript must clearly present original research ideas, methodology or analysis, results and findings, and conclusions.</li>
-                </ul>
-
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Originality Policy</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• The manuscript must not have been published previously and must not be under review elsewhere at the time of submission.</li>
-                </ul>
-
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Authorship Rules</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• A paper may have a maximum of four (4) authors and must clearly mention the corresponding author's name, email ID, and affiliations of all authors.</li>
-                </ul>
-
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Review Process</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.</li>
-                </ul>
-
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Registration, Presentation & Certificate</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.</li>
-                </ul>
-
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Publications</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• Selected high-quality and accepted papers will be published as book chapters in the edited volume titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to the publisher's scope, quality, and editorial requirements.</li>
-                  <li>• Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings.</li>
-                  <li>• Final publication decisions will be based on peer-review outcomes, technical quality, relevance, and originality.</li>
-                  <li>• An additional publication charge will apply.</li>
+                  <li>• All submissions will undergo a peer-review process with decisions communicated within the specified timeline.</li>
+                  <li>• Selected high-quality papers will be published as book chapters, while remaining papers will be published in conference proceedings.</li>
                 </ul>
               </div>
             </div>
