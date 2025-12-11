@@ -4,23 +4,23 @@ const About = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Research Excellence",
-      description: "A premier platform for researchers to present innovative ideas in AI and smart computing technologies.",
+      title: "Advance Human-Centric AI",
+      description: "To promote the development of intelligent computing solutions that prioritize human health, inclusivity, accessibility, and quality of life, ensuring that AI technologies serve society responsibly and ethically.",
     },
     {
       icon: Target,
-      title: "Industry Connect",
-      description: "Bridge the gap between academia and industry with insights from leading professionals.",
+      title: "Foster Sustainable Technologies",
+      description: "To encourage innovative research in energy-efficient, eco-friendly, and sustainable AI systems that support environmental protection, climate resilience, and responsible use of computational resources.",
     },
     {
       icon: Users,
-      title: "Networking",
-      description: "Connect with researchers, academicians, and industry experts from around the globe.",
+      title: "Bridge Research to Impact",
+      description: "To create a global platform that connects cutting-edge academic research, industry innovation, and societal needs, enabling the translation of intelligent algorithms into practical solutions for healthcare, agriculture, education, and public services.",
     },
     {
       icon: Award,
-      title: "Publication",
-      description: "Selected papers will be published in reputed international journals and proceedings.",
+      title: "Support Interdisciplinary Collaboration",
+      description: "To stimulate collaboration across computer science, engineering, life sciences, and social sciences, fostering holistic and future-ready AI solutions aligned with UN Sustainable Development Goals.",
     },
   ];
 
@@ -33,7 +33,7 @@ const About = () => {
             About the Conference
           </span>
           <h2 className="section-title">
-            Welcome to <span className="text-teal">HORIZON-AI 2025</span>
+            Welcome to <span className="text-teal">HORIZON-AI 2026</span>
           </h2>
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
         </div>
@@ -42,17 +42,11 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Content */}
           <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              HORIZON-AI 2025 aims to provide an international platform for researchers, academicians, industry professionals, and practitioners to present and exchange innovative ideas, methodologies, and research outcomes in the field of intelligent computing beyond traditional algorithmic approaches. The conference seeks to explore emerging paradigms in artificial intelligence, data-driven intelligence, and interdisciplinary computing, addressing real-world challenges in healthcare, agriculture, sustainability, and human-centric systems.
+            <p className="text-lg text-slate-700 leading-normal text-justify">
+              The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (HORIZON-AI 2026) is a global forum for presenting advanced research and innovations in artificial intelligence and intelligent computing. The conference focuses on next-generation AI solutions for healthcare, agriculture, sustainability, and human-centric systems, moving beyond traditional algorithms to address real-world challenges. Aligned with key UN Sustainable Development Goals-SDG 3 (Good Health), SDG 4 (Quality Education), SDG 8 (Economic Growth), and SDG 9 (Innovation & Infrastructure) - HORIZON-AI 2026 promotes interdisciplinary collaboration, research excellence, and impactful technological advancements for societal development.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              This conference provides a global platform for scientists, researchers, and practitioners from academia 
-              and industry to share their creative proposals on cutting-edge technologies in AI, Machine Learning, 
-              Deep Learning, and Smart Computing applications.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The forum aims to disseminate technical innovations in theoretical concepts, methodologies, and 
-              applications across various fields of computing and information technologies.
+            <p className="text-lg text-slate-700 leading-normal text-justify">
+              The conference aligns with key UN SDGs-SDG 3, SDG 4, SDG 8, and SDG 9 emphasizing health, quality education, economic growth, and technological innovation.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -92,81 +86,22 @@ const About = () => {
           </div>
         </div>
 
-        {/* Aims of HORIZON-AI 2025 */}
-        <div className="mb-20">
-          <h3 className="font-display font-bold text-3xl text-navy text-center mb-12">
-            Aims of HORIZON-AI 2025
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-slate rounded-2xl p-6">
-              <div className="w-12 h-12 bg-teal rounded-xl flex items-center justify-center mb-4">
-                <span className="text-primary-foreground font-bold text-xl">1</span>
-              </div>
-              <h4 className="font-display font-bold text-lg text-navy mb-3">
-                Advance Human-Centric AI
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                To promote the development of intelligent computing solutions that prioritize human health, inclusivity, accessibility, and quality of life, ensuring that AI technologies serve society responsibly and ethically.
-              </p>
-            </div>
-            <div className="bg-slate rounded-2xl p-6">
-              <div className="w-12 h-12 bg-coral rounded-xl flex items-center justify-center mb-4">
-                <span className="text-primary-foreground font-bold text-xl">2</span>
-              </div>
-              <h4 className="font-display font-bold text-lg text-navy mb-3">
-                Foster Sustainable Technologies
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                To encourage innovative research in energy-efficient, eco-friendly, and sustainable AI systems that support environmental protection, climate resilience, and responsible use of computational resources.
-              </p>
-            </div>
-            <div className="bg-slate rounded-2xl p-6">
-              <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center mb-4">
-                <span className="text-primary-foreground font-bold text-xl">3</span>
-              </div>
-              <h4 className="font-display font-bold text-lg text-navy mb-3">
-                Bridge Research to Impact
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                To create a global platform that connects cutting-edge academic research, industry innovation, and societal needs, enabling the translation of intelligent algorithms into practical solutions for healthcare, agriculture, education, and public services.
-              </p>
-            </div>
-            <div className="bg-slate rounded-2xl p-6">
-              <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mb-4">
-                <span className="text-primary-foreground font-bold text-xl">4</span>
-              </div>
-              <h4 className="font-display font-bold text-lg text-navy mb-3">
-                Support Interdisciplinary Collaboration
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                To stimulate collaboration across computer science, engineering, life sciences, and social sciences, fostering holistic and future-ready AI solutions aligned with UN Sustainable Development Goals.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* University Info */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-slate rounded-2xl p-8">
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               About Periyar University
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Periyar University is a state public university established in 1997 by the Government of Tamil Nadu and is located in Salem, Tamil Nadu, India. The university is named after the great social reformer Thanthai Periyar E. V. Ramasamy, reflecting its commitment to social justice, rationalism, and inclusive education.
-              The university offers a wide range of undergraduate, postgraduate, M.Phil., and Ph.D. programmes across disciplines such as Science, Arts, Humanities, Commerce, Management, Engineering, and Computer Science. It functions as both a teaching and affiliating university, supporting numerous affiliated colleges across the region.
-              Periyar University emphasizes quality education, research excellence, and community engagement. It actively promotes interdisciplinary research, innovation, and skill development aligned with national priorities and sustainable development goals. The university also focuses on strengthening industry–academia collaboration and nurturing socially responsible graduates.
-              Through its academic initiatives and outreach activities, Periyar University plays a significant role in higher education advancement and regional development in Tamil Nadu.
+            <p className="text-slate-700 leading-normal text-justify">
+              Periyar University, established in 1997 by the Government of Tamil Nadu, is a state public university located in Salem. Named after social reformer Thanthai Periyar E. V. Ramasamy, it upholds the values of social justice, rationalism, and inclusive education. The university offers diverse UG, PG, M.Phil., and Ph.D. programmes across Science, Arts, Humanities, Commerce, Management, Engineering, and Computer Science, functioning as both a teaching and affiliating university for colleges in the region. Committed to quality education, research excellence, and innovation, Periyar University promotes interdisciplinary research, skill development, industry–academia collaboration, and community engagement. Through its academic and outreach initiatives, the university plays a vital role in advancing higher education and regional development in Tamil Nadu.
             </p>
           </div>
           <div className="bg-slate rounded-2xl p-8">
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               About the Department
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              The Department of Computer Science, Periyar University, is a well-established academic and research unit committed to delivering quality education, innovative research, and skill-oriented training in the field of computer science. The department plays a vital role in aligning advanced computing education with societal needs and technological advancements.
-              The department offers postgraduate and doctoral programmes that focus on core computer science foundations and emerging technologies, including artificial intelligence, machine learning, data science, image and signal processing, cloud computing, cybersecurity, and software engineering. Emphasis is placed on both theoretical knowledge and practical application.
-              With a team of experienced faculty members, the department actively promotes interdisciplinary research, encouraging scholars to address real-world challenges in healthcare, agriculture, sustainability, and social development through intelligent computing solutions. The department also fosters a strong research culture through funded projects, publications, seminars, workshops, and conferences.
-              The Department of Computer Science at Periyar University is dedicated to academic excellence, ethical computing practices, and innovation, preparing graduates to contribute meaningfully to industry, academia, and society at large.
+            <p className="text-slate-700 leading-normal text-justify">
+              The Department of Computer Science, Periyar University, is a leading academic and research centre committed to quality education, innovation, and skill-based training. The department offers postgraduate and doctoral programmes covering core and emerging areas such as AI, machine learning, data science, cloud computing, cybersecurity, image and signal processing, and software engineering. With experienced faculty and a strong research culture, the department promotes interdisciplinary research addressing real-world challenges in healthcare, agriculture, sustainability, and social development. Through funded projects, publications, workshops, and conferences, it nurtures excellence, ethical computing, and innovation—preparing graduates for impactful careers in industry, academia, and society.
             </p>
           </div>
         </div>

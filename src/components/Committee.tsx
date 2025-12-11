@@ -3,7 +3,6 @@ import { useState } from "react";
 
 const Committee = () => {
   const [activeTab, setActiveTab] = useState<'academic' | 'technical'>('academic');
-  const [advisoryTab, setAdvisoryTab] = useState<'international' | 'national'>('international');
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor of Computer Science, Periyar University" },
     { name: "Dr. S. Sathish", role: "Associate Professor of Computer Science, Periyar University" },
@@ -102,7 +101,7 @@ const Committee = () => {
       ],
     },
     {
-      title: "General Chair",
+      title: "Organizing Secretary",
       icon: Users,
       color: "bg-navy",
       members: [
@@ -133,64 +132,139 @@ const Committee = () => {
         </div>
 
         {/* Main Committee Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          {committees.slice(0, 3).map((committee) => (
-            <div
-              key={committee.title}
-              className="bg-background rounded-2xl overflow-hidden card-hover"
-            >
-              <div className={`${committee.color} p-6`}>
-                <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
-                <h3 className="font-display font-bold text-xl text-primary-foreground">
-                  {committee.title}
-                </h3>
-              </div>
-              <div className="p-6 space-y-4">
-                {committee.members.map((member) => (
-                  <div key={member.name} className="flex items-center gap-3">
-                      {member.name === "Dr. S. Jayanthi" && (
-                        <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Prof. R. Subramani" && (
-                        <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. C. Chandrasekar" && (
-                        <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. H. Hannah Inbarani" && (
-                        <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
-                        <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
-                      ) : null}
-                      {member.name.includes("Sundaravalli") && (
-                        <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. V. Raj" && (
-                        <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. R. Rathipriya" && (
-                        <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. S. Sathish" && (
-                        <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                    <div>
-                      <p className="font-display font-bold text-navy">{member.name}</p>
-                      <p className="text-sm text-muted-foreground">{member.role}</p>
+        {/* First Row: Chief Patron and Patron */}
+        <div className="flex justify-center mb-8">
+          <div className="flex gap-6">
+            {committees.slice(0, 2).map((committee) => (
+              <div
+                key={committee.title}
+                className={`rounded-2xl overflow-hidden card-hover ${
+                  committee.title === 'Chief Patron' ? 'border-4 border-yellow-300 shadow-2xl bg-yellow-50' : 
+                  committee.title === 'Patron' ? 'border-4 border-blue-300 shadow-xl bg-blue-50' : 
+                  committee.title === 'Co-Patron' ? 'bg-pink-50' : 'bg-green-50'
+                }`}
+                style={{ maxWidth: '400px', width: '100%' }}
+              >
+                <div className={`p-6 ${committee.title === 'Chief Patron' ? 'bg-gradient-to-r from-yellow-200 to-yellow-300' : committee.title === 'Patron' ? 'bg-gradient-to-r from-blue-200 to-blue-300' : committee.title === 'Co-Patron' ? 'bg-gradient-to-r from-pink-200 to-pink-300' : 'bg-gradient-to-r from-green-200 to-green-300'}`}>
+                  <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
+                  <h3 className={`font-display font-bold text-xl text-primary-foreground ${
+                    committee.title === 'Chief Patron' ? 'text-2xl' : ''
+                  }`}>
+                    {committee.title}
+                  </h3>
+                </div>
+                <div className="p-6 space-y-4">
+                  {committee.members.map((member) => (
+                    <div key={member.name} className="flex items-center gap-3">
+                        {member.name === "Dr. S. Jayanthi" && (
+                          <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Prof. R. Subramani" && (
+                          <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. C. Chandrasekar" && (
+                          <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. H. Hannah Inbarani" && (
+                          <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
+                          <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
+                        ) : null}
+                        {member.name.includes("Sundaravalli") && (
+                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. V. Raj" && (
+                          <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. R. Rathipriya" && (
+                          <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. S. Sathish" && (
+                          <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                      <div>
+                        <p className={`font-display font-bold text-navy ${
+                          committee.title === 'Chief Patron' ? 'text-lg' : ''
+                        }`}>{member.name}</p>
+                        <p className={`text-sm text-muted-foreground ${
+                          committee.title === 'Chief Patron' ? 'text-base' : ''
+                        }`}>{member.role}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          {committees.slice(3).map((committee) => (
-            <div
-              key={committee.title}
-              className="bg-background rounded-2xl overflow-hidden card-hover"
-            >
+
+        {/* Second Row: Co-Patron Centered */}
+        <div className="flex justify-center mb-8">
+          <div style={{ maxWidth: '400px', width: '100%' }}>
+            {committees.slice(2, 3).map((committee) => (
+              <div
+                key={committee.title}
+                className="bg-background rounded-2xl overflow-hidden card-hover"
+              >
+                <div className={`${committee.color} p-6`}>
+                  <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
+                  <h3 className="font-display font-bold text-xl text-primary-foreground">
+                    {committee.title}
+                  </h3>
+                </div>
+                <div className="p-6 space-y-4">
+                  {committee.members.map((member) => (
+                    <div key={member.name} className="flex items-center gap-3">
+                        {member.name === "Dr. S. Jayanthi" && (
+                          <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Prof. R. Subramani" && (
+                          <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. C. Chandrasekar" && (
+                          <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. H. Hannah Inbarani" && (
+                          <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
+                          <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
+                        ) : null}
+                        {member.name.includes("Sundaravalli") && (
+                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. V. Raj" && (
+                          <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. R. Rathipriya" && (
+                          <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                        {member.name === "Dr. S. Sathish" && (
+                          <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
+                        )}
+                      <div>
+                        <p className="font-display font-bold text-navy">{member.name}</p>
+                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+        {/* Third Row: General Chair and Organizing Committee */}
+        <div className="flex justify-center mb-16">
+          <div className="grid md:grid-cols-2 gap-6" style={{ maxWidth: '850px' }}>
+            {committees.slice(3).map((committee) => (
+              <div
+                key={committee.title}
+                className="bg-background rounded-2xl overflow-hidden card-hover"
+                style={{ maxWidth: '400px' }}
+              >
               <div className={`${committee.color} p-6`}>
                 <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
                 <h3 className="font-display font-bold text-xl text-primary-foreground">
@@ -237,6 +311,7 @@ const Committee = () => {
             </div>
           ))}
         </div>
+        </div>
 
         {/* Advisory Committee */}
         <div className="bg-background rounded-2xl p-8 mt-16">
@@ -244,63 +319,46 @@ const Committee = () => {
             Advisory Committee
           </h3>
 
-          {/* Advisory Tab Navigation */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-slate rounded-lg p-1 flex">
-              <button
-                onClick={() => setAdvisoryTab('international')}
-                className={`px-6 py-3 rounded-lg font-display font-semibold transition-all duration-300 ${
-                  advisoryTab === 'international'
-                    ? 'bg-teal text-primary-foreground shadow-lg'
-                    : 'text-navy hover:bg-slate-200'
-                }`}
-              >
-                International Advisory Committee
-              </button>
-              <button
-                onClick={() => setAdvisoryTab('national')}
-                className={`px-6 py-3 rounded-lg font-display font-semibold transition-all duration-300 ${
-                  advisoryTab === 'national'
-                    ? 'bg-teal text-primary-foreground shadow-lg'
-                    : 'text-navy hover:bg-slate-200'
-                }`}
-              >
-                National Advisory Committee
-              </button>
+          {/* International Advisory Committee */}
+          <div className="mb-12">
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">International Advisory Committee</h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {internationalAdvisoryCommittee.map((member, index) => (
+                <div
+                  key={member.name}
+                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                >
+                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-navy">{member.name}</p>
+                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Advisory Tab Content */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {advisoryTab === 'international' && internationalAdvisoryCommittee.map((member, index) => (
-              <div
-                key={member.name}
-                className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-              >
-                <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+          {/* National Advisory Committee */}
+          <div>
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">National Advisory Committee</h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {nationalAdvisoryCommittee.map((member, index) => (
+                <div
+                  key={member.name}
+                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                >
+                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-navy">{member.name}</p>
+                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-display font-bold text-navy">{member.name}</p>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
-                </div>
-              </div>
-            ))}
-
-            {advisoryTab === 'national' && nationalAdvisoryCommittee.map((member, index) => (
-              <div
-                key={member.name}
-                className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-              >
-                <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                </div>
-                <div>
-                  <p className="font-display font-bold text-navy">{member.name}</p>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 

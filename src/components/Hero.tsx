@@ -38,7 +38,7 @@ const Hero = () => {
               <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
             </div>
             {/* Title */}
-            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">HORIZON-AI 2025</span>
+            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">HORIZON-AI 2026</span>
           </div>
 
           {/* Main Title */}
