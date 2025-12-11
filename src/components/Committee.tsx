@@ -7,37 +7,37 @@ const Committee = () => {
   ];
 
    const internationalAdvisoryCommittee = [
-    { name: "Dr. M. Ashok Kumar", role: "BlueCrest University, Liberia" },
-    { name: "Dr. Nithya Rekha Sivakumar", role: "Princess Nourah Bint Abdulrahman University, Saudi Arabia" },
-    { name: "Luis Martinez", role: "University of Jaén, Spain" },
-    { name: "Muthmainnah Yakin", role: "Universitas Al Asyariah Mandar, Indonesia" },
-    { name: "Preethi Ananthachari", role: "Ahlia University, Bahrain" },
-    { name: "Prof. Lai Khin Wee", role: "University of Malaya, Malaysia" },
-    { name: "Prof. Massimo Ficco", role: "University of Campania Luigi Vanvitelli, Italy" },
-    { name: "Prof. Valentina E. Balas", role: "\"Aurel Vlaicu\" University of Arad, Romania" },
-    { name: "Prof. Xiao-Zhi Gao", role: "University of Eastern Finland, Finland" },
-    { name: "Prof. Yui Wing Leung", role: "Hong Kong Baptist University, Hong Kong" },
-    { name: "Prof. Yuval Shavitt", role: "Tel Aviv University, Israel" },
-  ];
+    { name: "Dr. M. Ashok Kumar", role: "BlueCrest University, Liberia", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Nithya Rekha Sivakumar", role: "Princess Nourah Bint Abdulrahman University, Saudi Arabia", image: "/committee-placeholder.jpg" },
+    { name: "Luis Martinez", role: "University of Jaén, Spain", image: "/committee-placeholder.jpg" },
+    { name: "Muthmainnah Yakin", role: "Universitas Al Asyariah Mandar, Indonesia", image: "/committee-placeholder.jpg" },
+    { name: "Preethi Ananthachari", role: "Ahlia University, Bahrain", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Lai Khin Wee", role: "University of Malaya, Malaysia", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Massimo Ficco", role: "University of Campania Luigi Vanvitelli, Italy", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Valentina E. Balas", role: "\"Aurel Vlaicu\" University of Arad, Romania", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Xiao-Zhi Gao", role: "University of Eastern Finland, Finland", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Yui Wing Leung", role: "Hong Kong Baptist University, Hong Kong", image: "/committee-placeholder.jpg" },
+    { name: "Prof. Yuval Shavitt", role: "Tel Aviv University, Israel", image: "/committee-placeholder.jpg" },
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   const nationalAdvisoryCommittee = [
-    { name: "Dr. (Mrs.) R. Leela Velusamy", role: "National Institute of Technology Tiruchirappalli, India" },
-    { name: "Dr. B. Surendiran", role: "National Institute of Technology Puducherry, India" },
-    { name: "Dr. Abdul Nazeer K. A", role: "National Institute of Technology Calicut, India" },
-    { name: "Dr. T. Veerakumar", role: "National Institute of Technology Goa, India" },
-    { name: "Dr. S. Selvakumar", role: "National Institute of Technology Tiruchirappalli, India" },
-    { name: "Dr. Namita Mittal", role: "Malaviya National Institute of Technology Jaipur, India" },
-    { name: "Dr. Neeta Nain", role: "Malaviya National Institute of Technology Jaipur, India" },
-    { name: "Dr. K. HIMABINDU", role: "National Institute of Technology Andhra Pradesh, India" },
-    { name: "Dr. A. Prasanth", role: "Vel Tech University, India" },
-    { name: "Dr. Choudhary Shyam Prakash", role: "National Institute of Technology Andhra Pradesh, India" },
-    { name: "Dr. Saikat Gochhait", role: "SYMBIOSIS INTERNATIONAL UNIVERSITY, India" },
-    { name: "Dr. Mushtaq Ahmed (Head)", role: "MNIT, India" },
-    { name: "Senthilkumar Sengottaiyan", role: "Ant Philosophy Technology & Services Private Limited, India" },
-    { name: "Nivas K", role: "Sify technologies pvt, India" },
-    { name: "Dr.K.S.Sowmiya Rani", role: "Indian Institute of Engineering Science and Technology, India" },
-    { name: "Dr. Sweta Jain", role: "NIT Bhopal (MANIT), India" },
-  ];
+    { name: "Dr. (Mrs.) R. Leela Velusamy", role: "National Institute of Technology Tiruchirappalli, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. B. Surendiran", role: "National Institute of Technology Puducherry, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Abdul Nazeer K. A", role: "National Institute of Technology Calicut, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. T. Veerakumar", role: "National Institute of Technology Goa, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. S. Selvakumar", role: "National Institute of Technology Tiruchirappalli, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Namita Mittal", role: "Malaviya National Institute of Technology Jaipur, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Neeta Nain", role: "Malaviya National Institute of Technology Jaipur, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. K. HIMABINDU", role: "National Institute of Technology Andhra Pradesh, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. A. Prasanth", role: "Vel Tech University, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Choudhary Shyam Prakash", role: "National Institute of Technology Andhra Pradesh, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Saikat Gochhait", role: "SYMBIOSIS INTERNATIONAL UNIVERSITY, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Mushtaq Ahmed (Head)", role: "MNIT, India", image: "/committee-placeholder.jpg" },
+    { name: "Senthilkumar Sengottaiyan", role: "Ant Philosophy Technology & Services Private Limited, India", image: "/committee-placeholder.jpg" },
+    { name: "Nivas K", role: "Sify technologies pvt, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr.K.S.Sowmiya Rani", role: "Indian Institute of Engineering Science and Technology, India", image: "/committee-placeholder.jpg" },
+    { name: "Dr. Sweta Jain", role: "NIT Bhopal (MANIT), India", image: "/committee-placeholder.jpg" },
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   const academicLeadership = [
     { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India" },
@@ -318,14 +318,16 @@ const Committee = () => {
           <div className="mb-12">
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">International Advisory Committee</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {internationalAdvisoryCommittee.map((member, index) => (
+              {internationalAdvisoryCommittee.map((member) => (
                 <div
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
                 >
-                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-14 h-14 object-cover border-2 border-navy shrink-0"
+                  />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.role}</p>
@@ -339,14 +341,16 @@ const Committee = () => {
           <div>
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">National Advisory Committee</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {nationalAdvisoryCommittee.map((member, index) => (
+              {nationalAdvisoryCommittee.map((member) => (
                 <div
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
                 >
-                  <div className="w-14 h-14 bg-navy rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-14 h-14 object-cover border-2 border-navy shrink-0"
+                  />
                   <div>
                     <p className="font-display font-bold text-navy">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.role}</p>
@@ -417,8 +421,17 @@ const Committee = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Speaker 1 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/paventhan.jpg"
+                  alt="Dr. A. Paventhan"
+                  className="w-40 h-40 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                   <span className="text-primary-foreground font-bold text-xl">AP</span>
                 </div>
                 <div className="flex-1">
@@ -437,8 +450,17 @@ const Committee = () => {
 
             {/* Speaker 2 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/pisharady.jpg"
+                  alt="Dr. Pramod Pisharady"
+                  className="w-40 h-40 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                   <span className="text-primary-foreground font-bold text-xl">PP</span>
                 </div>
                 <div className="flex-1">
@@ -455,8 +477,17 @@ const Committee = () => {
 
             {/* Speaker 3 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/sowmiya.jpg"
+                  alt="Dr. K. S. Sowmiya Rani"
+                  className="w-40 h-40  object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                   <span className="text-primary-foreground font-bold text-xl">SR</span>
                 </div>
                 <div className="flex-1">
@@ -471,8 +502,17 @@ const Committee = () => {
 
             {/* Speaker 4 */}
             <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center shrink-0">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/muthmainnah.png"
+                  alt="Muthmainnah Yakin"
+                  className="w-36 h-42 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                   <span className="text-primary-foreground font-bold text-xl">MY</span>
                 </div>
                 <div className="flex-1">
