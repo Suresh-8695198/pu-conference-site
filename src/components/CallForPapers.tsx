@@ -50,7 +50,6 @@ const CallForPapers = () => {
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Author Guidelines</h4>
                 <ol className="space-y-3 text-base text-primary-foreground font-medium text-justify list-decimal list-inside">
                   <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
                   <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
