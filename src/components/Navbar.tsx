@@ -4,9 +4,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Tracks", href: "#tracks" },
   { name: "Call for Papers", href: "#call-for-papers" },
   { name: "Important Dates", href: "#dates" },
-  { name: "Tracks", href: "#tracks" },
   { name: "Committee", href: "#committee" },
   { name: "Speakers", href: "#speakers" },
   { name: "Registration", href: "#registration" },

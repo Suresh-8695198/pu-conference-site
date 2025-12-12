@@ -16,7 +16,7 @@ const CallForPapers = () => {
     <section id="call-for-papers" className="py-24 bg-navy text-primary-foreground">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <span className="inline-block text-coral font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Submit Your Research
           </span>
@@ -24,6 +24,15 @@ const CallForPapers = () => {
             Call for <span className="text-teal-light">Papers</span>
           </h2>
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
+        </div>
+
+        {/* Important Notice */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className=" p-8 text-center">
+            <p className="text-primary-foreground text-lg leading-normal text-justify">
+              Authors are invited to submit original and unpublished research articles that are not under review in any other conference or journal. Only accepted and registered papers will be scheduled for presentation. For inclusion in the book proceedings, at least one author of each accepted paper must complete the conference registration. Papers without a registered author will not be considered for publication in the book proceedings.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -40,22 +49,24 @@ const CallForPapers = () => {
                 </div>
               </div>
 
-              <p className="text-primary-foreground text-base leading-normal text-justify mb-6">
-                HORIZON-AI 2025 (HORIZON25) invites full-length original research contributions from engineering professionals, industry experts, R&D organizations, academic institutions, government departments, and research scholars from across the world.
-                All submissions must be original, unpublished, ethically compliant, and prepared in accordance with CRC Press (Taylor & Francis) editorial guidelines.
-              </p>
-
-              <p className="text-primary-foreground text-base leading-normal text-justify mb-6">
-                Authors are invited to submit original and unpublished research articles that are not under review in any other conference or journal. Only accepted and registered papers will be scheduled for presentation. For inclusion in the book proceedings, at least one author of each accepted paper must complete the conference registration. Papers without a registered author will not be considered for publication in the book proceedings.
-              </p>
-
               <div className="space-y-4">
-                <h4 className="font-display font-bold text-xl text-primary-foreground">Key Information</h4>
-                <ul className="space-y-3 text-base text-primary-foreground font-medium text-justify">
-                  <li>• Papers must be full-length original research or review articles and must not exceed six (6) pages in length.</li>
-                  <li>• All submissions will undergo a peer-review process with decisions communicated within the specified timeline.</li>
-                  <li>• Selected high-quality papers will be published as book chapters, while remaining papers will be published in conference proceedings.</li>
-                </ul>
+                <h4 className="font-display font-bold text-xl text-primary-foreground">Author Guidelines</h4>
+                <ol className="space-y-3 text-base text-primary-foreground font-medium text-justify list-decimal list-inside">
+                  <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
+                  <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
+                  <li>Papers must be carefully proofread and written in clear, grammatically correct English; poor language quality may lead to outright rejection.</li>
+                  <li>Each manuscript must include an abstract (150-250 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
+                  <li>The maximum length of the manuscript is Twelve (12) pages, formatted strictly according to the official conference template available on the conference website.</li>
+                  <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
+                  <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>
+                  <li>All references must be cited correctly in the text, and the reference list must include every cited source and only cited sources.</li>
+                  <li>Each paper may have a maximum of four (4) authors, with full affiliations and the corresponding author clearly identified.</li>
+                  <li>All manuscripts will undergo a double-blind peer-review process; authors must submit revisions within seven (7) days if requested.</li>
+                  <li>Only papers that are accepted, registered, and presented will be included in the conference proceedings and considered valid for certificates.</li>
+                  <li>At least one author must present the paper (online/offline as applicable) for it to be officially accepted.</li>
+                  <li>Authors must adhere to all ethical guidelines, including plagiarism policies, proper citations, and respecting intellectual property.</li>
+                  <li>Authors must ensure all figures, tables, and data representations are accurate, clear, and scientifically valid.</li>
+                </ol>
               </div>
             </div>
           </div>
