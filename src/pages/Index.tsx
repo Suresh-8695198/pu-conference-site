@@ -34,9 +34,9 @@ const Index = () => {
           <Tracks />
           <CallForPapers />
           <ImportantDates />
+          <Registration />
           <Speakers />
           <Committee />
-          <Registration />
           <Contact />
         </main>
         <Footer />

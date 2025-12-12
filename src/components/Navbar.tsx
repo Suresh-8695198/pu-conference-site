@@ -7,9 +7,9 @@ const navItems = [
   { name: "Tracks", href: "#tracks" },
   { name: "Call for Papers", href: "#call-for-papers" },
   { name: "Important Dates", href: "#dates" },
+  { name: "Registration", href: "#registration" },
   { name: "Committee", href: "#committee" },
   { name: "Speakers", href: "#speakers" },
-  { name: "Registration", href: "#registration" },
   { name: "Contact", href: "#contact" },
 ];
 
