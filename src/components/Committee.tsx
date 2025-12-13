@@ -171,7 +171,7 @@ const Committee = () => {
 
         {/* Main Committee Cards */}
         {/* First Row: Chief Patron and Patron */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto justify-center">
           {committees.slice(0, 2).map((committee, index) => (
             <div
               key={committee.title}
@@ -201,7 +201,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-xl text-navy">{member.name}</p>
-                        <p className="text-base text-slate-700 font-medium">{member.role}</p>
+                        <p className="text-base text-slate-700 font-medium justify-center ">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -211,7 +211,7 @@ const Committee = () => {
         </div>
 
         {/* Second Row: Co-Patron and Organizing Secretary */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto justify-center">
           {committees.slice(2, 4).map((committee) => (
             <div
               key={committee.title}
@@ -233,7 +233,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-lg text-navy">{member.name}</p>
-                        <p className="text-base text-slate-600">{member.role}</p>
+                        <p className="text-base text-slate-600 justify-center">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -243,7 +243,7 @@ const Committee = () => {
         </div>
 
         {/* Third Row: Organizing Committee */}
-        <div className="max-w-3xl mx-auto mb-12">
+        <div className="max-w-3xl mx-auto mb-12 justify-center">
           {committees.slice(4, 5).map((committee) => (
             <div
               key={committee.title}
@@ -265,7 +265,7 @@ const Committee = () => {
                     <MemberImage name={member.name} />
                     <div>
                       <p className="font-display font-bold text-lg text-navy">{member.name}</p>
-                      <p className="text-base text-slate-600">{member.role}</p>
+                      <p className="text-base text-slate-600 justify-center">{member.role}</p>
                     </div>
                   </div>
                 ))}

@@ -16,9 +16,9 @@ const Speakers = () => {
         </div>
 
         {/* Speakers Grid */}
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="grid md:grid-cols-2 gap-6 justify-items-center">
           {/* Speaker 1 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
                 src="/Deepak Garg.jpeg"
@@ -43,7 +43,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 2 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
                 src="/paventhan.jpg"
@@ -69,7 +69,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 3 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
                 src="/pisharady.jpg"
@@ -96,7 +96,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 4 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
                 src="/sowmiya.jpg"
@@ -121,7 +121,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 5 */}
-          <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:w-1/2">
+          <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:col-span-2 md:max-w-md md:mx-auto">
             <div className="flex items-center gap-4">
               <img
                 src="/muthmainnah.png"
