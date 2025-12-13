@@ -79,10 +79,10 @@ const About = () => {
         {/* SDG Cards */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="font-display  font-bold text-3xl text-navy mb-4">
+            <h3 className="font-display font-bold text-3xl text-navy mb-4">
               Conference Focus Areas
             </h3>
-            <p className="text-lg text-slate-700 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-700 max-w-2xl mx-auto text-justify leading-relaxed">
               HORIZON-AI 2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
@@ -96,7 +96,7 @@ const About = () => {
                 <h3 className="font-display font-bold text-lg mb-3 text-navy">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-slate-700  justify-start leading-relaxed flex-grow">
+                <p className="text-sm text-slate-700 text-justify leading-relaxed flex-grow">
                   {feature.description}
                 </p>
               </div>
@@ -110,7 +110,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               Aligned with UN Sustainable Development Goals
             </h3>
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-slate-700 text-justify leading-relaxed">
               Our conference focuses on key SDGs to drive positive change through AI and technology.
             </p>
           </div>
