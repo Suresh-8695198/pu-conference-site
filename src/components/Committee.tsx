@@ -1,4 +1,41 @@
 import { User, Users, Award, Briefcase } from "lucide-react";
+import { useState } from "react";
+
+const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string }) => {
+  const [imgError, setImgError] = useState(false);
+  
+  const imageMap: Record<string, string> = {
+    "Dr. S. Jayanthi": "/jayanthi.png",
+    "Prof. R. Subramani": "/subramani.jpeg",
+    "Dr. C. Chandrasekar": "/chandrasekar.jpeg",
+    "Dr. H. Hannah Inbarani": "/inbarani.jpeg",
+    "Dr. I. Laurence Aroquiaraj": "/laurence.jpeg",
+    "Dr.I. laurence aroquiaraj": "/laurence.jpeg",
+    "Tmt. E. Sundaravalli, I.A.S.": "/sundharavalli.jpeg",
+    "Dr. V. Raj": "/raj.jpeg",
+    "Dr. R. Rathipriya": "/rathipriya.jpeg",
+    "Dr. S. Sathish": "/sathish.jpeg",
+  };
+
+  const imageSrc = imageMap[name] || imageMap[Object.keys(imageMap).find(key => name.includes(key.split(' ')[2])) || ''];
+
+  if (imageSrc && !imgError) {
+    return (
+      <img
+        src={imageSrc}
+        alt={name}
+        className={`${size} object-cover border border-slate`}
+        onError={() => setImgError(true)}
+      />
+    );
+  }
+
+  return (
+    <div className={`${size} bg-navy rounded-lg flex items-center justify-center border border-slate`}>
+      <User className="w-12 h-12 text-white" />
+    </div>
+  );
+};
 
 const Committee = () => {
   const organizingCommittee = [
@@ -8,15 +45,15 @@ const Committee = () => {
 
    const internationalAdvisoryCommittee = [
     { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/Ahmed.jpeg" },
+    { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
     { name: "Dr. Ganesh R. Naik", university: "Torrens University / Flinders University", country: "Australia", image: "/Ganesh Naik.jpeg" },
     { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/Gunasekaran Thangavel.jpeg" },
-    { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
-    { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpg" },
-    { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
-    { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
     { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
     { name: "Prof. Luis Martinez Lopez", university: "University of Jaén", country: "Spain", image: "/Luis Martinez Lopez.jpg" },
     { name: "Prof. Massimo Ficco", university: "University of Campania Luigi Vanvitelli", country: "Italy", image: "/Massimo Ficco.jpg" },
+    { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpg" },
+    { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
+    { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
     { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/Sudhir Dixit.jpg" },
     { name: "Prof. Valentina E. Balas", university: "Aurel Vlaicu University of Arad", country: "Romania", image: "/Balas.jpg" },
     { name: "Prof. Xiao-Zhi Gao", university: "University of Eastern Finland", country: "Finland", image: "/Xiao-Zhi Gao.jpg" },
@@ -25,54 +62,57 @@ const Committee = () => {
   ];
 
   const nationalAdvisoryCommittee = [
-    { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut", country: "India", image: "/Abdul Nazeer.jpg" },
-    { name: "Dr. A. Prasanth", university: "Vel Tech University", country: "India", image: "/Prasanth.jpg" },
-    { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
-    { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", country: "India", image: "/Leela Velusamy.jpg" },
-    { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", country: "India", image: "/sowmiya.jpg" },
-    { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", country: "India", image: "/Mushtaq Ahmed.jpg" },
-    { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", country: "India", image: "/Namita Mittal.jpg" },
-    { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur", country: "India", image: "/Neeta Nain.jpg" },
-    { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", country: "India", image: "/Saikat Gochhait.jpg" },
-    { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", country: "India", image: "/Selvakumar.jpg" },
-    { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.", country: "India", image: "/Senthilkumar.jpg" },
-    { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", country: "India", image: "/Sweta Jain.jpg" },
-    { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", country: "India", image: "/Veerakumar.jpg" },
-    { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", country: "India", image: "/Nivas.jpg" },
-    { name: "Salom Jerlin", university: "Managing Director, Hitakey Tech solution", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
+    { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
+    { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
+    { name: "Salom Jerlin", role: "Managing Director", university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
+    { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
+    { name: "Dr. Neeta Nain", role: "Associate Professor, Department of Computer Science & Engineering", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
+    { name: "Nivas K", role: "Technical Professional", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
+    { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
+    { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Leela Velusamy.jpg" },
+    { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", location: "Lavale, Pune, Maharashtra, India", country: "India", image: "/Saikat Gochhait.jpg" },
+    { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
+    { name: "Dr. Senthilkumar Sengottaiyan", role: "Senior Developer Analyst", university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
+    { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", role: "Founder, Editor & Reviewer", university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
+    { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
+    { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
+    { name: "Dr. M. Thangarsu", role: "AI Technical Specialist", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarsu.jpg" },
+    { name: "Dr. S. Udhaya Kumar", role: "Assistant Vice President (Principal Data Scientist)", university: "HDFC Bank", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
+    { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
   ];
 
   const academicLeadership = [
+    { name: "Dr. S. Angelin Sophy", role: "—", image: "/Angelin Sophy.jpg" },
     { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India", image: "/Arul Pon Daniel.jpg" },
-    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
-    { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India", image: "/Sasirekha.jpg" },
-    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
+    { name: "Dr. M. Bagyamathi", role: "—", image: "/Bagyamathi.jpg" },
+    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
     { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Gowthamarayathirumal.jpg" },
     { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Jothi.jpg" },
-    { name: "Dr. M. Bagyamathi", role: "—", image: "/Bagyamathi.jpg" },
-    { name: "Dr. B. Lavanya", role: "—", image: "/Lavanya.jpg" },
-    { name: "Dr. Renugadevi K", role: "NKR Government Arts College for Women, Namakkal, Tamil Nadu, India", image: "/Renugadevi.jpg" },
-    { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India", image: "/Sudhakar.jpg" },
-    { name: "Dr. S. Angelin Sophy", role: "—", image: "/Angelin Sophy.jpg" },
     { name: "Dr. G. Kavitha", role: "—", image: "/Kavitha.jpg" },
-    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
+    { name: "Dr. B. Lavanya", role: "—", image: "/Lavanya.jpg" },
     { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
+    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
+    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
+    { name: "Dr. Renugadevi K", role: "NKR Government Arts College for Women, Namakkal, Tamil Nadu, India", image: "/Renugadevi.jpg" },
+    { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India", image: "/Sasirekha.jpg" },
+    { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India", image: "/Sudhakar.jpg" },
   ];
 
   const technicalLeadership = [
-    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
-    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
-    { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Ramyachitra.jpg" },
-    { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
-    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
-    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
     { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
+    { name: "Dr. J. Bagyamathi", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamathi.jpg" },
     { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
     { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
-    { name: "Dr. C. Velayutham", role: "Aditanar College of Arts and Science, Tiruchendur, Tamil Nadu, India", image: "/Velayutham.jpeg" },
+    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
+    { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Ramyachitra.jpg" },
+    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
+    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
+    { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
+    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
   ];
 
   const committees = [
@@ -162,33 +202,7 @@ const Committee = () => {
               <div className="p-6 space-y-4">
                   {committee.members.map((member) => (
                     <div key={member.name} className="flex items-center gap-3">
-                        {member.name === "Dr. S. Jayanthi" && (
-                          <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Prof. R. Subramani" && (
-                          <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. C. Chandrasekar" && (
-                          <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. H. Hannah Inbarani" && (
-                          <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
-                          <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
-                        ) : null}
-                        {member.name.includes("Sundaravalli") && (
-                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-30 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. V. Raj" && (
-                          <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. R. Rathipriya" && (
-                          <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. S. Sathish" && (
-                          <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
-                        )}
+                      <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-xl text-navy">{member.name}</p>
                         <p className="text-base text-slate-700 font-medium">{member.role}</p>
@@ -220,33 +234,7 @@ const Committee = () => {
                 <div className="p-6 space-y-4">
                   {committee.members.map((member) => (
                     <div key={member.name} className="flex items-center gap-3">
-                        {member.name === "Dr. S. Jayanthi" && (
-                          <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Prof. R. Subramani" && (
-                          <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. C. Chandrasekar" && (
-                          <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. H. Hannah Inbarani" && (
-                          <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
-                          <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-28 object-cover border border-slate" />
-                        ) : null}
-                        {member.name.includes("Sundaravalli") && (
-                          <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. V. Raj" && (
-                          <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. R. Rathipriya" && (
-                          <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-28 object-cover border border-slate" />
-                        )}
-                        {member.name === "Dr. S. Sathish" && (
-                          <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
-                        )}
+                      <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-lg text-navy">{member.name}</p>
                         <p className="text-base text-slate-600">{member.role}</p>
@@ -278,33 +266,7 @@ const Committee = () => {
               <div className="p-6 space-y-4">
                 {committee.members.map((member) => (
                   <div key={member.name} className="flex items-center gap-3">
-                      {member.name === "Dr. S. Jayanthi" && (
-                        <img src="/jayanthi.png" alt="Dr. S. Jayanthi" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Prof. R. Subramani" && (
-                        <img src="/subramani.jpeg" alt="Prof. R. Subramani" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. C. Chandrasekar" && (
-                        <img src="/chandrasekar.jpeg" alt="Dr. C. Chandrasekar" className="w-28 h-30 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. H. Hannah Inbarani" && (
-                        <img src="/inbarani.jpeg" alt="Dr. H. Hannah Inbarani" className="w-28 h-26 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. I. Laurence Aroquiaraj" || member.name === "Dr.I. laurence aroquiaraj" ? (
-                        <img src="/laurence.jpeg" alt="Dr. I. Laurence Aroquiaraj" className="w-28 h-26 object-cover border border-slate" />
-                      ) : null}
-                      {member.name.includes("Sundaravalli") && (
-                        <img src="/sundharavalli.jpeg" alt="Tmt. E. Sundaravalli" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. V. Raj" && (
-                        <img src="/raj.jpeg" alt="Dr. V. Raj" className="w-28 h-28 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. R. Rathipriya" && (
-                        <img src="/rathipriya.jpeg" alt="Dr. R. Rathipriya" className="w-28 h-26 object-cover border border-slate" />
-                      )}
-                      {member.name === "Dr. S. Sathish" && (
-                        <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-26 object-cover border border-slate" />
-                      )}
+                    <MemberImage name={member.name} />
                     <div>
                       <p className="font-display font-bold text-lg text-navy">{member.name}</p>
                       <p className="text-base text-slate-600">{member.role}</p>
@@ -326,22 +288,32 @@ const Committee = () => {
           <div className="mb-12">
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">International Advisory Committee</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {internationalAdvisoryCommittee.map((member) => (
-                <div
-                  key={member.name}
-                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                >
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-14 h-14 object-cover  shrink-0"
-                  />
-                  <div>
-                    <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
+              {internationalAdvisoryCommittee.map((member) => {
+                const [imgError, setImgError] = useState(false);
+                return (
+                  <div
+                    key={member.name}
+                    className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                  >
+                    {member.image && !imgError ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-14 h-14 object-cover shrink-0"
+                        onError={() => setImgError(true)}
+                      />
+                    ) : (
+                      <div className="w-14 h-14 bg-teal rounded-full flex items-center justify-center shrink-0">
+                        <User className="w-7 h-7 text-white" />
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -349,22 +321,36 @@ const Committee = () => {
           <div>
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">National Advisory Committee</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {nationalAdvisoryCommittee.map((member) => (
-                <div
-                  key={member.name}
-                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                >
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-14 h-14 object-cover shrink-0"
-                  />
-                  <div>
-                    <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
+              {nationalAdvisoryCommittee.map((member) => {
+                const [imgError, setImgError] = useState(false);
+                return (
+                  <div
+                    key={member.name}
+                    className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                  >
+                    {member.image && !imgError ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-14 h-14 object-cover shrink-0"
+                        onError={() => setImgError(true)}
+                      />
+                    ) : (
+                      <div className="w-14 h-14 bg-teal rounded-full flex items-center justify-center shrink-0">
+                        <User className="w-7 h-7 text-white" />
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      {member.role && (
+                        <p className="text-sm text-slate-600 font-medium">{member.role}</p>
+                      )}
+                      <p className="text-sm text-muted-foreground">{member.university}</p>
+                      <p className="text-sm text-muted-foreground">{member.location}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -379,22 +365,32 @@ const Committee = () => {
           <div className="mb-12">
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {technicalLeadership.map((member, index) => (
-                <div
-                  key={member.name}
-                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                >
-                  <img
-                    src={member.image || "/committee-placeholder.jpg"}
-                    alt={member.name}
-                    className="w-14 h-14 object-cover shrink-0"
-                  />
-                  <div>
-                    <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
+              {technicalLeadership.map((member, index) => {
+                const [imgError, setImgError] = useState(false);
+                return (
+                  <div
+                    key={member.name}
+                    className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                  >
+                    {member.image && !imgError ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-14 h-14 object-cover shrink-0"
+                        onError={() => setImgError(true)}
+                      />
+                    ) : (
+                      <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center shrink-0">
+                        <User className="w-7 h-7 text-white" />
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="text-sm text-muted-foreground">{member.role}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -402,35 +398,37 @@ const Committee = () => {
           <div>
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {academicLeadership.map((member, index) => (
-                <div
-                  key={member.name}
-                  className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
-                >
-                  <img
-                    src={member.image || "/committee-placeholder.jpg"}
-                    alt={member.name}
-                    className="w-14 h-14 object-cover shrink-0"
-                  />
-                  <div>
-                    <p className="font-display font-bold text-navy">{member.name}</p>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
+              {academicLeadership.map((member, index) => {
+                const [imgError, setImgError] = useState(false);
+                return (
+                  <div
+                    key={member.name}
+                    className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
+                  >
+                    {member.image && !imgError ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-14 h-14 object-cover shrink-0"
+                        onError={() => setImgError(true)}
+                      />
+                    ) : (
+                      <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center shrink-0">
+                        <User className="w-7 h-7 text-white" />
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="text-sm text-muted-foreground">{member.role}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
 
        
-
-        {/* Publishing Partner */}
-        <div className="mt-12 text-center">
-          <div className="bg-background rounded-2xl p-4 md:p-6 shadow">
-            <h4 className="font-display font-bold text-xl text-navy mb-2">Publishing Partner</h4>
-            <p className="text-muted-foreground text-base">All peer-reviewed full papers will be published in the edited book <b>"Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity"</b>, CRC Press, Taylor & Francis Group.</p>
-          </div>
-        </div>
       </div>
     </section>
   );
