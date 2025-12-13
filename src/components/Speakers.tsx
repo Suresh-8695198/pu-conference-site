@@ -16,9 +16,9 @@ const Speakers = () => {
         </div>
 
         {/* Speakers Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {/* Speaker 1 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
             <div className="flex items-center gap-4">
               <img
                 src="/Deepak Garg.jpeg"
@@ -43,7 +43,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 2 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
             <div className="flex items-center gap-4">
               <img
                 src="/paventhan.jpg"
@@ -69,7 +69,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 3 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
             <div className="flex items-center gap-4">
               <img
                 src="/pisharady.jpg"
@@ -96,7 +96,7 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 4 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full md:w-1/2">
             <div className="flex items-center gap-4">
               <img
                 src="/sowmiya.jpg"
@@ -121,12 +121,12 @@ const Speakers = () => {
           </div>
 
           {/* Speaker 5 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors">
+          <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:w-1/2">
             <div className="flex items-center gap-4">
               <img
                 src="/muthmainnah.png"
                 alt="Muthmainnah Yakin"
-                className="w-36 h-41 object-cover shrink-0"
+                className="w-40 h-41   object-cover shrink-0"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
