@@ -8,8 +8,8 @@ const navItems = [
   { name: "Submission", href: "#call-for-papers" },
   { name: "Important Dates", href: "#dates" },
   { name: "Registration", href: "#registration" },
-  { name: "Committee", href: "#committee" },
   { name: "Speakers", href: "#speakers" },
+  { name: "Committee", href: "#committee" },
   { name: "Accommodation", href: "#accommodation" },
   { name: "Contact", href: "#contact" },
 ];

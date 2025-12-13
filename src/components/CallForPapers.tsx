@@ -173,12 +173,12 @@ const CallForPapers = () => {
                   Manuscript Guidelines
                 </a>
                 <a 
-                  href="/Abstract_Guidelines.pdf" 
-                  download="Abstract_Guidelines.pdf"
+                  href="/Abstracts_Guidelines.pdf" 
+                  download="Abstracts_Guidelines.pdf"
                   className="inline-flex items-center justify-center gap-2 bg-teal text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-teal/90 transition-colors"
                 >
                   <FileText className="w-5 h-5" />
-                  Abstract Guidelines
+                  Abstracts Guidelines
                 </a>
               </div>
             </div>
