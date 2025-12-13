@@ -184,7 +184,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Publication Partner */}
-            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm text-justify">
               <h3 className="font-display font-bold text-2xl mb-6 text-navy">
                 Publication Partner
               </h3>
