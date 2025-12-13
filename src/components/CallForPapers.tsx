@@ -183,14 +183,15 @@ const CallForPapers = () => {
               </div>
             </div>
 
-            {/* Publication */}
+            {/* Publication Partner */}
             <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
-              <h3 className="font-display font-bold text-2xl mb-4 text-navy">
-                Publication
+              <h3 className="font-display font-bold text-2xl mb-6 text-navy">
+                Publication Partner
               </h3>
-              <p className="text-slate-700 mb-6 leading-relaxed">
-                High-quality selected papers will be published as book chapters in the edited volume titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to the publisher's guidelines and a minimum publication charge. Remaining accepted and presented papers will be included in the HORIZON-AI 2026 Conference Proceedings, with an applicable additional publication fee.
-              </p>
+              <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
+                <li>Selected high-quality papers will be published as book chapters in the edited volume: "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to publisher scope, quality, and editorial policies.</li>
+                <li>Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings, with applicable publication charges.</li>
+              </ol>
             </div>
 
             {/* Submit Button */}

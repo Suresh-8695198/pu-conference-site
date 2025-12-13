@@ -38,6 +38,17 @@ const About = () => {
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
         </div>
 
+        {/* Publication Announcement Scrolling */}
+        <div className="mb-12 bg-navy border-l-4 border-l-coral rounded-lg shadow-xl overflow-hidden">
+          <div className="relative bg-slate-50">
+            <div className="animate-marquee whitespace-nowrap py-5 px-4">
+              <span className="text-white font-display font-bold text-lg inline-block">
+                PUBLICATION ANNOUNCEMENT: Selected high-quality papers from HORIZON-AI 2026 will be published as post-conference proceedings in the edited book titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", to be published by CRC Press, Taylor & Francis Group.
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-20">
           <p className="text-lg text-slate-700 leading-normal text-justify">
