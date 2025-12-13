@@ -380,11 +380,11 @@ const Committee = () => {
             Academic & Technical Leadership
           </h3>
 
-          {/* Academic Leadership */}
+          {/* Technical Leadership */}
           <div className="mb-12">
-            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {academicLeadership.map((member, index) => (
+              {technicalLeadership.map((member, index) => (
                 <div
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
@@ -403,11 +403,11 @@ const Committee = () => {
             </div>
           </div>
 
-          {/* Technical Leadership */}
+          {/* Academic Leadership */}
           <div>
-            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Committee (TPC) Members</h4>
+            <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {technicalLeadership.map((member, index) => (
+              {academicLeadership.map((member, index) => (
                 <div
                   key={member.name}
                   className="flex items-center gap-4 bg-slate p-4 rounded-xl hover:bg-muted transition-colors"
