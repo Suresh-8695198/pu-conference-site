@@ -52,11 +52,11 @@ const CallForPapers = () => {
                   <p className="text-slate-600 text-base">Basic submission criteria</p>
                 </div>
               </div>
-              <ol className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-decimal list-inside">
+              <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
                 <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
                 <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
                 <li>Papers must be carefully proofread and written in clear, grammatically correct English; poor language quality may lead to outright rejection.</li>
-              </ol>
+              </ul>
             </div>
 
             {/* Manuscript Preparation */}
@@ -70,13 +70,13 @@ const CallForPapers = () => {
                   <p className="text-slate-600 text-base">Content and formatting guidelines</p>
                 </div>
               </div>
-              <ol className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-decimal list-inside" start={4}>
+              <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
                 <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
                 <li>The maximum length of the manuscript is Twelve (12) pages, formatted strictly according to the official conference template available on the conference website.</li>
                 <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
                 <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>
                 <li>All references must be cited correctly in the text, and the reference list must include every cited source and only cited sources.</li>
-              </ol>
+              </ul>
             </div>
 
             {/* Review and Publication */}
@@ -90,12 +90,12 @@ const CallForPapers = () => {
                   <p className="text-slate-600 text-base">Review process and publication details</p>
                 </div>
               </div>
-              <ol className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-decimal list-inside" start={9}>
+              <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
                 <li>Each paper may have a maximum of four (4) authors, with full affiliations and the corresponding author clearly identified.</li>
                 <li>All manuscripts will undergo a double-blind peer-review process; authors must submit revisions within seven (7) days if requested.</li>
                 <li>Only papers that are accepted, registered, and presented will be included in the conference proceedings and considered valid for certificates.</li>
                 <li>At least one author must present the paper (online/offline as applicable) for it to be officially accepted.</li>
-              </ol>
+              </ul>
             </div>
 
             {/* Ethical Standards */}
@@ -109,10 +109,10 @@ const CallForPapers = () => {
                   <p className="text-slate-600 text-base">Academic integrity guidelines</p>
                 </div>
               </div>
-              <ol className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-decimal list-inside" start={13}>
+              <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
                 <li>Authors must adhere to all ethical guidelines, including plagiarism policies, proper citations, and respecting intellectual property.</li>
                 <li>Authors must ensure all figures, tables, and data representations are accurate, clear, and scientifically valid.</li>
-              </ol>
+              </ul>
             </div>
           </div>
 
