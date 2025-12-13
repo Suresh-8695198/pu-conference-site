@@ -56,29 +56,36 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-coral rounded-xl flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h4 className="font-display font-bold text-navy mb-1">Phone</h4>
-                  <p className="text-muted-foreground">
-                    +91 427 234 5678<br />
-                    +91 98765 43210
-                  </p>
-                </div>
-              </div>
+            </div>
 
-              <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gold rounded-xl flex items-center justify-center shrink-0">
-                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            {/* Organizing Secretaries */}
+            <div className="mt-8">
+              <h3 className="font-display font-bold text-2xl text-navy mb-6">
+                Organizing Secretaries
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal rounded-xl flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-navy mb-1">Dr. H. Hannah Inbarani</h4>
+                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science</p>
+                    <p className="text-muted-foreground mb-1">Periyar University, Salem</p>
+                    <p className="text-teal font-medium">Ph: 9865380392</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-display font-bold text-navy mb-1">Office Hours</h4>
-                  <p className="text-muted-foreground">
-                    Monday - Friday: 9:00 AM - 5:00 PM<br />
-                    Saturday: 9:00 AM - 1:00 PM
-                  </p>
+
+                <div className="flex items-start gap-3 sm:gap-4 bg-slate p-3 sm:p-5 rounded-xl">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-coral rounded-xl flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-navy mb-1">Dr. I. Laurence Aroquiaraj</h4>
+                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science</p>
+                    <p className="text-muted-foreground mb-1">Periyar University, Salem</p>
+                    <p className="text-teal font-medium">Ph: 8807058505</p>
+                  </div>
                 </div>
               </div>
             </div>

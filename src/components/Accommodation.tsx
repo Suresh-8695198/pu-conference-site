@@ -2,7 +2,7 @@ import { MapPin, Plane, Train, Bus, Camera, Home } from "lucide-react";
 
 const Accommodation = () => {
   return (
-    <section id="accommodation" className="py-24 bg-slate">
+    <section id="accommodation" className="py-0 bg-slate">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -95,39 +95,126 @@ const Accommodation = () => {
 
         {/* Places to Visit */}
         <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-12 bg-coral rounded-lg flex items-center justify-center">
               <Camera className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Important Places to Visit</h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>Yercaud Hills</strong> – Scenic hill station with viewpoints, lake, and coffee estates.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>1008 Lingam Temple</strong> – Famous spiritual site with 1008 Shiva lingams.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>Kurumbapatti Zoological Park</strong> – Mini zoo at the foothills of Yercaud.</p>
+
+          {/* Places Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Yercaud Hills */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/yercaud.jpg"
+                  alt="Yercaud Hills"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">Yercaud Hills</h4>
+                  <p className="text-white/90 text-sm">Scenic hill station with viewpoints, lake, and coffee estates</p>
+                </div>
               </div>
             </div>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>Kailasanathar Temple, Tharamangalam</strong> – Renowned for its intricate stone carvings.</p>
+
+            {/* 1008 Lingam Temple */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/1008-Shiva-Lingam-Temple.jpg"
+                  alt="1008 Lingam Temple"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1582515073490-39981397c445?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">1008 Lingam Temple</h4>
+                  <p className="text-white/90 text-sm">Famous spiritual site with 1008 Shiva lingams</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>Mettur Dam</strong> – One of India's largest dams with beautiful reservoir views.</p>
+            </div>
+
+            {/* Kurumbapatti Zoological Park */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/kurumbapatti-zoo.jpeg"
+                  alt="Kurumbapatti Zoological Park"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">Kurumbapatti Zoo</h4>
+                  <p className="text-white/90 text-sm">Mini zoo at the foothills of Yercaud</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-teal rounded-full mt-2 shrink-0"></div>
-                <p className="text-slate-700 text-base leading-relaxed"><strong>ISKCON Salem</strong> – Peaceful spiritual and cultural center.</p>
+            </div>
+
+            {/* Kailasanathar Temple */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/kailasanathar-temple.jpeg"
+                  alt="Kailasanathar Temple"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1582515073490-39981397c445?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">Kailasanathar Temple</h4>
+                  <p className="text-white/90 text-sm">Renowned for intricate stone carvings</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mettur Dam */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/mettur-dam.webp"
+                  alt="Mettur Dam"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">Mettur Dam</h4>
+                  <p className="text-white/90 text-sm">One of India's largest dams with beautiful reservoir views</p>
+                </div>
+              </div>
+            </div>
+
+            {/* ISKCON Salem */}
+            <div className="group bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/iskcon-salem.webp"
+                  alt="ISKCON Salem"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1582515073490-39981397c445?w=400&h=300&fit=crop&crop=center';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h4 className="font-display font-bold text-white text-lg mb-1">ISKCON Salem</h4>
+                  <p className="text-white/90 text-sm">Peaceful spiritual and cultural center</p>
+                </div>
               </div>
             </div>
           </div>

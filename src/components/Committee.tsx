@@ -104,7 +104,7 @@ const Committee = () => {
 
   const technicalLeadership = [
     { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
-    { name: "Dr. J. Bagyamathi", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamathi.jpg" },
+    { name: "Dr. J. Bagyamani", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamani.jpg" },
     { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
     { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
     { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
