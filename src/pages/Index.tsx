@@ -8,6 +8,7 @@ import Tracks from "@/components/Tracks";
 import Committee from "@/components/Committee";
 import Speakers from "@/components/Speakers";
 import Registration from "@/components/Registration";
+import Accommodation from "@/components/Accommodation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -37,6 +38,7 @@ const Index = () => {
           <Registration />
           <Speakers />
           <Committee />
+          <Accommodation />
           <Contact />
         </main>
         <Footer />

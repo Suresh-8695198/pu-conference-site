@@ -37,7 +37,6 @@ const Speakers = () => {
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p><strong>Vice Chancellor - SR University</strong></p>
                   <p><strong>Director - leadingindia.ai</strong></p>
-                  <p>Director, Chair, IEEE Computer Society, India Council</p>
                 </div>
               </div>
             </div>
