@@ -39,8 +39,6 @@ const Index = () => {
           <Speakers />
           <Committee />
           <Accommodation />
-          <Committee />
-          <Speakers />
           <Contact />
         </main>
         <Footer />

@@ -2,8 +2,8 @@ import { User, Users, Award, Briefcase } from "lucide-react";
 
 const Committee = () => {
   const organizingCommittee = [
-    { name: "Dr. R. Rathipriya", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
-    { name: "Dr. S. Sathish", role: "Associate Professor, Periyar University, Salem, Tamilnadu, India" },
+    { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
+    { name: "Dr. S. Sathish", role: "Associate Professor, Department of Computer Science, Periyar University, Salem" },
   ];
 
    const internationalAdvisoryCommittee = [
@@ -81,10 +81,9 @@ const Committee = () => {
       icon: Award,
       color: "bg-gold",
       members: [
-        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Syndicate Member, Periyar University, Salem - 636 011" },
-        { name: "Prof. R. Subramani", role: "Syndicate Member, Periyar University, Salem - 636 011" },
-        { name: "Dr. S. Jayanthi", role: "Syndicate Member, Periyar University, Salem - 636 011" },
-
+        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Member- Vice Chancellor Committee, Member Syndicate, Periyar University, Salem - 636 011" },
+        { name: "Prof. R. Subramani", role: "Convenor, Member- Vice Chancellor Committee, Member Syndicate, Periyar University, Salem - 636 011" },
+        { name: "Dr. S. Jayanthi", role: "Convenor, Member- Vice Chancellor Committee, Member Syndicate, Periyar University, Salem - 636 011" },
       ],
     },
     {
@@ -104,16 +103,16 @@ const Committee = () => {
       ],
     },
     {
-      title: "Organizing Secretary",
+      title: "Organizing Secretaries",
       icon: Users,
       color: "bg-navy",
       members: [
-        { name: "Dr. H. Hannah Inbarani", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
-        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Periyar University, Salem, Tamilnadu, India" },
+        { name: "Dr. H. Hannah Inbarani", role: "Professor, Department of Computer Science, Periyar University, Salem" },
+        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Department of Computer Science, Periyar University, Salem" },
       ],
     },
     {
-      title: "Organizing Committee",
+      title: "Organizing Members",
       icon: Users,
       color: "bg-coral",
       members: organizingCommittee,
@@ -136,23 +135,31 @@ const Committee = () => {
 
         {/* Main Committee Cards */}
         {/* First Row: Chief Patron and Patron */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-6 md:mb-8">
-          <div className="flex flex-col md:flex-row gap-6">
-            {committees.slice(0, 2).map((committee) => (
-              <div
-                key={committee.title}
-                className="bg-white rounded-2xl overflow-hidden card-hover border border-gray-200 shadow-lg"
-                style={{ maxWidth: '100%', width: '100%' }}
-              >
-                <div className={`p-4 md:p-6 ${committee.title === 'Chief Patron' ? 'bg-gradient-to-r from-amber-600 to-yellow-600' : committee.title === 'Patron' ? 'bg-gradient-to-r from-blue-700 to-blue-800' : committee.title === 'Co-Patron' ? 'bg-gradient-to-r from-teal-600 to-teal-700' : 'bg-gradient-to-r from-emerald-600 to-emerald-700'}`}>
-                  <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
-                  <h3 className={`font-display font-bold text-xl text-primary-foreground ${
-                    committee.title === 'Chief Patron' ? 'text-2xl' : ''
-                  }`}>
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto">
+          {committees.slice(0, 2).map((committee, index) => (
+            <div
+              key={committee.title}
+              className={`rounded-lg shadow-lg overflow-hidden ${
+                index === 0 
+                  ? 'bg-white border-2 border-navy' 
+                  : 'bg-white border-2 border-teal'
+              }`}
+            >
+              <div className={`p-6 ${
+                index === 0 
+                  ? 'bg-navy' 
+                  : 'bg-teal'
+              }`}>
+                <div className="flex items-center gap-4">
+                  <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+                    <committee.icon className="w-12 h-12 text-white" />
+                  </div>
+                  <h3 className="font-display font-bold text-3xl text-white">
                     {committee.title}
                   </h3>
                 </div>
-                <div className="p-6 space-y-4">
+              </div>
+              <div className="p-6 space-y-4">
                   {committee.members.map((member) => (
                     <div key={member.name} className="flex items-center gap-3">
                         {member.name === "Dr. S. Jayanthi" && (
@@ -183,36 +190,33 @@ const Committee = () => {
                           <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
                         )}
                       <div>
-                        <p className={`font-display font-bold text-navy ${
-                          committee.title === 'Chief Patron' ? 'text-lg' : ''
-                        }`}>{member.name}</p>
-                        <p className={`text-sm text-muted-foreground ${
-                          committee.title === 'Chief Patron' ? 'text-base' : ''
-                        }`}>{member.role}</p>
+                        <p className="font-display font-bold text-xl text-navy">{member.name}</p>
+                        <p className="text-base text-slate-700 font-medium">{member.role}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-          </div>
         </div>
 
-        {/* Second Row: Co-Patron Centered */}
-        <div className="flex justify-center mb-6 md:mb-8">
-          <div style={{ maxWidth: '500px', width: '100%' }}>
-            {committees.slice(2, 3).map((committee) => (
-              <div
-                key={committee.title}
-                className="bg-background rounded-2xl overflow-hidden card-hover"
-                style={{ minHeight: '450px' }}
-              >
-                <div className={`${committee.color} p-6`}>
-                  <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
-                  <h3 className="font-display font-bold text-xl text-primary-foreground">
+        {/* Second Row: Co-Patron and Organizing Secretary */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto">
+          {committees.slice(2, 4).map((committee) => (
+            <div
+              key={committee.title}
+              className="bg-white border-l-4 border-l-coral border border-slate-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-coral/5 to-coral/10">
+                <div className="flex items-center gap-3">
+                  <div className="bg-coral p-2 rounded-lg">
+                    <committee.icon className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="font-display font-bold text-2xl text-navy">
                     {committee.title}
                   </h3>
                 </div>
+              </div>
                 <div className="p-6 space-y-4">
                   {committee.members.map((member) => (
                     <div key={member.name} className="flex items-center gap-3">
@@ -244,36 +248,32 @@ const Committee = () => {
                           <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-28 object-cover border border-slate" />
                         )}
                       <div>
-                        <p className="font-display font-bold text-navy">{member.name}</p>
-                        {"university" in member && "country" in member ? (
-                          <p className="text-sm text-muted-foreground">{(member as any).university}, {(member as any).country}</p>
-                        ) : (
-                          <p className="text-sm text-muted-foreground">{member.role}</p>
-                        )}
+                        <p className="font-display font-bold text-lg text-navy">{member.name}</p>
+                        <p className="text-base text-slate-600">{member.role}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-          </div>
         </div>
 
-
-        {/* Third Row: General Chair and Organizing Committee */}
-        <div className="flex justify-center mb-12 md:mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
-            {committees.slice(3).map((committee) => (
-              <div
-                key={committee.title}
-                className="bg-background rounded-2xl overflow-hidden card-hover"
-                style={{ maxWidth: '100%' }}
-              >
-              <div className={`${committee.color} p-6`}>
-                <committee.icon className="w-10 h-10 text-primary-foreground mb-3" />
-                <h3 className="font-display font-bold text-xl text-primary-foreground">
-                  {committee.title}
-                </h3>
+        {/* Third Row: Organizing Committee */}
+        <div className="max-w-3xl mx-auto mb-12">
+          {committees.slice(4, 5).map((committee) => (
+            <div
+              key={committee.title}
+              className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-teal/5 to-teal/10">
+                <div className="flex items-center gap-3">
+                  <div className="bg-teal p-2 rounded-lg">
+                    <committee.icon className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="font-display font-bold text-2xl text-navy">
+                    {committee.title}
+                  </h3>
+                </div>
               </div>
               <div className="p-6 space-y-4">
                 {committee.members.map((member) => (
@@ -306,19 +306,14 @@ const Committee = () => {
                         <img src="/sathish.jpeg" alt="Dr. S. Sathish" className="w-28 h-26 object-cover border border-slate" />
                       )}
                     <div>
-                      <p className="font-display font-bold text-navy">{member.name}</p>
-                      {"university" in member && "country" in member ? (
-                        <p className="text-sm text-muted-foreground">{(member as any).university}, {(member as any).country}</p>
-                      ) : (
-                        <p className="text-sm text-muted-foreground">{member.role}</p>
-                      )}
+                      <p className="font-display font-bold text-lg text-navy">{member.name}</p>
+                      <p className="text-base text-slate-600">{member.role}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
           ))}
-        </div>
         </div>
 
         {/* Advisory Committee */}
