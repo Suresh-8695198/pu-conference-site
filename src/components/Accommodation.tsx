@@ -42,7 +42,7 @@ const Accommodation = () => {
             <h3 className="font-display font-bold text-2xl text-navy">Accommodation</h3>
           </div>
           <p className="text-slate-700 mb-6 leading-relaxed">
-            Accommodation options will be available near the conference venue. Details will be provided closer to the event date. For inquiries, please contact the organizing committee.
+           Accommodation for participants will be arranged at the University Faculty Guest House on a payment basis, subject to availability and prior request.
           </p>
         </div>
 
