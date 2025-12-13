@@ -42,7 +42,7 @@ const CallForPapers = () => {
           {/* Left Content */}
           <div className="space-y-6">
             {/* Submission Requirements */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <FileText className="w-7 h-7 text-white" />
@@ -60,7 +60,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Manuscript Preparation */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <FileText className="w-7 h-7 text-white" />
@@ -80,7 +80,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Review and Publication */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <FileText className="w-7 h-7 text-white" />
@@ -99,7 +99,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Ethical Standards */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-7 h-7 text-white" />
@@ -119,7 +119,7 @@ const CallForPapers = () => {
           {/* Right Content */}
           <div className="space-y-6">
             {/* Submission */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <Send className="w-7 h-7 text-white" />
@@ -135,7 +135,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Publication Ethics */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-teal rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-7 h-7 text-white" />
@@ -156,27 +156,35 @@ const CallForPapers = () => {
             </div>
 
             {/* Submission Format */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <h3 className="font-display font-bold text-2xl mb-4 text-navy">
                 Paper Submission Format
               </h3>
               <p className="text-slate-700 mb-6 leading-relaxed">
-                All papers must be submitted in IEEE double column format. Please use the official IEEE template 
-                for your submission.
+                Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
               </p>
-              <a 
-                href="https://www.ieee.org/conferences/publishing/templates.html" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-coral text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-coral/90 transition-colors"
-              >
-                <FileText className="w-5 h-5" />
-                IEEE Template
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="/Manuscript_Guidelines.pdf" 
+                  download="Manuscript_Guidelines.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-coral text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-coral/90 transition-colors"
+                >
+                  <FileText className="w-5 h-5" />
+                  Manuscript Guidelines
+                </a>
+                <a 
+                  href="/Abstract_Guidelines.pdf" 
+                  download="Abstract_Guidelines.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-teal text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-teal/90 transition-colors"
+                >
+                  <FileText className="w-5 h-5" />
+                  Abstract Guidelines
+                </a>
+              </div>
             </div>
 
             {/* Publication */}
-            <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
               <h3 className="font-display font-bold text-2xl mb-4 text-navy">
                 Publication
               </h3>
