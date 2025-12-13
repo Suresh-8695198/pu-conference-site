@@ -89,9 +89,6 @@ const Tracks = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
-            Conference Topics
-          </span>
           <h2 className="section-title">
             Research <span className="text-coral">Tracks</span>
           </h2>

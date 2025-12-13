@@ -46,7 +46,7 @@ const Committee = () => {
    const internationalAdvisoryCommittee = [
     { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/Ahmed.jpeg" },
     { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
-    { name: "Dr. Ganesh R. Naik", university: "Torrens University / Flinders University", country: "Australia", image: "/Ganesh Naik.jpeg" },
+    { name: "Dr. Ganesh R. Naik", university: "Flinders University", country: "Australia", image: "/Ganesh Naik.jpeg" },
     { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/Gunasekaran Thangavel.jpeg" },
     { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
     { name: "Prof. Luis Martinez Lopez", university: "University of Jaén", country: "Spain", image: "/Luis Martinez Lopez.jpg" },
@@ -65,23 +65,23 @@ const Committee = () => {
     { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Salom Jerlin", role: "Managing Director", university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin",  university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
-    { name: "Dr. Neeta Nain", role: "Associate Professor, Department of Computer Science & Engineering", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
-    { name: "Nivas K", role: "Technical Professional", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
+    { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
+    { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Leela Velusamy.jpg" },
     { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", location: "Lavale, Pune, Maharashtra, India", country: "India", image: "/Saikat Gochhait.jpg" },
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
-    { name: "Dr. Senthilkumar Sengottaiyan", role: "Senior Developer Analyst", university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
+    { name: "Dr. Senthilkumar Sengottaiyan",  university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani", role: "Founder, Editor & Reviewer", university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani",  university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Dr. M. Thangarsu", role: "AI Technical Specialist", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarsu.jpg" },
-    { name: "Dr. S. Udhaya Kumar", role: "Assistant Vice President (Principal Data Scientist)", university: "HDFC Bank", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
+    { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
+    { name: "Dr. S. Udhaya Kumar", university: "HDFC Bank", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
   ];
 
@@ -89,10 +89,10 @@ const Committee = () => {
     { name: "Dr. S. Angelin Sophy", role: "—", image: "/Angelin Sophy.jpg" },
     { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India", image: "/Arul Pon Daniel.jpg" },
     { name: "Dr. M. Bagyamathi", role: "—", image: "/Bagyamathi.jpg" },
-    { name: "Dr. T. Dharani", role: "RRCE, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
+    { name: "Dr. T. Dharani", role: "Rajarajeswari College of Engineering, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
     { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Gowthamarayathirumal.jpg" },
     { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Jothi.jpg" },
-    { name: "Dr. G. Kavitha", role: "—", image: "/Kavitha.jpg" },
+    { name: "Dr. G. Kavitha", role: "Vinayaka Mission's Kirupananda Variyar Engineering College, Salem, Tamil Nadu, India", image: "/Kavitha.jpg" },
     { name: "Dr. B. Lavanya", role: "—", image: "/Lavanya.jpg" },
     { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
     { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
@@ -112,7 +112,7 @@ const Committee = () => {
     { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
     { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
-    { name: "Professor Vijaya A", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
+    { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
   ];
 
   const committees = [
@@ -139,7 +139,7 @@ const Committee = () => {
       icon: Briefcase,
       color: "bg-coral",
       members: [
-        { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University" },
+        { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University, Salem" },
       ],
     },
     {
@@ -342,9 +342,7 @@ const Committee = () => {
                     )}
                     <div>
                       <p className="font-display font-bold text-navy">{member.name}</p>
-                      {member.role && (
-                        <p className="text-sm text-slate-600 font-medium">{member.role}</p>
-                      )}
+                      
                       <p className="text-sm text-muted-foreground">{member.university}</p>
                       <p className="text-sm text-muted-foreground">{member.location}</p>
                     </div>

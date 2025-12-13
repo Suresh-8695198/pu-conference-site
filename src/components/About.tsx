@@ -79,7 +79,7 @@ const About = () => {
         {/* SDG Cards */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="font-display font-bold text-3xl text-navy mb-4">
+            <h3 className="font-display  font-bold text-3xl text-navy mb-4">
               Conference Focus Areas
             </h3>
             <p className="text-lg text-slate-700 max-w-2xl mx-auto">
@@ -96,7 +96,7 @@ const About = () => {
                 <h3 className="font-display font-bold text-lg mb-3 text-navy">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-slate-700 leading-relaxed flex-grow">
+                <p className="text-sm text-slate-700  justify-start leading-relaxed flex-grow">
                   {feature.description}
                 </p>
               </div>
