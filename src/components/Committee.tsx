@@ -364,7 +364,7 @@ const Committee = () => {
         </div>
 
         {/* Advisory Committee */}
-        <div className="bg-background rounded-2xl p-4 md:p-8 mt-16">
+        <div className="bg-[#efeee3] rounded-2xl p-4 md:p-8 mt-16">
           <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
             Advisory Committee
           </h3>
@@ -439,7 +439,7 @@ const Committee = () => {
         </div>
 
         {/* Academic & Technical Leadership */}
-        <div className="bg-background rounded-2xl p-4 md:p-8 mt-16">
+        <div className="bg-[#efeee3] rounded-2xl p-4 md:p-8 mt-16">
           <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
             Academic & Technical Leadership
           </h3>

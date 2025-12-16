@@ -52,12 +52,12 @@ const Registration = () => {
           {categories.map((category) => (
             <div
               key={category.title}
-              className={`rounded-lg overflow-hidden card-hover shadow-sm border bg-white border-slate-200 w-full max-w-sm`}
+              className={`rounded-lg overflow-hidden card-hover shadow-sm border bg-[#efeee3] border-slate-200 w-full max-w-sm`}
             >
               <div className="p-6 flex flex-col">
                 <div className="mb-4 min-h-[88px]">
                   <category.icon className={`w-10 h-10 mb-3 text-teal`} />
-                  <h3 className={`font-display font-bold text-lg text-navy`}>
+                  <h3 className={`font-display font-bold text-lg text-[#0b3d2e]`}>
                     {category.title}
                   </h3>
                 </div>
@@ -65,16 +65,16 @@ const Registration = () => {
                 <div className="space-y-3 mt-0">
                   {category.indian && (
                     <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
-                      <p className={`text-sm mb-1 text-slate-600`}>Indian Participants</p>
-                      <p className={`font-display font-bold text-2xl text-navy`}>
+                      <p className={`text-sm mb-1 text-[#0b3d2e]`}>Indian Participants</p>
+                      <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
                         {category.indian}
                       </p>
                     </div>
                   )}
                   {category.foreign && (
                     <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
-                      <p className={`text-sm mb-1 text-slate-600`}>International Participants (Outside India)</p>
-                      <p className={`font-display font-bold text-2xl text-navy`}>
+                      <p className={`text-sm mb-1 text-[#0b3d2e]`}>International Participants (Outside India)</p>
+                      <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
                         {category.foreign}
                       </p>
                     </div>
