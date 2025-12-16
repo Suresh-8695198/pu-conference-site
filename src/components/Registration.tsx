@@ -11,7 +11,7 @@ const Registration = () => {
     {
       title: "Full-time Research Scholars (Post-Doctoral/Ph.D) / PG Students",
       icon: Users,
-      indian: "₹4,500",
+      indian: "₹5,000",
       foreign: "",
     },
     {
@@ -24,7 +24,7 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$75",
+      foreign: "$100",
     },
   ];
 
