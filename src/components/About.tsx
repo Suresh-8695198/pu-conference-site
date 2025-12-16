@@ -43,8 +43,7 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-                PUBLICATION ANNOUNCEMENT: Selected high-quality papers from ICAITSC 2026 will be published as post-conference proceedings in the edited book titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", to be published by CRC Press, Taylor & Francis Group.
-              </span>
+              Selected high-quality papers from ICAITSC 2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific.              </span>
             </div>
           </div>
         </div>

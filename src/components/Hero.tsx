@@ -36,6 +36,9 @@ const Hero = () => {
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 xl:gap-6 2xl:gap-8 mb-4 sm:mb-6">
               <img src="/logo.jpg" alt="Periyar University Logo" className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
               <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
+              <div className="flex flex-col items-center">
+                <img src="/colob.png" alt="Colobarrative Partner" className="h-14 sm:h-16 md:h-18 xl:h-20 2xl:h-24 w-auto object-contain rounded-md shadow-sm border border-white/20" />
+              </div>
             </div>
             {/* Title */}
             <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">ICAITSC 2026</span>
