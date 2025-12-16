@@ -21,11 +21,15 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. Manikandan Kumar": "/Manikandan_Kumar.jpg",
     "Dr. P. Shanmuga Sundari": "/P_Shanmuga_Sundari.jpg",
     "Dr. J. Frank Ruban Jebaraj": "/J_Frank_Ruban_Jebaraj.png",
-    "Dr. T RAMESH": "/T_RAMESH.jpg",
+    "Dr. T. RAMESH": "/T_RAMESH.jpg",
     "Dr. D NAPOLEON": "/D_NAPOLEON.jpg",
     "Dr. W. Rose verna, M.C.A Ph.D": "/W_Rose_verna.jpg",
     "Dr. ABDUL GAFFAR H": "/ABDUL_GAFFAR_H.jpg",
     "Dr. Murali S": "/Murali_S.jpg",
+    // Images for recently added national advisory members
+    "Mohanasundaram Ranganathan": "/Mohanasundaram_Ranganathan.jpeg",
+    "Dr. Vijayarajan R": "/Vijayarajan_R.jpeg",
+    "Dr. Nagarajan Deivanayagam Pillai": "/Nagarajan_Deivanayagam_Pillai.jpg",
   };
 
   const findImageSrc = (name: string) => {
@@ -81,15 +85,58 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
 const Committee = () => {
   const titleCaseName = (s: string) => {
     if (!s) return s;
-    return s
-      .split(/\s+/)
-      .map((w) => {
-        // leave initials (single letters) uppercase, and preserve words with dots (e.g., M.C.A)
-        if (w.length === 1) return w.toUpperCase();
-        if (/[.]/.test(w)) return w;
-        return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-      })
-      .join(' ');
+
+    // Extract a leading title if present (Dr., Prof., Mr., Ms., Mrs., Tmt.)
+    const titleMatch = s.match(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)/i);
+    const title = titleMatch ? titleMatch[0].trim() : '';
+
+    // Remove any leading title and drop trailing comma-suffixed qualifications (e.g., ", I.A.S.")
+    let rest = s.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '');
+    rest = rest.split(',')[0].trim();
+
+    // Split into tokens and normalize
+    const tokens = rest.replace(/[.]/g, '').split(/\s+/).filter(Boolean);
+    if (tokens.length === 0) return s;
+
+    const isInitial = (t: string) => t.length === 1;
+
+    let initial = '';
+    let surname = '';
+
+    if (tokens.length === 1) {
+      // Single token name -> just title-case it
+      surname = tokens[0];
+    } else {
+      // Try to find an explicit initial token (single letter)
+      const idx = tokens.findIndex(isInitial);
+      if (idx !== -1) {
+        initial = tokens[idx];
+        const remaining = tokens.filter((_, i) => i !== idx);
+        surname = remaining.join(' ');
+      } else {
+        // No explicit initial: use first letter of first token as initial,
+        // and use the remaining tokens as surname
+        initial = tokens[0].charAt(0);
+        surname = tokens.slice(1).join(' ');
+      }
+    }
+
+    const makeTitleCase = (str: string) =>
+      str
+        .split(/\s+/)
+        .map((w) => {
+          if (w.length === 1) return w.toUpperCase();
+          if (/^[A-Z0-9]+$/.test(w)) return w; // keep acronyms as-is
+          return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+        })
+        .join(' ');
+
+    let out = '';
+    if (title) out += title + ' ';
+    if (initial) out += initial.toUpperCase() + '. ';
+    out += makeTitleCase(surname || tokens[0]);
+
+    return out.trim();
   };
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
@@ -116,7 +163,7 @@ const Committee = () => {
   ];
 
   const nationalAdvisoryCommittee = [
-    { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut,", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
+    // { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut,", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
@@ -125,7 +172,7 @@ const Committee = () => {
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
     { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
-    { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
+    { name: "K. Nivas", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
     { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Leela Velusamy.jpg" },
     { name: "Dr. Saikat Gochhait", university: "Symbiosis International University,", location: "Lavale, Pune, Maharashtra, India", country: "India", image: "/Saikat Gochhait.jpg" },
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
@@ -137,6 +184,9 @@ const Committee = () => {
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur,", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
     { name: "Dr. S. Udhaya Kumar", university: "Assistant Vice President (Principal Data Scientist), HDFC Bank,", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa,", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
+    { name: "Mohanasundaram Ranganathan", university: "School of Computing Science and Engineering, Vellore Institute of Technology (VIT University)", location: "Vellore, Tamil Nadu, India", country: "India", image: "/Mohanasundaram_Ranganathan.jpeg" },
+    { name: "Dr. Vijayarajan R", university: "Vellore Institute of Technology University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Vijayarajan_R.jpeg" },
+    { name: "Dr. Nagarajan Deivanayagam Pillai", university: "Chettinad Institute of Technology, Chettinad Academy of Research and Education", location: "Chennai, India", country: "India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
       // Remove titles like Dr., Prof., Mr., Ms., Mrs., Tmt.
@@ -183,9 +233,9 @@ const Committee = () => {
     { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
     { name: "Dr. T. RAMESH", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/T_RAMESH.jpg" },
     { name: "Dr. D. NAPOLEON", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
-    { name: "Dr. W. Rose verna, M.C.A Ph.D", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
+    { name: "Dr. W. Rose verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
     { name: "Dr. H. ABDUL GAFFAR", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
-    { name: "Dr. S. Murali", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
+    // { name: "Dr. S. Murali", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
       let cleaned = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '').trim();

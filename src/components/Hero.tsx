@@ -33,7 +33,9 @@ const Hero = () => {
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 xl:gap-6 2xl:gap-8 mb-4 sm:mb-6">
               <img src="/icaitsc.png" alt="Periyar University Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
               <img src="/logo.jpg" alt="ICAITSC Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
-              
+              <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
+                  <img src="/colob.png" alt="Partner 4" className="h-12 sm:h-14 md:h-16 object-contain" />
+                </div>  
             </div>
             {/* Partners (single row logos) */}
             <div className="w-full overflow-x-auto mt-3 mb-2">
@@ -44,12 +46,7 @@ const Hero = () => {
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
                   <img src="/partner2.jpeg" alt="Partner 2" className="h-12 sm:h-14 md:h-16 object-contain" />
                 </div>
-                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
-                  <img src="/partner3.jpeg" alt="Partner 3" className="h-12 sm:h-14 md:h-16 object-contain" />
-                </div>
-                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
-                  <img src="/colob.png" alt="Partner 4" className="h-12 sm:h-14 md:h-16 object-contain" />
-                </div>
+                
               </div>
             </div>
 

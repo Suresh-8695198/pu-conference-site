@@ -66,8 +66,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <h3 className="font-display font-bold text-2xl text-navy mb-4">Organizing Secretaries</h3>
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-4">
                   <div className="w-12 h-12 bg-teal rounded-lg flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-white" />

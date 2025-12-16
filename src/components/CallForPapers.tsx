@@ -150,7 +150,7 @@ const CallForPapers = () => {
                 <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
                 <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
                 <li>Any paper exceeding the permitted plagiarism or AI-content limits will be outright rejected without review.</li>
-                <li>Authors must conduct a plagiarism check before submission and upload their own plagiarism report along with the paper.</li>
+                <li>Authors must conduct a plagiarism check before submission and upload both the Plagiarism Report and the AI Plagiarism Report generated using Turnitin along with the paper.</li>
                 <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
               </ol>
             </div>
