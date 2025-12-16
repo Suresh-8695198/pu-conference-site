@@ -103,19 +103,29 @@ const Committee = () => {
     let initial = '';
     let surname = '';
 
+    if (!title) {
+      // No title present: return full name in title case (do not abbreviate)
+      const makeTitleCase = (str: string) =>
+        str
+          .split(/\s+/)
+          .map((w) => {
+            if (w.length === 1) return w.toUpperCase();
+            if (/^[A-Z0-9]+$/.test(w)) return w;
+            return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+          })
+          .join(' ');
+      return makeTitleCase(rest);
+    }
+
     if (tokens.length === 1) {
-      // Single token name -> just title-case it
       surname = tokens[0];
     } else {
-      // Try to find an explicit initial token (single letter)
       const idx = tokens.findIndex(isInitial);
       if (idx !== -1) {
         initial = tokens[idx];
         const remaining = tokens.filter((_, i) => i !== idx);
         surname = remaining.join(' ');
       } else {
-        // No explicit initial: use first letter of first token as initial,
-        // and use the remaining tokens as surname
         initial = tokens[0].charAt(0);
         surname = tokens.slice(1).join(' ');
       }
@@ -167,7 +177,7 @@ const Committee = () => {
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, Tamilnadu, India", country: "India", image: "/sowmiya.jpg" },
     { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
@@ -178,7 +188,7 @@ const Committee = () => {
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.,", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Salom Jerlin", university: "Hitakey Tech Solution,", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin", university: "Hitakey Tech Solution, Trichy", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT),", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur,", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
