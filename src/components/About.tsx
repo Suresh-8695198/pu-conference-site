@@ -10,7 +10,7 @@ const About = () => {
     {
       icon: Target,
       title: "SDG 4 – Quality Education",
-      description: "ICAITSC 2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
+      description: "ICAITSC-2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
     },
     {
       icon: Users,
@@ -33,7 +33,7 @@ const About = () => {
             About the Conference
           </span>
           <h2 className="section-title">
-            Welcome to <span className="text-teal">ICAITSC 2026</span>
+            Welcome to <span className="text-teal">ICAITSC-2026</span>
           </h2>
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
         </div>
@@ -43,7 +43,7 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-              Selected high-quality papers from ICAITSC 2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific; both publications are indexed by Scopus.
+              Selected high-quality papers from ICAITSC-2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific; both publications are indexed by Scopus.
               </span>
             </div>
           </div>
@@ -83,7 +83,7 @@ const About = () => {
               Conference Focus Areas
             </h3>
             <p className="text-lg text-slate-700 max-w-2xl mx-auto text-justify leading-relaxed">
-              ICAITSC 2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
+              ICAITSC-2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

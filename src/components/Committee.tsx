@@ -440,9 +440,6 @@ const Committee = () => {
 
         {/* Academic & Technical Leadership */}
         <div className="bg-[#efeee3] rounded-2xl p-4 md:p-8 mt-16">
-          <h3 className="font-display font-bold text-2xl text-navy text-center mb-8">
-            Academic & Technical Leadership
-          </h3>
 
           {/* Technical Leadership */}
           <div className="mb-12">

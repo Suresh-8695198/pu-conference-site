@@ -24,23 +24,37 @@ const Hero = () => {
       <div className="container mx-auto px-4 mb-0 pt-16 sm:pt-10 md:pt-14 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-1 sm:mb-2 xl:mb-10 2xl:mb-8 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
-            <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
-          </div>
+           
+          
 
-
-          {/* Logo + ICAITSC 2026 Card */}
-          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 2xl:mt-10 bg-white rounded-xl shadow-lg px-6 py-8 sm:px-8 sm:py-10 md:px-8 md:py-10 xl:px-8 xl:py-10 2xl:px-10 2xl:py-12 mb-6 sm:mb-8 md:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in max-w-full sm:max-w-lg md:max-w-xl xl:max-w-xl 2xl:max-w-2xl mx-auto">
+          {/* Logo + ICAITSC-2026 Card */}
+          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 2xl:mt-10 bg-white border-4 border-gray-400  rounded-xl shadow-lg px-6 py-8 sm:px-8 sm:py-10 md:px-8 md:py-10 xl:px-8 xl:py-10 2xl:px-8 2xl:py-12 mb-6 sm:mb-8 md:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in max-w-full sm:max-w-xl md:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto">
             {/* Logos Row */}
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 xl:gap-6 2xl:gap-8 mb-4 sm:mb-6">
-              <img src="/logo.jpg" alt="Periyar University Logo" className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
-              <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
-              <div className="flex flex-col items-center">
-                <img src="/colob.png" alt="Colobarrative Partner" className="h-14 sm:h-16 md:h-18 xl:h-20 2xl:h-24 w-auto object-contain rounded-md shadow-sm border border-white/20" />
+              <img src="/icaitsc.png" alt="Periyar University Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
+              <img src="/logo.jpg" alt="ICAITSC Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
+              
+            </div>
+            {/* Partners (single row logos) */}
+            <div className="w-full overflow-x-auto mt-3 mb-2">
+              <div className="flex items-center justify-center gap-3 sm:gap-5 flex-nowrap px-1">
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
+                  <img src="/partner1.jpeg" alt="Partner 1" className="h-12 sm:h-14 md:h-16 object-contain" />
+                </div>
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
+                  <img src="/partner2.jpeg" alt="Partner 2" className="h-12 sm:h-14 md:h-16 object-contain" />
+                </div>
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
+                  <img src="/partner3.jpeg" alt="Partner 3" className="h-12 sm:h-14 md:h-16 object-contain" />
+                </div>
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
+                  <img src="/colob.png" alt="Partner 4" className="h-12 sm:h-14 md:h-16 object-contain" />
+                </div>
               </div>
             </div>
+
             {/* Title */}
-            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">ICAITSC 2026</span>
+            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl mt-5 font-bold text-navy text-center block">ICAITSC-2026</span>
           </div>
 
           {/* Main Title */}
@@ -56,7 +70,7 @@ const Hero = () => {
 
          
           {/* Info Cards */}
-          <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 animate-fade-in px-4" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-8 animate-fade-in px-4" style={{ animationDelay: "0.3s" }}>
             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
               <Calendar className="w-5 h-5 text-coral flex-shrink-0" />
               <span className="text-white font-medium text-base drop-shadow-sm">26-27 February 2026</span>

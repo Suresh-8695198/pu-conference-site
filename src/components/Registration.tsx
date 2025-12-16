@@ -141,9 +141,10 @@ const Registration = () => {
               {[
                 { label: "Account Name", value: "Periyar University Conference Account" },
                 { label: "Account Number", value: "1234567890" },
-                { label: "Bank Name", value: "State Bank of India" },
+                { label: "Bank Name", value: "Canara Bank" },
                 { label: "Branch", value: "Periyar University Campus" },
-                { label: "IFSC Code", value: "SBIN0001234" },
+                { label: "IFSC Code", value: "CNRB0008450" },
+                { label: "MICR Code", value: "636015024" }
               ].map((item) => (
                 <div key={item.label} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-200 pb-3 gap-1">
                   <span className="text-slate-600 break-words">{item.label}</span>
