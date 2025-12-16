@@ -123,7 +123,30 @@ const Committee = () => {
     { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
     { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
-  ];
+    // New entries added by user
+    { name: "Dr. R Porkodi", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. Kaja Mohideen A", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India" },
+    { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. P. Shanmuga Sundari", role: "SRMIST, Trichy, Tamil Nadu, India" },
+    { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India" },
+    { name: "Dr. T RAMESH", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. D Napoleon", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. W. Rose verna, M.C.A Ph.D", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
+    { name: "Dr. ABDUL GAFFAR H", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India" },
+    { name: "Dr. Murali S", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India" },
+  ].sort((a, b) => {
+    const getFirstName = (name: string) => {
+      let cleaned = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '').trim();
+      const words = cleaned.split(/\s+/);
+      for (const word of words) {
+        if (word.length > 2 && !word.endsWith('.')) {
+          return word.toLowerCase();
+        }
+      }
+      return cleaned.toLowerCase();
+    };
+    return getFirstName(a.name).localeCompare(getFirstName(b.name));
+  });
 
   const committees = [
     {
