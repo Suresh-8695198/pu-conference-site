@@ -56,7 +56,7 @@ const Accommodation = () => {
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Air</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed">
+            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify">
               <li>• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
               <li>• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
               <li>• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>

@@ -86,10 +86,9 @@ const Speakers = () => {
               <div className="flex-1">
                 <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
                 <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong>Assistant Professor</strong></p>
                   <p><strong>Chan Zuckerberg Imaging Scientist</strong></p>
-                  <p>Assistant Professor at the Center for Magnetic Resonance Research (CMRR)</p>
-                  <p>University of Minnesota (UMN)</p>
+                  <p>Center for Magnetic Resonance Research (CMRR)</p>
+                  <p>University of Minnesota (UMN),United States</p>
                 </div>
               </div>
             </div>
