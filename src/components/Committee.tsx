@@ -79,6 +79,18 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
 };
 
 const Committee = () => {
+  const titleCaseName = (s: string) => {
+    if (!s) return s;
+    return s
+      .split(/\s+/)
+      .map((w) => {
+        // leave initials (single letters) uppercase, and preserve words with dots (e.g., M.C.A)
+        if (w.length === 1) return w.toUpperCase();
+        if (/[.]/.test(w)) return w;
+        return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+      })
+      .join(' ');
+  };
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
     { name: "Dr. S. Sathish", role: "Associate Professor, Department of Computer Science, Periyar University, Salem" },
@@ -107,8 +119,8 @@ const Committee = () => {
     { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut,", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
-    { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: " Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, India", country: "India", image: "/sowmiya.jpg" },
     { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
@@ -119,7 +131,7 @@ const Committee = () => {
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.,", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Salom Jerlin", university: "Hitakey Tech Solution,", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin", university: "Hitakey Tech Solution,", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT),", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur,", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
@@ -146,7 +158,7 @@ const Committee = () => {
     { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Gowthamarayathirumal.jpg" },
     { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Jothi.jpg" },
     // { name: "Dr. G. Kavitha", role: "Vinayaka Mission's Kirupananda Variyar Engineering College, Salem, Tamil Nadu, India", image: "/Kavitha.jpg" },
-    { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
+    { name: "Dr. V. Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
     // { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
     // { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
     { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India", image: "/Sasirekha.jpg" },
@@ -277,7 +289,7 @@ const Committee = () => {
                     <div key={member.name} className="flex items-center gap-3">
                       <MemberImage name={member.name} />
                       <div>
-                        <p className="font-display font-bold text-xl text-navy">{member.name}</p>
+                        <p className="font-display font-bold text-xl text-navy">{titleCaseName(member.name)}</p>
                         <p className="text-base text-slate-700 font-medium">{member.role}</p>
                       </div>
                     </div>
@@ -309,7 +321,7 @@ const Committee = () => {
                     <div key={member.name} className="flex items-center gap-3">
                       <MemberImage name={member.name} />
                       <div>
-                        <p className="font-display font-bold text-lg text-navy">{member.name}</p>
+                        <p className="font-display font-bold text-lg text-navy">{titleCaseName(member.name)}</p>
                         <p className="text-base text-slate-600">{member.role}</p>
                       </div>
                     </div>
@@ -341,7 +353,7 @@ const Committee = () => {
                   <div key={member.name} className="flex items-center gap-3">
                     <MemberImage name={member.name} />
                     <div>
-                      <p className="font-display font-bold text-lg text-navy">{member.name}</p>
+                      <p className="font-display font-bold text-lg text-navy">{titleCaseName(member.name)}</p>
                       <p className="text-base text-slate-600">{member.role}</p>
                     </div>
                   </div>
@@ -371,7 +383,7 @@ const Committee = () => {
                     {member.image && !imgError ? (
                       <img
                         src={member.image}
-                        alt={member.name}
+                        alt={titleCaseName(member.name)}
                         className="w-14 h-14 object-cover shrink-0"
                         onError={() => setImgError(true)}
                       />
@@ -381,7 +393,7 @@ const Committee = () => {
                       </div>
                     )}
                     <div>
-                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="font-display font-bold text-navy">{titleCaseName(member.name)}</p>
                       <p className="text-sm text-muted-foreground">{member.university}, {member.country}</p>
                     </div>
                   </div>
@@ -404,7 +416,7 @@ const Committee = () => {
                     {member.image && !imgError ? (
                       <img
                         src={member.image}
-                        alt={member.name}
+                        alt={titleCaseName(member.name)}
                         className="w-14 h-14 object-cover shrink-0"
                         onError={() => setImgError(true)}
                       />
@@ -414,7 +426,7 @@ const Committee = () => {
                       </div>
                     )}
                     <div>
-                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="font-display font-bold text-navy">{titleCaseName(member.name)}</p>
                       
                       <p className="text-sm text-muted-foreground">{member.university}</p>
                       <p className="text-sm text-muted-foreground">{member.location}</p>
@@ -446,7 +458,7 @@ const Committee = () => {
                     {member.image && !imgError ? (
                       <img
                         src={member.image}
-                        alt={member.name}
+                        alt={titleCaseName(member.name)}
                         className="w-14 h-14 object-cover shrink-0"
                         onError={() => setImgError(true)}
                       />
@@ -456,7 +468,7 @@ const Committee = () => {
                       </div>
                     )}
                     <div>
-                      <p className="font-display font-bold text-navy">{member.name}</p>
+                      <p className="font-display font-bold text-navy">{titleCaseName(member.name)}</p>
                       <p className="text-sm text-muted-foreground">{member.role}</p>
                     </div>
                   </div>
@@ -479,7 +491,7 @@ const Committee = () => {
                     {member.image && !imgError ? (
                       <img
                         src={member.image}
-                        alt={member.name}
+                        alt={titleCaseName(member.name)}
                         className="w-14 h-14 object-cover shrink-0"
                         onError={() => setImgError(true)}
                       />
