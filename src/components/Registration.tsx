@@ -155,7 +155,7 @@ const Registration = () => {
             <h3 className="font-display font-bold text-2xl mb-4 text-white">
               Ready to Register?
             </h3>
-            <p className="text-white/90 mb-6">
+            <p className="text-white/90 mb-6 text-justify">
               Complete your registration by filling out the form and making the payment.
             </p>
             <a
@@ -168,7 +168,7 @@ const Registration = () => {
         </div>
 
         {/* Note */}
-        <p className="text-center text-slate-600 text-sm mt-8">
+        <p className="text-slate-600 text-sm mt-8 text-justify leading-relaxed max-w-5xl mx-auto">
           Conference registration will commence on 25 December 2025 and close on 5 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper to be included in the conference proceedings.
         </p>
       </div>

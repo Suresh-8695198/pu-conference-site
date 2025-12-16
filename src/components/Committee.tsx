@@ -66,7 +66,7 @@ const Committee = () => {
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani",  university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
     { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
@@ -75,9 +75,9 @@ const Committee = () => {
     { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Leela Velusamy.jpg" },
     { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", location: "Lavale, Pune, Maharashtra, India", country: "India", image: "/Saikat Gochhait.jpg" },
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
-    { name: "Dr. Senthilkumar Sengottaiyan",  university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
+    { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Salom Jerlin",  university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin", university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
@@ -215,7 +215,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-xl text-navy">{member.name}</p>
-                        <p className="text-base text-slate-700 font-medium justify-center ">{member.role}</p>
+                        <p className="text-base text-slate-700 font-medium">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -247,7 +247,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-lg text-navy">{member.name}</p>
-                        <p className="text-base text-slate-600 justify-center">{member.role}</p>
+                        <p className="text-base text-slate-600">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -279,7 +279,7 @@ const Committee = () => {
                     <MemberImage name={member.name} />
                     <div>
                       <p className="font-display font-bold text-lg text-navy">{member.name}</p>
-                      <p className="text-base text-slate-600 justify-center">{member.role}</p>
+                      <p className="text-base text-slate-600">{member.role}</p>
                     </div>
                   </div>
                 ))}

@@ -22,7 +22,7 @@ const Contact = () => {
               <h3 className="font-display font-bold text-2xl text-navy mb-6">
                 Conference Secretariat
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-justify">
                 For any queries regarding the conference, paper submission, or registration, 
                 please feel free to contact us.
               </p>
@@ -36,10 +36,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-display font-bold text-navy mb-1">Address</h4>
                   <p className="text-muted-foreground break-words">
-                    Department of Computer Science<br />
-                    Periyar University<br />
-                    Salem - 636011<br />
-                    Tamil Nadu, India
+                    Department of Computer Science,<br />
+                    Periyar University,<br />
+                    Salem - 636011,<br />
+                    Tamil Nadu, India.
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-display font-bold text-navy mb-1">Dr. H. Hannah Inbarani</h4>
-                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science</p>
+                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science,</p>
                     <p className="text-muted-foreground mb-1">Periyar University, Salem</p>
                     <p className="text-teal font-medium">Ph: 9865380392</p>
                   </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-display font-bold text-navy mb-1">Dr. I. Laurence Aroquiaraj</h4>
-                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science</p>
+                    <p className="text-muted-foreground mb-1">Professor, Department of Computer Science,</p>
                     <p className="text-muted-foreground mb-1">Periyar University, Salem</p>
                     <p className="text-teal font-medium">Ph: 8807058505</p>
                   </div>

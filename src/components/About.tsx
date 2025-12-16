@@ -66,7 +66,7 @@ const About = () => {
               Download Brochure
             </a>
             <a
-              href="/Schedules.pdf"
+              href="/Schedule.pdf"
                 download="ICAITSC_2026_Schedule.pdf"
               className="inline-flex items-center justify-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-coral/90 transition-colors shadow-sm"
             >
