@@ -49,19 +49,19 @@ const Accommodation = () => {
         {/* How to Reach */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* By Air */}
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
-                <Plane className="w-5 h-5 text-white" />
+              <Plane className="w-5 h-5 text-white" />
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Air</h4>
             </div>
             <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify">
-              <li>• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
-              <li>• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
-              <li>• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
+              <li className="text-justify">• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
+              <li className="text-justify">• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
+              <li className="text-justify">• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
             </ul>
-          </div>
+            </div>
 
           {/* By Train */}
           <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
