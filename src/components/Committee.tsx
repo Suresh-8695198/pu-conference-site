@@ -63,28 +63,42 @@ const Committee = () => {
 
   const nationalAdvisoryCommittee = [
     { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
+    { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh", location: "Tadepalligudem, Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Salom Jerlin",  university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani",  university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
     { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
     { name: "Nivas K", university: "Sify Technologies Pvt. Ltd.", location: "Tidel Park, Chennai, Tamil Nadu, India", country: "India", image: "/Nivas.jpg" },
-    { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. R. Leela Velusamy", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Leela Velusamy.jpg" },
     { name: "Dr. Saikat Gochhait", university: "Symbiosis International University", location: "Lavale, Pune, Maharashtra, India", country: "India", image: "/Saikat Gochhait.jpg" },
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan",  university: "Ant Philosophy Technology & Services Pvt. Ltd.", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani",  university: "Sowmis_AWW", location: "India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Salom Jerlin",  university: "Hitakey Tech Solution", location: "India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
+    { name: "Tzung-Pei Hong", university: "National University of Kaohsiung", location: "Kaohsiung, Taiwan", country: "Taiwan", image: "/Tzung-Pei Hong.jpg" },
     { name: "Dr. S. Udhaya Kumar", university: "HDFC Bank", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
-  ];
-
+  ].sort((a, b) => {
+    const getFirstName = (name: string) => {
+      // Remove titles like Dr., Prof., Mr., Ms., Mrs., Tmt.
+      let cleaned = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '').trim();
+      // Split into words and find first word that's not an initial (length > 2)
+      const words = cleaned.split(/\s+/);
+      for (const word of words) {
+        if (word.length > 2 && !word.endsWith('.')) {
+          return word;
+        }
+      }
+      return cleaned; // fallback
+    };
+    return getFirstName(a.name).localeCompare(getFirstName(b.name));
+  });
   const academicLeadership = [
     { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India", image: "/Arul Pon Daniel.jpg" },
     { name: "Dr. T. Dharani", role: "Rajarajeswari College of Engineering, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
