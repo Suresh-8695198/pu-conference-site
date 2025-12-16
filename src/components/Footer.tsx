@@ -54,12 +54,7 @@ const Footer = () => {
                   icaitsc2026@periyaruniversity.ac.in
                 </span>
               </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-coral shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">
-                  +91 427 234 5678
-                </span>
-              </li>
+            
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/70 text-sm">

@@ -88,7 +88,7 @@ const Accommodation = () => {
             <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
               <li>Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
               <li>Frequent state and private buses operate from all major cities.</li>
-              <li>From Salem bus stands, the University is 15–20 minutes away by bus, auto, or taxi.</li>
+              <li>From Salem bus stand, the University is 15–20 minutes away by bus, auto, or taxi.</li>
             </ul>
           </div>
         </div>
