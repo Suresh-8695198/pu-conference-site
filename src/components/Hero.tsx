@@ -26,7 +26,6 @@ const Hero = () => {
           <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 border border-white/30 text-white px-4 sm:px-6 xl:px-6 2xl:px-8 py-3 rounded-full mb-1 sm:mb-2 xl:mb-10 2xl:mb-8 animate-fade-in text-sm sm:text-base xl:text-base 2xl:text-lg backdrop-blur-sm drop-shadow-lg">
             <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
-            <span className="font-medium">International Conference 2026</span>
           </div>
 
 

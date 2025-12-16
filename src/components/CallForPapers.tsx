@@ -71,7 +71,7 @@ const CallForPapers = () => {
                 </div>
               </div>
               <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
-                <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
+                <li>Each manuscript must include an abstract of 150–200 words summarizing the objectives, methodology, key results, and conclusions, along with 5–6 keywords.</li>
                 <li>The maximum length of the manuscript is Twelve (12) pages, formatted strictly according to the official conference template available on the conference website.</li>
                 <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
                 <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>

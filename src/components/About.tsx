@@ -43,7 +43,8 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-              Selected high-quality papers from ICAITSC 2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific.              </span>
+              Selected high-quality papers from ICAITSC 2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific; both publications are indexed by Scopus.
+              </span>
             </div>
           </div>
         </div>
@@ -137,18 +138,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-slate rounded-2xl p-8 min-h-[300px]">
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
-              About Periyar University
+              ABOUT THE UNIVERSITY
             </h3>
             <p className="text-slate-700 leading-relaxed text-justify">
-              Periyar University, established by the Government of Tamil Nadu on 17 September 1997 under the Periyar University Act, 1997, is located in Salem and serves the districts of Salem, Namakkal, Dharmapuri, and Krishnagiri. The University is the only state-run university in Tamil Nadu to have received a four-star rating under the Institution’s Innovation Council (IIC) for three consecutive years (2022–2024). It holds 12(B) and 2(f) status from the University Grants Commission (UGC) and was reaccredited with an “A++” grade by NAAC in 2021. Periyar University was ranked 56th among Indian Universities in the MoE–NIRF 2024 rankings. The University actively promotes interdisciplinary teaching and research, emphasizing academic flexibility, curriculum innovation, quality research publications, modern laboratory infrastructure, and robust anti-plagiarism practices to ensure academic excellence and originality.
+              Periyar University, established by the Government of Tamil Nadu on 17 September 1997 under the Periyar University Act, 1997, is located in Salem and serves the districts of Salem, Namakkal, Dharmapuri, and Krishnagiri. The University has been reaccredited with an “A++” grade by NAAC (2021) and holds 12(B) and 2(f) status from the University Grants Commission (UGC). Periyar University is the only state-run university in Tamil Nadu to have received a four-star rating from the Institution’s Innovation Council (IIC) for three consecutive years (2022–2024). In the MoE–NIRF 2024 rankings, the University was placed 56th among Indian Universities. The University actively promotes interdisciplinary teaching and research, emphasizing academic flexibility, curriculum innovation, quality research publications, modern laboratory infrastructure, and strong anti-plagiarism practices, thereby ensuring academic excellence, integrity, and originality.
             </p>
           </div>
           <div className="bg-slate rounded-2xl p-8 min-h-[300px]">
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
-              About the Department
+              ABOUT THE DEPARTMENT
             </h3>
             <p className="text-slate-700 leading-relaxed text-justify">
-              The Department of Computer Science, Periyar University, is a leading academic and research centre committed to quality education, innovation, and skill-based training. The department offers postgraduate and doctoral programmes in core and emerging areas such as Artificial Intelligence, Machine Learning, Data Science, Cloud Computing, Cybersecurity, and Image and Signal Processing. With experienced faculty and a strong research culture, the department actively promotes interdisciplinary research addressing real-world challenges in healthcare, agriculture, sustainability, and social development. A significant number of research papers are published by the faculty in reputed national and international journals. Through funded projects, publications, workshops, and conferences, the department nurtures academic excellence, ethical computing, and innovation, preparing graduates for impactful careers in industry, academia, and society.
+              The Department of Computer Science, Periyar University, established in 2002, is committed to delivering quality education in Computer Science and Applications. The department offers postgraduate and doctoral programmes in core and emerging domains such as Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Bioinformatics and Genomic Data Analysis, Computer Networks, and Image and Signal Processing. With a regularly updated curriculum and experienced faculty, the department emphasizes academic excellence, innovation, and skill development. Faculty members publish a significant number of research papers in reputed national and international journals. Through funded projects, publications, workshops, and conferences, the department nurtures academic excellence, ethical computing, and innovation, preparing graduates for impactful careers in industry, academia, and society.
             </p>
           </div>
         </div>
