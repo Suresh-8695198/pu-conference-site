@@ -30,6 +30,18 @@ const Registration = () => {
 
   const formatINR = (n: number) => `₹${n.toLocaleString("en-IN")}`;
 
+  const parseAmount = (s?: string) => {
+    if (!s) return null;
+    const num = Number(s.replace(/[^0-9.]+/g, ""));
+    return isNaN(num) ? null : num;
+  };
+
+  const formatCurrency = (s?: string, n?: number) => {
+    if (s && s.trim().startsWith("₹")) return `₹${(n ?? 0).toLocaleString("en-IN")}`;
+    if (s && s.trim().startsWith("$")) return `$${(n ?? 0).toFixed(2)}`;
+    return (n ?? 0).toString();
+  };
+
   const includes = [
     "Conference Kit",
     "Certificate of Participation",
@@ -72,7 +84,7 @@ const Registration = () => {
 
                 <div className="space-y-3 mt-0">
                   {category.indian && (
-                    <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
+                    <div className={`p-4 rounded-lg text-left w-full bg-white border border-slate-200`}>
                       <p className={`text-sm mb-1 text-[#0b3d2e]`}>Indian Participants</p>
                       <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
                         {category.indian}
@@ -98,11 +110,36 @@ const Registration = () => {
                     </div>
                   )}
                   {category.foreign && (
-                    <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
+                    <div className={`p-4 rounded-lg text-left w-full bg-white border border-slate-200`}>
                       <p className={`text-sm mb-1 text-[#0b3d2e]`}>International Participants (Outside India)</p>
                       <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
                         {category.foreign}
                       </p>
+                      {(() => {
+                        const base = parseAmount(category.foreign as string);
+                        if (base === null) return null;
+                        const gst = +(base * 0.18).toFixed(2);
+                        const total = +(base + gst).toFixed(2);
+                        return (
+                          <div className="mt-3 text-sm text-[#0b3d2e]">
+                            <div className="flex justify-between">
+                              <span>Base Amount</span>
+                              <span className="font-semibold">{formatCurrency(category.foreign, base)}</span>
+                            </div>
+                            <div className="flex justify-between mt-1">
+                              <span>GST @ 18%</span>
+                              <span className="font-semibold">{formatCurrency(category.foreign, gst)}</span>
+                            </div>
+                            <div className="flex justify-between mt-1">
+                              <span>Total (Including GST)</span>
+                              <span className="font-bold text-lg">{formatCurrency(category.foreign, total)}</span>
+                            </div>
+                            <div className="mt-2 text-xs text-slate-600">
+                              {`${base} + 18% GST = ${total}`}
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </div>
