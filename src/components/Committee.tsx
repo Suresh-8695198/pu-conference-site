@@ -21,7 +21,7 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. Manikandan Kumar": "/Manikandan_Kumar.jpg",
     "Dr. P. Shanmuga Sundari": "/P_Shanmuga_Sundari.jpg",
     "Dr. J. Frank Ruban Jebaraj": "/J_Frank_Ruban_Jebaraj.png",
-    "Dr. T. RAMESH": "/T_RAMESH.jpg",
+    "Dr. T RAMESH": "/T_RAMESH.jpg",
     "Dr. D NAPOLEON": "/D_NAPOLEON.jpg",
     "Dr. W. Rose verna, M.C.A Ph.D": "/W_Rose_verna.jpg",
     "Dr. ABDUL GAFFAR H": "/ABDUL_GAFFAR_H.jpg",
@@ -85,33 +85,15 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
 const Committee = () => {
   const titleCaseName = (s: string) => {
     if (!s) return s;
-
-    // Preserve a leading title if present (Dr., Prof., Mr., Ms., Mrs., Tmt.)
-    const titleMatch = s.match(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)/i);
-    const title = titleMatch ? titleMatch[0].trim() + ' ' : '';
-
-    // Remove leading title and trailing qualifications like ', I.A.S.'
-    let rest = s.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '');
-    rest = rest.split(',')[0].trim();
-
-    // Title-case each token but preserve existing dot-form initials and acronyms
-    const formatted = rest
+    return s
       .split(/\s+/)
       .map((w) => {
-        if (/[.]/.test(w)) {
-          // normalize initials like 'R.' or 'M.C.A.' -> keep dots, uppercase letters
-          return w
-            .split('.')
-            .filter(Boolean)
-            .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-            .join('.') + (w.endsWith('.') ? '.' : '');
-        }
-        if (/^[A-Z0-9]+$/.test(w)) return w; // keep acronyms
+        // leave initials (single letters) uppercase, and preserve words with dots (e.g., M.C.A)
+        if (w.length === 1) return w.toUpperCase();
+        if (/[.]/.test(w)) return w;
         return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
       })
       .join(' ');
-
-    return (title + formatted).trim();
   };
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
@@ -138,11 +120,11 @@ const Committee = () => {
   ];
 
   const nationalAdvisoryCommittee = [
-    // { name: "Dr. Abdul Nazeer K. A", university: "National Institute of Technology Calicut,", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
+    { name: "Dr. K. A. Abdul Nazeer", university: "National Institute of Technology Calicut,", location: "Calicut, Kerala, India", country: "India", image: "/Abdul Nazeer.jpg" },
     { name: "Dr. A. Prasanth", university: "Vel Tech University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Prasanth.jpg" },
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
-    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, Tamilnadu, India", country: "India", image: "/sowmiya.jpg" },
+    { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, India", country: "India", image: "/sowmiya.jpg" },
     { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
@@ -153,15 +135,13 @@ const Committee = () => {
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.,", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Salom Jerlin", university: "Hitakey Tech Solution, Trichy", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin", university: "Hitakey Tech Solution,Trichy ", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT),", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur,", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Dr. S. Udhaya Kumar", university: "Assistant Vice President (Principal Data Scientist), HDFC Bank,", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
+    { name: "Dr. S. Udhaya Kumar", university: " (Principal Data Scientist), HDFC Bank,", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa,", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
-    { name: "Mohanasundaram Ranganathan", university: "School of Computing Science and Engineering, Vellore Institute of Technology (VIT University)", location: "Vellore, Tamil Nadu, India", country: "India", image: "/Mohanasundaram_Ranganathan.jpeg" },
-    { name: "Dr. Vijayarajan R", university: "Vellore Institute of Technology University", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Vijayarajan_R.jpeg" },
-    { name: "Dr. Nagarajan Deivanayagam Pillai", university: "Chettinad Institute of Technology, Chettinad Academy of Research and Education", location: "Chennai, India", country: "India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
+   
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
       // Remove titles like Dr., Prof., Mr., Ms., Mrs., Tmt.
@@ -201,8 +181,8 @@ const Committee = () => {
     { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
     { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
-    { name: "Dr. R PORKODI", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/R_PORKODI.jpg" },
-    { name: "Dr. Kaja Mohideen A", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India", image: "/Kaja_Mohideen_A.jpg" },
+    { name: "Dr. R. PORKODI", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/R_PORKODI.jpg" },
+    { name: "Dr. A. Kaja Mohideen", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India", image: "/Kaja_Mohideen_A.jpg" },
     { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science, Coimbatore, Tamil Nadu, India", image: "/Manikandan_Kumar.jpg" },
     { name: "Dr. P. Shanmuga Sundari", role: "SRMIST, Trichy, Tamil Nadu, India", image: "/P_Shanmuga_Sundari.jpg" },
     { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
@@ -210,6 +190,9 @@ const Committee = () => {
     { name: "Dr. D. NAPOLEON", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
     { name: "Dr. W. Rose verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
     // { name: "Dr. H. ABDUL GAFFAR", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
+    { name: "Dr. Mohanasundaram Ranganathan", role: "School of Computing Science and Engineering, Vellore Institute of Technology (VIT University), Vellore, Tamil Nadu, India", country: "India", image: "/Mohanasundaram_Ranganathan.jpeg" },
+    { name: "Dr. R. Vijayarajan", role: "Vellore Institute of Technology University, Chennai, Tamil Nadu, India", country: "India", image: "/Vijayarajan_R.jpeg" },
+    { name: "Dr. Nagarajan Deivanayagam Pillai", role: "Chettinad Institute of Technology, Chettinad Academy of Research and Education, Chennai, India", country: "India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
     // { name: "Dr. S. Murali", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {

@@ -140,7 +140,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               ABOUT THE UNIVERSITY
             </h3>
-            <p className="text-slate-700 leading-relaxed text-justify indent-5">
+            <p className="text-slate-700 leading-relaxed text-justify indent-10">
               Periyar University, established by the Government of Tamil Nadu on 17 September 1997 under the Periyar University Act, 1997, is located in Salem and serves the districts of Salem, Namakkal, Dharmapuri, and Krishnagiri. The University has been reaccredited with an “A++” grade by NAAC (2021) and holds 12(B) and 2(f) status from the University Grants Commission (UGC). Periyar University is the only state-run university in Tamil Nadu to have received a four-star rating from the Institution’s Innovation Council (IIC) for three consecutive years (2022–2024). In the MoE–NIRF 2024 rankings, the University was placed 56th among Indian Universities. The University actively promotes interdisciplinary teaching and research, emphasizing academic flexibility, curriculum innovation, quality research publications, modern laboratory infrastructure, and strong anti-plagiarism practices, thereby ensuring academic excellence, integrity, and originality.
             </p>
           </div>
@@ -148,7 +148,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               ABOUT THE DEPARTMENT
             </h3>
-            <p className="text-slate-700 leading-relaxed text-justify indent-5">
+            <p className="text-slate-700 leading-relaxed text-justify indent-10">
               The Department of Computer Science, Periyar University, established in 2002, is committed to delivering quality education in Computer Science and Applications. The department offers postgraduate and doctoral programmes in core and emerging domains such as Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Bioinformatics and Genomic Data Analysis, Computer Networks, and Image and Signal Processing. With a regularly updated curriculum and experienced faculty, the department emphasizes academic excellence, innovation, and skill development. Faculty members publish a significant number of research papers in reputed national and international journals. Through funded projects, publications, workshops, and conferences, the department nurtures academic excellence, ethical computing, and innovation, preparing graduates for impactful careers in industry, academia, and society.
             </p>
           </div>
