@@ -86,67 +86,32 @@ const Committee = () => {
   const titleCaseName = (s: string) => {
     if (!s) return s;
 
-    // Extract a leading title if present (Dr., Prof., Mr., Ms., Mrs., Tmt.)
+    // Preserve a leading title if present (Dr., Prof., Mr., Ms., Mrs., Tmt.)
     const titleMatch = s.match(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)/i);
-    const title = titleMatch ? titleMatch[0].trim() : '';
+    const title = titleMatch ? titleMatch[0].trim() + ' ' : '';
 
-    // Remove any leading title and drop trailing comma-suffixed qualifications (e.g., ", I.A.S.")
+    // Remove leading title and trailing qualifications like ', I.A.S.'
     let rest = s.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '');
     rest = rest.split(',')[0].trim();
 
-    // Split into tokens and normalize
-    const tokens = rest.replace(/[.]/g, '').split(/\s+/).filter(Boolean);
-    if (tokens.length === 0) return s;
+    // Title-case each token but preserve existing dot-form initials and acronyms
+    const formatted = rest
+      .split(/\s+/)
+      .map((w) => {
+        if (/[.]/.test(w)) {
+          // normalize initials like 'R.' or 'M.C.A.' -> keep dots, uppercase letters
+          return w
+            .split('.')
+            .filter(Boolean)
+            .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+            .join('.') + (w.endsWith('.') ? '.' : '');
+        }
+        if (/^[A-Z0-9]+$/.test(w)) return w; // keep acronyms
+        return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+      })
+      .join(' ');
 
-    const isInitial = (t: string) => t.length === 1;
-
-    let initial = '';
-    let surname = '';
-
-    if (!title) {
-      // No title present: return full name in title case (do not abbreviate)
-      const makeTitleCase = (str: string) =>
-        str
-          .split(/\s+/)
-          .map((w) => {
-            if (w.length === 1) return w.toUpperCase();
-            if (/^[A-Z0-9]+$/.test(w)) return w;
-            return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-          })
-          .join(' ');
-      return makeTitleCase(rest);
-    }
-
-    if (tokens.length === 1) {
-      surname = tokens[0];
-    } else {
-      const idx = tokens.findIndex(isInitial);
-      if (idx !== -1) {
-        initial = tokens[idx];
-        const remaining = tokens.filter((_, i) => i !== idx);
-        surname = remaining.join(' ');
-      } else {
-        initial = tokens[0].charAt(0);
-        surname = tokens.slice(1).join(' ');
-      }
-    }
-
-    const makeTitleCase = (str: string) =>
-      str
-        .split(/\s+/)
-        .map((w) => {
-          if (w.length === 1) return w.toUpperCase();
-          if (/^[A-Z0-9]+$/.test(w)) return w; // keep acronyms as-is
-          return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-        })
-        .join(' ');
-
-    let out = '';
-    if (title) out += title + ' ';
-    if (initial) out += initial.toUpperCase() + '. ';
-    out += makeTitleCase(surname || tokens[0]);
-
-    return out.trim();
+    return (title + formatted).trim();
   };
   const organizingCommittee = [
     { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
@@ -244,7 +209,7 @@ const Committee = () => {
     { name: "Dr. T. RAMESH", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/T_RAMESH.jpg" },
     { name: "Dr. D. NAPOLEON", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
     { name: "Dr. W. Rose verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
-    { name: "Dr. H. ABDUL GAFFAR", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
+    // { name: "Dr. H. ABDUL GAFFAR", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
     // { name: "Dr. S. Murali", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
