@@ -101,19 +101,19 @@ const Committee = () => {
   });
   const academicLeadership = [
     { name: "Dr. D. Arul Pon Daniel", role: "Jayarani College, Salem, Tamil Nadu, India", image: "/Arul Pon Daniel.jpg" },
-    { name: "Dr. T. Dharani", role: "Rajarajeswari College of Engineering, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
+    // { name: "Dr. T. Dharani", role: "Rajarajeswari College of Engineering, Bengaluru, Karnataka, India", image: "/Dharani.jpg" },
     { name: "Dr. Gowthamarayathirumal P", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Gowthamarayathirumal.jpg" },
     { name: "Dr. G. Jothi", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Jothi.jpg" },
-    { name: "Dr. G. Kavitha", role: "Vinayaka Mission's Kirupananda Variyar Engineering College, Salem, Tamil Nadu, India", image: "/Kavitha.jpg" },
+    // { name: "Dr. G. Kavitha", role: "Vinayaka Mission's Kirupananda Variyar Engineering College, Salem, Tamil Nadu, India", image: "/Kavitha.jpg" },
     { name: "Mageshwari V", role: "Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India", image: "/Mageshwari.jpg" },
-    { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
-    { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
+    // { name: "Dr. P. S. Raja", role: "Government Arts College, Dharmapuri, Tamil Nadu, India", image: "/Raja.jpg" },
+    // { name: "Dr. D. Rajeswari", role: "Sona College of Arts & Science, Salem, Tamil Nadu, India", image: "/Rajeswari.jpg" },
     { name: "Dr. K. Sasirekha", role: "Sona College of Technology, Salem, Tamil Nadu, India", image: "/Sasirekha.jpg" },
     { name: "Dr. T. Sudhakar", role: "CHRIST (Deemed to be University), Bengaluru, Karnataka, India", image: "/Sudhakar.jpg" },
   ];
 
   const technicalLeadership = [
-    { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
+    // { name: "Dr. K. Akilandeswari", role: "Government Arts College, Salem, Tamil Nadu, India", image: "/Akilandeswari.jpg" },
     { name: "Dr. J. Bagyamani", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamani.jpg" },
     { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
     { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
