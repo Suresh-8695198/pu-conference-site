@@ -55,7 +55,7 @@ const Committee = () => {
     { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
     { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
     { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/Sudhir Dixit.jpg" },
-        { name: "Tzung-Pei Hong", university: "National University of Kaohsiung", location: "Kaohsiung, Taiwan", country: "Taiwan", image: "/Tzung-Pei Hong.jpg" },
+    { name: "Tzung-Pei Hong", university: "National University of Kaohsiung", location: "Kaohsiung, Taiwan", country: "Taiwan", image: "/Tzung-Pei Hong.jpg" },
     { name: "Prof. Valentina E. Balas", university: "Aurel Vlaicu University of Arad", country: "Romania", image: "/Balas.jpg" },
     { name: "Prof. Xiao-Zhi Gao", university: "University of Eastern Finland", country: "Finland", image: "/Xiao-Zhi Gao.jpg" },
     { name: "Prof. Yui Wing Leung", university: "Hong Kong Baptist University", country: "Hong Kong", image: "/Yui Wing Leung.jpg" },
