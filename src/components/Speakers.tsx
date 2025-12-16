@@ -17,7 +17,7 @@ const Speakers = () => {
 
         {/* Speakers Grid */}
         <div className="grid md:grid-cols-2 gap-6 justify-items-center">
-          {/* Speaker 1 */}
+          {/* Speaker 1
           <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
@@ -40,7 +40,7 @@ const Speakers = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Speaker 2 */}
           <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
@@ -95,7 +95,7 @@ const Speakers = () => {
             </div>
           </div>
 
-          {/* Speaker 4 */}
+          {/* Speaker 4
           <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
@@ -118,9 +118,9 @@ const Speakers = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Speaker 5 */}
+          </div> */}
+{/* 
+          Speaker 5
           <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:col-span-2 md:max-w-md md:mx-auto">
             <div className="flex items-center gap-4">
               <img
@@ -144,7 +144,7 @@ const Speakers = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

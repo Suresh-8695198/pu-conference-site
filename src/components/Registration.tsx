@@ -5,13 +5,13 @@ const Registration = () => {
     {
       title: "Faculty/Scientist from Academic/Research institutions",
       icon: GraduationCap,
-      indian: "₹7,500",
+      indian: "₹5,000",
       foreign: "",
     },
     {
       title: "Full-time Research Scholars (Post-Doctoral/Ph.D) / PG Students",
       icon: Users,
-      indian: "₹6,000",
+      indian: "₹4,500",
       foreign: "",
     },
     {
@@ -24,7 +24,7 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$150",
+      foreign: "$75",
     },
   ];
 
@@ -169,7 +169,7 @@ const Registration = () => {
 
         {/* Note */}
         <p className="text-center text-slate-600 text-sm mt-8">
-          Conference registration will commence on 20 January 2026 and close on 20 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper to be included in the conference proceedings.
+          Conference registration will commence on 25 December 2025 and close on 5 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper to be included in the conference proceedings.
         </p>
       </div>
     </section>

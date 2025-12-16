@@ -38,17 +38,17 @@ const Hero = () => {
               <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 object-contain" />
             </div>
             {/* Title */}
-            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">HORIZON-AI 2026</span>
+            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-navy text-center block">ICAITSC 2026</span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-display font-bold text-white mb-0 leading-tight animate-fade-in px-2 drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-teal-300 mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl drop-shadow-lg">
+            <span className="block text-teal-300 mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl drop-shadow-lg">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-300 mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl drop-shadow-lg">
-              Beyond Algorithms
+            <span className="block text-coral-300 mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl drop-shadow-lg">
+             Techniques and Smart Computing
             </span>
           </h1>
 

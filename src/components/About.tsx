@@ -10,7 +10,7 @@ const About = () => {
     {
       icon: Target,
       title: "SDG 4 – Quality Education",
-      description: "HORIZON-AI 2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
+      description: "ICAITSC 2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
     },
     {
       icon: Users,
@@ -33,7 +33,7 @@ const About = () => {
             About the Conference
           </span>
           <h2 className="section-title">
-            Welcome to <span className="text-teal">HORIZON-AI 2026</span>
+            Welcome to <span className="text-teal">ICAITSC 2026</span>
           </h2>
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
         </div>
@@ -43,23 +43,23 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-                PUBLICATION ANNOUNCEMENT: Selected high-quality papers from HORIZON-AI 2026 will be published as post-conference proceedings in the edited book titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", to be published by CRC Press, Taylor & Francis Group.
+                PUBLICATION ANNOUNCEMENT: Selected high-quality papers from ICAITSC 2026 will be published as post-conference proceedings in the edited book titled "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", to be published by CRC Press, Taylor & Francis Group.
               </span>
             </div>
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-20">
+          <div className="max-w-4xl mx-auto mb-20">
           <p className="text-lg text-slate-700 leading-normal text-justify">
-            The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (IC-HORIZON-AI 2026) serves as a global forum for presenting advanced research findings and technological innovations in artificial intelligence and intelligent computing. The conference emphasizes next-generation AI solutions for healthcare, agriculture, sustainability, and human-centric systems, moving beyond traditional algorithms to effectively address real-world challenges. The primary aim of HORIZON-AI 2026 is to bring together researchers, academicians, industry professionals, and innovators from around the world to present, discuss, and advance cutting-edge developments in artificial intelligence. The conference seeks to promote impactful, ethical, and sustainable AI technologies that translate research outcomes into practical societal benefits while fostering interdisciplinary collaboration and global knowledge exchange.
+            The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (IC-ICAITSC 2026) serves as a global forum for presenting advanced research findings and technological innovations in artificial intelligence and intelligent computing. The conference emphasizes next-generation AI solutions for healthcare, agriculture, sustainability, and human-centric systems, moving beyond traditional algorithms to effectively address real-world challenges. The primary aim of ICAITSC 2026 is to bring together researchers, academicians, industry professionals, and innovators from around the world to present, discuss, and advance cutting-edge developments in artificial intelligence. The conference seeks to promote impactful, ethical, and sustainable AI technologies that translate research outcomes into practical societal benefits while fostering interdisciplinary collaboration and global knowledge exchange.
           </p>
 
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
             <a
               href="/Brochure.pdf"
-              download="HORIZON-AI_2026_Brochure.pdf"
+              download="ICAITSC_2026_Brochure.pdf"
               className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-teal/90 transition-colors shadow-sm"
             >
               <FileText className="w-5 h-5" />
@@ -67,7 +67,7 @@ const About = () => {
             </a>
             <a
               href="/Schedules.pdf"
-              download="HORIZON-AI_2026_Schedule.pdf"
+                download="ICAITSC_2026_Schedule.pdf"
               className="inline-flex items-center justify-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-coral/90 transition-colors shadow-sm"
             >
               <FileText className="w-5 h-5" />
@@ -83,7 +83,7 @@ const About = () => {
               Conference Focus Areas
             </h3>
             <p className="text-lg text-slate-700 max-w-2xl mx-auto text-justify leading-relaxed">
-              HORIZON-AI 2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
+              ICAITSC 2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -110,7 +110,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               Aligned with UN Sustainable Development Goals
             </h3>
-            <p className="text-lg text-slate-700 text-justify leading-relaxed">
+            <p className="text-lg text-slate-700 leading-relaxed">
               Our conference focuses on key SDGs to drive positive change through AI and technology.
             </p>
           </div>

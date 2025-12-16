@@ -24,7 +24,7 @@ const Accommodation = () => {
             <h3 className="font-display font-bold text-2xl text-navy">Conference Venue</h3>
           </div>
           <p className="text-slate-700 mb-6 leading-relaxed">
-            The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (HORIZON-AI 2026) will be held at:
+            The International Conference on Health, Optimization, Research, Intelligence, and Next-Gen AI for Humanity (ICAITSC 2026) will be held at:
           </p>
           <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
             <h4 className="font-display font-bold text-lg text-navy mb-2">Department of Computer Science, Seminar Hall-II Floor</h4>

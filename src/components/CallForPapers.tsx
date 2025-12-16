@@ -9,7 +9,7 @@ const CallForPapers = () => {
     "All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.",
     "Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.",
     "Selected high-quality and accepted papers will be published as book chapters in the edited volume titled 'Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity', subject to the publisher's scope, quality, and editorial requirements.",
-    "Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings.",
+    "Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings.",
   ];
 
   return (
@@ -190,7 +190,7 @@ const CallForPapers = () => {
               </h3>
               <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
                 <li>Selected high-quality papers will be published as book chapters in the edited volume: "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to publisher scope, quality, and editorial policies.</li>
-                <li>Remaining accepted and presented papers will be published in the HORIZON-AI 2026 Conference Proceedings, with applicable publication charges.</li>
+                <li>Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings, with applicable publication charges.</li>
               </ol>
             </div>
 
