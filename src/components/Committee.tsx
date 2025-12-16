@@ -55,6 +55,7 @@ const Committee = () => {
     { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
     { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
     { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/Sudhir Dixit.jpg" },
+        { name: "Tzung-Pei Hong", university: "National University of Kaohsiung", location: "Kaohsiung, Taiwan", country: "Taiwan", image: "/Tzung-Pei Hong.jpg" },
     { name: "Prof. Valentina E. Balas", university: "Aurel Vlaicu University of Arad", country: "Romania", image: "/Balas.jpg" },
     { name: "Prof. Xiao-Zhi Gao", university: "University of Eastern Finland", country: "Finland", image: "/Xiao-Zhi Gao.jpg" },
     { name: "Prof. Yui Wing Leung", university: "Hong Kong Baptist University", country: "Hong Kong", image: "/Yui Wing Leung.jpg" },
@@ -81,8 +82,7 @@ const Committee = () => {
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Tzung-Pei Hong", university: "National University of Kaohsiung", location: "Kaohsiung, Taiwan", country: "Taiwan", image: "/Tzung-Pei Hong.jpg" },
-    { name: "Dr. S. Udhaya Kumar", university: "HDFC Bank", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
+    { name: "Dr. S. Udhaya Kumar", university: "HDFC Bank, Principal Data Scientist", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
