@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 xl:gap-6 2xl:gap-8 animate-fade-in px-4" style={{ animationDelay: "0.5s" }}>
+          <div className="flex flex-col mb-7 sm:flex-row justify-center gap-4 sm:gap-6 xl:gap-6 2xl:gap-8 animate-fade-in px-4" style={{ animationDelay: "0.5s" }}>
             <a href="#registration" className="btn-accent flex items-center justify-center gap-2 group text-base sm:text-lg xl:text-lg 2xl:text-xl px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 w-full sm:w-auto">
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -87,20 +87,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 xl:gap-8 2xl:gap-10 mt-16 sm:mt-20 xl:mt-20 2xl:mt-24 animate-fade-in px-4" style={{ animationDelay: "0.6s" }}>
-            {[
-              { number: "50+", label: "Speakers" },
-              { number: "200+", label: "Papers" },
-              { number: "30+", label: "Sessions" },
-              { number: "500+", label: "Attendees" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-4xl 2xl:text-6xl font-display font-bold text-white drop-shadow-lg">{stat.number}</p>
-                <p className="text-teal-300 text-sm sm:text-base xl:text-base 2xl:text-lg uppercase tracking-wider mt-2 drop-shadow-sm font-semibold">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
         </div>
       </div>

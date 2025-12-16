@@ -13,10 +13,10 @@ const CallForPapers = () => {
   ];
 
   return (
-    <section id="call-for-papers" className="py-24 bg-slate">
+    <section id="call-for-papers" className="py-5 bg-slate">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Submit Your Research
           </span>

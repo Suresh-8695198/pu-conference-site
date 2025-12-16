@@ -67,11 +67,11 @@ const About = () => {
             </a>
             <a
               href="/Schedules.pdf"
-              download="HORIZON-AI_2026_Schedules.pdf"
+              download="HORIZON-AI_2026_Schedule.pdf"
               className="inline-flex items-center justify-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-coral/90 transition-colors shadow-sm"
             >
               <FileText className="w-5 h-5" />
-              Download Schedules
+              Download Schedule
             </a>
           </div>
         </div>
