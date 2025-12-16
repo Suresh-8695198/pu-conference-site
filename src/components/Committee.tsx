@@ -82,7 +82,7 @@ const Committee = () => {
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT)", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
-    { name: "Dr. S. Udhaya Kumar", university: "HDFC Bank, Principal Data Scientist", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
+    { name: "Dr. S. Udhaya Kumar", university: "Assistant Vice President (Principal Data Scientist), HDFC Bank,", location: "Chennai, Tamil Nadu, India", country: "India", image: "/Udaya.jpg" },
     { name: "Dr. T. Veerakumar", university: "National Institute of Technology Goa", location: "Goa, India", country: "India", image: "/Veerakumar.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
