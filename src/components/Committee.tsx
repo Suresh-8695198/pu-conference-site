@@ -474,7 +474,7 @@ const Committee = () => {
             </div>
           </div>
 
-          {/* Academic Leadership */}
+          {/* Academic Leadership
           <div>
             <h4 className="font-display font-bold text-xl text-navy mb-6 text-center">Technical Program Chair (TPC Chair)</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -505,7 +505,7 @@ const Committee = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
 
        
