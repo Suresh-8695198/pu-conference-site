@@ -15,6 +15,17 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. V. Raj": "/raj.jpeg",
     "Dr. R. Rathipriya": "/rathipriya.jpeg",
     "Dr. S. Sathish": "/sathish.jpeg",
+    // Images for newly added technical leadership members
+    "Dr. R PORKODI": "/R_PORKODI.jpg",
+    "Dr. Kaja Mohideen A": "/Kaja_Mohideen_A.jpg",
+    "Dr. Manikandan Kumar": "/Manikandan_Kumar.jpg",
+    "Dr. P. Shanmuga Sundari": "/P_Shanmuga_Sundari.jpg",
+    "Dr. J. Frank Ruban Jebaraj": "/J_Frank_Ruban_Jebaraj.jpg",
+    "Dr. T RAMESH": "/T_RAMESH.jpg",
+    "Dr. D NAPOLEON": "/D_NAPOLEON.jpg",
+    "Dr. W. Rose verna, M.C.A Ph.D": "/W_Rose_verna.jpg",
+    "Dr. ABDUL GAFFAR H": "/ABDUL_GAFFAR_H.jpg",
+    "Dr. Murali S": "/Murali_S.jpg",
   };
 
   const imageSrc = imageMap[name] || imageMap[Object.keys(imageMap).find(key => name.includes(key.split(' ')[2])) || ''];
