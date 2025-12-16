@@ -18,9 +18,17 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$75",
+      foreign: "$100",
     },
   ];
+
+  const parseIndian = (s?: string) => {
+    if (!s) return null;
+    const num = Number(s.replace(/[^0-9.-]+/g, ""));
+    return isNaN(num) ? null : num;
+  };
+
+  const formatINR = (n: number) => `₹${n.toLocaleString("en-IN")}`;
 
   const includes = [
     "Conference Kit",
@@ -69,6 +77,24 @@ const Registration = () => {
                       <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
                         {category.indian}
                       </p>
+                      {(() => {
+                        const base = parseIndian(category.indian as string);
+                        if (!base) return null;
+                        const gst = Math.round(base * 0.18);
+                        const total = base + gst;
+                        return (
+                          <div className="mt-3 text-sm text-[#0b3d2e]">
+                            <div className="flex justify-between">
+                              <span>GST (18%)</span>
+                              <span className="font-semibold">{formatINR(gst)}</span>
+                            </div>
+                            <div className="flex justify-between mt-1">
+                              <span>Total (incl. GST)</span>
+                              <span className="font-bold text-lg">{formatINR(total)}</span>
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                   {category.foreign && (
