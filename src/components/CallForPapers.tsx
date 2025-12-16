@@ -189,7 +189,7 @@ const CallForPapers = () => {
                 Publication Partner
               </h3>
               <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
-                <li>Selected high-quality papers will be published as book chapters in the edited volume: "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to publisher scope, quality, and editorial policies.</li>
+                <li>Selected high-quality papers will be published as book chapters in the edited volume: "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to publisher scope, quality, and editorial policies, indexed by Scopus.</li>
                 <li>Other accepted and presented papers will be published as book chapters in Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications (Wiley / World Scientific), indexed by Scopus.</li>
               </ol>
             </div>

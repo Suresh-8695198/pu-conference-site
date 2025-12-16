@@ -18,7 +18,7 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$100",
+      foreign: "$85",
     },
   ];
 
@@ -122,10 +122,6 @@ const Registration = () => {
                         const total = +(base + gst).toFixed(2);
                         return (
                           <div className="mt-3 text-sm text-[#0b3d2e]">
-                            <div className="flex justify-between">
-                              <span>Base Amount</span>
-                              <span className="font-semibold">{formatCurrency(category.foreign, base)}</span>
-                            </div>
                             <div className="flex justify-between mt-1">
                               <span>GST @ 18%</span>
                               <span className="font-semibold">{formatCurrency(category.foreign, gst)}</span>
