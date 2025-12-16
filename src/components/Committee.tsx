@@ -135,7 +135,7 @@ const Committee = () => {
     { name: "Dr. S. Selvakumar", university: "National Institute of Technology Tiruchirappalli,", location: "Tiruchirappalli, Tamil Nadu, India", country: "India", image: "/Selvakumar.jpg" },
     { name: "Dr. Senthilkumar Sengottaiyan", university: "Ant Philosophy Technology & Services Pvt. Ltd.,", location: "Bangalore, Karnataka, India", country: "India", image: "/Senthilkumar.jpg" },
     { name: "Dr. Sipra Das Bit", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Sipra Das Bit.jpg" },
-    { name: "Salom Jerlin", university: "Hitakey Tech Solution,Trichy ", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
+    { name: "Salom Jerlin", university: "Hitakey Tech Solution, Trichy ", location: "Jerlin, India", country: "India", image: "/Salom Jerlin.jpg" },
     { name: "Dr. Susanta Chakraborty", university: "Indian Institute of Engineering Science and Technology (IIEST) Shibpur,", location: "West Bengal, India", country: "India", image: "/Susanta Chakraborty.jpg" },
     { name: "Dr. Sweta Jain", university: "Maulana Azad National Institute of Technology (MANIT),", location: "Bhopal, Madhya Pradesh, India", country: "India", image: "/Sweta Jain.jpg" },
     { name: "Dr. Tanmay De", university: "National Institute of Technology Durgapur,", location: "Durgapur, West Bengal, India", country: "India", image: "/Tanmay De.jpg" },
