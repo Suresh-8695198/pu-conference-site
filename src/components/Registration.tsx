@@ -100,9 +100,9 @@ const Registration = () => {
                               <span>GST (18%)</span>
                               <span className="font-semibold">{formatINR(gst)}</span>
                             </div>
-                            <div className="flex justify-between mt-1">
-                              <span>Total (incl. GST)</span>
-                              <span className="font-bold text-lg">{formatINR(total)}</span>
+                            <div className="flex justify-between mt-1 items-center">
+                              <span className="text-sm">Total (incl. GST)</span>
+                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatINR(total)}</span>
                             </div>
                           </div>
                         );
@@ -130,13 +130,11 @@ const Registration = () => {
                               <span>GST @ 18%</span>
                               <span className="font-semibold">{formatCurrency(category.foreign, gst)}</span>
                             </div>
-                            <div className="flex justify-between mt-1">
-                              <span>Total (Including GST)</span>
-                              <span className="font-bold text-lg">{formatCurrency(category.foreign, total)}</span>
+                            <div className="flex justify-between mt-1 items-center">
+                              <span className="text-sm">Total (Including GST)</span>
+                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatCurrency(category.foreign, total)}</span>
                             </div>
-                            <div className="mt-2 text-xs text-slate-600">
-                              {`${base} + 18% GST = ${total}`}
-                            </div>
+                            <div className="mt-2 text-xs text-slate-600">{`${base} + 18% GST = ${total}`}</div>
                           </div>
                         );
                       })()}
