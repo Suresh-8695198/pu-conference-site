@@ -20,7 +20,7 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. Kaja Mohideen A": "/Kaja_Mohideen_A.jpg",
     "Dr. Manikandan Kumar": "/Manikandan_Kumar.jpg",
     "Dr. P. Shanmuga Sundari": "/P_Shanmuga_Sundari.jpg",
-    "Dr. J. Frank Ruban Jebaraj": "/J_Frank_Ruban_Jebaraj.jpg",
+    "Dr. J. Frank Ruban Jebaraj": "/J_Frank_Ruban_Jebaraj.png",
     "Dr. T RAMESH": "/T_RAMESH.jpg",
     "Dr. D NAPOLEON": "/D_NAPOLEON.jpg",
     "Dr. W. Rose verna, M.C.A Ph.D": "/W_Rose_verna.jpg",
@@ -28,7 +28,37 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. Murali S": "/Murali_S.jpg",
   };
 
-  const imageSrc = imageMap[name] || imageMap[Object.keys(imageMap).find(key => name.includes(key.split(' ')[2])) || ''];
+  const findImageSrc = (name: string) => {
+    if (imageMap[name]) return imageMap[name];
+    const removeTitles = (s: string) => s.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '').replace(/[.,]/g, '').trim().toLowerCase();
+    const nameClean = removeTitles(name);
+    const nameWords = nameClean.split(/\s+/).filter(Boolean);
+
+    // Exact cleaned match
+    for (const key of Object.keys(imageMap)) {
+      if (removeTitles(key) === nameClean) return imageMap[key];
+    }
+
+    // Match by last substantive word
+    const lastWord = [...nameWords].reverse().find(w => w.length > 2) || nameWords[0];
+    for (const key of Object.keys(imageMap)) {
+      const keyClean = removeTitles(key);
+      const keyWords = keyClean.split(/\s+/);
+      if (keyWords.includes(lastWord)) return imageMap[key];
+    }
+
+    // Match by any substantive word
+    for (const key of Object.keys(imageMap)) {
+      const keyClean = removeTitles(key);
+      for (const w of nameWords) {
+        if (w.length > 2 && keyClean.includes(w)) return imageMap[key];
+      }
+    }
+
+    return null;
+  };
+
+  const imageSrc = findImageSrc(name) || '/placeholder.svg';
 
   if (imageSrc && !imgError) {
     return (
@@ -134,17 +164,16 @@ const Committee = () => {
     { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
     { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
-    // New entries added by user
-    { name: "Dr. R Porkodi", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. Kaja Mohideen A", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India" },
-    { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. P. Shanmuga Sundari", role: "SRMIST, Trichy, Tamil Nadu, India" },
-    { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India" },
-    { name: "Dr. T RAMESH", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. D Napoleon", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. W. Rose verna, M.C.A Ph.D", role: "Bharathiar University, Coimbatore, Tamil Nadu, India" },
-    { name: "Dr. ABDUL GAFFAR H", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India" },
-    { name: "Dr. Murali S", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India" },
+      { name: "Dr. R PORKODI", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/R_PORKODI.jpg" },
+      { name: "Dr. Kaja Mohideen A", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India", image: "/Kaja_Mohideen_A.jpg" },
+      { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science, Coimbatore, Tamil Nadu, India", image: "/Manikandan_Kumar.jpg" },
+      { name: "Dr. P. Shanmuga Sundari", role: "SRMIST, Trichy, Tamil Nadu, India", image: "/P_Shanmuga_Sundari.jpg" },
+      { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
+      { name: "Dr. T RAMESH", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/T_RAMESH.jpg" },
+      { name: "Dr. D NAPOLEON", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
+      { name: "Dr. W. Rose verna, M.C.A Ph.D", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
+      { name: "Dr. ABDUL GAFFAR H", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
+      { name: "Dr. Murali S", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
       let cleaned = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.|Tmt\.)\s*/i, '').trim();
