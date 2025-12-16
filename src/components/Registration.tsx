@@ -3,14 +3,8 @@ import { Check, Users, GraduationCap, Briefcase, Globe, MapPin, Plane, Train, Bu
 const Registration = () => {
   const categories = [
     {
-      title: "Faculty/Scientist from Academic/Research institutions",
+      title: "Faculty/Scientist & Full-time Research Scholars",
       icon: GraduationCap,
-      indian: "₹5,000",
-      foreign: "",
-    },
-    {
-      title: "Full-time Research Scholars (Post-Doctoral/Ph.D) / PG Students",
-      icon: Users,
       indian: "₹5,000",
       foreign: "",
     },
@@ -24,7 +18,7 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$100",
+      foreign: "$75",
     },
   ];
 
@@ -54,51 +48,33 @@ const Registration = () => {
         </div>
 
         {/* Registration Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {categories.map((category, index) => (
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
+          {categories.map((category) => (
             <div
               key={category.title}
-              className={`rounded-lg overflow-hidden card-hover shadow-sm border ${
-                index === 0 ? "bg-teal border-teal" : "bg-white border-slate-200"
-              }`}
+              className={`rounded-lg overflow-hidden card-hover shadow-sm border bg-white border-slate-200 w-full max-w-sm`}
             >
               <div className="p-6 flex flex-col">
                 <div className="mb-4 min-h-[88px]">
-                  <category.icon className={`w-10 h-10 mb-3 ${
-                    index === 0 ? "text-white" : "text-teal"
-                  }`} />
-                  <h3 className={`font-display font-bold text-lg ${
-                    index === 0 ? "text-white" : "text-navy"
-                  }`}>
+                  <category.icon className={`w-10 h-10 mb-3 text-teal`} />
+                  <h3 className={`font-display font-bold text-lg text-navy`}>
                     {category.title}
                   </h3>
                 </div>
 
                 <div className="space-y-3 mt-0">
                   {category.indian && (
-                    <div className={`p-4 rounded-lg text-left w-full ${
-                      index === 0 ? "bg-white/20" : "bg-slate-50"
-                    }`}>
-                      <p className={`text-sm mb-1 ${
-                        index === 0 ? "text-white" : "text-slate-600"
-                      }`}>Indian Participants</p>
-                      <p className={`font-display font-bold text-2xl ${
-                        index === 0 ? "text-white" : "text-navy"
-                      }`}>
+                    <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
+                      <p className={`text-sm mb-1 text-slate-600`}>Indian Participants</p>
+                      <p className={`font-display font-bold text-2xl text-navy`}>
                         {category.indian}
                       </p>
                     </div>
                   )}
                   {category.foreign && (
-                    <div className={`p-4 rounded-lg text-left w-full ${
-                      index === 0 ? "bg-white/20" : "bg-slate-50"
-                    }`}>
-                      <p className={`text-sm mb-1 ${
-                        index === 0 ? "text-white/80" : "text-slate-600"
-                      }`}>International Participants (Outside India)</p>
-                      <p className={`font-display font-bold text-2xl ${
-                        index === 0 ? "text-white" : "text-navy"
-                      }`}>
+                    <div className={`p-4 rounded-lg text-left w-full bg-slate-50`}>
+                      <p className={`text-sm mb-1 text-slate-600`}>International Participants (Outside India)</p>
+                      <p className={`font-display font-bold text-2xl text-navy`}>
                         {category.foreign}
                       </p>
                     </div>
