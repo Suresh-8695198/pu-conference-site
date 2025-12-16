@@ -56,10 +56,10 @@ const Accommodation = () => {
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Air</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify">
-              <li className="text-justify">• Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
-              <li className="text-justify">• Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
-              <li className="text-justify">• Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
+            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+              <li>Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
+              <li>Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
+              <li>Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
             </ul>
             </div>
 
@@ -71,9 +71,9 @@ const Accommodation = () => {
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Train</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed">
-              <li>• Salem Junction (SA) – Major railway junction with connections to all metro cities.</li>
-              <li>• From the station, Periyar University is 15–20 minutes by taxi, auto, or bus.</li>
+            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+              <li>Salem Junction (SA) – Major railway junction with connections to all metro cities.</li>
+              <li>From the station, Periyar University is 15–20 minutes by taxi, auto, or bus.</li>
             </ul>
           </div>
 
@@ -85,10 +85,10 @@ const Accommodation = () => {
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Road</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed">
-              <li>• Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
-              <li>• Frequent state and private buses operate from all major cities.</li>
-              <li>• From Salem bus stands, the University is 15–20 minutes away by bus, auto, or taxi.</li>
+            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+              <li>Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
+              <li>Frequent state and private buses operate from all major cities.</li>
+              <li>From Salem bus stands, the University is 15–20 minutes away by bus, auto, or taxi.</li>
             </ul>
           </div>
         </div>

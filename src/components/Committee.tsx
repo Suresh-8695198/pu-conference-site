@@ -45,7 +45,7 @@ const Committee = () => {
 
    const internationalAdvisoryCommittee = [
     { name: "Dr. Ahmed J. Obaid", university: "University of Kufa", country: "Iraq", image: "/Ahmed.jpeg" },
-    { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia", image: "/Ashok Kumar.jpg" },
+    { name: "Dr. M. Ashok Kumar", university: "BlueCrest University", country: "Liberia, West Africa", image: "/Ashok Kumar.jpg" },
     { name: "Dr. Ganesh R. Naik", university: "Flinders University", country: "Australia", image: "/Ganesh Naik.jpeg" },
     { name: "Dr. Gunasekaran Thangavel", university: "University of Technology and Applied Sciences–HCT", country: "Oman", image: "/Gunasekaran Thangavel.jpeg" },
     { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
