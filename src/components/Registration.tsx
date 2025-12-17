@@ -18,7 +18,7 @@ const Registration = () => {
       title: "Onsite Faculty/Scientist from Academic/Research institutions",
       icon: Briefcase,
       indian: "",
-      foreign: "$85",
+      foreign: "USD 85",
     },
   ];
 
@@ -38,7 +38,7 @@ const Registration = () => {
 
   const formatCurrency = (s?: string, n?: number) => {
     if (s && s.trim().startsWith("₹")) return `₹${(n ?? 0).toLocaleString("en-IN")}`;
-    if (s && s.trim().startsWith("$")) return `$${(n ?? 0).toFixed(2)}`;
+    if (s && (s.trim().startsWith("$") || s.trim().toUpperCase().startsWith("USD"))) return `USD ${(n ?? 0).toFixed(2)}`;
     return (n ?? 0).toString();
   };
 
@@ -113,7 +113,10 @@ const Registration = () => {
                     <div className={`p-4 rounded-lg text-left w-full bg-white border border-slate-200`}>
                       <p className={`text-sm mb-1 text-[#0b3d2e]`}>International Participants (Outside India)</p>
                       <p className={`font-display font-bold text-2xl text-[#0b3d2e]`}>
-                        {category.foreign}
+                        {(() => {
+                          const base = parseAmount(category.foreign as string);
+                          return formatCurrency(category.foreign, base ?? undefined);
+                        })()}
                       </p>
                       {(() => {
                         const base = parseAmount(category.foreign as string);
