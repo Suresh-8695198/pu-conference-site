@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-12 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -14,12 +14,11 @@ const Contact = () => {
         </div>
 
         {/* Two-column layout: left = secretariat + map, right = contact cards */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div className="space-y-6">
-           
-            <div className="bg-white mt-3 p-4 rounded-2xl border border-slate-200 shadow-sm">
+        <div className="grid md:grid-cols-2 gap-6 items-start">
+          <div className="space-y-4">
+            <div className="bg-white mt-2 p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-sm">
               <h4 className="font-display font-semibold text-navy mb-3">University Location</h4>
-              <div className="w-full rounded-md overflow-hidden h-56 sm:h-72 md:h-96 lg:h-[520px]">
+              <div className="w-full rounded-md overflow-hidden h-44 sm:h-56 md:h-72 lg:h-[520px]">
                 <iframe
                   src="https://maps.google.com/maps?q=Periyar%20University%2C%20Salem%2C%20Tamil%20Nadu%20636011%2C%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
@@ -29,18 +28,18 @@ const Contact = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Periyar University Location Map"
-                  className="w-full h-full"
+                  className="w-full h-full rounded-md"
                 />
               </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-4">
+          <div className="space-y-4">
+            <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start gap-4">
               <div className="w-12 h-12 bg-navy rounded-lg flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <div>
+              <div className="w-full">
                 <h4 className="font-display font-semibold text-navy mb-1">Venue</h4>
                 <div className="text-slate-700 text-sm">
                   <p className="font-semibold">Physical Venue</p>
@@ -58,38 +57,38 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-4">
+            <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start gap-4">
               <div className="w-12 h-12 bg-teal rounded-lg flex items-center justify-center shrink-0">
                 <Mail className="w-5 h-5 text-white" />
               </div>
-              <div>
+              <div className="w-full">
                 <h4 className="font-display font-semibold text-navy mb-1">Email</h4>
                 <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-teal hover:underline break-words">icaitsc2026@periyaruniversity.ac.in</a>
               </div>
             </div>
 
             <div>
-               <div className="bg-white p-6 rounded-2xl mb-4 border border-slate-200 shadow-sm text-justify">
+               <div className="bg-white p-4 sm:p-6 rounded-2xl mb-4 border border-slate-200 shadow-sm text-justify">
               <p className="text-slate-700 leading-relaxed">For any queries related to the conference, paper submission, or registration, please contact the following:</p>
             </div>
 
               <div className="flex flex-col gap-4">
-                <div className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-4">
+                <div className="bg-white p-4 sm:p-5 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start gap-4">
                   <div className="w-12 h-12 bg-teal rounded-lg flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
-                  <div>
+                  <div className="w-full">
                     <h4 className="font-display font-semibold text-navy">Dr. H. Hannah Inbarani</h4>
                     <p className="text-slate-600 text-sm mb-1">Professor, Department of Computer Science</p>
                     <p className="text-teal font-medium"><a href="tel:+918965380392">+91 98653 80392</a></p>
                   </div>
                 </div>
 
-                <div className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-4">
+                <div className="bg-white p-4 sm:p-5 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start gap-4">
                   <div className="w-12 h-12 bg-coral rounded-lg flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
-                  <div>
+                  <div className="w-full">
                     <h4 className="font-display font-semibold text-navy">Dr. I. Laurence Aroquiaraj</h4>
                     <p className="text-slate-600 text-sm mb-1">Professor, Department of Computer Science</p>
                     <p className="text-teal font-medium"><a href="tel:+918807058505">+91 88070 58505</a></p>
