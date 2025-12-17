@@ -8,19 +8,19 @@ const ImportantDates = () => {
       title: "Paper Submission Opens",
       description: "Start submitting your research papers",
       icon: FileText,
-      color: "bg-teal",
+      color: "bg-gold",
       side: "left",
     },
     {
-      date: "30 January 2026",
+      date: "22 January 2026",
       title: "Paper Submission Deadline",
       description: "Last date for paper submission",
       icon: Calendar,
-      color: "bg-coral",
+      color: "bg-burgundy",
       side: "right",
     },
     {
-      date: "09 February 2026",
+      date: "30 January 2026",
       title: "Acceptance Notification",
       description: "Notification of acceptance/rejection",
       icon: Bell,
@@ -28,11 +28,11 @@ const ImportantDates = () => {
       side: "left",
     },
     {
-      date: "16 February 2026",
+      date: "02 February 2026",
       title: "Camera Ready Submission",
       description: "Final paper submission deadline",
       icon: CheckCircle,
-      color: "bg-teal",
+      color: "bg-burgundy",
       side: "right",
     },
     {
@@ -40,7 +40,7 @@ const ImportantDates = () => {
       title: "Registration Deadline",
       description: "Last date for registration",
       icon: CreditCard,
-      color: "bg-coral",
+      color: "bg-gold",
       side: "left",
     },
     {
@@ -54,17 +54,17 @@ const ImportantDates = () => {
   ];
 
   return (
-    <section id="dates" className="py-24 bg-slate">
+    <section id="dates" className="py-24 bg-cream">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Mark Your Calendar
           </span>
           <h2 className="section-title">
-            Important <span className="text-coral">Dates</span>
+            Important <span className="text-burgundy">Dates</span>
           </h2>
-          <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
         {/* Timeline */}
@@ -107,7 +107,7 @@ const ImportantDates = () => {
 
               {/* Center Dot */}
               <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-background rounded-full border-4 border-navy items-center justify-center z-10">
-                <div className="w-2 h-2 bg-teal rounded-full" />
+                <div className="w-2 h-2 bg-gold rounded-full" />
               </div>
             </div>
           ))}

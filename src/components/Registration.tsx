@@ -58,13 +58,13 @@ const Registration = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Join the Conference
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">
-            Registration <span className="text-teal">Details</span>
+            Registration <span className="text-burgundy">Details</span>
           </h2>
-          <div className="w-24 h-1 bg-coral mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
         {/* Registration Cards */}
@@ -76,7 +76,7 @@ const Registration = () => {
             >
               <div className="p-6 flex flex-col">
                 <div className="mb-4 min-h-[88px]">
-                  <category.icon className={`w-10 h-10 mb-3 text-teal`} />
+                  <category.icon className={`w-10 h-10 mb-3 text-gold`} />
                   <h3 className={`font-display font-bold text-lg text-[#0b3d2e]`}>
                     {category.title}
                   </h3>
@@ -102,7 +102,7 @@ const Registration = () => {
                             </div>
                             <div className="flex justify-between mt-1 items-center">
                               <span className="text-sm">Total (incl. GST)</span>
-                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatINR(total)}</span>
+                              <span className="font-bold text-2xl text-white bg-burgundy px-3 py-1 rounded-lg">{formatINR(total)}</span>
                             </div>
                           </div>
                         );
@@ -131,7 +131,7 @@ const Registration = () => {
                             </div>
                             <div className="flex justify-between mt-1 items-center">
                               <span className="text-sm">Total (Including GST)</span>
-                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatCurrency(category.foreign, total)}</span>
+                              <span className="font-bold text-2xl text-white bg-burgundy px-3 py-1 rounded-lg">{formatCurrency(category.foreign, total)}</span>
                             </div>
                           </div>
                         );
@@ -155,10 +155,10 @@ const Registration = () => {
                 key={item}
                 className="flex items-center gap-3 bg-slate-50 p-4 rounded-lg"
               >
-                <div className="w-8 h-8 bg-teal rounded-lg flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 bg-burgundy rounded-lg flex items-center justify-center shrink-0">
                   <Check className="w-5 h-5 text-white" />
                 </div>
-                <span className="font-medium text-slate-700">{item}</span>
+                <span className="font-medium text-black">{item}</span>
               </div>
             ))}
           </div>
@@ -194,15 +194,15 @@ const Registration = () => {
 
                 {/* QR Column */}
                 <div className="flex flex-col items-center justify-start">
-                  <div className="w-full bg-gradient-to-br from-teal/5 to-coral/5 p-6 rounded-lg border border-slate-200 shadow-lg flex flex-col items-center">
-                    <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center mb-3">
+                  <div className="w-full bg-gradient-to-br from-gold/5 to-burgundy/5 p-6 rounded-lg border border-slate-200 shadow-lg flex flex-col items-center">
+                    <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-3">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <p className="text-sm text-slate-600 mb-4 font-medium">Scan to Pay</p>
+                    <p className="text-sm text-black mb-4 font-medium">Scan to Pay</p>
                     <img src="/qr.jpeg" alt="Conference QR Code for Payment" className="w-40 h-40 object-contain rounded-lg border-2 border-slate-300 shadow-md" />
-                    <p className="text-xs text-slate-500 mt-4 text-center leading-relaxed">Use your UPI or banking app to scan and make payment securely.</p>
+                    <p className="text-xs text-black mt-4 text-center leading-relaxed">Use your UPI or banking app to scan and make payment securely.</p>
                   </div>
                 </div>
               </div>
@@ -217,7 +217,7 @@ const Registration = () => {
             </p>
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-display font-bold text-lg hover:bg-coral/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-burgundy text-white px-8 py-4 rounded-lg font-display font-bold text-lg hover:bg-burgundy/90 transition-colors"
             >
               Register Now
             </a>
@@ -225,7 +225,7 @@ const Registration = () => {
         </div>
 
         {/* Note */}
-        <p className="text-slate-600 text-sm mt-8 text-justify leading-relaxed max-w-5xl mx-auto">
+        <p className="text-black text-sm mt-8 text-justify leading-relaxed max-w-5xl mx-auto">
           Conference registration will commence on 25 December 2025 and close on 9 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper to be included in the conference proceedings.
         </p>
       </div>

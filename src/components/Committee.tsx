@@ -247,7 +247,7 @@ const Committee = () => {
     {
       title: "Co-Patron",
       icon: Briefcase,
-      color: "bg-coral",
+      color: "bg-burgundy",
       members: [
         { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University, Salem" },
       ],
@@ -255,7 +255,7 @@ const Committee = () => {
     {
       title: "Organizing Secretaries",
       icon: Users,
-      color: "bg-navy",
+      color: "bg-burgundy",
       members: [
         { name: "Dr. H. Hannah Inbarani", role: "Professor, Department of Computer Science, Periyar University, Salem" },
         { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Department of Computer Science, Periyar University, Salem" },
@@ -264,23 +264,23 @@ const Committee = () => {
     {
       title: "Organizing Members",
       icon: Users,
-      color: "bg-coral",
+      color: "bg-burgundy",
       members: organizingCommittee,
     },
   ];
 
   return (
-    <section id="committee" className="py-16 md:py-24 bg-slate">
+    <section id="committee" className="py-16 md:py-24 bg-cream">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Meet Our Team
           </span>
           <h2 className="section-title">
-            Conference <span className="text-coral">Committee</span>
+            Conference <span className="text-burgundy">Committee</span>
           </h2>
-          <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
         {/* Main Committee Cards */}
@@ -292,13 +292,13 @@ const Committee = () => {
               className={`rounded-lg shadow-lg overflow-hidden ${
                 index === 0 
                   ? 'bg-white border-2 border-navy' 
-                  : 'bg-white border-2 border-teal'
+                  : 'bg-white border-2 border-gold'
               }`}
             >
               <div className={`p-6 ${
                 index === 0 
                   ? 'bg-navy' 
-                  : 'bg-teal'
+                  : 'bg-gold'
               }`}>
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
@@ -315,7 +315,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-xl text-navy">{titleCaseName(member.name)}</p>
-                        <p className="text-base text-slate-700 font-medium text-justify">{member.role}</p>
+                        <p className="text-base text-black font-medium text-justify">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -329,11 +329,11 @@ const Committee = () => {
           {committees.slice(2, 4).map((committee) => (
             <div
               key={committee.title}
-              className="bg-white border-l-4 border-l-coral border border-slate-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white border-l-4 border-l-burgundy border border-slate-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-coral/5 to-coral/10">
+              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-burgundy/5 to-burgundy/10">
                 <div className="flex items-center gap-3">
-                  <div className="bg-coral p-2 rounded-lg">
+                  <div className="bg-burgundy p-2 rounded-lg">
                     <committee.icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="font-display font-bold text-2xl text-navy">
@@ -361,11 +361,11 @@ const Committee = () => {
           {committees.slice(4, 5).map((committee) => (
             <div
               key={committee.title}
-              className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-teal/5 to-teal/10">
+              <div className="p-6 border-b border-warm-grey bg-gradient-to-r from-gold/5 to-gold/10">
                 <div className="flex items-center gap-3">
-                  <div className="bg-teal p-2 rounded-lg">
+                  <div className="bg-gold p-2 rounded-lg">
                     <committee.icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="font-display font-bold text-2xl text-navy">
@@ -379,7 +379,7 @@ const Committee = () => {
                     <MemberImage name={member.name} />
                     <div>
                       <p className="font-display font-bold text-lg text-navy">{titleCaseName(member.name)}</p>
-                      <p className="text-base text-slate-600">{member.role}</p>
+                      <p className="text-base text-black">{member.role}</p>
                     </div>
                   </div>
                 ))}
@@ -413,7 +413,7 @@ const Committee = () => {
                         onError={() => setImgError(true)}
                       />
                     ) : (
-                      <div className="w-14 h-14 bg-teal rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-14 h-14 bg-burgundy rounded-full flex items-center justify-center shrink-0">
                         <User className="w-7 h-7 text-white" />
                       </div>
                     )}
@@ -446,7 +446,7 @@ const Committee = () => {
                         onError={() => setImgError(true)}
                       />
                     ) : (
-                      <div className="w-14 h-14 bg-teal rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-14 h-14 bg-burgundy rounded-full flex items-center justify-center shrink-0">
                         <User className="w-7 h-7 text-white" />
                       </div>
                     )}
@@ -485,7 +485,7 @@ const Committee = () => {
                         onError={() => setImgError(true)}
                       />
                     ) : (
-                      <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-14 h-14 bg-burgundy rounded-full flex items-center justify-center shrink-0">
                         <User className="w-7 h-7 text-white" />
                       </div>
                     )}
@@ -518,7 +518,7 @@ const Committee = () => {
                         onError={() => setImgError(true)}
                       />
                     ) : (
-                      <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-14 h-14 bg-burgundy rounded-full flex items-center justify-center shrink-0">
                         <User className="w-7 h-7 text-white" />
                       </div>
                     )}

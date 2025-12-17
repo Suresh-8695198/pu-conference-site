@@ -2,51 +2,29 @@ import { MapPin, Plane, Train, Bus, Camera, Home } from "lucide-react";
 
 const Accommodation = () => {
   return (
-    <section id="accommodation" className="py-0 bg-slate">
+    <section id="accommodation" className="py-0 bg-cream">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Plan Your Visit
           </span>
           <h2 className="section-title">
-            Travel, Venue & <span className="text-coral">Accommodation</span>
+            Travel & <span className="text-burgundy">Accommodation</span>
           </h2>
-          <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
-        {/* Conference Venue */}
-        <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 bg-teal rounded-lg flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="font-display font-bold text-2xl text-navy">Conference Venue</h3>
-          </div>
-          <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
-            <h4 className="font-display font-bold text-lg text-navy mb-2">Physical Venue</h4>
-            <address className="not-italic text-slate-700 leading-relaxed">
-              Department of Computer Science<br />
-              Periyar University,<br />
-              Salem-636011
-            </address>
-
-            <div className="mt-4">
-              <h4 className="font-display font-bold text-lg text-navy mb-2">Virtual Mode</h4>
-              <p className="text-slate-700">Participants can join the conference via an online platform. The link will be provided upon registration.</p>
-            </div>
-          </div>
-        </div>
-
+      
         {/* Accommodation */}
         <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 bg-coral rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-burgundy rounded-lg flex items-center justify-center">
               <Home className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Accommodation</h3>
           </div>
-          <p className="text-slate-700 mb-6 leading-relaxed">
+          <p className="text-black mb-6 leading-relaxed">
            Accommodation for participants will be arranged at the University Faculty Guest House on a payment basis, subject to availability and prior request.
           </p>
         </div>
@@ -54,14 +32,14 @@ const Accommodation = () => {
         {/* How to Reach */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* By Air */}
-            <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-white border border-warm-grey rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
               <Plane className="w-5 h-5 text-white" />
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Air</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+            <ul className="space-y-2 text-base text-black leading-relaxed text-justify list-disc list-inside">
               <li>Salem Airport (20 km) – Nearest airport; taxis and cabs available.</li>
               <li>Coimbatore Airport (170 km) – Regular flights from major cities; bus/taxi to Salem.</li>
               <li>Bengaluru Airport (210 km) – International hub with direct buses/trains to Salem.</li>
@@ -69,28 +47,28 @@ const Accommodation = () => {
             </div>
 
           {/* By Train */}
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
+          <div className="bg-white border border-warm-grey rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-burgundy rounded-lg flex items-center justify-center">
                 <Train className="w-5 h-5 text-white" />
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Train</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+            <ul className="space-y-2 text-base text-black leading-relaxed text-justify list-disc list-inside">
               <li>Salem Junction (SA) – Major railway junction with connections to all metro cities.</li>
               <li>From the station, Periyar University is 15–20 minutes by taxi, auto, or bus.</li>
             </ul>
           </div>
 
           {/* By Road */}
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
+          <div className="bg-white border border-warm-grey rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-teal rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
                 <Bus className="w-5 h-5 text-white" />
               </div>
               <h4 className="font-display font-bold text-xl text-navy">By Road</h4>
             </div>
-            <ul className="space-y-2 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
+            <ul className="space-y-2 text-base text-black leading-relaxed text-justify list-disc list-inside">
               <li>Salem is well connected via NH-44 and NH-544 to Chennai, Coimbatore, Bengaluru, Trichy, and Madurai.</li>
               <li>Frequent state and private buses operate from all major cities.</li>
               <li>From Salem bus stand, the University is 15–20 minutes away by bus, auto, or taxi.</li>
@@ -101,7 +79,7 @@ const Accommodation = () => {
         {/* Places to Visit */}
         <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-12 bg-coral rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-burgundy rounded-lg flex items-center justify-center">
               <Camera className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Important Places to Visit</h3>

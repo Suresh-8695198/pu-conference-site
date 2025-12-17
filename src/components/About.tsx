@@ -25,33 +25,42 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-24 bg-cream">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             About the Conference
           </span>
           <h2 className="section-title">
-            Welcome to <span className="text-teal">ICAITSC2026</span>
+            Welcome to <span className="text-gold">ICAITSC2026</span>
           </h2>
-          <div className="w-24 h-1 bg-coral mx-auto mt-6" />
+          <div className="w-24 h-1 bg-burgundy mx-auto mt-6" />
         </div>
 
         {/* Publication Announcement Scrolling */}
-        <div className="mb-12 bg-white border-l-4 border-l-coral rounded-lg shadow-xl overflow-hidden">
-          <div className="relative bg-slate-50">
-            <div className="animate-marquee whitespace-nowrap py-5 px-4">
-              <span className="text-navy font-display font-bold text-lg inline-block">
-             Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-             </span>
+        <div className="mb-12 bg-white border-l-4 border-l-burgundy rounded-lg shadow-xl overflow-hidden">
+          <div className="relative bg-cream">
+            <div className="animate-marquee whitespace-nowrap py-5 px-4 flex">
+              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
+                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
+              </span>
+              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
+                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
+              </span>
+              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
+                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
+              </span>
+              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
+                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
+              </span>
             </div>
           </div>
         </div>
 
         {/* Main Content */}
           <div className="max-w-4xl mx-auto mb-20">
-          <p className="text-lg text-slate-700 leading-relaxed text-justify">
+          <p className="text-lg text-black leading-relaxed text-justify indent-10">
             The International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC2026) serves as a multidisciplinary forum that brings together researchers, academicians, industry experts, and practitioners to explore recent advances and emerging trends in artificial intelligence and smart computing. The conference covers a broad spectrum of themes, including AI for healthcare and bioinformatics, computer vision and imaging, signal processing and edge intelligence, machine learning and computational intelligence, data science, big data and high-performance computing, and AI-driven solutions for agriculture and sustainable systems. ICAITSC2026 aims to foster innovation through the integration of intelligent algorithms, data-centric approaches, and scalable computational frameworks, encouraging research that bridges theory with real-world applications and contributes to technological progress and societal well-being.
           </p>
 
@@ -60,7 +69,7 @@ const About = () => {
             <a
               href="/Brochure.pdf"
               download="ICAITSC_2026_Brochure.pdf"
-              className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-teal/90 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-gold text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-gold-dark transition-colors shadow-sm"
             >
               <FileText className="w-5 h-5" />
               Download Brochure
@@ -68,7 +77,7 @@ const About = () => {
             <a
               href="/Schedule.pdf"
                 download="ICAITSC_2026_Schedule.pdf"
-              className="inline-flex items-center justify-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-coral/90 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-burgundy-light transition-colors shadow-sm"
             >
               <FileText className="w-5 h-5" />
               Download Schedule
@@ -82,7 +91,7 @@ const About = () => {
             <h3 className="font-display font-bold text-3xl text-navy mb-4">
               Conference Focus Areas
             </h3>
-            <p className="text-lg text-slate-700 max-w-2xl mx-auto leading-relaxed indent-10">
+            <p className="text-lg text-black max-w-2xl mx-auto leading-relaxed indent-10">
               ICAITSC2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
@@ -90,13 +99,13 @@ const About = () => {
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-6 shadow-sm min-h-[280px] flex flex-col"
+                className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-6 shadow-sm min-h-[280px] flex flex-col"
               >
-                <feature.icon className="w-12 h-12 mb-4 text-teal" />
+                <feature.icon className="w-12 h-12 mb-4 text-gold" />
                 <h3 className="font-display font-bold text-lg mb-3 text-navy">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-slate-700 text-justify leading-relaxed flex-grow">
+                <p className="text-sm text-black text-justify leading-relaxed flex-grow">
                   {feature.description}
                 </p>
               </div>
@@ -110,7 +119,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               Aligned with UN Sustainable Development Goals
             </h3>
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-black leading-relaxed">
               Our conference focuses on key SDGs to drive positive change through AI and technology.
             </p>
           </div>
@@ -140,7 +149,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               ABOUT THE UNIVERSITY
             </h3>
-            <p className="text-slate-700 leading-relaxed text-justify indent-10">
+            <p className="text-black leading-relaxed text-justify indent-10">
               Periyar University, established by the Government of Tamil Nadu on 17 September 1997 under the Periyar University Act, 1997, is located in Salem and serves the districts of Salem, Namakkal, Dharmapuri, and Krishnagiri. The University has been reaccredited with an “A++” grade by NAAC (2021) and holds 12(B) and 2(f) status from the University Grants Commission (UGC). Periyar University is the only state-run university in Tamil Nadu to have received a four-star rating from the Institution’s Innovation Council (IIC) for three consecutive years (2022–2024). In the MoE–NIRF 2024 rankings, the University was placed 56th among Indian Universities. The University actively promotes interdisciplinary teaching and research, emphasizing academic flexibility, curriculum innovation, quality research publications, modern laboratory infrastructure, and strong anti-plagiarism practices, thereby ensuring academic excellence, integrity, and originality.
             </p>
           </div>
@@ -148,7 +157,7 @@ const About = () => {
             <h3 className="font-display font-bold text-2xl text-navy mb-4">
               ABOUT THE DEPARTMENT
             </h3>
-            <p className="text-slate-700 leading-relaxed text-justify indent-10">
+            <p className="text-black leading-relaxed text-justify indent-10">
               The Department of Computer Science at Periyar University, established in 2002, is dedicated to providing high-quality education in Computer Science and its applications. The department offers postgraduate programmes including MCA, M.Sc. (Computer Science), and M.Sc. (Data Science), along with a doctoral programme in Computer Science covering both core and emerging areas such as Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Bioinformatics and Genomic Data Analysis, Computer Networks, and Image and Signal Processing. With a dynamic and regularly updated curriculum delivered by experienced faculty, the department places strong emphasis on academic excellence, innovation, and skill development. Faculty members actively contribute to research, publishing extensively in reputed national and international journals. Through funded research projects, publications, workshops, and conferences, the department fosters a culture of ethical computing, research excellence, and innovation, equipping graduates for impactful careers in industry, academia, and society.            </p>
           </div>
         </div>

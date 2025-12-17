@@ -57,11 +57,11 @@ const Hero = () => {
           {/* Main Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-display font-bold text-white mb-0 leading-tight animate-fade-in px-2 drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
             International Conference on
-            <span className="block text-yellow-200 mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
+            <span className="block text-gold mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
               Artificial Intelligence
             </span>
-            <span className="block text-coral-300 mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
-             Techniques and Smart Computing
+            <span className="block text-white mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
+             Techniques and Smart Computingss
             </span>
           </h1>
 
@@ -69,15 +69,15 @@ const Hero = () => {
           {/* Info Cards */}
           <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-8 animate-fade-in px-4" style={{ animationDelay: "0.3s" }}>
             <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
-                <Users className="w-5 h-5 text-coral flex-shrink-0" />
+                <Users className="w-5 h-5 text-gold flex-shrink-0" />
                 <span className="text-navy font-semibold text-base sm:text-lg">Hybrid Mode</span>
             </div>
             <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
-              <Calendar className="w-5 h-5 text-coral font-bold flex-shrink-0" />
+              <Calendar className="w-5 h-5 text-gold font-bold flex-shrink-0" />
               <span className="text-navy font-semibold text-base">26-27 February 2026</span>
             </div>
             <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
-              <MapPin className="w-5 h-5 text-coral flex-shrink-0" />
+              <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
               <span className="text-navy font-semibold text-base">Salem, Tamil Nadu, India</span>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Hero = () => {
             <p className="text-xl sm:text-2xl xl:text-xl 2xl:text-3xl text-white font-display font-semibold mb-2 drop-shadow-lg">
               Department of Computer Science
             </p>
-            <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-2xl text-yellow-200 font-medium drop-shadow-lg">
+            <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-2xl text-gold font-medium drop-shadow-lg">
               Periyar University
             </p>
           </div>

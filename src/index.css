@@ -39,17 +39,19 @@
 
     --radius: 0.5rem;
 
-    /* Custom design tokens */
-    --navy: 210 40% 20%;
-    --navy-dark: 210 50% 15%;
-    --navy-light: 210 30% 35%;
-    --teal: 210 20% 40%;
-    --teal-light: 210 15% 50%;
-    --coral: 45 30% 50%;
-    --coral-light: 45 25% 60%;
-    --gold: 45 30% 50%;
-    --mint: 160 20% 95%;
-    --slate: 220 14% 96%;
+    /* Custom design tokens - Professional Gold Theme */
+    --navy: 210 45% 18%;
+    --navy-dark: 210 55% 12%;
+    --navy-light: 210 35% 32%;
+    --gold: 45 85% 50%;
+    --gold-light: 45 75% 60%;
+    --gold-dark: 45 90% 40%;
+    --purple: 270 50% 40%;
+    --purple-light: 270 40% 55%;
+    --burgundy: 0 50% 35%;
+    --burgundy-light: 0 40% 50%;
+    --cream: 45 20% 98%;
+    --warm-grey: 45 10% 92%;
   }
 
   html, body {
@@ -128,11 +130,11 @@
   }
 
   .btn-secondary {
-    @apply bg-secondary text-secondary-foreground px-8 py-4 font-display font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-teal-light hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-secondary text-secondary-foreground px-8 py-4 font-display font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-gold-light hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .btn-accent {
-    @apply bg-accent text-accent-foreground px-8 py-4 font-display font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-coral-light hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-accent text-accent-foreground px-8 py-4 font-display font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-burgundy-light hover:shadow-lg hover:-translate-y-0.5;
   }
 }
 
@@ -143,14 +145,6 @@
   
   .bg-navy-dark {
     background-color: hsl(var(--navy-dark));
-  }
-
-  .bg-teal {
-    background-color: hsl(var(--teal));
-  }
-
-  .bg-coral {
-    background-color: hsl(var(--coral));
   }
 
   .bg-gold {
@@ -167,14 +161,6 @@
 
   .text-navy {
     color: hsl(var(--navy));
-  }
-
-  .text-teal {
-    color: hsl(var(--teal));
-  }
-
-  .text-coral {
-    color: hsl(var(--coral));
   }
 
   .text-gold {
@@ -202,7 +188,7 @@
   }
 
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: marquee 18s linear infinite;
   }
 }
 
@@ -217,10 +203,10 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

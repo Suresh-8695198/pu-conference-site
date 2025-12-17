@@ -9,7 +9,7 @@ const Tracks = () => {
       id: 0,
       title: "Next-Gen AI for Healthcare, Bioinformatics & Biomedical Systems",
       icon: Brain,
-      color: "bg-teal",
+      color: "bg-gold",
       topics: [
         "Medical Imaging, Radiomics & Biomedical Signals",
         "AI for Diagnosis, Early Detection & Clinical Intelligence",
@@ -22,7 +22,7 @@ const Tracks = () => {
       id: 1,
       title: "Intelligent Computer Vision, Imaging & Pattern Recognition",
       icon: Cpu,
-      color: "bg-coral",
+      color: "bg-burgundy",
       topics: [
         "Deep Learning for Image/Video Analytics",
         "Medical, Agricultural & Satellite Imaging",
@@ -35,7 +35,7 @@ const Tracks = () => {
       id: 2,
       title: "Advanced Signal Processing, Smart Sensing & Edge Intelligence",
       icon: Database,
-      color: "bg-navy",
+      color: "bg-gold",
       topics: [
         "Audio/Speech/Signal Processing",
         "Wavelet, Time–Frequency & Feature Extraction",
@@ -48,7 +48,7 @@ const Tracks = () => {
       id: 3,
       title: "Machine Learning, Deep Learning & Computational Intelligence",
       icon: Cloud,
-      color: "bg-teal",
+      color: "bg-burgundy",
       topics: [
         "Deep Learning Models & Optimization",
         "Evolutionary & Swarm-Based Intelligence",
@@ -61,7 +61,7 @@ const Tracks = () => {
       id: 4,
       title: "Data Science, Big Data Technologies & High-Performance Computing",
       icon: Shield,
-      color: "bg-coral",
+      color: "bg-burgundy",
       topics: [
         "Big Data Analytics for Health & Agriculture",
         "Cloud, Distributed & Parallel ML",
@@ -90,12 +90,12 @@ const Tracks = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="section-title">
-            Research <span className="text-coral">Tracks</span>
+            Research <span className="text-burgundy">Tracks</span>
           </h2>
           <p className="section-subtitle mt-4">
             Click on any track to explore the topics covered
           </p>
-          <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
         {/* Tracks Grid */}

@@ -6,13 +6,13 @@ const Speakers = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-gold font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Keynote Speakers
           </span>
           <h2 className="section-title">
-            Meet Our <span className="text-coral">Speakers</span>
+            Meet Our <span className="text-burgundy">Speakers</span>
           </h2>
-          <div className="w-24 h-1 bg-teal mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
 
         {/* Speakers Grid */}
@@ -29,7 +29,7 @@ const Speakers = () => {
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">DG</span>
               </div>
               <div className="flex-1">
@@ -54,7 +54,7 @@ const Speakers = () => {
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">AP</span>
               </div>
               <div className="flex-1">
@@ -80,7 +80,7 @@ const Speakers = () => {
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-44 h-52 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-44 h-52 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">PP</span>
               </div>
               <div className="flex-1">
@@ -106,7 +106,7 @@ const Speakers = () => {
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-40 h-40 bg-teal rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">SR</span>
               </div>
               <div className="flex-1">
