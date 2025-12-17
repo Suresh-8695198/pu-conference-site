@@ -9,7 +9,7 @@ const Registration = () => {
       foreign: "",
     },
     {
-      title: "Participants (non-authors)",
+      title: "Participants (Non-authors)",
       icon: Globe,
       indian: "₹1,500",
       foreign: "",
@@ -102,7 +102,6 @@ const Registration = () => {
                             </div>
                             <div className="flex justify-between mt-1 items-center">
                               <span className="text-sm">Total (incl. GST)</span>
-                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatINR(total)}</span>
                             </div>
                           </div>
                         );
