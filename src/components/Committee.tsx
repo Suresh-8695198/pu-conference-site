@@ -190,9 +190,9 @@ const Committee = () => {
     { name: "Dr. D. NAPOLEON", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
     { name: "Dr. W. Rose verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
     // { name: "Dr. H. ABDUL GAFFAR", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/ABDUL_GAFFAR_H.jpg" },
-    { name: "Dr. Mohanasundaram Ranganathan", role: "School of Computing Science and Engineering, Vellore Institute of Technology (VIT University), Vellore, Tamil Nadu, India", country: "India", image: "/Mohanasundaram_Ranganathan.jpeg" },
+    { name: "Dr. Mohanasundaram Ranganathan", role: "Vellore Institute of Technology (VIT University), Vellore, Tamil Nadu, India", country: "India", image: "/Mohanasundaram_Ranganathan.jpeg" },
     { name: "Dr. R. Vijayarajan", role: "Vellore Institute of Technology University, Chennai, Tamil Nadu, India", country: "India", image: "/Vijayarajan_R.jpeg" },
-    { name: "Dr. Nagarajan Deivanayagam Pillai", role: "Chettinad Institute of Technology, Chettinad Academy of Research and Education, Chennai, India", country: "India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
+    { name: "Dr. Nagarajan Deivanayagam Pillai", role: "Chettinad Institute of Technology, Chennai, Tamil Nadu, India", country: "India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
     // { name: "Dr. S. Murali", role: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India", image: "/Murali_S.jpg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
