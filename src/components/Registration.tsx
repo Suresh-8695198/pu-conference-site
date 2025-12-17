@@ -102,6 +102,7 @@ const Registration = () => {
                             </div>
                             <div className="flex justify-between mt-1 items-center">
                               <span className="text-sm">Total (incl. GST)</span>
+                              <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatINR(total)}</span>
                             </div>
                           </div>
                         );
@@ -129,7 +130,6 @@ const Registration = () => {
                               <span className="text-sm">Total (Including GST)</span>
                               <span className="font-bold text-2xl text-white bg-coral px-3 py-1 rounded-lg">{formatCurrency(category.foreign, total)}</span>
                             </div>
-                            <div className="mt-2 text-xs text-slate-600">{`${base} + 18% GST = ${total}`}</div>
                           </div>
                         );
                       })()}
