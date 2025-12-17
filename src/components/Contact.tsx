@@ -17,9 +17,9 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-6">
            
-            <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-white mt-3 p-4 rounded-2xl border border-slate-200 shadow-sm">
               <h4 className="font-display font-semibold text-navy mb-3">University Location</h4>
-              <div className="aspect-[16/9] w-full rounded-md overflow-hidden">
+              <div className="w-full rounded-md overflow-hidden h-56 sm:h-72 md:h-96 lg:h-[520px]">
                 <iframe
                   src="https://maps.google.com/maps?q=Periyar%20University%2C%20Salem%2C%20Tamil%20Nadu%20636011%2C%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
@@ -62,8 +62,8 @@ const Contact = () => {
             </div>
 
             <div>
-               <div className="bg-white p-6 rounded-2xl mb-4 border border-slate-200 shadow-sm">
-              <p className="text-slate-700 leading-relaxed">For queries regarding the conference, paper submission, or registration, please contact the secretariat below.</p>
+               <div className="bg-white p-6 rounded-2xl mb-4 border border-slate-200 shadow-sm text-justify">
+              <p className="text-slate-700 leading-relaxed">For any queries related to the conference, paper submission, or registration, please contact the following:</p>
             </div>
 
               <div className="flex flex-col gap-4">
