@@ -38,7 +38,7 @@ const Registration = () => {
 
   const formatCurrency = (s?: string, n?: number) => {
     if (s && s.trim().startsWith("₹")) return `₹${(n ?? 0).toLocaleString("en-IN")}`;
-    if (s && (s.trim().startsWith("$") || s.trim().toUpperCase().startsWith("USD"))) return `USD ${(n ?? 0).toFixed(2)}`;
+    if (s && (s.trim().startsWith("$") || s.trim().toUpperCase().startsWith("USD"))) return `USD ${(n ?? 0)}`;
     return (n ?? 0).toString();
   };
 
