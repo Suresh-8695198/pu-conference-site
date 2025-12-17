@@ -38,7 +38,7 @@ const Registration = () => {
 
   const formatCurrency = (s?: string, n?: number) => {
     if (s && s.trim().startsWith("₹")) return `₹${(n ?? 0).toLocaleString("en-IN")}`;
-    if (s && (s.trim().startsWith("$") || s.trim().toUpperCase().startsWith("USD"))) return `USD ${(n ?? 0)}`;
+    if (s && (s.trim().startsWith("$") || s.trim().toUpperCase().startsWith("USD"))) return `USD ${(n ?? 0).toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
     return (n ?? 0).toString();
   };
 
@@ -121,8 +121,8 @@ const Registration = () => {
                       {(() => {
                         const base = parseAmount(category.foreign as string);
                         if (base === null) return null;
-                        const gst = +(base * 0.18).toFixed(2);
-                        const total = +(base + gst).toFixed(2);
+                        const gst = Math.round(base * 0.18);
+                        const total = base + gst;
                         return (
                           <div className="mt-3 text-sm text-[#0b3d2e]">
                             <div className="flex justify-between mt-1">
