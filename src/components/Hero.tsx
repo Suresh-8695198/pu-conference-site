@@ -27,7 +27,7 @@ const Hero = () => {
            
           
 
-          {/* Logo + ICAITSC-2026 Card */}
+          {/* Logo + ICAITSC2026 Card */}
           <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 2xl:mt-10 bg-white border-2 border-gray-300 rounded-xl shadow-lg px-4 py-5 sm:px-6 sm:py-6 md:px-6 md:py-6 xl:px-6 xl:py-6 2xl:px-6 2xl:py-8 mb-6 sm:mb-8 md:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in w-full max-w-4xl mx-auto">
             {/* Combined Logos Row - single horizontal, non-wrapping with overflow */}
             <div className="w-full mt-1 mb-4">
@@ -42,7 +42,7 @@ const Hero = () => {
                   <img src="/colob.png" alt="Partner Colob" className="h-8 sm:h-10 md:h-12 object-contain" />
                 </div>
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[56px] sm:min-w-[64px]">
-                  <img src="/partner1.jpeg" alt="Partner 1" className="h-8 sm:h-10 md:h-12 object-contain" />
+                  <img src="/partner1.jpg" alt="Partner 1" className="h-8 sm:h-10 md:h-12 object-contain" />
                 </div>
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[56px] sm:min-w-[64px]">
                   <img src="/partner2.jpeg" alt="Partner 2" className="h-8 sm:h-10 md:h-12 object-contain" />
@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
 
             {/* Title */}
-            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl mt-5 font-bold text-navy text-center block">ICAITSC-2026</span>
+            <span className="text-xl sm:text-2xl md:text-3xl xl:text-3xl 2xl:text-4xl mt-5 font-bold text-navy text-center block">ICAITSC2026</span>
           </div>
 
           {/* Main Title */}
@@ -99,7 +99,7 @@ const Hero = () => {
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#call-for-papers" className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 font-display font-semibold text-base sm:text-lg xl:text-lg 2xl:text-xl rounded-lg transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-center w-full sm:w-auto drop-shadow-lg">
+            <a href="https://forms.gle/YBBhAq98RbPFqEeYA" target="_blank" rel="noopener noreferrer" className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 font-display font-semibold text-base sm:text-lg xl:text-lg 2xl:text-xl rounded-lg transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-center w-full sm:w-auto drop-shadow-lg">
               Submit Paper
             </a>
           </div>

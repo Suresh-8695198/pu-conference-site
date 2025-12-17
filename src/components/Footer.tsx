@@ -14,11 +14,11 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <img
                 src="/icaitsc.png"
-                alt="ICAITSC-2026 Logo"
+                alt="ICAITSC2026 Logo"
                 className="w-12 h-12 object-contain"
               />
               <div>
-                <p className="font-display font-bold text-lg">ICAITSC-2026</p>
+                <p className="font-display font-bold text-lg">ICAITSC2026</p>
                 <p className="text-xs text-primary-foreground/60">Periyar University</p>
               </div>
             </div>

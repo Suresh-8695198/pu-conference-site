@@ -28,8 +28,9 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr. Murali S": "/Murali_S.jpg",
     // Images for recently added national advisory members
     "Mohanasundaram Ranganathan": "/Mohanasundaram_Ranganathan.jpeg",
-    "Dr. Vijayarajan R": "/Vijayarajan_R.jpeg",
-    "Dr. Nagarajan Deivanayagam Pillai": "/Nagarajan_Deivanayagam_Pillai.jpg",
+    "Dr E CHANDRA": "/E_Chandra.jpeg",
+    "Dr.D.Murugan": "/D_Murugan.jpeg",
+    "Dr.P.Shanmugavadivu": "/P_Shanmugavadivu.jpeg",
   };
 
   const findImageSrc = (name: string) => {
@@ -197,44 +198,32 @@ const Committee = () => {
   End of previous entries.
   */
 
-  // Technical Program Committee: exact 20 members as requested
+  // Technical Program Committee Members
   const technicalLeadership = [
-    { name: "Dr. J. Bagyamani", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamani.jpg" },
-    { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
+    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education(Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
+    { name: "Dr. Nagarajan Deivanayagam Pillai", role: "Chettinad Institute of Technology,Chennai, Tamil Nadu, India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
     { name: "Dr. E. George Dharma Prakash Raj", role: "Bharathidasan University, Tiruchirappalli, Tamil Nadu, India", image: "/George Dharma Prakash Raj.jpg" },
-    { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
-    { name: "Dr. A. Kaja Mohideen", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India", image: "/Kaja_Mohideen_A.jpg" },
-    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
-    { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science, Coimbatore, Tamil Nadu, India", image: "/Manikandan_Kumar.jpg" },
-    { name: "Dr. Mohanasundaram Ranganathan", role: "Vellore Institute of Technology (VIT University), Vellore, Tamil Nadu, India", image: "/Mohanasundaram_Ranganathan.jpeg" },
-    { name: "Dr. Nagarajan Deivanayagam Pillai", role: "Chettinad Institute of Technology, Chennai, Tamil Nadu, India", image: "/Nagarajan_Deivanayagam_Pillai.jpg" },
-    { name: "Dr. D. Napoleon", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
+    { name: "Dr E CHANDRA", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/E_Chandra.jpeg" },
+    { name: "Dr.P.Shanmugavadivu", role: "The Gandhigram Rural Institute - Deemed to be University,, Dindigul, Tamil Nadu, India", image: "/P_Shanmugavadivu.jpeg" },
+    { name: "Dr. T. Kalaiselvi", role: "Gandhigram Rural Institute (Deemed to be University),Dindigul, Tamil Nadu, India", image: "/Kalaiselvi.jpg" },
     { name: "Dr. R. Porkodi", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/R_PORKODI.jpg" },
-    { name: "Dr. T. Ramesh", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/T_RAMESH.jpg" },
+    { name: "Dr. S. Janakiraman", role: "Pondicherry University (Central University), Puducherry, India", image: "/Janakiraman.jpg" },
     { name: "Dr. D. Ramyachitra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Ramyachitra.jpg" },
-    { name: "Dr. W. Rose Verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
-    { name: "Dr. P. Shanmuga Sundari", role: "SRM Institute of Science and Technology (SRMIST), Trichy, Tamil Nadu, India", image: "/P_Shanmuga_Sundari.jpg" },
-    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
-    { name: "Dr. N. Suresh Kumar", role: "Chettinad Academy of Research and Education (Deemed to be University), CIT, Chengalpattu, Tamil Nadu, India", image: "/Suresh Kumar.jpg" },
+    { name: "Dr. T. Ramesh", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/T_RAMESH.jpg" },
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
+    { name: "Dr. D. Napoleon", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/D_NAPOLEON.jpg" },
+    { name: "Dr. W. Rose Verna", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/W_Rose_verna.jpg" },
+    { name: "Dr.D.Murugan", role: "Manonmaniam Sundaranar University (MSU) ,Tirunelveli, TamilNadu, India", image: "/D_Murugan.jpeg" },
+    { name: "Dr. J. Bagyamani", role: "Government Arts College, Pennagaram, Tamil Nadu, India", image: "/Bagyamani.jpg" },
     { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
-    { name: "Dr. R. Vijayarajan", role: "Vellore Institute of Technology University, Chennai, Tamil Nadu, India", image: "/Vijayarajan_R.jpeg" },
-    { name: "Dr. P. Shanmugavadivu", role: "Gandhigram Rural Institute - Deemed to be University, Dindigul, Tamil Nadu, India", image: "/P_Shanmugavadivu.jpeg" },
-    { name: "Dr. E. Chandra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/E_Chandra.jpeg" },
-    { name: "Dr. D. Murugan", role: "Manonmaniam Sundaranar University (MSU), Tirunelveli, Tamil Nadu, India", image: "/D_Murugan.jpeg" },
-  ].sort((a, b) => {
-    const getFirstName = (name: string) => {
-      let cleaned = name.replace(/^(Dr\.\s*|Prof\.\s*|Mr\.\s*|Ms\.\s*|Mrs\.\s*|Tmt\.\s*)/i, '').trim();
-      const words = cleaned.split(/\s+/);
-      for (const word of words) {
-        if (word.length > 2 && !word.endsWith('.')) {
-          return word.toLowerCase();
-        }
-      }
-      return cleaned.toLowerCase();
-    };
-    return getFirstName(a.name).localeCompare(getFirstName(b.name));
-  });
+    { name: "Dr. M. Sumathi", role: "Sri Meenakshi Government Arts College for Women (Autonomous),Madurai, Tamil Nadu, India", image: "/Sumathi.jpg" },
+    { name: "Dr. A. Kaja Mohideen", role: "Vellore Institute of Technology, Chennai, Tamil Nadu, India", image: "/Kaja_Mohideen_A.jpg" },
+    { name: "Dr. Mohanasundaram Ranganathan", role: "Vellore Institute of Technology,Vellore, Tamil Nadu, India", image: "/Mohanasundaram_Ranganathan.jpeg" },
+    { name: "Dr. R. Vijayarajan", role: "Vellore Institute of Technology University,Chennai, Tamil Nadu, India", image: "/Vijayarajan_R.jpeg" },
+    { name: "Dr. P. Shanmuga Sundari", role: "SRM Institute of Science and Technology (SRMIST), Trichy, Tamil Nadu, India", image: "/P_Shanmuga_Sundari.jpg" },
+    { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
+    { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science,Coimbatore, Tamil Nadu, India", image: "/Manikandan_Kumar.jpg" },
+  ];
 
   const committees = [
     {

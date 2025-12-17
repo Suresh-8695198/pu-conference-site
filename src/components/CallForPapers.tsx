@@ -16,18 +16,18 @@ const CallForPapers = () => {
     <section id="call-for-papers" className="py-5 bg-slate">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <span className="inline-block text-teal font-display font-semibold text-sm uppercase tracking-wider mb-4">
             Submit Your Research
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">
             Camera Ready<span className="text-teal"> Submission</span>
           </h2>
-          <div className="w-24 h-1 bg-coral mx-auto mt-6" />
+          <div className="w-24 h-1 bg-coral mx-auto"></div>
         </div>
 
         {/* Important Notice */}
-        <div className="max-w-6xl mx-auto mb-16">
+        <div className="max-w-6xl mx-auto mb-12">
           <div className="bg-white border-2 border-teal rounded-lg p-8 shadow-sm">
             <div className="flex items-start gap-4">
               <AlertCircle className="w-6 h-6 text-teal mt-1 shrink-0" />
@@ -163,15 +163,7 @@ const CallForPapers = () => {
               <p className="text-slate-700 mb-6 leading-relaxed">
                 Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="/Manuscript_Guidelines.pdf" 
-                  download="Manuscript_Guidelines.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-coral text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-coral/90 transition-colors"
-                >
-                  <FileText className="w-5 h-5" />
-                  Manuscript Guidelines
-                </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a 
                   href="/Abstracts_Guidelines.pdf" 
                   download="Abstracts_Guidelines.pdf"
@@ -179,6 +171,22 @@ const CallForPapers = () => {
                 >
                   <FileText className="w-5 h-5" />
                   Abstracts Guidelines
+                </a>
+                <a 
+                  href="/Manuscript_Guidelines.pdf" 
+                  download="Manuscript_Guidelines_Taylor_Francis.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <FileText className="w-5 h-5" />
+                  Manuscript Guidelines - Taylor & Francis
+                </a>
+                <a 
+                  href="/sample_file.pdf" 
+                  download="Manuscript_Guidelines_Wiley.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <FileText className="w-5 h-5" />
+                  Manuscript Guidelines - Wiley
                 </a>
               </div>
             </div>
@@ -190,7 +198,6 @@ const CallForPapers = () => {
               </h3>
               <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
                 <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
-                <li>Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings, with applicable publication charges.</li>
               </ol>
             </div>
 
@@ -199,15 +206,65 @@ const CallForPapers = () => {
               <Send className="w-12 h-12 text-coral mx-auto mb-4" />
               <h3 className="font-display font-bold text-xl mb-2 text-white">Ready to Submit?</h3>
               <p className="text-white/90 mb-6 text-base">
-                Submit your paper through our online submission portal
+                Authors are requested to submit the Google Form only after completing the paper submission through Microsoft CMT
               </p>
               <a 
-                href="#" 
+                href="https://forms.gle/YBBhAq98RbPFqEeYA" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-coral text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-coral/90 transition-colors"
               >
                 <Send className="w-5 h-5" />
                 Submit Paper
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* CMT Acknowledgement */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="bg-gradient-to-br from-slate-50 to-white border-2 border-teal/20 rounded-2xl p-8 shadow-xl">
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-slate-200 shadow-md mb-4">
+                <div className="w-8 h-8 bg-teal rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-teal font-display font-semibold text-sm uppercase tracking-wide">
+                  Acknowledgement
+                </span>
+              </div>
+              <h3 className="font-display font-bold text-2xl text-navy mb-4">
+                CMT Service Acknowledgement
+              </h3>
+              <div className="w-16 h-1 bg-gradient-to-r from-teal to-coral rounded-full mx-auto mb-6"></div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-slate-700 text-base leading-relaxed mb-8 text-justify max-w-3xl mx-auto">
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex items-center gap-2 text-slate-600">
+                  <svg className="w-5 h-5 text-teal" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="font-medium">Powered by Microsoft</span>
+                </div>
+                <a
+                  href="https://cmt3.research.microsoft.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-teal to-navy text-white px-6 py-3 rounded-lg font-display font-semibold hover:from-teal/90 hover:to-navy/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clipRule="evenodd" />
+                  </svg>
+                  Visit CMT Portal
+                </a>
+              </div>
             </div>
           </div>
         </div>

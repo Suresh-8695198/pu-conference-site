@@ -165,29 +165,47 @@ const Registration = () => {
         </div>
 
         {/* Bank Details */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-8 shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-8 shadow-sm md:col-span-2">
             <h3 className="font-display font-bold text-2xl mb-6 text-navy">
               Bank Transfer Details
             </h3>
-            <div className="space-y-4">
-              {[
-                { label: "Account Name", value: "Periyar University Conference Account" },
-                { label: "Account Number", value: "To be Provided" },
-                { label: "Bank Name", value: "Canara Bank" },
-                { label: "Branch Name", value: "Periyar University Campus" },
-                { label: "Branch Code", value: "08450" },
-                { label: "IFSC Code", value: "CNRB0008450" },
-                { label: "MICR Code", value: "636015024" },
-                { label: "SWIFT Code", value: "To be Provided" },
-                { label: "Address", value: "Canara Bank, Periyar University Campus Branch, Salem – 636011, Tamil Nadu, India" },
-              ].map((item) => (
-                <div key={item.label} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-200 pb-3 gap-1">
-                  <span className="text-slate-600 break-words">{item.label}</span>
-                  <span className="font-display font-semibold text-navy break-words">{item.value}</span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                {/* Details column (spans two columns on md+) */}
+                <div className="md:col-span-2 bg-transparent">
+                  <div className="divide-y divide-slate-100 rounded-lg overflow-hidden border border-slate-100">
+                    {[
+                      { label: "Account Name", value: "Periyar University Conference Account" },
+                      { label: "Account Number", value: "8450101001449" },
+                      { label: "Bank Name", value: "Canara Bank" },
+                      { label: "Branch Name", value: "Periyar University Campus" },
+                      { label: "Branch Code", value: "08450" },
+                      { label: "IFSC Code", value: "CNRB0008450" },
+                      { label: "MICR Code", value: "636015024" },
+                      { label: "Address", value: "Canara Bank, Periyar University Campus Branch, Salem – 636011, Tamil Nadu, India" },
+                    ].map((item, idx) => (
+                      <div key={item.label} className={`py-4 px-4 flex justify-between items-start bg-white hover:bg-slate-50 transition-colors ${idx === 0 ? 'rounded-t-lg' : ''} ${idx === 8 ? 'rounded-b-lg' : ''}`}>
+                        <dt className="text-slate-600 text-sm font-medium mr-4 uppercase tracking-wide">{item.label}</dt>
+                        <dd className="text-slate-900 text-sm font-display font-semibold text-navy text-right break-words flex-1">{item.value}</dd>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
+
+                {/* QR Column */}
+                <div className="flex flex-col items-center justify-start">
+                  <div className="w-full bg-gradient-to-br from-teal/5 to-coral/5 p-6 rounded-lg border border-slate-200 shadow-lg flex flex-col items-center">
+                    <div className="w-16 h-16 bg-teal rounded-full flex items-center justify-center mb-3">
+                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-slate-600 mb-4 font-medium">Scan to Pay</p>
+                    <img src="/qr.jpeg" alt="Conference QR Code for Payment" className="w-40 h-40 object-contain rounded-lg border-2 border-slate-300 shadow-md" />
+                    <p className="text-xs text-slate-500 mt-4 text-center leading-relaxed">Use your UPI or banking app to scan and make payment securely.</p>
+                  </div>
+                </div>
+              </div>
           </div>
 
           <div className="bg-navy border border-navy rounded-lg p-4 sm:p-8 flex flex-col justify-center items-center text-center shadow-sm">

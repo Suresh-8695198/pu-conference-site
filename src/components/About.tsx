@@ -10,7 +10,7 @@ const About = () => {
     {
       icon: Target,
       title: "SDG 4 – Quality Education",
-      description: "ICAITSC-2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
+      description: "ICAITSC2026 fosters knowledge dissemination, research skill development, and AI-enabled learning technologies by bringing together academicians, researchers, and students on a global platform.",
     },
     {
       icon: Users,
@@ -33,7 +33,7 @@ const About = () => {
             About the Conference
           </span>
           <h2 className="section-title">
-            Welcome to <span className="text-teal">ICAITSC-2026</span>
+            Welcome to <span className="text-teal">ICAITSC2026</span>
           </h2>
           <div className="w-24 h-1 bg-coral mx-auto mt-6" />
         </div>
@@ -43,7 +43,8 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-              Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies              </span>
+             Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
+             </span>
             </div>
           </div>
         </div>
@@ -51,7 +52,7 @@ const About = () => {
         {/* Main Content */}
           <div className="max-w-4xl mx-auto mb-20">
           <p className="text-lg text-slate-700 leading-relaxed text-justify">
-            The International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC-2026) serves as a multidisciplinary forum that brings together researchers, academicians, industry experts, and practitioners to explore recent advances and emerging trends in artificial intelligence and smart computing. The conference covers a broad spectrum of themes, including AI for healthcare and bioinformatics, computer vision and imaging, signal processing and edge intelligence, machine learning and computational intelligence, data science, big data and high-performance computing, and AI-driven solutions for agriculture and sustainable systems. ICAITSC-2026 aims to foster innovation through the integration of intelligent algorithms, data-centric approaches, and scalable computational frameworks, encouraging research that bridges theory with real-world applications and contributes to technological progress and societal well-being.
+            The International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC2026) serves as a multidisciplinary forum that brings together researchers, academicians, industry experts, and practitioners to explore recent advances and emerging trends in artificial intelligence and smart computing. The conference covers a broad spectrum of themes, including AI for healthcare and bioinformatics, computer vision and imaging, signal processing and edge intelligence, machine learning and computational intelligence, data science, big data and high-performance computing, and AI-driven solutions for agriculture and sustainable systems. ICAITSC2026 aims to foster innovation through the integration of intelligent algorithms, data-centric approaches, and scalable computational frameworks, encouraging research that bridges theory with real-world applications and contributes to technological progress and societal well-being.
           </p>
 
           {/* Download Buttons */}
@@ -82,7 +83,7 @@ const About = () => {
               Conference Focus Areas
             </h3>
             <p className="text-lg text-slate-700 max-w-2xl mx-auto leading-relaxed indent-10">
-              ICAITSC-2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
+              ICAITSC2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
