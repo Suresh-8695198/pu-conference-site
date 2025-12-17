@@ -33,52 +33,110 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Conference Venue - Full Width Centered */}
-        <div className="max-w-4xl mx-auto mb-8 md:mb-12">
-          <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col gap-4 md:gap-6">
-            <div className="flex items-center justify-center gap-3 md:gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-navy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
-              </div>
-              <h4 className="font-display font-semibold text-navy text-lg md:text-xl text-center">Conference Venue</h4>
-            </div>
+        {/* Conference Venue - Advanced Design */}
+        <div className="max-w-5xl mx-auto mb-8 md:mb-12">
+          <div className="relative">
+            {/* Background gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-teal/5 via-transparent to-coral/5 rounded-3xl"></div>
             
-            {/* Physical Venue Card */}
-            <div className="bg-teal/10 p-4 md:p-5 rounded-xl border border-teal/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-teal rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm3 1h6v2H7V5zm0 4h6v2H7V9zm0 4h4v2H7v-2z" clipRule="evenodd" />
-                </svg>
+            {/* Main venue card with advanced styling */}
+            <div className="relative bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-slate-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+              {/* Decorative background elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-coral/10 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
+              
+              {/* Header with enhanced design */}
+              <div className="relative z-10 text-center mb-8 md:mb-10">
+                <div className="inline-flex items-center gap-4 bg-gradient-to-r from-teal/10 to-coral/10 px-6 py-3 rounded-full border border-slate-200/50 shadow-lg mb-6">
+                  <div className="w-3 h-3 bg-teal rounded-full animate-pulse"></div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-navy to-teal rounded-xl flex items-center justify-center shadow-md">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="w-3 h-3 bg-coral rounded-full animate-pulse"></div>
+                </div>
+                <h3 className="font-display font-bold text-2xl md:text-3xl mb-4 bg-gradient-to-r from-navy to-teal bg-clip-text text-transparent">
+                  Conference Venue
+                </h3>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-16 h-1 bg-gradient-to-r from-teal to-navy rounded-full"></div>
+                  <div className="w-3 h-3 bg-navy rounded-full"></div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-navy to-coral rounded-full"></div>
+                </div>
               </div>
-              <div className="flex-1 min-w-0">
-                <h5 className="font-display font-semibold text-teal text-base md:text-lg mb-2 flex items-center gap-2">
-                  Physical Venue
-                  <div className="w-2 h-2 bg-teal rounded-full"></div>
-                </h5>
-                <address className="not-italic text-slate-700 text-sm leading-relaxed">
-                  Department of Computer Science<br />
-                  Periyar University<br />
-                  Salem - 636011<br />
-                  Tamil Nadu, India
-                </address>
-              </div>
-            </div>
 
-            {/* Virtual Mode Card */}
-            <div className="bg-coral/10 p-4 md:p-5 rounded-xl border border-coral/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-coral rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
-                </svg>
+              {/* Venue cards grid with advanced styling */}
+              <div className="relative z-10 grid md:grid-cols-2 gap-6 md:gap-8">
+                {/* Physical Venue Card - Enhanced */}
+                <div className="group relative bg-gradient-to-br from-teal/5 to-teal/10 p-6 md:p-7 rounded-2xl border-2 border-teal/20 hover:border-teal/40 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 hover:scale-[1.02] overflow-hidden">
+                  {/* Card background pattern */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute top-4 right-4 w-16 h-16 border-2 border-teal rounded-full"></div>
+                    <div className="absolute bottom-4 left-4 w-12 h-12 bg-teal rounded-lg rotate-45"></div>
+                  </div>
+                  
+                  <div className="relative z-10 flex items-start gap-4 md:gap-5">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-teal to-teal/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 flex-shrink-0">
+                      <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm3 1h6v2H7V5zm0 4h6v2H7V9zm0 4h4v2H7v-2z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-3">
+                        <h4 className="font-display font-bold text-teal text-lg md:text-xl">Physical Venue</h4>
+                        <div className="w-3 h-3 bg-teal rounded-full animate-pulse"></div>
+                      </div>
+                      <address className="not-italic text-slate-700 text-sm md:text-base leading-relaxed font-medium">
+                        Department of Computer Science<br />
+                        <span className="text-navy font-semibold">Periyar University</span><br />
+                        Salem - 636011<br />
+                        Tamil Nadu, India
+                      </address>
+                      <div className="mt-4 flex items-center gap-2 text-teal/70 text-sm">
+                        <div className="w-2 h-2 bg-teal rounded-full"></div>
+                        <span>On-campus facility</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Virtual Mode Card - Enhanced */}
+                <div className="group relative bg-gradient-to-br from-coral/5 to-coral/10 p-6 md:p-7 rounded-2xl border-2 border-coral/20 hover:border-coral/40 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 hover:scale-[1.02] overflow-hidden">
+                  {/* Card background pattern */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute top-4 left-4 w-16 h-16 border-2 border-coral rounded-full"></div>
+                    <div className="absolute bottom-4 right-4 w-12 h-12 bg-coral rounded-lg rotate-45"></div>
+                  </div>
+                  
+                  <div className="relative z-10 flex items-start gap-4 md:gap-5">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-coral to-coral/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 flex-shrink-0">
+                      <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-3">
+                        <h4 className="font-display font-bold text-coral text-lg md:text-xl">Virtual Mode</h4>
+                        <div className="w-3 h-3 bg-coral rounded-full animate-pulse"></div>
+                      </div>
+                      <p className="text-slate-700 text-sm md:text-base leading-relaxed font-medium mb-4">
+                        Join us from anywhere in the world through our online platform. Conference link will be provided upon registration.
+                      </p>
+                      <div className="flex items-center gap-2 text-coral/70 text-sm">
+                        <div className="w-2 h-2 bg-coral rounded-full"></div>
+                        <span>Global accessibility</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex-1 min-w-0">
-                <h5 className="font-display font-semibold text-coral text-base md:text-lg mb-2 flex items-center gap-2">
-                  Virtual Mode
+
+              {/* Bottom decorative element */}
+              <div className="relative z-10 mt-8 flex justify-center">
+                <div className="flex items-center gap-4 px-6 py-3 bg-gradient-to-r from-slate-50 to-white rounded-full border border-slate-200/50 shadow-md">
+                  <div className="w-2 h-2 bg-teal rounded-full"></div>
+                  <span className="text-slate-600 text-sm font-medium">ICAI TSC 2026</span>
                   <div className="w-2 h-2 bg-coral rounded-full"></div>
-                </h5>
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  Participants can join the conference via an online platform. The link will be provided upon registration.
-                </p>
+                </div>
               </div>
             </div>
           </div>
