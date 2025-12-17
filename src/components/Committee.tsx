@@ -298,7 +298,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-xl text-navy">{titleCaseName(member.name)}</p>
-                        <p className="text-base text-slate-700 font-medium justify-center">{member.role}</p>
+                        <p className="text-base text-slate-700 font-medium text-justify">{member.role}</p>
                       </div>
                     </div>
                   ))}
@@ -330,7 +330,7 @@ const Committee = () => {
                       <MemberImage name={member.name} />
                       <div>
                         <p className="font-display font-bold text-lg text-navy">{titleCaseName(member.name)}</p>
-                        <p className="text-base text-slate-600">{member.role}</p>
+                        <p className="text-base text-slate-600 text-justify">{member.role}</p>
                       </div>
                     </div>
                   ))}
