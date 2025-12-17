@@ -22,31 +22,31 @@ const Hero = () => {
       />
 
       <div className="container mx-auto px-4 mb-0 pt-16 sm:pt-10 md:pt-14 xl:pt-24 2xl:pt-28 pb-8 sm:pb-12 md:pb-16 xl:pb-16 2xl:pb-20 relative z-10">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
            
           
 
           {/* Logo + ICAITSC-2026 Card */}
-          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 2xl:mt-10 bg-white border-4 border-gray-400  rounded-xl shadow-lg px-6 py-8 sm:px-8 sm:py-10 md:px-8 md:py-10 xl:px-8 xl:py-10 2xl:px-8 2xl:py-12 mb-6 sm:mb-8 md:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in max-w-full sm:max-w-xl md:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto">
-            {/* Logos Row */}
-            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-6 xl:gap-6 2xl:gap-8 mb-4 sm:mb-6">
-              <img src="/icaitsc.png" alt="Periyar University Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
-              <img src="/logo.jpg" alt="ICAITSC Logo" className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32 2xl:h-36 2xl:w-36 object-contain" />
-              <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
-                  <img src="/colob.png" alt="Partner 4" className="h-12 sm:h-14 md:h-16 object-contain" />
-                </div>  
-            </div>
-            {/* Partners (single row logos) */}
-            <div className="w-full overflow-x-auto mt-3 mb-2">
-              <div className="flex items-center justify-center gap-3 sm:gap-5 flex-nowrap px-1">
-                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
-                  <img src="/partner1.jpeg" alt="Partner 1" className="h-12 sm:h-14 md:h-16 object-contain" />
+          <div className="flex flex-col justify-center items-center mt-4 sm:mt-6 md:mt-8 xl:mt-8 2xl:mt-10 bg-white border-2 border-gray-300 rounded-xl shadow-lg px-4 py-5 sm:px-6 sm:py-6 md:px-6 md:py-6 xl:px-6 xl:py-6 2xl:px-6 2xl:py-8 mb-6 sm:mb-8 md:mb-10 xl:mb-10 2xl:mb-12 animate-fade-in w-full max-w-4xl mx-auto">
+            {/* Combined Logos Row - single horizontal, non-wrapping with overflow */}
+            <div className="w-full mt-1 mb-4">
+              <div className="flex items-center gap-2 sm:gap-3 md:gap-4 xl:gap-4 px-2 flex-nowrap justify-center w-full">
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[64px]">
+                  <img src="/icaitsc.png" alt="Periyar University Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
                 </div>
-                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[96px]">
-                  <img src="/partner2.jpeg" alt="Partner 2" className="h-12 sm:h-14 md:h-16 object-contain" />
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[64px]">
+                  <img src="/logo.jpg" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
                 </div>
-                
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[64px]">
+                  <img src="/colob.png" alt="Partner Colob" className="h-8 sm:h-10 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[64px]">
+                  <img src="/partner1.jpeg" alt="Partner 1" className="h-8 sm:h-10 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[64px]">
+                  <img src="/partner2.jpeg" alt="Partner 2" className="h-8 sm:h-10 md:h-12 object-contain" />
+                </div>
               </div>
             </div>
 

@@ -43,8 +43,7 @@ const About = () => {
           <div className="relative bg-slate-50">
             <div className="animate-marquee whitespace-nowrap py-5 px-4">
               <span className="text-navy font-display font-bold text-lg inline-block">
-              Selected high-quality papers from ICAITSC-2026 will be published as book chapters by Taylor & Francis Group, while other accepted papers will be published as book chapters by Wiley / World Scientific; both publications are indexed by Scopus.
-              </span>
+              Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies              </span>
             </div>
           </div>
         </div>
@@ -149,8 +148,7 @@ const About = () => {
               ABOUT THE DEPARTMENT
             </h3>
             <p className="text-slate-700 leading-relaxed text-justify indent-10">
-              The Department of Computer Science, Periyar University, established in 2002, is committed to delivering quality education in Computer Science and Applications. The department offers postgraduate and doctoral programmes in core and emerging domains such as Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Bioinformatics and Genomic Data Analysis, Computer Networks, and Image and Signal Processing. With a regularly updated curriculum and experienced faculty, the department emphasizes academic excellence, innovation, and skill development. Faculty members publish a significant number of research papers in reputed national and international journals. Through funded projects, publications, workshops, and conferences, the department nurtures academic excellence, ethical computing, and innovation, preparing graduates for impactful careers in industry, academia, and society.
-            </p>
+              The Department of Computer Science at Periyar University, established in 2002, is dedicated to providing high-quality education in Computer Science and its applications. The department offers postgraduate programmes including MCA, M.Sc. (Computer Science), and M.Sc. (Data Science), along with a doctoral programme in Computer Science covering both core and emerging areas such as Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Bioinformatics and Genomic Data Analysis, Computer Networks, and Image and Signal Processing. With a dynamic and regularly updated curriculum delivered by experienced faculty, the department places strong emphasis on academic excellence, innovation, and skill development. Faculty members actively contribute to research, publishing extensively in reputed national and international journals. Through funded research projects, publications, workshops, and conferences, the department fosters a culture of ethical computing, research excellence, and innovation, equipping graduates for impactful careers in industry, academia, and society.            </p>
           </div>
         </div>
       </div>

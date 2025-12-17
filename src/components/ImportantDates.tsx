@@ -1,4 +1,5 @@
 import { Calendar, FileText, Bell, CheckCircle, CreditCard } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ImportantDates = () => {
   const dates = [
@@ -115,9 +116,9 @@ const ImportantDates = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">Don't miss the deadlines!</p>
-          <a href="#registration" className="btn-primary">
+          <Link to="/registration" className="btn-primary">
             Register Early
-          </a>
+          </Link>
         </div>
       </div>
     </section>

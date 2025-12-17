@@ -9,7 +9,7 @@ const CallForPapers = () => {
     "All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.",
     "Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.",
     "Selected high-quality and accepted papers will be published as book chapters in the edited volume titled 'Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity', subject to the publisher's scope, quality, and editorial requirements.",
-    "Remaining accepted and presented papers will be published in the ICAITSC-2026 Conference Proceedings.",
+    "Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings.",
   ];
 
   return (
@@ -71,7 +71,7 @@ const CallForPapers = () => {
                 </div>
               </div>
               <ul className="space-y-3 text-base text-slate-700 leading-relaxed text-justify list-disc list-inside">
-                <li>Each manuscript must include an abstract of 150–200 words summarizing the objectives, methodology, key results, and conclusions, along with 5–6 keywords.</li>
+                <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
                 <li>The maximum length of the manuscript is Twelve (12) pages, formatted strictly according to the official conference template available on the conference website.</li>
                 <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
                 <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>
@@ -150,7 +150,7 @@ const CallForPapers = () => {
                 <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
                 <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
                 <li>Any paper exceeding the permitted plagiarism or AI-content limits will be outright rejected without review.</li>
-                <li>Authors must conduct a plagiarism check before submission and upload both the Plagiarism Report and the AI Plagiarism Report generated using Turnitin along with the paper.</li>
+                <li>Authors must conduct a plagiarism check before submission and upload their own plagiarism report along with the paper.</li>
                 <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
               </ol>
             </div>
@@ -189,8 +189,8 @@ const CallForPapers = () => {
                 Publication Partner
               </h3>
               <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
-                <li>Selected high-quality papers will be published as book chapters in the edited volume: "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity", subject to publisher scope, quality, and editorial policies, indexed by Scopus.</li>
-                <li>Other accepted and presented papers will be published as book chapters in Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications (Wiley / World Scientific), indexed by Scopus.</li>
+                <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
+                <li>Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings, with applicable publication charges.</li>
               </ol>
             </div>
 
