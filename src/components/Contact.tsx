@@ -41,13 +41,20 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h4 className="font-display font-semibold text-navy mb-1">Address</h4>
-                <address className="not-italic text-slate-700 text-sm">
-                  Department of Computer Science,<br />
-                  Periyar University,<br />
-                  Salem - 636011,<br />
-                  Tamil Nadu, India.
-                </address>
+                <h4 className="font-display font-semibold text-navy mb-1">Venue</h4>
+                <div className="text-slate-700 text-sm">
+                  <p className="font-semibold">Physical Venue</p>
+                  <address className="not-italic">
+                    Department of Computer Science<br />
+                    Periyar University,<br />
+                    Salem-636011<br />
+                    Tamil Nadu, India
+                  </address>
+                  <div className="mt-3">
+                    <p className="font-semibold">Virtual Mode</p>
+                    <p className="not-italic">Participants can join the conference via an online platform. The link will be provided upon registration.</p>
+                  </div>
+                </div>
               </div>
             </div>
 

@@ -219,6 +219,9 @@ const Committee = () => {
     { name: "Dr. R. Vadivel", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/Vadivel.jpg" },
     { name: "Dr. A. Vijaya", role: "Sri Meenakshi Government Arts College for Women (Autonomous), Madurai, Tamil Nadu, India", image: "/Vijaya.jpg" },
     { name: "Dr. R. Vijayarajan", role: "Vellore Institute of Technology University, Chennai, Tamil Nadu, India", image: "/Vijayarajan_R.jpeg" },
+    { name: "Dr. P. Shanmugavadivu", role: "Gandhigram Rural Institute - Deemed to be University, Dindigul, Tamil Nadu, India", image: "/P_Shanmugavadivu.jpeg" },
+    { name: "Dr. E. Chandra", role: "Bharathiar University, Coimbatore, Tamil Nadu, India", image: "/E_Chandra.jpeg" },
+    { name: "Dr. D. Murugan", role: "Manonmaniam Sundaranar University (MSU), Tirunelveli, Tamil Nadu, India", image: "/D_Murugan.jpeg" },
   ].sort((a, b) => {
     const getFirstName = (name: string) => {
       let cleaned = name.replace(/^(Dr\.\s*|Prof\.\s*|Mr\.\s*|Ms\.\s*|Mrs\.\s*|Tmt\.\s*)/i, '').trim();

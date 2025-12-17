@@ -173,11 +173,14 @@ const Registration = () => {
             <div className="space-y-4">
               {[
                 { label: "Account Name", value: "Periyar University Conference Account" },
-                { label: "Account Number", value: "1234567890" },
+                { label: "Account Number", value: "To be Provided" },
                 { label: "Bank Name", value: "Canara Bank" },
-                { label: "Branch", value: "Periyar University Campus" },
+                { label: "Branch Name", value: "Periyar University Campus" },
+                { label: "Branch Code", value: "08450" },
                 { label: "IFSC Code", value: "CNRB0008450" },
-                { label: "MICR Code", value: "636015024" }
+                { label: "MICR Code", value: "636015024" },
+                { label: "SWIFT Code", value: "To be Provided" },
+                { label: "Address", value: "Canara Bank, Periyar University Campus Branch, Salem – 636011, Tamil Nadu, India" },
               ].map((item) => (
                 <div key={item.label} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-200 pb-3 gap-1">
                   <span className="text-slate-600 break-words">{item.label}</span>

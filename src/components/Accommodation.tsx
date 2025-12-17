@@ -23,13 +23,18 @@ const Accommodation = () => {
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Conference Venue</h3>
           </div>
-          <p className="text-slate-700 mb-6 leading-relaxed">
-            The International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC-2026) will be held at:
-          </p>
           <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
-            <h4 className="font-display font-bold text-lg text-navy mb-2">Department of Computer Science, Seminar Hall-II Floor</h4>
-            <p className="text-slate-600 font-medium">Periyar University</p>
-            <p className="text-slate-600">Salem – 636011, Tamil Nadu, India</p>
+            <h4 className="font-display font-bold text-lg text-navy mb-2">Physical Venue</h4>
+            <address className="not-italic text-slate-700 leading-relaxed">
+              Department of Computer Science<br />
+              Periyar University,<br />
+              Salem-636011
+            </address>
+
+            <div className="mt-4">
+              <h4 className="font-display font-bold text-lg text-navy mb-2">Virtual Mode</h4>
+              <p className="text-slate-700">Participants can join the conference via an online platform. The link will be provided upon registration.</p>
+            </div>
           </div>
         </div>
 
