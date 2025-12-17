@@ -243,7 +243,7 @@ const CallForPapers = () => {
 
             <div className="text-center">
               <p className="text-slate-700 text-base leading-relaxed mb-8 text-justify max-w-3xl mx-auto">
-                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -268,6 +268,9 @@ const CallForPapers = () => {
             </div>
           </div>
         </div>
+
+        {/* CMT Acknowledgment */}
+        <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
       </div>
     </section>
   );

@@ -41,17 +41,8 @@ const About = () => {
         {/* Publication Announcement Scrolling */}
         <div className="mb-12 bg-white border-l-4 border-l-burgundy rounded-lg shadow-xl overflow-hidden">
           <div className="relative bg-cream">
-            <div className="animate-marquee whitespace-nowrap py-5 px-4 flex">
-              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
-                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-              </span>
-              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
-                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-              </span>
-              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
-                Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-              </span>
-              <span className="text-navy font-display font-bold text-lg inline-block mr-40">
+            <div className="animate-marquee whitespace-nowrap py-5 px-4">
+              <span className="text-navy font-display font-bold text-lg inline-block">
                 Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
               </span>
             </div>
