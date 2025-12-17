@@ -82,7 +82,7 @@ const About = () => {
             <h3 className="font-display font-bold text-3xl text-navy mb-4">
               Conference Focus Areas
             </h3>
-            <p className="text-lg text-slate-700 max-w-2xl mx-auto text-justify leading-relaxed">
+            <p className="text-lg text-slate-700 max-w-2xl mx-auto text-justify leading-relaxed indent-10">
               ICAITSC-2026 aligns with key UN Sustainable Development Goals to drive positive change through AI and technology.
             </p>
           </div>
