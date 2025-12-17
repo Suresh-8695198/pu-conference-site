@@ -17,7 +17,6 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-              <h3 className="font-display font-bold text-2xl text-navy mb-3">Conference Secretariat</h3>
               <p className="text-slate-700 leading-relaxed">For queries regarding the conference, paper submission, or registration, please contact the secretariat below.</p>
             </div>
 
