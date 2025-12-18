@@ -42,7 +42,7 @@ const Navbar = () => {
             <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain -ml-2 sm:-ml-3" />
             <div className="hidden sm:block">
               <p className={`font-display font-bold text-base sm:text-lg ${scrolled ? "text-navy" : "text-primary-foreground"}`}>
-                ICAITSC-2026
+                ICAITSC2026
               </p>
               <p className={`text-xs ${scrolled ? "text-muted-foreground" : "text-primary-foreground/80"}`}>
                 Periyar University
