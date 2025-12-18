@@ -221,60 +221,17 @@ const CallForPapers = () => {
           </div>
         </div>
 
-        {/* CMT Acknowledgement */}
-        <div className="max-w-4xl mx-auto mt-12">
-          <div className="bg-gradient-to-br from-cream to-white border-2 border-gold/20 rounded-2xl p-8 shadow-xl">
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-slate-200 shadow-md mb-4">
-                <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-gold font-display font-semibold text-sm uppercase tracking-wide">
-                  Acknowledgement
-                </span>
-              </div>
-              <h3 className="font-display font-bold text-2xl text-navy mb-4">
-                CMT Service Acknowledgement
-              </h3>
-              <div className="w-16 h-1 bg-gradient-to-r from-gold to-burgundy rounded-full mx-auto mb-6"></div>
-            </div>
-
-            <div className="text-center">
-              <p className="text-slate-700 text-base leading-relaxed mb-8 text-justify max-w-3xl mx-auto">
-               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <div className="flex items-center gap-2 text-black">
-                  <svg className="w-5 h-5 text-gold " fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="font-medium">Powered by Microsoft</span>
-                </div>
-                <a
-                  href="https://cmt3.research.microsoft.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-burgundy to-burgundy text-white px-6 py-3 rounded-lg font-display font-semibold hover:from-gold-dark hover:to-navy/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clipRule="evenodd" />
-                  </svg>
-                  Visit CMT Portal
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* CMT Acknowledgment */}
-      {/* <div className="mt-16 text-center">
-        <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference.</p>
-        <p>This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
-      </div> */}
+      {/* CMT Acknowledgment - Plain HTML, static, outside fancy UI blocks, as per Microsoft rules */}
+      <div style={{width:'100%',background:'#fff',color:'#111',textAlign:'center',padding:'32px 0 16px 0',fontSize:'17px',lineHeight:'1.7',boxSizing:'border-box',marginTop:'32px'}}>
+        <p style={{margin:0,padding:0,maxWidth:'700px',marginLeft:'auto',marginRight:'auto'}}>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+      </div>
+
+      {/* Link to CMT Acknowledgment HTML */}
+      <div style={{textAlign:'center',marginTop:'16px'}}>
+        <a href="/cmt-acknowledgment.html" target="_blank" rel="noopener noreferrer" style={{color:'#b08a2e',fontWeight:600,textDecoration:'underline',fontSize:'16px'}}>View CMT Acknowledgment</a>
+      </div>
     </section>
   );
 };

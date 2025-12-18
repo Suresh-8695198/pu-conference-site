@@ -175,7 +175,7 @@ const Contact = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <h4 className="font-display font-semibold text-navy text-lg md:text-xl mb-2">Email Contact</h4>
-                <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-navy hover:text-navy transition-colors text-sm md:text-base font-medium break-all underline decoration-2  hover:decoration-4">
+                <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-navy hover:text-navy transition-colors text-sm md:text-base font-medium ">
                   icaitsc2026@periyaruniversity.ac.in
                 </a>
               </div>
@@ -191,28 +191,28 @@ const Contact = () => {
               <p className="text-black leading-relaxed text-sm">For any queries related to the conference, paper submission, or registration, please contact the following:</p>
 
               <div className="space-y-4 md:space-y-6">
-                <div className="bg-burgundy/10 p-4 md:p-5 rounded-xl border border-burgundy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-burgundy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                <div className="bg-navy/10 p-4 md:p-5 rounded-xl border border-navy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-navy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h5 className="font-display font-semibold text-burgundy text-base md:text-lg mb-1">Dr. H. Hannah Inbarani</h5>
+                    <h5 className="font-display font-semibold text-navy text-base md:text-lg mb-1">Dr. H. Hannah Inbarani</h5>
                     <p className="text-black text-xs md:text-sm mb-2 font-medium">Organizing Secretary - (ICAITSC2026)</p>
-                    <a href="tel:9865380392" className="inline-flex items-center gap-2 text-burgundy hover:text-navy transition-colors text-sm md:text-base font-semibold underline decoration-2 underline-offset-4 hover:decoration-4">
+                    <a href="tel:9865380392" className="inline-flex items-center gap-2 text-navy hover:text-navy transition-colors text-sm md:text-base font-semibold">
                       <Phone className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       <span className="break-all">9865380392</span>
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-burgundy/10 p-4 md:p-5 rounded-xl border border-burgundy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-burgundy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                <div className="bg-navy/10 p-4 md:p-5 rounded-xl border border-navy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-navy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h5 className="font-display font-semibold text-burgundy text-base md:text-lg mb-1">Dr. I. Laurence Aroquiaraj</h5>
+                    <h5 className="font-display font-semibold text-navy text-base md:text-lg mb-1">Dr. I. Laurence Aroquiaraj</h5>
                     <p className="text-black text-xs md:text-sm mb-2 font-medium">Organizing Secretary - (ICAITSC2026)</p>
-                    <a href="tel:9894358505" className="inline-flex items-center gap-2 text-burgundy hover:text-navy transition-colors text-sm md:text-base font-semibold underline decoration-2 underline-offset-4 hover:decoration-4">
+                    <a href="tel:9894358505" className="inline-flex items-center gap-2 text-navy hover:text-navy transition-colors text-sm md:text-base font-semibold">
                       <Phone className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       <span className="break-all">9894358505</span>
                     </a>
