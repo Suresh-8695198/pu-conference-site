@@ -29,7 +29,7 @@ const Contact = () => {
             <div className="w-8 md:w-12 h-1 bg-burgundy rounded-full"></div>
           </div>
           <p className="text-black text-sm md:text-base max-w-xl mx-auto leading-relaxed px-4">
-            Ready to join us? Get all the information you need to participate in ICAITSC 2026
+            Ready to join us? Get all the information you need to participate in ICAITSC2026
           </p>
         </div>
 
@@ -134,7 +134,7 @@ const Contact = () => {
               <div className="relative z-10 mt-8 flex justify-center">
                 <div className="flex items-center gap-4 px-6 py-3 bg-gradient-to-r from-warm-grey to-cream rounded-full border border-warm-grey/50 shadow-md">
                   <div className="w-2 h-2 bg-gold rounded-full"></div>
-                  <span className="text-navy text-sm font-medium">ICAI TSC 2026</span>
+                  <span className="text-navy text-sm font-medium">ICAITSC2026</span>
                   <div className="w-2 h-2 bg-burgundy rounded-full"></div>
                 </div>
               </div>

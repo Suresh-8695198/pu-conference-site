@@ -47,7 +47,6 @@ const Registration = () => {
     "Certificate of Participation",
     "Lunch & Refreshments",
     "Access to All Sessions",
-    "Conference Proceedings",
     "Publication Support",
   ];
 
