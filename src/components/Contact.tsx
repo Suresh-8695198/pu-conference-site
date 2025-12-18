@@ -118,7 +118,7 @@ const Contact = () => {
                         <h4 className="font-display font-bold text-burgundy text-lg md:text-xl">Virtual Mode</h4>
                         <div className="w-3 h-3 bg-burgundy rounded-full animate-pulse"></div>
                       </div>
-                      <p className="text-black text-sm md:text-base leading-relaxed font-medium mb-4">
+                      <p className="text-black text-sm md:text-base leading-relaxed text-justify font-medium mb-4">
                         Join us from anywhere in the world through our online platform. Conference link will be provided upon registration.
                       </p>
                       <div className="flex items-center gap-2 text-burgundy/70 text-sm">

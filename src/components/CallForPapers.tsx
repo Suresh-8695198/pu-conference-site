@@ -9,7 +9,7 @@ const CallForPapers = () => {
     "All submissions will undergo a peer-review process, and review decisions will be communicated to the corresponding author; revised manuscripts, if required, must be submitted within seven (7) days.",
     "Only papers that are accepted, registered, and presented will be considered valid, and authors of such papers will receive conference certificates.",
     "Selected high-quality and accepted papers will be published as book chapters in the edited volume titled 'Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity', subject to the publisher's scope, quality, and editorial requirements.",
-    "Remaining accepted and presented papers will be published in the ICAITSC 2026 Conference Proceedings.",
+    "Remaining accepted and presented papers will be published in the ICAITSC2026 Conference Proceedings.",
   ];
 
   return (
@@ -130,7 +130,7 @@ const CallForPapers = () => {
                 </div>
               </div>
               <p className="text-black text-base leading-relaxed text-justify">
-                All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to MicrosoftCMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through MicrosoftCMT will be considered for review, acceptance, and publication.
+                All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to MicrosoftCMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft  CMT will be considered for review, acceptance, and publication.
               </p>
             </div>
 
