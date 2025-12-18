@@ -280,4 +280,3 @@ const CallForPapers = () => {
 };
 
 export default CallForPapers;
- Original content of the file restored as per earlier commit */
