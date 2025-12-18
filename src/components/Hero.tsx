@@ -61,7 +61,7 @@ const Hero = () => {
               Artificial Intelligence
             </span>
             <span className="block text-white mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
-             Techniques and Smart Computingss
+             Techniques and Smart Computings
             </span>
           </h1>
 
