@@ -33,10 +33,10 @@ const Hero = () => {
             <div className="w-full mt-1 mb-4">
               <div className="flex flex-wrap md:flex-nowrap items-center gap-2 sm:gap-3 md:gap-4 xl:gap-4 px-2 justify-center w-full">
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[56px] sm:min-w-[64px]">
-                  <img src="/icaitsc.png" alt="Periyar University Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
+                  <img src="/logo.jpg" alt="Periyar University Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
                 </div>
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[56px] sm:min-w-[64px]">
-                  <img src="/logo.jpg" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
+                  <img src="/icaitsc.png" alt="ICAITSC Logo" className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 xl:h-24 xl:w-24 2xl:h-24 2xl:w-24 object-contain" />
                 </div>
                 <div className="flex items-center justify-center bg-white/80 p-2 rounded-md shadow-sm border border-white/20 min-w-[56px] sm:min-w-[64px]">
                   <img src="/colob.png" alt="Partner Colob" className="h-8 sm:h-10 md:h-12 object-contain" />
