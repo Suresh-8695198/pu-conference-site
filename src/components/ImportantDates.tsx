@@ -48,7 +48,7 @@ const ImportantDates = () => {
       title: "Conference Dates",
       description: "Main conference event",
       icon: Calendar,
-      color: "bg-navy",
+      color: "bg-burgundy",
       side: "right",
     },
   ];
