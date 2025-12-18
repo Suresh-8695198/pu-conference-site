@@ -191,8 +191,8 @@ const Contact = () => {
               <p className="text-black leading-relaxed text-sm">For any queries related to the conference, paper submission, or registration, please contact the following:</p>
 
               <div className="space-y-4 md:space-y-6">
-                <div className="bg-gold/10 p-4 md:p-5 rounded-xl border border-gold/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gold rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                <div className="bg-gold/10 p-4 md:p-5 rounded-xl border border-burgundy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-burgundy rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
