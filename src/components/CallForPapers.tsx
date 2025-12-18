@@ -1,4 +1,4 @@
-/import { FileText, CheckCircle, AlertCircle, Send } from "lucide-react";
+import { FileText, CheckCircle, AlertCircle, Send } from "lucide-react";
 
 const CallForPapers = () => {
   const guidelines = [
