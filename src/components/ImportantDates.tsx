@@ -8,7 +8,7 @@ const ImportantDates = () => {
       title: "Paper Submission Opens",
       description: "Start submitting your research papers",
       icon: FileText,
-      color: "bg-gold",
+      color: "bg-navy",
       side: "left",
     },
     {
@@ -24,7 +24,7 @@ const ImportantDates = () => {
       title: "Acceptance Notification",
       description: "Notification of acceptance/rejection",
       icon: Bell,
-      color: "bg-gold",
+      color: "bg-navy",
       side: "left",
     },
     {
@@ -40,7 +40,7 @@ const ImportantDates = () => {
       title: "Registration Deadline",
       description: "Last date for registration",
       icon: CreditCard,
-      color: "bg-gold",
+      color: "bg-navy",
       side: "left",
     },
     {
