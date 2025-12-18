@@ -50,7 +50,7 @@ const Navbar = () => {
             </div>
             <div className="sm:hidden">
               <p className={`font-display font-bold text-sm ${scrolled ? "text-navy" : "text-primary-foreground"}`}>
-                ICAITSC-2026
+                ICAITSC2026
               </p>
             </div>
           </a>
