@@ -170,7 +170,7 @@ const Contact = () => {
 
           <div className="space-y-6 md:space-y-8">
             <div className="bg-white p-4 md:p-6 rounded-2xl border border-warm-grey shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 md:gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gold rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-navy  rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                 <Mail className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div className="flex-1 min-w-0">
@@ -198,7 +198,7 @@ const Contact = () => {
                   <div className="flex-1 min-w-0">
                     <h5 className="font-display font-semibold text-burgundy text-base md:text-lg mb-1">Dr. H. Hannah Inbarani</h5>
                     <p className="text-black text-xs md:text-sm mb-2 font-medium">Organizing Secretary - (ICAITSC-2026)</p>
-                    <a href="tel:9865380392" className="inline-flex items-center gap-2 text-gold hover:text-navy transition-colors text-sm md:text-base font-semibold underline decoration-2 underline-offset-4 hover:decoration-4">
+                    <a href="tel:9865380392" className="inline-flex items-center gap-2 text-burgundy hover:text-navy transition-colors text-sm md:text-base font-semibold underline decoration-2 underline-offset-4 hover:decoration-4">
                       <Phone className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       <span className="break-all">9865380392</span>
                     </a>
