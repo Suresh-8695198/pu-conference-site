@@ -175,7 +175,7 @@ const Contact = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <h4 className="font-display font-semibold text-navy text-lg md:text-xl mb-2">Email Contact</h4>
-                <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-navy hover:text-navy transition-colors text-sm md:text-base font-medium break-all underline decoration-2 underline-offset-4 hover:decoration-4">
+                <a href="mailto:icaitsc2026@periyaruniversity.ac.in" className="text-navy hover:text-navy transition-colors text-sm md:text-base font-medium break-all underline decoration-2  hover:decoration-4">
                   icaitsc2026@periyaruniversity.ac.in
                 </a>
               </div>
