@@ -212,34 +212,35 @@ const CallForPapers = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* Publication Partner */}
-            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm text-justify">
-              <h3 className="font-display font-bold text-2xl mb-6 text-navy">
-                Publication Partner
-              </h3>
-              <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
-                <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
-              </ol>
-            </div>
+        {/* Publication Partner and Submit Section */}
+        <div className="grid lg:grid-cols-2 gap-12 mt-12">
+          <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm text-justify">
+            <h3 className="font-display font-bold text-2xl mb-6 text-navy">
+              Publication Partner
+            </h3>
+            <ol className="space-y-4 text-base text-slate-700 leading-relaxed list-decimal list-inside">
+              <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
+            </ol>
+          </div>
 
-            {/* Submit Button */}
-            <div className="bg-green-900 border border-navy rounded-lg p-8 text-center shadow-sm">
-              <Send className="w-12 h-12 text-gold mx-auto mb-4" />
-              <h3 className="font-display font-bold text-xl mb-2 text-white">Ready to Submit?</h3>
-              <p className="text-white/90 mb-6 text-base">
-                Authors are requested to submit the Google Form only after completing the paper submission through Microsoft CMT
-              </p>
-              <a 
-                href="https://forms.gle/YBBhAq98RbPFqEeYA" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gold text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors"
-              >
-                <Send className="w-5 h-5" />
-                Submit Paper
-              </a>
-            </div>
+          <div className="bg-green-900 border border-navy rounded-lg p-8 text-center shadow-sm">
+            <Send className="w-12 h-12 text-gold mx-auto mb-4" />
+            <h3 className="font-display font-bold text-xl mb-2 text-white">Ready to Submit?</h3>
+            <p className="text-white/90 mb-6 text-base">
+              Authors are requested to submit the Google Form only after completing the paper submission through Microsoft CMT
+            </p>
+            <a
+              href="https://forms.gle/YBBhAq98RbPFqEeYA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gold text-white px-6 py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors"
+            >
+              <Send className="w-5 h-5" />
+              Submit Paper
+            </a>
           </div>
         </div>
 
