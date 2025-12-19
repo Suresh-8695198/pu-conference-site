@@ -230,7 +230,19 @@ const CallForPapers = () => {
 
       {/* Link to CMT Acknowledgment HTML */}
       <div style={{textAlign:'center',marginTop:'16px'}}>
-        <a href="/cmt-acknowledgment.html" target="_blank" rel="noopener noreferrer" style={{color:'#b08a2e',fontWeight:600,textDecoration:'underline',fontSize:'16px'}}>View CMT Acknowledgment</a>
+        <a href="/cmt-acknowledgment.html" target="_blank" rel="noopener noreferrer" style={{color:'#b08a2e',fontWeight:600,textDecoration:'underline',fontSize:'16px',display:'block',marginBottom:'18px'}}>View CMT Acknowledgment</a>
+        <a
+          href="https://cmt3.research.microsoft.com/ICAITSC2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-7 py-3 rounded-full font-display font-semibold shadow-md hover:shadow-xl transition-all duration-200 text-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          style={{marginTop:'8px', letterSpacing: '0.01em'}}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75V6A2.25 2.25 0 0015 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25h9A2.25 2.25 0 0017.25 18v-.75M15.75 12h5.25m0 0l-2.25-2.25m2.25 2.25l-2.25 2.25" />
+          </svg>
+          Go to Microsoft CMT Portal
+        </a>
       </div>
     </section>
   );
