@@ -178,7 +178,7 @@ const CallForPapers = () => {
             </div>
 
             {/* Submission Format */}
-            <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
+            <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-8 shadow-sm">
               <h3 className="font-display font-bold text-2xl mb-4 text-navy">
                 Paper Submission Format
               </h3>
@@ -217,7 +217,7 @@ const CallForPapers = () => {
 
         {/* Publication Partner and Submit Section */}
         <div className="grid lg:grid-cols-2 gap-12 mt-12">
-          <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm text-justify">
+          <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-8 shadow-sm text-justify">
             <h3 className="font-display font-bold text-2xl mb-6 text-navy">
               Publication Partner
             </h3>
@@ -266,7 +266,7 @@ const CallForPapers = () => {
 
       {/* Participation, Presentation & Certificate Rules */}
       <div className="max-w-6xl mx-auto mt-12">
-        <div className="bg-white border-l-4 border-l-teal border border-slate-200 rounded-lg p-8 shadow-sm">
+        <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-8 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-14 h-14 bg-teal-600 rounded-lg flex items-center justify-center">
               <CheckCircle className="w-7 h-7 text-white" />

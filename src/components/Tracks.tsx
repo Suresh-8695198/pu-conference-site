@@ -92,10 +92,14 @@ const Tracks = () => {
           <h2 className="section-title">
             Research <span className="text-burgundy">Tracks</span>
           </h2>
-          <p className="section-subtitle mt-4">
+          <p className="section-subtitle mt-1">
             Click on any track to explore the topics covered
           </p>
-          <div className="w-24 h-1 bg-gold mx-auto mt-6" />
+              <p className="section-subtitle mt-1">
+              (Not limited to)          
+             </p>
+         
+          <div className="w-24 h-1 bg-gold mx-auto mt-5" />
         </div>
 
         {/* Tracks Grid */}
