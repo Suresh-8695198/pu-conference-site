@@ -130,7 +130,7 @@ const CallForPapers = () => {
                 </div>
               </div>
               <p className="text-black text-base leading-relaxed text-justify">
-                All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to MicrosoftCMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft  CMT will be considered for review, acceptance, and publication.
+                All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to Microsoft CMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft  CMT will be considered for review, acceptance, and publication.
               </p>
             </div>
 
