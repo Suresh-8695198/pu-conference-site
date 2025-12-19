@@ -3,19 +3,25 @@ import { Check, Users, GraduationCap, Briefcase, Globe, MapPin, Plane, Train, Bu
 const Registration = () => {
   const categories = [
     {
-      title: "Faculty/Scientist & Full-time Research Scholars",
+      title: "Faculty / Scientist / Full-Time Research Scholars (Indian)",
       icon: GraduationCap,
-      indian: "₹5,000",
+      indian: "₹4,000",
       foreign: "",
     },
     {
-      title: "Participants (Non-authors)",
+      title: "Participants (Indian)",
       icon: Globe,
       indian: "₹1,500",
       foreign: "",
     },
     {
-      title: "Onsite Faculty/Scientist from Academic/Research institutions",
+      title: "Co-Author Registration (Indian)",
+      icon: Users,
+      indian: "₹1,500",
+      foreign: "",
+    },
+    {
+      title: "Foreign Participants",
       icon: Briefcase,
       indian: "",
       foreign: "USD 85",
