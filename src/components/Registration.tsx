@@ -213,7 +213,7 @@ const Registration = () => {
               </div>
           </div>
 
-          <div className="bg-navy border border-navy rounded-lg p-4 sm:p-8 flex flex-col justify-center items-center text-center shadow-sm">
+          <div className="bg-green-900 border border-navy rounded-lg p-4 sm:p-8 flex flex-col justify-center items-center text-center shadow-sm">
             <h3 className="font-display font-bold text-2xl mb-4 text-white">
               Ready to Register?
             </h3>
@@ -222,7 +222,7 @@ const Registration = () => {
             </p>
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-burgundy text-white px-8 py-4 rounded-lg font-display font-bold text-lg hover:bg-burgundy/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-yellow-600 text-white px-8 py-4 rounded-lg font-display font-bold text-lg hover:bg-burgundy/90 transition-colors"
             >
               Register Now
             </a>
