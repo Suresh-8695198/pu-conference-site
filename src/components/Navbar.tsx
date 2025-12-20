@@ -111,7 +111,7 @@ const Navbar = () => {
 						))}
 						<a
 							href="#registration"
-							className="btn-secondary text-sm px-4 lg:px-6 py-2 lg:py-2.5"
+							className="btn-secondary bg-green-700 text-sm px-4 lg:px-6 py-2 lg:py-2.5"
 						>
 							Register Now
 						</a>
@@ -147,7 +147,7 @@ const Navbar = () => {
 								<a
 									href="#registration"
 									onClick={() => setIsOpen(false)}
-									className="block btn-secondary text-center py-3 text-base font-semibold"
+									className="block btn-secondary bg-green-700 text-center py-3 text-base font-semibold"
 								>
 									Register Now
 								</a>
