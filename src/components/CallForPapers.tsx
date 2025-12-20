@@ -305,7 +305,7 @@ const CallForPapers = () => {
               <CheckCircle className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Rules for Certificate</h3>
-            <p className="text-black text-base">Guidelines for conference participation</p>
+            <p className="text-black text-base">Guidelines for conference certification</p>
           </div>
           <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
             <li><strong>Registration & Payment:</strong> All participants, including authors and co-authors, must register individually and pay the applicable fee to be eligible for participation and certificates.</li>
