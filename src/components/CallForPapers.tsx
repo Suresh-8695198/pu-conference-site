@@ -150,6 +150,7 @@ const CallForPapers = () => {
                 <p className="text-black text-base">Ethical guidelines for publication</p>
               </div>
             </div>
+            <div className="flex-1">
             <ol className="space-y-3 text-base text-black leading-relaxed text-justify list-decimal list-inside">
               <li>Authors must strictly follow the publication ethics and academic integrity standards before submitting their manuscripts.</li>
               <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
@@ -158,6 +159,7 @@ const CallForPapers = () => {
               <li>Authors must conduct a plagiarism check before submission and upload their own plagiarism report along with the paper.</li>
               <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
             </ol>
+            </div>
           </div>
 
           {/* Card 7 */}
@@ -190,7 +192,6 @@ const CallForPapers = () => {
                   <li>AIReport.pdf</li>
                 </ul>
               </li>
-              <li><strong>File formats allowed: PDF / DOC / DOCX.</strong></li>
             </ol>
           </div>
 
@@ -283,14 +284,12 @@ const CallForPapers = () => {
       {/* Refund Policy */}
       <div className="max-w-6xl mx-auto mt-12">
         <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-8 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 bg-gold rounded-lg flex items-center justify-center">
+          <div className="text-center mb-6">
+            <div className="w-14 h-14 bg-gold rounded-lg flex items-center justify-center mx-auto mb-4">
               <AlertCircle className="w-7 h-7 text-white" />
             </div>
-            <div>
-              <h3 className="font-display font-bold text-2xl text-navy">Refund and Cancellation Policy</h3>
-              <p className="text-black text-base">Important policy information</p>
-            </div>
+            <h3 className="font-display font-bold text-2xl text-navy">Refund and Cancellation Policy</h3>
+            <p className="text-black text-base">Important policy information</p>
           </div>
           <p className="text-black text-base leading-relaxed text-justify">
             Once a candidate has completed registration and paid the applicable registration fee, the registration cannot be cancelled. The registration fee paid for the conference is strictly non-refundable under any circumstances.
@@ -301,22 +300,20 @@ const CallForPapers = () => {
       {/* Participation, Presentation & Certificate Rules */}
       <div className="max-w-6xl mx-auto mt-12">
         <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-8 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 bg-teal-600 rounded-lg flex items-center justify-center">
+          <div className="text-center mb-6">
+            <div className="w-14 h-14 bg-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-7 h-7 text-white" />
             </div>
-            <div>
-              <h3 className="font-display font-bold text-2xl text-navy">Participation, Presentation & Certificate Rules</h3>
-              <p className="text-black text-base">Guidelines for conference participation</p>
-            </div>
+            <h3 className="font-display font-bold text-2xl text-navy">Rules for Certificate</h3>
+            <p className="text-black text-base">Guidelines for conference participation</p>
           </div>
           <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
-            <li><strong>Registration & Payment:</strong> All participants, including authors and co-authors, must <strong>register individually and pay the applicable fee</strong> to be eligible for participation and certificates.</li>
-            <li><strong>Attendance:</strong> Registered participants must <strong>attend all required conference sessions</strong>; attendance will be recorded.</li>
-            <li><strong>Presentation Requirement:</strong> For accepted papers, <strong>at least one registered author must present the paper</strong> in the allotted session and complete the <strong>Q&A</strong>.</li>
-            <li><strong>Certificates:</strong> Participation and presentation certificates will be issued <strong>only after verification of registration, payment, attendance, and presentation</strong>.</li>
-            <li><strong>Co-authors:</strong> Co-authors will receive certificates <strong>only if they are individually registered, paid, and attend the relevant sessions</strong>.</li>
-            <li><strong>Non-Compliance:</strong> <strong>No certificate will be issued</strong> in cases of non-registration, non-payment, non-attendance, or failure to present the paper.</li>
+            <li><strong>Registration & Payment:</strong> All participants, including authors and co-authors, must register individually and pay the applicable fee to be eligible for participation and certificates.</li>
+            <li><strong>Attendance:</strong> Registered participants must attend all required conference sessions; attendance will be recorded.</li>
+            <li><strong>Presentation Requirement:</strong> For accepted papers, at least one registered author must present the paper in the allotted session and complete the Q&A.</li>
+            <li><strong>Certificates:</strong> Participation and presentation certificates will be issued only after verification of registration, payment, attendance, and presentation.</li>
+            <li><strong>Co-authors:</strong> Co-authors will receive certificates only if they are individually registered, paid, and attend the relevant sessions.</li>
+            <li><strong>Non-Compliance:</strong> No certificate will be issued in cases of non-registration, non-payment, non-attendance, or failure to present the paper.</li>
           </ol>
         </div>
       </div>
