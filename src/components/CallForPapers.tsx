@@ -156,7 +156,7 @@ const CallForPapers = () => {
               <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
               <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
               <li>Any paper exceeding the permitted plagiarism or AI-content limits will be outright rejected without review.</li>
-              <li>Authors must conduct a plagiarism check before submission and upload their own plagiarism report along with the paper.</li>
+              <li>Authors must upload both Plagiarism Report and AI-Content Detection Report along with the paper. Submissions without these reports will not be considered.</li>
               <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
             </ol>
             </div>
@@ -179,7 +179,7 @@ const CallForPapers = () => {
                 <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
                   <li>Main Paper</li>
                   <li>Plagiarism Report</li>
-                  <li>AI Usage Report</li>
+                  <li>AI Content Detection Report</li>
                 </ul>
               </li>
               <li><strong>ZIP/RAR files are not allowed.</strong></li>
