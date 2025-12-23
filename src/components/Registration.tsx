@@ -203,7 +203,7 @@ const Registration = () => {
                       { label: "Branch Code", value: "08450" },
                       { label: "IFSC Code", value: "CNRB0008450" },
                       { label: "MICR Code", value: "636015024" },
-                      { label: "BIC Code (Swift)", value: "CNRBINBB" },
+                      { label: "BIC Code (Swift)", value: "CNRBINBBBFD" },
                       { label: "Address", value: "Canara Bank, Periyar University Campus Branch, Salem – 636011, Tamil Nadu, India" },
                     ].map((item, idx) => (
                       <div key={item.label} className={`py-4 px-4 flex justify-between items-start bg-white hover:bg-slate-50 transition-colors ${idx === 0 ? 'rounded-t-lg' : ''} ${idx === 8 ? 'rounded-b-lg' : ''}`}>
