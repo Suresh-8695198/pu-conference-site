@@ -188,7 +188,9 @@ const Contact = () => {
                 </div>
                 <h4 className="font-display font-semibold text-navy text-lg md:text-xl">Contact Persons</h4>
               </div>
-              <p className="text-black leading-relaxed text-justify text-sm">For any queries related to the conference, paper submission, or registration, please contact the following:</p>
+              <p className="text-black leading-relaxed text-sm text-justify md:text-left">
+                For any queries related to the conference, paper submission, or registration, please contact the following:
+              </p>
 
               <div className="space-y-4 md:space-y-6">
                 <div className="bg-navy/10 p-4 md:p-5 rounded-xl border border-navy/30 hover:shadow-md transition-all duration-300 flex items-start gap-3 md:gap-4">
