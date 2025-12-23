@@ -247,6 +247,23 @@ const CallForPapers = () => {
             <p className="text-black mb-6 leading-relaxed">
               Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
             </p>
+
+            {/* Submission Notice */}
+            <div role="status" aria-live="polite" className="bg-amber-50 border-2 border-amber-400 rounded-lg p-5 mb-6 shadow-md animate-pulse">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center shrink-0 text-white font-bold">
+                  ⚠
+                </div>
+                <div>
+                  <h4 className="font-display font-bold text-2xl text-amber-800 mb-1">
+                    Submission & Post-Review Formatting
+                  </h4>
+                  <p className="text-amber-700 font-semibold leading-relaxed text-justify">
+                    Initially, all papers must be submitted in accordance with the Taylor & Francis manuscript guidelines. After the review process and upon receipt of the reviewers’ decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-extrabold text-amber-900">Taylor & Francis</span> or <span className="font-extrabold text-amber-900">World Scientific / Wiley</span>, as applicable.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a 
                 href="/Abstracts_Guidelines.pdf" 
