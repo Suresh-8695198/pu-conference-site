@@ -159,8 +159,8 @@ const Registration = () => {
               <h3 className="font-display font-bold text-2xl text-white mb-3">
                 For International Participants: 
               </h3>
-              <p className="text-white text-xl leading-relaxed font-semibold">
-              Kindly be informed that any bank charges, currency conversion charges, or international transfer fees, if applicable, shall be borne by the payer/bank. International participants are kindly requested to ensure that the full registration amount is credited to the conference account.              </p>
+              <p className="text-white text-xl text-justify leading-relaxed font-semibold">
+             Please note that any bank charges, currency conversion fees, or international transfer charges, if applicable, must be borne by the payer. International participants are kindly requested to ensure that the full registration amount is credited to the conference account.     </p>
             </div>
           </div>
         </div>
