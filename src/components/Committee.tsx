@@ -223,9 +223,9 @@ const Committee = () => {
     { name: "Dr. P. Shanmuga Sundari", role: "SRM Institute of Science and Technology (SRMIST), Trichy, Tamil Nadu, India", image: "/P_Shanmuga_Sundari.jpg" },
     { name: "Dr. J. Frank Ruban Jebaraj", role: "The American College, Madurai, Tamil Nadu, India", image: "/J_Frank_Ruban_Jebaraj.png" },
     { name: "Dr. Manikandan Kumar", role: "PSG College of Arts and Science,Coimbatore, Tamil Nadu, India", image: "/Manikandan_Kumar.jpg" },
-    { name: "Dr. Mrs. P.L. Chithra", role: "University of Madras, Chennai - 600025, Tamil Nadu, India", image: "/PL_Chithra.jpg" },
-    { name: "Dr. S. Vimala", role: "Mother Teresa Women’s University, Kodaikanal – 624102, Tamil Nadu, India", image: "/S_Vimala.jpg" },
-    { name: "Dr. Sathiaseelan J.G.R", role: "Bishop Heber College, Tiruchirappalli, Tamil Nadu, India", image: "/Sathiaseelan_JGR.jpg" },
+    { name: "Dr. P.L. Chithra", role: "University of Madras, Chennai, Tamil Nadu, India", image: "/PL_Chithra.jpg" },
+    { name: "Dr. S. Vimala", role: "Mother Teresa Women’s University, Kodaikanal, Tamil Nadu, India", image: "/S_Vimala.jpg" },
+    { name: "Dr. Sathiselan J.G.R", role: "Bishop Heber College, Tiruchirappalli, Tamil Nadu, India", image: "/Sathiaseelan_JGR.jpg" },
   ];
 
   const committees = [
