@@ -150,9 +150,9 @@ const Registration = () => {
         </div>
 
         {/* International Participants Notice */}
-        <div className="bg-red-500 border-2 border-red-300 rounded-lg p-6 mb-8 shadow-lg">
+        <div className="bg-blue-800 border-2 border-blue-300 rounded-lg p-6 mb-8 shadow-lg">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center shrink-0">
               <AlertTriangle className="w-6 h-6 text-white" />
             </div>
             <div>
