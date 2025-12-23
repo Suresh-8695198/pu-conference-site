@@ -157,11 +157,10 @@ const Registration = () => {
             </div>
             <div>
               <h3 className="font-display font-bold text-2xl text-white mb-3">
-                Important Notice for International Participants
+                For International Participants: 
               </h3>
               <p className="text-white text-xl leading-relaxed font-semibold">
-                International participants are requested to contact the organizing committee directly for registration details and payment procedures. Please reach out via email or phone for personalized assistance with your registration process.
-              </p>
+              Kindly be informed that any bank charges, currency conversion charges, or international transfer fees, if applicable, shall be borne by the payer/bank. International participants are kindly requested to ensure that the full registration amount is credited to the conference account.              </p>
             </div>
           </div>
         </div>
