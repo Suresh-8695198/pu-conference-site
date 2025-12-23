@@ -16,13 +16,67 @@ const Speakers = () => {
         </div>
 
         {/* Speakers Grid */}
-        <div className="grid md:grid-cols-2 gap-6 justify-items-center">
-          {/* Speaker 1
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-            <div className="flex items-center gap-4">
+        <div className="flex flex-col items-center gap-12">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12">
+            {/* Speaker 2 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+                <img
+                  src="/paventhan.jpg"
+                  alt="Dr. A. Paventhan"
+                  className="w-40 h-40 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                  <span className="text-primary-foreground font-bold text-xl">AP</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. A. Paventhan</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Senior Director, HoD-Research & Development</strong></p>
+                    <p><strong>Scientist-G, ERNET India</strong></p>
+                    <p>Ministry of Electronics & IT, Government of India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker 3 */}
+            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+                <img
+                  src="/pisharady.jpg"
+                  alt="Dr. Pramod Pisharady"
+                  className="w-40 h-40 object-cover shrink-0"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                  }}
+                />
+                <div className="w-44 h-52 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                  <span className="text-primary-foreground font-bold text-xl">PP</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p><strong>Chan Zuckerberg Imaging Scientist</strong></p>
+                    <p>Center for Magnetic Resonance Research (CMRR)</p>
+                    <p>University of Minnesota (UMN),United States</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Speaker 4 */}
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full max-w-md">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
               <img
-                src="/Deepak Garg.jpeg"
-                alt="DR. DEEPAK GARG"
+                src="/shanthababu.jpeg"
+                alt="Shanthababu Pandian"
                 className="w-40 h-40 object-cover shrink-0"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -30,69 +84,19 @@ const Speakers = () => {
                 }}
               />
               <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                <span className="text-primary-foreground font-bold text-xl">DG</span>
+                <span className="text-primary-foreground font-bold text-xl">SP</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-display font-bold text-xl text-navy mb-2">DR. DEEPAK GARG</h4>
+                <h4 className="font-display font-bold text-xl text-navy mb-2">Shanthababu Pandian</h4>
                 <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong>Vice Chancellor - SR University</strong></p>
-                  <p><strong>Director - leadingindia.ai</strong></p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-          {/* Speaker 2 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-            <div className="flex items-center gap-4">
-              <img
-                src="/paventhan.jpg"
-                alt="Dr. A. Paventhan"
-                className="w-40 h-40 object-cover shrink-0"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
-                }}
-              />
-              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                <span className="text-primary-foreground font-bold text-xl">AP</span>
-              </div>
-              <div className="flex-1">
-                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. A. Paventhan</h4>
-                <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong>Senior Director, HoD-Research & Development</strong></p>
-                  <p><strong>Scientist-G, ERNET India</strong></p>
-                  <p>Ministry of Electronics & IT, Government of India</p>
+                  <p><strong>Director-Data and AI (Data and AI Engineering)</strong></p>
+                  <p>Rolan Software Service</p>
+                  <p>London, United Kingdom</p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Speaker 3 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-            <div className="flex items-center gap-4">
-              <img
-                src="/pisharady.jpg"
-                alt="Dr. Pramod Pisharady"
-                className="w-40 h-40 object-cover shrink-0"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
-                }}
-              />
-              <div className="w-44 h-52 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                <span className="text-primary-foreground font-bold text-xl">PP</span>
-              </div>
-              <div className="flex-1">
-                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
-                <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong>Chan Zuckerberg Imaging Scientist</strong></p>
-                  <p>Center for Magnetic Resonance Research (CMRR)</p>
-                  <p>University of Minnesota (UMN),United States</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
           {/* Speaker 4
           <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
@@ -145,7 +149,6 @@ const Speakers = () => {
             </div>
           </div> */}
         </div>
-      </div>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import { Check, Users, GraduationCap, Briefcase, Globe, MapPin, Plane, Train, Bus, Camera } from "lucide-react";
+import { Check, Users, GraduationCap, Briefcase, Globe, MapPin, Plane, Train, Bus, Camera, AlertTriangle } from "lucide-react";
 
 const Registration = () => {
   const categories = [
@@ -147,6 +147,23 @@ const Registration = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* International Participants Notice */}
+        <div className="bg-red-500 border-2 border-red-300 rounded-lg p-6 mb-8 shadow-lg">
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center shrink-0">
+              <AlertTriangle className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="font-display font-bold text-2xl text-white mb-3">
+                Important Notice for International Participants
+              </h3>
+              <p className="text-white text-xl leading-relaxed font-semibold">
+                International participants are requested to contact the organizing committee directly for registration details and payment procedures. Please reach out via email or phone for personalized assistance with your registration process.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* What's Included */}
