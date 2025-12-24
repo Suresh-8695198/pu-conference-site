@@ -252,11 +252,11 @@ const CallForPapers = () => {
               </a>
               <a 
                 href="/Presentation_Guidelines.pdf" 
-                download="Presentation_Guidelines.pdf"
+                download="Presentation_Template.pdf"
                 className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
               >
                 <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                PDF Guidelines
+                PDF Template
               </a>
             </div>
           </div>
