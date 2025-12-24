@@ -58,7 +58,6 @@ const CallForPapers = () => {
             </ul>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
@@ -194,7 +193,7 @@ const CallForPapers = () => {
               </li>
             </ol>
           </div>
-
+         
           {/* Card 8 */}
           <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
@@ -217,7 +216,51 @@ const CallForPapers = () => {
               <li className="mb-3 leading-relaxed"><strong>Copyright Form</strong> — Paper_ID_No_Copyright_Form.pdf</li>
             </ol>
           </div>
-  {/* Card 9 */}
+
+           {/* Presentation Guidelines */}
+          <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-purple-600 rounded-lg flex items-center justify-center">
+                <Send className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Presentation Guidelines</h3>
+                <p className="text-black text-sm md:text-base">Guidelines for paper presentation</p>
+              </div>
+            </div>
+            <div className="flex-1">
+              <ul className="space-y-3 text-sm md:text-base text-black leading-relaxed text-justify list-disc list-inside">
+                <li>Presentations must be prepared strictly using the official conference PPT template and must follow the structure defined in the template.</li>
+                <li>Only registered authors are permitted to present papers.</li>
+                <li>At least one author of each accepted paper must present the paper.</li>
+                <li>Presentations may be delivered in physical or online (hybrid) mode, as allotted by the organizing committee.</li>
+                <li>The presenting author must attend the entire session, including the question-and-answer segment.</li>
+                <li>Certificates of Presentation will be issued only to authors who present the paper.</li>
+                <li>Failure to present may result in exclusion from the conference proceedings and certification.</li>
+                <li>The presentation schedule and session details will be communicated in advance.</li>
+                <li>Authors must strictly adhere to the allocated presentation time.</li>
+              </ul>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-6">
+              <a 
+                href="/Presentation_Template.pptx" 
+                download="Presentation_Template.pptx"
+                className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-purple-700 transition-colors text-sm md:text-base"
+              >
+                <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                PPT Template
+              </a>
+              <a 
+                href="/Presentation_Guidelines.pdf" 
+                download="Presentation_Guidelines.pdf"
+                className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+              >
+                <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                PDF Guidelines
+              </a>
+            </div>
+          </div>
+          {/* Card 9 */}
           <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
               <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
@@ -233,67 +276,70 @@ const CallForPapers = () => {
             </ol>
           </div>
 
-          {/* Card 10 */}
-          <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Paper Submission Format</h3>
-                <p className="text-black text-sm md:text-base">Download guidelines and templates</p>
-              </div>
-            </div>
-            <p className="text-black mb-6 leading-relaxed">
-              Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
-            </p>
+        </div>
 
-            {/* Submission Notice */}
-            <div role="status" aria-live="polite" className="bg-amber-50 border-2 border-amber-400 rounded-lg p-3 md:p-5 mb-4 md:mb-6 shadow-md animate-pulse">
-              <div className="flex items-start gap-3 md:gap-4">
-                <div className="w-8 h-8 md:w-10 md:h-10 bg-amber-600 rounded-full flex items-center justify-center shrink-0 text-white font-bold">
-                  ⚠
+        {/* Centered Paper Submission Format Section */}
+        <div className="flex justify-center mt-8 md:mt-12">
+          <div className="w-full max-w-4xl">
+            {/* Card 10 */}
+            <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
+              <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
+                  <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-display font-bold text-lg md:text-xl lg:text-2xl text-amber-800 mb-1">
-                    Submission & Post-Review Formatting
-                  </h4>
-                  <p className="text-amber-700 font-semibold leading-relaxed text-justify text-sm md:text-base">
-                    Initially, all papers must be submitted in accordance with the Taylor & Francis manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-extrabold text-amber-900">Taylor & Francis</span> or <span className="font-extrabold text-amber-900">World Scientific / Wiley</span>, as applicable.
-                  </p>
+                  <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Paper Submission Format</h3>
+                  <p className="text-black text-sm md:text-base">Download guidelines and templates</p>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-              <a 
-                href="/Abstracts_Guidelines.pdf" 
-                download="Abstracts_Guidelines.pdf"
-                className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors text-sm md:text-base"
-              >
-                <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                Abstracts Guidelines
-              </a>
-              <a 
-                href="/Manuscript_Guidelines.pdf" 
-                download="Manuscript_Guidelines_Taylor_Francis.pdf"
-                className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-              >
-                <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                Manuscript Guidelines - Taylor & Francis
-              </a>
-              <a 
-                href="/sample_file.pdf" 
-                download="Manuscript_Guidelines_Wiley.pdf"
-                className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base col-span-1 sm:col-span-2"
-              >
-                <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                Manuscript Guidelines - Wiley
-              </a>
+              <p className="text-black mb-6 leading-relaxed text-center md:text-left">
+                Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
+              </p>
+
+              {/* Submission Notice */}
+              <div role="status" aria-live="polite" className="bg-amber-50 border-2 border-amber-400 rounded-lg p-3 md:p-5 mb-4 md:mb-6 shadow-md animate-pulse">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="w-8 h-8 md:w-10 md:h-10 bg-amber-600 rounded-full flex items-center justify-center shrink-0 text-white font-bold">
+                    ⚠
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-lg md:text-xl lg:text-2xl text-amber-800 mb-1">
+                      Submission & Post-Review Formatting
+                    </h4>
+                    <p className="text-amber-700 font-semibold leading-relaxed text-justify text-sm md:text-base">
+                      Initially, all papers must be submitted in accordance with the Taylor & Francis manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-extrabold text-amber-900">Taylor & Francis</span> or <span className="font-extrabold text-amber-900">World Scientific / Wiley</span>, as applicable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+                <a 
+                  href="/Abstracts_Guidelines.pdf" 
+                  download="Abstracts_Guidelines.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Abstracts Guidelines
+                </a>
+                <a 
+                  href="/Manuscript_Guidelines.pdf" 
+                  download="Manuscript_Guidelines_Taylor_Francis.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Manuscript Guidelines - Taylor & Francis
+                </a>
+                <a 
+                  href="/sample_file.pdf" 
+                  download="Manuscript_Guidelines_Wiley.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Manuscript Guidelines - Wiley
+                </a>
+              </div>
             </div>
           </div>
-
-        
-         
         </div>
 
       </div>
