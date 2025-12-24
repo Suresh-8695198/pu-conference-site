@@ -248,7 +248,7 @@ const Registration = () => {
 
         {/* Note */}
         <p className="text-black text-sm mt-8 text-justify leading-relaxed max-w-5xl mx-auto">
-Conference registration will commence on 25 December 2025 and close on 19 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline. For each accepted paper, at least one author must register and attend the conference for the paper.        </p>
+Conference registration will commence on 25 December 2025 and close on 19 February 2026. All conference participants are requested to complete the registration process and pay the applicable registration fee on or before the deadline.      </p>
       </div>
     </section>
     </>

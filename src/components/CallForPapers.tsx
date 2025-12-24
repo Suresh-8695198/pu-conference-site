@@ -193,30 +193,6 @@ const CallForPapers = () => {
               </li>
             </ol>
           </div>
-         
-          {/* Card 8 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Final Submission Requirements</h3>
-                <p className="text-black text-sm md:text-base">After review process</p>
-              </div>
-            </div>
-            <p className="text-black text-base leading-relaxed mb-6 font-medium text-left">
-              After addressing the reviewers' comments, upload a single .zip folder containing the following documents:
-            </p>
-            <ol className="space-y-4 text-base text-black leading-relaxed text-left list-decimal list-inside pl-6">
-              <li className="mb-3 leading-relaxed"><strong>Revised Camera-Ready Paper (PDF)</strong> — Paper_ID_No_Revised_Camera_Ready.pdf</li>
-              <li className="mb-3 leading-relaxed"><strong>Source File (Word or LaTeX)</strong> — Word format: Paper_ID_No_Revised_Camera_Ready.docx</li>
-              <li className="mb-3 leading-relaxed"><strong>Response to Reviewers</strong> — Paper_ID_No_Reviewer_Response.docx</li>
-              <li className="mb-3 leading-relaxed"><strong>Proof of Payment (Invoice / Receipt – PDF)</strong> — Paper_ID_No_Payment_Proof.pdf</li>
-              <li className="mb-3 leading-relaxed"><strong>Copyright Form</strong> — Paper_ID_No_Copyright_Form.pdf</li>
-            </ol>
-          </div>
-
            {/* Presentation Guidelines */}
           <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
@@ -260,6 +236,30 @@ const CallForPapers = () => {
               </a>
             </div>
           </div>
+          {/* Card 8 */}
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
+                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Final Submission Requirements</h3>
+                <p className="text-black text-sm md:text-base">After review process</p>
+              </div>
+            </div>
+            <p className="text-black text-base leading-relaxed mb-6 font-medium text-left">
+              After addressing the reviewers' comments, upload a single .zip folder containing the following documents:
+            </p>
+            <ol className="space-y-4 text-base text-black leading-relaxed text-left list-decimal list-inside pl-6">
+              <li className="mb-3 leading-relaxed"><strong>Revised Camera-Ready Paper (PDF)</strong> — Paper_ID_No_Revised_Camera_Ready.pdf</li>
+              <li className="mb-3 leading-relaxed"><strong>Source File (Word or LaTeX)</strong> — Word format: Paper_ID_No_Revised_Camera_Ready.docx</li>
+              <li className="mb-3 leading-relaxed"><strong>Response to Reviewers</strong> — Paper_ID_No_Reviewer_Response.docx</li>
+              <li className="mb-3 leading-relaxed"><strong>Proof of Payment </strong> — Paper_ID_No_Payment_Proof.pdf</li>
+              <li className="mb-3 leading-relaxed"><strong>Copyright Form</strong> — Paper_ID_No_Copyright_Form.pdf</li>
+            </ol>
+          </div>
+
+         
           {/* Card 9 */}
           <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
