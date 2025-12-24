@@ -31,6 +31,7 @@ const MemberImage = ({ name, size = "w-28 h-28" }: { name: string; size?: string
     "Dr E CHANDRA": "/E_Chandra.jpeg",
     "Dr.D.Murugan": "/D_Murugan.jpeg",
     "Dr.P.Shanmugavadivu": "/P_Shanmugavadivu.jpeg",
+    "Dr. D. Arul Pon Daniel": "/D_Arul_Pon_Daniel.jpeg",
   };
 
   const findImageSrc = (name: string) => {
@@ -226,6 +227,7 @@ const Committee = () => {
     { name: "Dr. P.L. Chithra", role: "University of Madras, Chennai, Tamil Nadu, India", image: "/PL_Chithra.jpg" },
     { name: "Dr. S. Vimala", role: "Mother Teresa Women’s University, Kodaikanal, Tamil Nadu, India", image: "/S_Vimala.jpg" },
     { name: "Dr. J.G.R. Sathiselan ", role: "Bishop Heber College, Tiruchirappalli, Tamil Nadu, India", image: "/Sathiaseelan_JGR.jpg" },
+    { name: "Dr. D. Arul Pon Daniel", role: "Vice-principal, Jayarani Arts & Science College For Women", image: "/D_Arul_Pon_Daniel.jpeg" },
   ];
 
   const committees = [
