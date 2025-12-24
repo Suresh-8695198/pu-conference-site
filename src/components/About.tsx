@@ -62,14 +62,23 @@ const About = () => {
 
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <a
-              href="/Brochure.pdf"
-              download="ICAITSC_2026_Brochure.pdf"
-              className="inline-flex items-center justify-center gap-2 bg-gold text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-gold-dark transition-colors shadow-sm"
+            <button
+              onClick={() => {
+                // Open in new tab
+                window.open('/BROCHURE.jpg', '_blank', 'noopener,noreferrer');
+                // Trigger download
+                const link = document.createElement('a');
+                link.href = '/BROCHURE.jpg';
+                link.download = 'ICAITSC_2026_Brochure.jpg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="inline-flex items-center justify-center gap-2 bg-gold text-white px-8 py-4 rounded-lg font-display font-semibold text-lg hover:bg-gold-dark transition-colors shadow-sm cursor-pointer"
             >
               <FileText className="w-5 h-5" />
               Download Brochure
-            </a>
+            </button>
             <a
               href="/Schedule.pdf"
                 download="ICAITSC_2026_Schedule.pdf"
