@@ -196,6 +196,7 @@ const Registration = () => {
                 <div className="md:col-span-2 bg-transparent">
                   <div className="divide-y divide-slate-100 rounded-lg overflow-hidden border border-slate-100">
                     {[
+                      { label: "Account Name", value: "Profesor and Head, Department of Computer Science" },
                       { label: "Account Number", value: "8450101001449" },
                       { label: "Bank Name", value: "Canara Bank" },
                       { label: "Branch Name", value: "Periyar University Campus" },

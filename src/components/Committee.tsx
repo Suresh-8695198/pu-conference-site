@@ -227,7 +227,7 @@ const Committee = () => {
     { name: "Dr. P.L. Chithra", role: "University of Madras, Chennai, Tamil Nadu, India", image: "/PL_Chithra.jpg" },
     { name: "Dr. S. Vimala", role: "Mother Teresa Women’s University, Kodaikanal, Tamil Nadu, India", image: "/S_Vimala.jpg" },
     { name: "Dr. J.G.R. Sathiselan ", role: "Bishop Heber College, Tiruchirappalli, Tamil Nadu, India", image: "/Sathiaseelan_JGR.jpg" },
-    { name: "Dr. D. Arul Pon Daniel", role: "Vice-principal, Jayarani Arts & Science College For Women", image: "/D_Arul_Pon_Daniel.jpeg" },
+    { name: "Dr. D. Arul Pon Daniel", role: "Vice-principal, Jayarani Arts & Science College For Women, Salem, TamilNadu, India", image: "/D_Arul_Pon_Daniel.jpeg" },
   ];
 
   const committees = [
@@ -236,9 +236,9 @@ const Committee = () => {
       icon: Award,
       color: "bg-gold",
       members: [
-        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Member- Vice Chancellor Committee, Periyar University, Salem - 636 011" },
-        { name: "Prof. R. Subramani", role: "Convenor, Member- Vice Chancellor Committee, Periyar University, Salem - 636 011" },
-        { name: "Dr. S. Jayanthi", role: "Convenor, Member- Vice Chancellor Committee, Periyar University, Salem - 636 011" },
+        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
+        { name: "Prof. R. Subramani", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
+        { name: "Dr. S. Jayanthi", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
       ],
     },
     {
