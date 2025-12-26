@@ -246,7 +246,7 @@ const Committee = () => {
       icon: User,
       color: "bg-navy",
       members: [
-        { name: "Dr. V. Raj", role: "Registrar(FAC), Periyar University Salem" },
+        { name: "Dr. V. Raj", role: "Registrar(FAC), Periyar University Salem, TN" },
       ],
     },
     {
@@ -254,7 +254,7 @@ const Committee = () => {
       icon: Briefcase,
       color: "bg-burgundy",
       members: [
-        { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University, Salem" },
+        { name: "Dr. C. Chandrasekar", role: "Senior Professor & Head of Computer Science, Periyar University, Salem, TN" },
       ],
     },
     {
