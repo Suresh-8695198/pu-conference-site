@@ -98,8 +98,8 @@ const Committee = () => {
       .join(' ');
   };
   const organizingCommittee = [
-    { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem" },
-    { name: "Dr. S. Sathish", role: "Associate Professor, Department of Computer Science, Periyar University, Salem" },
+    { name: "Dr. R. Rathipriya", role: "Professor, Department of Computer Science, Periyar University, Salem, TN" },
+    { name: "Dr. S. Sathish", role: "Associate Professor, Department of Computer Science, Periyar University, Salem, TN" },
   ];
 
    const internationalAdvisoryCommittee = [
@@ -236,9 +236,9 @@ const Committee = () => {
       icon: Award,
       color: "bg-gold",
       members: [
-        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
-        { name: "Prof. R. Subramani", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
-        { name: "Dr. S. Jayanthi", role: "Convenor, Vice-Chancellor Committee Periyar University, Salem, TN" },
+        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Vice-Chancellor Committee, Periyar University, Salem, TN" },
+        { name: "Prof. R. Subramani", role: "Convenor, Vice-Chancellor Committee, Periyar University, Salem, TN" },
+        { name: "Dr. S. Jayanthi", role: "Convenor, Vice-Chancellor Committee, Periyar University, Salem, TN" },
       ],
     },
     {
@@ -262,8 +262,8 @@ const Committee = () => {
       icon: Users,
       color: "bg-burgundy",
       members: [
-        { name: "Dr. H. Hannah Inbarani", role: "Professor, Department of Computer Science, Periyar University, Salem" },
-        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Department of Computer Science, Periyar University, Salem" },
+        { name: "Dr. H. Hannah Inbarani", role: "Professor, Department of Computer Science, Periyar University, Salem, TN" },
+        { name: "Dr. I. Laurence Aroquiaraj", role: "Professor, Department of Computer Science, Periyar University, Salem, TN" },
       ],
     },
     {

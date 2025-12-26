@@ -96,7 +96,7 @@ const Tracks = () => {
             Click on any track to explore the topics covered
           </p>
               <p className="section-subtitle mt-1">
-              (Not limited to)          
+              (Not Limited to)          
              </p>
          
           <div className="w-24 h-1 bg-gold mx-auto mt-5" />
