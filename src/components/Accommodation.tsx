@@ -24,9 +24,6 @@ const Accommodation = () => {
             </div>
             <h3 className="font-display font-bold text-2xl text-navy">Accommodation</h3>
           </div>
-          <p className="text-black mb-6 leading-relaxed">
-           Accommodation for participants will be arranged at the University Faculty Guest House on a payment basis, subject to availability and prior request.
-          </p>
           <p className="text-black mb-6 leading-relaxed text-justify">
             Accommodation is available at ₹700 per day. Food charges will be extra and payable separately, based on the participants' requirements.
           </p>
