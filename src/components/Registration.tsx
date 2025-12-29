@@ -167,9 +167,10 @@ const Registration = () => {
 
         {/* What's Included */}
         <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-sm">
-          <h3 className="font-display font-bold text-2xl text-center mb-8 text-navy">
+          <h3 className="font-display font-bold text-2xl text-center mb-2 text-navy">
             Registration Includes
           </h3>
+          <p className="text-center mb-6">(For Offline Participants only)</p>
           <div className="grid md:grid-cols-3 gap-4">
             {includes.map((item) => (
               <div

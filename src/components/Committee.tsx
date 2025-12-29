@@ -127,7 +127,7 @@ const Committee = () => {
     { name: "Dr. Choudhary Shyam Prakash", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/Choudhary Shyam Prakash.jpg" },
     { name: "Dr. K. Himabindu", university: "National Institute of Technology Andhra Pradesh,", location: "Andhra Pradesh, India", country: "India", image: "/HIMABINDU.jpg" },
     { name: "Dr. K. S. Sowmiya Rani", university: "Sowmis_AWW", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/sowmiya.jpg" },
-    { name: "Dr. M. Thangarsu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
+    { name: "Dr. M. Thangarasu", university: "CGVAK", location: "Coimbatore, Tamil Nadu, India", country: "India", image: "/Thangarasu.jpg" },
     { name: "Dr. Mushtaq Ahmed", university: "Malaviya National Institute of Technology (MNIT) Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Mushtaq Ahmed.jpg" },
     { name: "Dr. Namita Mittal", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Namita Mittal.jpg" },
     { name: "Dr. Neeta Nain", university: "Malaviya National Institute of Technology Jaipur,", location: "Jaipur, Rajasthan, India", country: "India", image: "/Neeta Nain.jpg" },
