@@ -170,7 +170,7 @@ const Registration = () => {
           <h3 className="font-display font-bold text-2xl text-center mb-2 text-navy">
             Registration Includes
           </h3>
-          <p className="text-center mb-6">(For Offline Participants only)</p>
+          <p className="text-center mb-6 font-bold text-red-800">(The conference kit will be issued exclusively to participants attending the conference in offline mode.)</p>
           <div className="grid md:grid-cols-3 gap-4">
             {includes.map((item) => (
               <div

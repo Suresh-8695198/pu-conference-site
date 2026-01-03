@@ -66,17 +66,76 @@ const Hero = () => {
           </h1>
 
          
+          {/* Important Announcement - Animated & Highlighted */}
+          <div className="mt-8 mb-6 animate-fade-in px-4" style={{ animationDelay: "0.2s" }}>
+            <div className="relative overflow-hidden">
+              {/* Animated Border Glow */}
+              <div className="absolute inset-0 bg-gradient-to-r from-gold via-amber-400 to-gold opacity-75 blur-xl animate-pulse"></div>
+              
+              <div className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 border-4 border-gold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 transform">
+                {/* Decorative Corner Elements */}
+                <div className="absolute top-0 left-0 w-20 h-20 bg-gold opacity-20 rounded-br-full"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 bg-gold opacity-20 rounded-tl-full"></div>
+                
+                {/* Content */}
+                <div className="relative px-6 py-5 sm:px-8 sm:py-6 md:px-10 md:py-7">
+                  {/* Icon Badge */}
+                  <div className="flex justify-center mb-4">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gold blur-md animate-pulse"></div>
+                      <div className="relative bg-gradient-to-br from-gold to-amber-600 rounded-full p-3 shadow-lg">
+                        <Users className="w-6 h-6 sm:w-7 sm:h-7 text-white animate-bounce" style={{ animationDuration: '2s' }} />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-center font-display font-bold text-lg sm:text-xl md:text-2xl text-navy mb-3 tracking-wide">
+                    📢 Important Presentation Notice
+                  </h3>
+                  
+                  {/* Main Message */}
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/10 to-transparent animate-shimmer"></div>
+                    <p className="relative text-center text-base sm:text-lg md:text-xl font-semibold text-gray-800 leading-relaxed">
+                      <span className="inline-block animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                        Online mode of presentation is permitted 
+                      </span>
+                      <span className="inline-block text-burgundy font-bold animate-fade-in px-2" style={{ animationDelay: "0.4s" }}>
+                        only for participants
+                      </span>
+                      <span className="inline-block animate-fade-in" style={{ animationDelay: "0.5s" }}>
+                        from states
+                      </span>
+                      <span className="inline-block text-burgundy font-bold animate-fade-in px-2" style={{ animationDelay: "0.6s" }}>
+                        other than Tamil Nadu
+                      </span>
+                    </p>
+                  </div>
+                  
+                  {/* Decorative Underline */}
+                  <div className="flex justify-center mt-4">
+                    <div className="w-32 h-1 bg-gradient-to-r from-transparent via-gold to-transparent rounded-full"></div>
+                  </div>
+                </div>
+                
+                {/* Animated Bottom Border */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-amber-400 to-gold animate-shimmer"></div>
+              </div>
+            </div>
+          </div>
+
           {/* Info Cards */}
-          <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-8 animate-fade-in px-4" style={{ animationDelay: "0.3s" }}>
-            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row mt-8 sm:mt-10 flex-wrap items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-8 animate-fade-in px-4" style={{ animationDelay: "0.7s" }}>
+            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto hover:scale-105 transition-transform duration-300">
                 <Users className="w-5 h-5 text-gold flex-shrink-0" />
                 <span className="text-navy font-semibold text-base sm:text-lg">Hybrid Mode</span>
             </div>
-            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
+            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto hover:scale-105 transition-transform duration-300">
               <Calendar className="w-5 h-5 text-gold font-bold flex-shrink-0" />
               <span className="text-navy font-semibold text-base">26-27 February 2026</span>
             </div>
-            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto">
+            <div className="flex items-center gap-3 bg-white backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 w-full sm:w-auto hover:scale-105 transition-transform duration-300">
               <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
               <span className="text-navy font-semibold text-base">Salem, Tamil Nadu, India</span>
             </div>
