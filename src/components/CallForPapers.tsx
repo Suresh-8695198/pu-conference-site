@@ -273,6 +273,7 @@ const CallForPapers = () => {
             </div>
             <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
               <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
+              <li>Papers not selected for inclusion as book chapters will be considered for ISBN-registered conference proceedings, with DOI assigned where applicable.</li>
             </ol>
           </div>
 
