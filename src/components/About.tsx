@@ -65,7 +65,7 @@ const About = () => {
             <button
               onClick={() => {
                 // Open in new tab
-                window.open('/BROCHURE.jpg', '_blank', 'noopener,noreferrer');
+                window.open('/BROCHURE.pdf', '_blank', 'noopener,noreferrer');
                 // Trigger download
                 const link = document.createElement('a');
                 link.href = '/BROCHURE.jpg';
