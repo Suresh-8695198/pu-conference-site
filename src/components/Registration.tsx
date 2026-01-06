@@ -223,8 +223,7 @@ const Registration = () => {
                   {[...Array(5)].map((_, i) => (
                     <svg 
                       key={i} 
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500 animate-pulse" 
-                      style={{ animationDelay: `${i * 0.2}s` }}
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500" 
                       fill="currentColor" 
                       viewBox="0 0 20 20"
                     >
