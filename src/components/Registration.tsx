@@ -165,6 +165,86 @@ const Registration = () => {
           </div>
         </div>
 
+        {/* Best Paper Award Announcement */}
+        <div className="mb-8">
+          <div className="relative overflow-hidden">
+            {/* Animated Glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 opacity-60 blur-2xl animate-pulse"></div>
+            
+            <div className="relative bg-gradient-to-br from-amber-50 via-yellow-100 to-amber-100 border-4 border-amber-500 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] transform">
+              {/* Decorative Elements */}
+              <div className="absolute top-0 left-0 w-24 h-24 bg-amber-500 opacity-20 rounded-br-full"></div>
+              <div className="absolute bottom-0 right-0 w-24 h-24 bg-amber-500 opacity-20 rounded-tl-full"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-yellow-300/30 to-amber-400/30 rounded-full blur-3xl"></div>
+              
+              {/* Content */}
+              <div className="relative px-6 py-6 sm:px-8 sm:py-7 md:px-10 md:py-8">
+                {/* Award Trophy Icon */}
+                <div className="flex justify-center mb-5">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-amber-500 blur-xl animate-pulse"></div>
+                    <div className="relative bg-gradient-to-br from-amber-500 via-yellow-500 to-amber-600 rounded-full p-4 shadow-2xl">
+                      <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Title with Sparkle Effect */}
+                <h3 className="text-center font-display font-bold text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 mb-4 tracking-wide">
+                  🏆 Best Paper Award 🏆
+                </h3>
+                
+                {/* Main Message */}
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-300/20 to-transparent animate-shimmer"></div>
+                  <p className="relative text-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 leading-relaxed">
+                    <span className="inline-block px-2">
+                      The best papers presented in
+                    </span>
+                    <span className="inline-block px-2 text-amber-700 drop-shadow-md">
+                      offline mode
+                    </span>
+                    <span className="inline-block px-2">
+                      will be recognized with
+                    </span>
+                    <span className="inline-block px-2 text-amber-700 drop-shadow-md animate-pulse">
+                      awards
+                    </span>
+                    <span className="inline-block px-2">
+                      during the conference
+                    </span>
+                  </p>
+                </div>
+                
+                {/* Decorative Stars */}
+                <div className="flex justify-center gap-3 mt-5">
+                  {[...Array(5)].map((_, i) => (
+                    <svg 
+                      key={i} 
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500 animate-pulse" 
+                      style={{ animationDelay: `${i * 0.2}s` }}
+                      fill="currentColor" 
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                
+                {/* Subtle Gradient Underline */}
+                <div className="flex justify-center mt-4">
+                  <div className="w-48 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent rounded-full"></div>
+                </div>
+              </div>
+              
+              {/* Bottom Shimmer Border */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 animate-shimmer"></div>
+            </div>
+          </div>
+        </div>
+
         {/* What's Included */}
         <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-sm">
           <h3 className="font-display font-bold text-2xl text-center mb-2 text-navy">
