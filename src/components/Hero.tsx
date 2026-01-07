@@ -99,16 +99,16 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/10 to-transparent animate-shimmer"></div>
                     <p className="relative text-center text-base sm:text-lg md:text-xl font-semibold text-gray-800 leading-relaxed">
                       <span className="inline-block animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                        Online mode of presentation is permitted 
+                        Online presentation mode  
                       </span>
                       <span className="inline-block text-burgundy font-bold animate-fade-in px-2" style={{ animationDelay: "0.4s" }}>
-                        only for participants
+                         is available only
                       </span>
                       <span className="inline-block animate-fade-in" style={{ animationDelay: "0.5s" }}>
-                        from states
+                        for participants
                       </span>
                       <span className="inline-block text-burgundy font-bold animate-fade-in px-2" style={{ animationDelay: "0.6s" }}>
-                        other than Tamil Nadu
+                        outside Tamil Nadu.
                       </span>
                     </p>
                   </div>

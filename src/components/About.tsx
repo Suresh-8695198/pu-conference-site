@@ -44,11 +44,9 @@ const About = () => {
             <div className="marquee overflow-hidden py-5">
               <div className="marquee-track animate-marquee inline-flex items-center px-4">
                 <span className="text-navy font-display font-bold text-lg inline-block mr-8">
-                  Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-                </span>
+Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes “Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity” (CRC Press, Taylor & Francis Group publication) or “Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications” (Wiley publication), subject to the respective publisher’s scope and editorial policies. Papers not selected for inclusion as book chapters will be considered for publication in the ISBN-registered conference proceedings, with DOI assigned where applicable.                </span>
                 <span className="text-navy font-display font-bold text-lg inline-block mr-8">
-                  Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes " Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications", subject to publisher scope and editorial policies.
-                </span>
+Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes “Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity” (CRC Press, Taylor & Francis Group publication) or “Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications” (Wiley publication), subject to the respective publisher’s scope and editorial policies. Papers not selected for inclusion as book chapters will be considered for publication in the ISBN-registered conference proceedings, with DOI assigned where applicable.                </span>
               </div>
             </div>
           </div>
