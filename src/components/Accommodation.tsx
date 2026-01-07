@@ -25,7 +25,7 @@ const Accommodation = () => {
             <h3 className="font-display font-bold text-2xl text-navy">Accommodation</h3>
           </div>
           <p className="text-black mb-6 leading-relaxed text-justify">
-            Accommodation is available at ₹700 per day. Food charges will be extra and payable separately, based on the participants' requirements.
+           Accommodation will be provided on prior request at ₹700 per day. Food charges are extra and payable separately, based on the participant’s requirements.
           </p>
         </div>
 
