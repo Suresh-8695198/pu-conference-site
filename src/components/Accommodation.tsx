@@ -26,7 +26,92 @@ const Accommodation = () => {
           </div>
           <p className="text-black mb-6 leading-relaxed text-justify">
            Accommodation will be provided on prior request at ₹700 per day. Food charges are extra and payable separately, based on the participant’s requirements.
-          </p>
+          </p>          
+          {/* Accommodation Form Section */}
+          <div className="mt-8 bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            
+            <div className="relative z-10 text-center mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4 shadow-lg">
+                <Home className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="font-display font-bold text-xl md:text-2xl text-blue-900 mb-2">
+                Book Your Accommodation
+              </h4>
+              <p className="text-gray-700 text-sm md:text-base font-medium">
+                Fill out the form to request accommodation during the conference
+              </p>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 relative z-10">
+              {/* QR Code */}
+              <div className="flex flex-col items-center group">
+                <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-blue-200 hover:border-blue-600 hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/accommodation_form.png" 
+                    alt="Accommodation Form QR Code" 
+                    className="w-40 h-40 sm:w-48 sm:h-48 object-contain"
+                  />
+                </div>
+                <p className="text-xs text-gray-600 mt-3 font-semibold flex items-center gap-1">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
+                  </svg>
+                  Scan to fill the form
+                </p>
+              </div>
+              
+              {/* OR Divider */}
+              <div className="flex lg:flex-col items-center gap-3">
+                <div className="hidden lg:block w-px h-32 bg-blue-200"></div>
+                <div className="lg:hidden w-32 h-px bg-blue-200"></div>
+                <span className="text-blue-700 font-bold text-sm px-3 py-1 bg-blue-50 rounded-full shadow-sm border border-blue-200">OR</span>
+                <div className="hidden lg:block w-px h-32 bg-blue-200"></div>
+                <div className="lg:hidden w-32 h-px bg-blue-200"></div>
+              </div>
+              
+              {/* Button with Hand Icon */}
+              <div className="flex flex-col items-center">
+                <div className="relative group">
+                  
+                  <a
+                    href="https://forms.gle/AFnz1MY4GdK3xuff8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative inline-flex items-center justify-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-lg font-display font-bold text-base md:text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 transform group"
+                  >
+                    {/* Animated Hand Icon */}
+                    <svg 
+                      className="w-6 h-6 md:w-7 md:h-7 animate-pulse group-hover:scale-110 transition-transform duration-300" 
+                      fill="currentColor" 
+                      viewBox="0 0 20 20"
+                    >
+                      <path fillRule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clipRule="evenodd" />
+                    </svg>
+                    
+                    <span className="relative">
+                      Click to Fill Form
+                      {/* Underline Animation */}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </span>
+                    
+                    {/* Arrow Icon */}
+                    <svg 
+                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <p className="text-xs text-gray-600 mt-4 text-center max-w-xs font-medium flex items-center gap-1.5">
+                  
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* How to Reach */}

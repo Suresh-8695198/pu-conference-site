@@ -64,21 +64,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Feedback Form */}
           <div>
-            <h4 className="font-display font-bold text-lg mb-6">Stay Updated</h4>
-            <p className="text-primary-foreground/70 text-sm mb-4">
-              Subscribe for conference updates
+            <h4 className="font-display font-bold text-lg mb-6">Feedback</h4>
+            <p className="text-primary-foreground/70 text-sm mb-4 leading-relaxed">
+              Share your valuable feedback to help us improve
             </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gold"
-              />
-              <button className="px-4 py-2 bg-gold rounded-lg font-medium text-sm hover:bg-gold/90 transition-colors">
-                Subscribe
-              </button>
+            <div className="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center mb-3">
+                <img 
+                  src="/feedback_form.png" 
+                  alt="Feedback Form QR Code" 
+                  className="w-32 h-32 object-contain rounded-lg"
+                />
+              </div>
+              <a
+                href="https://forms.gle/yHr3ZpBNcCL5VhzAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-gold text-navy px-4 py-2.5 rounded-lg font-display font-semibold text-sm hover:bg-gold/90 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Submit Feedback
+              </a>
             </div>
           </div>
         </div>
