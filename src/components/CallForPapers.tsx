@@ -1,4 +1,4 @@
-import { FileText, CheckCircle, AlertCircle, Send } from "lucide-react";
+import { FileText, CheckCircle, AlertCircle, Send, Home } from "lucide-react";
 
 const CallForPapers = () => {
   const guidelines = [
@@ -272,8 +272,8 @@ const CallForPapers = () => {
               </div>
             </div>
             <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
-              <li>Selected high-quality papers will be published as book chapters in the Scopus-indexed edited volumes Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity or Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications, subject to publisher scope and editorial policies.</li>
-              <li>Papers not selected for inclusion as book chapters will be considered for ISBN-registered conference proceedings, with DOI assigned where applicable.</li>
+              <li>Selected high-quality and presented papers will be published as <span className="font-bold text-purple-700">book chapters</span> in the <span className="font-bold text-blue-700">Scopus</span>-indexed edited volumes "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" (<span className="font-bold text-orange-600">CRC Press, Taylor & Francis Group</span> publication) or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications" (<span className="font-bold text-emerald-600">Wiley publication</span>), subject to the respective publisher's scope and editorial policies.</li>
+              <li>Papers not selected for inclusion as <span className="font-bold text-purple-700">book chapters</span> will be considered for publication in the <span className="font-bold text-rose-600">ISBN-registered conference proceedings</span>, with DOI assigned where applicable.</li>
             </ol>
           </div>
 
@@ -404,22 +404,189 @@ const CallForPapers = () => {
           Go to Microsoft CMT Portal
         </a>
       </div>
-      {/* Card 11 */}
-      <div className="max-w-6xl mx-auto mt-8 md:mt-12">
-        <div className="bg-green-900 border border-navy rounded-lg p-4 md:p-6 lg:p-8 text-center shadow-sm">
-          <Send className="w-10 h-10 md:w-12 md:h-12 text-gold mx-auto mb-3 md:mb-4" />
-          <h3 className="font-display font-bold text-lg md:text-xl mb-2 text-white">Ready to Submit?</h3>
-          <p className="text-white/90 mb-4 md:mb-6 text-sm md:text-base">
-          After paper acceptance, authors are requested to submit the Google Form only after receiving the official acceptance notification, for participation confirmation and certificate processing.          </p>
-          <a
-            href="https://forms.gle/fBEX117QF3QYBgd7A"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gold text-white-900 px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors text-sm md:text-base"
-          >
-            <Send className="w-4 h-4 md:w-5 md:h-5" />
-            Fill Google Form
-          </a>
+      {/* All Google Forms Section */}
+      <div className="max-w-7xl mx-auto mt-8 md:mt-12">
+        <div className="text-center mb-8">
+          <h3 className="font-display font-bold text-2xl md:text-3xl text-navy mb-2">
+            <span className="text-gold">Conference</span> Forms
+          </h3>
+          <p className="text-black text-sm md:text-base">Complete the forms as applicable</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Certificate Form */}
+          <div className="bg-white border-2 border-amber-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-amber-600 rounded-full mb-3 shadow-lg">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-lg text-amber-900 mb-1">
+                <span className="text-amber-700">Certificate</span> Form
+              </h4>
+              <p className="text-gray-600 text-xs">After acceptance only</p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-amber-200 hover:border-amber-600 hover:scale-105 transition-all duration-300">
+                <img 
+                  src="/certificate_form.png" 
+                  alt="Certificate Form QR" 
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
+              
+              <div className="flex items-center gap-2 w-full">
+                <div className="flex-1 h-px bg-amber-200"></div>
+                <span className="text-amber-700 font-bold text-xs">OR</span>
+                <div className="flex-1 h-px bg-amber-200"></div>
+              </div>
+              
+              <a
+                href="https://forms.gle/fBEX117QF3QYBgd7A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
+                <span className="relative z-10">Fill Form</span>
+                <span className="absolute inset-0 -z-10 bg-amber-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+              </a>
+            </div>
+          </div>
+
+          {/* Presentation Form */}
+          <div className="bg-white border-2 border-purple-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-purple-600 rounded-full mb-3 shadow-lg">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-lg text-purple-900 mb-1">
+                <span className="text-purple-700">Presentation</span> Form
+              </h4>
+              <p className="text-gray-600 text-xs">Submit PPT details</p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-purple-200 hover:border-purple-600 hover:scale-105 transition-all duration-300">
+                <img 
+                  src="/presentation_form.png" 
+                  alt="Presentation Form QR" 
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
+              
+              <div className="flex items-center gap-2 w-full">
+                <div className="flex-1 h-px bg-purple-200"></div>
+                <span className="text-purple-700 font-bold text-xs">OR</span>
+                <div className="flex-1 h-px bg-purple-200"></div>
+              </div>
+              
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSczrQD7EnMFrjrceGqUL-7qeX40SGyrMErO3Tm2R6AKESgtDw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
+                <span className="relative z-10">Fill Form</span>
+                <span className="absolute inset-0 -z-10 bg-purple-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+              </a>
+            </div>
+          </div>
+
+          {/* Accommodation Form */}
+          <div className="bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full mb-3 shadow-lg">
+                <Home className="w-7 h-7 text-white" />
+              </div>
+              <h4 className="font-display font-bold text-lg text-blue-900 mb-1">
+                <span className="text-blue-700">Accommodation</span> Form
+              </h4>
+              <p className="text-gray-600 text-xs">Book your stay</p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-blue-200 hover:border-blue-600 hover:scale-105 transition-all duration-300">
+                <img 
+                  src="/accommodation_form.png" 
+                  alt="Accommodation Form QR" 
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
+              
+              <div className="flex items-center gap-2 w-full">
+                <div className="flex-1 h-px bg-blue-200"></div>
+                <span className="text-blue-700 font-bold text-xs">OR</span>
+                <div className="flex-1 h-px bg-blue-200"></div>
+              </div>
+              
+              <a
+                href="https://forms.gle/AFnz1MY4GdK3xuff8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
+                <span className="relative z-10">Fill Form</span>
+                <span className="absolute inset-0 -z-10 bg-blue-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+              </a>
+            </div>
+          </div>
+
+          {/* Feedback Form */}
+          <div className="bg-white border-2 border-green-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-green-600 rounded-full mb-3 shadow-lg">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-lg text-green-900 mb-1">
+                <span className="text-green-700">Feedback</span> Form
+              </h4>
+              <p className="text-gray-600 text-xs">Share your experience</p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-green-200 hover:border-green-600 hover:scale-105 transition-all duration-300">
+                <img 
+                  src="/feedback_form.png" 
+                  alt="Feedback Form QR" 
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
+              
+              <div className="flex items-center gap-2 w-full">
+                <div className="flex-1 h-px bg-green-200"></div>
+                <span className="text-green-700 font-bold text-xs">OR</span>
+                <div className="flex-1 h-px bg-green-200"></div>
+              </div>
+              
+              <a
+                href="https://forms.gle/yHr3ZpBNcCL5VhzAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
+                <span className="relative z-10">Fill Form</span>
+                <span className="absolute inset-0 -z-10 bg-green-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
