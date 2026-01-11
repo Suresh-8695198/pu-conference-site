@@ -298,26 +298,37 @@ const CallForPapers = () => {
               </p>
 
               {/* Submission Notice */}
-              <div role="status" aria-live="polite" className="bg-amber-50 border-2 border-amber-400 rounded-lg p-3 md:p-5 mb-4 md:mb-6 shadow-md animate-pulse">
-                <div className="flex items-start gap-3 md:gap-4">
-                  <div className="w-8 h-8 md:w-10 md:h-10 bg-amber-600 rounded-full flex items-center justify-center shrink-0 text-white font-bold">
-                    ⚠
+              <div role="status" aria-live="polite" className="relative bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 border-l-4 border-amber-500 rounded-lg p-4 md:p-6 mb-6 md:mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <style>{`
+                  @keyframes swing {
+                    0%, 100% { transform: rotate(-3deg); }
+                    50% { transform: rotate(3deg); }
+                  }
+                  .swing-badge {
+                    animation: swing 2s ease-in-out infinite;
+                  }
+                `}</style>
+                <div className="flex items-start gap-4 md:gap-5">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shrink-0 text-white font-bold shadow-md">
+                    <AlertCircle className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
-                  <div>
-                    <h4 className="font-display font-bold text-lg md:text-xl lg:text-2xl text-amber-800 mb-1">
+                  <div className="flex-1">
+                    <h4 className="font-display font-bold text-xl md:text-2xl text-amber-900 mb-3 flex items-center gap-2 flex-wrap">
                       Submission & Post-Review Formatting
+                      <span className="swing-badge inline-block px-3 py-1 text-xs font-bold bg-gradient-to-r from-red-500 to-red-600 text-white rounded-md shadow-lg">IMPORTANT</span>
                     </h4>
-                    <p className="text-amber-700 font-semibold leading-relaxed text-justify text-sm md:text-base">
-                      Initially, all papers must be submitted in accordance with the Taylor & Francis manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-extrabold text-amber-900">Taylor & Francis</span> or <span className="font-extrabold text-amber-900">World Scientific / Wiley</span>, as applicable.
+                    <p className="text-gray-800 font-medium leading-relaxed text-justify text-sm md:text-base">
+                      Initially, all papers must be submitted in accordance with the <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> or <span className="font-bold text-emerald-700 bg-emerald-100 px-1 rounded">World Scientific / Wiley</span>, as applicable.
                     </p>
                   </div>
                 </div>
+                <div className="absolute top-0 right-0 w-20 h-20 bg-amber-200 rounded-bl-full opacity-20"></div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                 <a 
                   href="/Abstracts_Guidelines.pdf" 
                   download="Abstracts_Guidelines.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-gold-dark transition-colors text-sm md:text-base"
+                  className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-gold-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
                 >
                   <FileText className="w-4 h-4 md:w-5 md:h-5" />
                   Abstracts Guidelines
@@ -325,7 +336,7 @@ const CallForPapers = () => {
                 <a 
                   href="/Manuscript_Guidelines.pdf" 
                   download="Manuscript_Guidelines_Taylor_Francis.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                  className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
                 >
                   <FileText className="w-4 h-4 md:w-5 md:h-5" />
                   Manuscript Guidelines - Taylor & Francis
@@ -333,10 +344,18 @@ const CallForPapers = () => {
                 <a 
                   href="/sample_file.pdf" 
                   download="Manuscript_Guidelines_Wiley.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
                 >
                   <FileText className="w-4 h-4 md:w-5 md:h-5" />
                   Manuscript Guidelines - Wiley
+                </a>
+                <a 
+                  href="/AIC_docx.docx" 
+                  download="AIC_docx.docx"
+                  className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Academic Integrity Committee (AIC) - Taylor & Francis
                 </a>
               </div>
             </div>
@@ -414,6 +433,50 @@ const CallForPapers = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Publication Willingness Form */}
+          <div className="bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full mb-3 shadow-lg">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-lg text-blue-900 mb-1">
+                <span className="text-blue-700">Publication Willingness</span> Form
+              </h4>
+              <p className="text-gray-600 text-xs">Indicate publication preference</p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-blue-200 hover:border-blue-600 hover:scale-105 transition-all duration-300">
+                <img 
+                  src="/publication_willingness_form.png" 
+                  alt="Publication Willingness Form QR" 
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
+              
+              <div className="flex items-center gap-2 w-full">
+                <div className="flex-1 h-px bg-blue-200"></div>
+                <span className="text-blue-700 font-bold text-xs">OR</span>
+                <div className="flex-1 h-px bg-blue-200"></div>
+              </div>
+              
+              <a
+                href="https://forms.gle/Xbhaofcy8pC5K8zXA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
+                <span className="relative z-10">Fill Form</span>
+                <span className="absolute inset-0 -z-10 bg-blue-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+              </a>
+            </div>
+          </div>
+
           {/* Certificate Form */}
           <div className="bg-white border-2 border-amber-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
             <div className="text-center mb-4">
@@ -502,48 +565,6 @@ const CallForPapers = () => {
             </div>
           </div>
 
-          {/* Accommodation Form */}
-          <div className="bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
-            <div className="text-center mb-4">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full mb-3 shadow-lg">
-                <Home className="w-7 h-7 text-white" />
-              </div>
-              <h4 className="font-display font-bold text-lg text-blue-900 mb-1">
-                <span className="text-blue-700">Accommodation</span> Form
-              </h4>
-              <p className="text-gray-600 text-xs">Book your stay</p>
-            </div>
-            
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-blue-200 hover:border-blue-600 hover:scale-105 transition-all duration-300">
-                <img 
-                  src="/accommodation_form.png" 
-                  alt="Accommodation Form QR" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
-              
-              <div className="flex items-center gap-2 w-full">
-                <div className="flex-1 h-px bg-blue-200"></div>
-                <span className="text-blue-700 font-bold text-xs">OR</span>
-                <div className="flex-1 h-px bg-blue-200"></div>
-              </div>
-              
-              <a
-                href="https://forms.gle/AFnz1MY4GdK3xuff8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
-                <span className="relative z-10">Fill Form</span>
-                <span className="absolute inset-0 -z-10 bg-blue-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
-              </a>
-            </div>
-          </div>
-
           {/* Feedback Form */}
           <div className="bg-white border-2 border-green-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
             <div className="text-center mb-4">
@@ -585,6 +606,123 @@ const CallForPapers = () => {
                 <span className="relative z-10">Fill Form</span>
                 <span className="absolute inset-0 -z-10 bg-green-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional Services Section */}
+      <div className="max-w-7xl mx-auto mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Food Request Form */}
+          <div className="group relative bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-4 border-orange-400 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
+            {/* Decorative Corner Elements */}
+            <div className="absolute top-0 right-0 w-20 h-20 bg-orange-300 rounded-bl-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute bottom-0 left-0 w-20 h-20 bg-amber-300 rounded-tr-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            
+            <div className="relative z-10">
+              {/* Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-600 rounded-full flex items-center justify-center shadow-xl group-hover:rotate-12 transition-transform duration-500">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* Title */}
+              <h4 className="font-display font-bold text-2xl md:text-3xl text-orange-900 mb-3 text-center">
+                Food Request Form
+              </h4>
+              
+              {/* Description */}
+              <p className="text-gray-700 text-center mb-6 text-sm md:text-base leading-relaxed">
+                Submit your food and catering requirements for the conference period
+              </p>
+              
+              {/* Decorative Divider */}
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="w-12 h-1 bg-orange-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <div className="w-12 h-1 bg-orange-400 rounded-full"></div>
+              </div>
+              
+              {/* Download Button */}
+              <a
+                href="https://www.periyaruniversity.ac.in/Documents/2024/Food-Request-Form.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/btn inline-flex items-center justify-center gap-3 w-full bg-orange-600 text-white px-6 py-4 rounded-xl font-display font-bold text-base hover:bg-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 border-2 border-orange-700 hover:border-orange-800"
+              >
+                <FileText className="w-5 h-5 group-hover/btn:scale-110 transition-transform" />
+                <span>Download PDF Form</span>
+                <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              
+              {/* Info Badge */}
+              <div className="mt-4 flex items-center justify-center gap-2 text-xs text-orange-700 bg-orange-100 px-3 py-2 rounded-full">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+                <span className="font-semibold">PDF Format - Print & Fill</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Room Request Form */}
+          <div className="group relative bg-gradient-to-br from-indigo-50 via-blue-50 to-indigo-100 border-4 border-indigo-400 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
+            {/* Decorative Corner Elements */}
+            <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-300 rounded-bl-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute bottom-0 left-0 w-20 h-20 bg-blue-300 rounded-tr-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            
+            <div className="relative z-10">
+              {/* Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl group-hover:rotate-12 transition-transform duration-500">
+                  <Home className="w-10 h-10 text-white" />
+                </div>
+              </div>
+              
+              {/* Title */}
+              <h4 className="font-display font-bold text-2xl md:text-3xl text-indigo-900 mb-3 text-center">
+                Room Request Form
+              </h4>
+              
+              {/* Description */}
+              <p className="text-gray-700 text-center mb-6 text-sm md:text-base leading-relaxed">
+                Book your accommodation for the conference duration at university campus
+              </p>
+              
+              {/* Decorative Divider */}
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="w-12 h-1 bg-indigo-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
+                <div className="w-12 h-1 bg-indigo-400 rounded-full"></div>
+              </div>
+              
+              {/* Download Button */}
+              <a
+                href="https://www.periyaruniversity.ac.in/Documents/2024/Room-Request-Form.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/btn inline-flex items-center justify-center gap-3 w-full bg-indigo-600 text-white px-6 py-4 rounded-xl font-display font-bold text-base hover:bg-indigo-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 border-2 border-indigo-700 hover:border-indigo-800"
+              >
+                <FileText className="w-5 h-5 group-hover/btn:scale-110 transition-transform" />
+                <span>Download PDF Form</span>
+                <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              
+              {/* Info Badge */}
+              <div className="mt-4 flex items-center justify-center gap-2 text-xs text-indigo-700 bg-indigo-100 px-3 py-2 rounded-full">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+                <span className="font-semibold">PDF Format - Print & Fill</span>
+              </div>
             </div>
           </div>
         </div>

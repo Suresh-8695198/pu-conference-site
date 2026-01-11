@@ -87,7 +87,7 @@ const Speakers = () => {
                 <span className="text-primary-foreground font-bold text-xl">SP</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-display font-bold text-xl text-navy mb-2">Shanthababu Pandian</h4>
+                <h4 className="font-display font-bold text-xl text-navy mb-2">Mr. Shanthababu Pandian</h4>
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p><strong>Director-Data and AI (Data and AI Engineering)</strong></p>
                   <p>Rolan Software Service</p>

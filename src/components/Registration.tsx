@@ -167,79 +167,246 @@ const Registration = () => {
 
         {/* Best Paper Award Announcement */}
         <div className="mb-8">
-          <div className="relative overflow-hidden">
-            {/* Animated Glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 opacity-60 blur-2xl animate-pulse"></div>
-            
-            <div className="relative bg-gradient-to-br from-amber-50 via-yellow-100 to-amber-100 border-4 border-amber-500 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] transform">
-              {/* Decorative Elements */}
-              <div className="absolute top-0 left-0 w-24 h-24 bg-amber-500 opacity-20 rounded-br-full"></div>
-              <div className="absolute bottom-0 right-0 w-24 h-24 bg-amber-500 opacity-20 rounded-tl-full"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-yellow-300/30 to-amber-400/30 rounded-full blur-3xl"></div>
+          <style>{`
+            @keyframes float {
+              0%, 100% { transform: translateY(0px); }
+              50% { transform: translateY(-8px); }
+            }
+            @keyframes rotateSlightly {
+              0%, 100% { transform: rotate(0deg); }
+              25% { transform: rotate(-2deg); }
+              75% { transform: rotate(2deg); }
+            }
+            @keyframes fadeInScale {
+              from { opacity: 0; transform: scale(0.95); }
+              to { opacity: 1; transform: scale(1); }
+            }
+            @keyframes sparkle {
+              0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
+              50% { transform: scale(1) rotate(180deg); opacity: 1; }
+            }
+            @keyframes floatRandom1 {
+              0%, 100% { transform: translate(0, 0) rotate(0deg); }
+              33% { transform: translate(5px, -10px) rotate(120deg); }
+              66% { transform: translate(-5px, -5px) rotate(240deg); }
+            }
+            @keyframes floatRandom2 {
+              0%, 100% { transform: translate(0, 0) rotate(0deg); }
+              33% { transform: translate(-8px, -8px) rotate(-120deg); }
+              66% { transform: translate(8px, -12px) rotate(-240deg); }
+            }
+            @keyframes floatRandom3 {
+              0%, 100% { transform: translate(0, 0) scale(1); }
+              50% { transform: translate(-3px, -8px) scale(1.2); }
+            }
+            @keyframes glareEffect {
+              0% { left: -150%; }
+              100% { left: 150%; }
+            }
+            @keyframes typewriter {
+              from { width: 0; }
+              to { width: 100%; }
+            }
+            @keyframes blink {
+              0%, 100% { border-color: transparent; }
+              50% { border-color: #d97706; }
+            }
+            .float-badge {
+              animation: float 4s ease-in-out infinite;
+            }
+            .rotate-badge:hover {
+              animation: rotateSlightly 2s ease-in-out infinite;
+            }
+            .fade-in-card {
+              animation: fadeInScale 0.6s ease-out;
+            }
+            .sparkle-1 { animation: floatRandom1 4s ease-in-out infinite; }
+            .sparkle-2 { animation: floatRandom2 5s ease-in-out infinite; }
+            .sparkle-3 { animation: floatRandom3 3.5s ease-in-out infinite; }
+            .sparkle-4 { animation: sparkle 3s ease-in-out infinite; }
+            .glare-container {
+              position: relative;
+              overflow: hidden;
+            }
+            .glare-container::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: -150%;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.1) 25%,
+                rgba(255, 255, 255, 0.4) 50%,
+                rgba(255, 255, 255, 0.1) 75%,
+                transparent 100%
+              );
+              transform: skewX(-25deg);
+              animation: glareEffect 5s ease-in-out infinite;
+              pointer-events: none;
+              z-index: 10;
+            }
+            .typewriter-text {
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              animation: typewriter 4s steps(80) 0.5s forwards, blink 0.75s step-end infinite;
+              border-right: 3px solid #d97706;
+              width: 0;
+            }
+            .typewriter-text.typed {
+              animation: blink 0.75s step-end infinite;
+              width: 100%;
+              border-right: none;
+            }
+          `}</style>
+          <div className="relative overflow-hidden group fade-in-card">
+            <div className="relative glare-container bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 border-4 border-amber-600 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 p-8 md:p-12">
+              {/* Elegant Corner Decorations */}
+              <div className="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-amber-500 rounded-tl-2xl opacity-30"></div>
+              <div className="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-amber-500 rounded-br-2xl opacity-30"></div>
+              
+              {/* Top Accent Line */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-transparent via-amber-600 to-transparent"></div>
+              
+              {/* Decorative Floating Elements */}
+              {/* Top Left Sparkles */}
+              <div className="absolute top-8 left-8 sparkle-1">
+                <div className="text-red-500 text-2xl">✦</div>
+              </div>
+              <div className="absolute top-16 left-20 sparkle-2">
+                <div className="text-orange-400 text-xl">★</div>
+              </div>
+              <div className="absolute top-12 left-32 sparkle-3">
+                <div className="text-purple-500 text-lg">◆</div>
+              </div>
+              <div className="absolute top-20 left-12 sparkle-4">
+                <div className="text-pink-400 text-sm">✕</div>
+              </div>
+              <div className="absolute top-6 left-40 sparkle-1">
+                <div className="text-yellow-500 text-base">○</div>
+              </div>
+              
+              {/* Top Right Sparkles */}
+              <div className="absolute top-10 right-12 sparkle-2">
+                <div className="text-amber-500 text-2xl">✦</div>
+              </div>
+              <div className="absolute top-20 right-24 sparkle-1">
+                <div className="text-yellow-400 text-xl">✕</div>
+              </div>
+              <div className="absolute top-6 right-32 sparkle-3">
+                <div className="text-orange-400 text-sm">○</div>
+              </div>
+              <div className="absolute top-14 right-8 sparkle-4">
+                <div className="text-red-400 text-lg">★</div>
+              </div>
+              <div className="absolute top-24 right-40 sparkle-2">
+                <div className="text-purple-500 text-base">◆</div>
+              </div>
+              
+              {/* Bottom Left Sparkles */}
+              <div className="absolute bottom-12 left-16 sparkle-3">
+                <div className="text-red-400 text-lg">○</div>
+              </div>
+              <div className="absolute bottom-20 left-24 sparkle-1">
+                <div className="text-orange-500 text-2xl">✦</div>
+              </div>
+              <div className="absolute bottom-8 left-8 sparkle-2">
+                <div className="text-amber-400 text-xl">★</div>
+              </div>
+              <div className="absolute bottom-16 left-36 sparkle-4">
+                <div className="text-yellow-400 text-sm">✕</div>
+              </div>
+              <div className="absolute bottom-24 left-12 sparkle-3">
+                <div className="text-pink-500 text-base">◆</div>
+              </div>
+              
+              {/* Bottom Right Sparkles */}
+              <div className="absolute bottom-16 right-20 sparkle-2">
+                <div className="text-purple-400 text-xl">◆</div>
+              </div>
+              <div className="absolute bottom-8 right-12 sparkle-3">
+                <div className="text-yellow-500 text-2xl">★</div>
+              </div>
+              <div className="absolute bottom-24 right-32 sparkle-1">
+                <div className="text-amber-400 text-sm">✕</div>
+              </div>
+              <div className="absolute bottom-12 right-8 sparkle-4">
+                <div className="text-orange-500 text-lg">✦</div>
+              </div>
+              <div className="absolute bottom-20 right-36 sparkle-2">
+                <div className="text-red-500 text-base">○</div>
+              </div>
+              
+              {/* Middle Floating Elements */}
+              <div className="absolute top-1/3 left-12 sparkle-4">
+                <div className="text-yellow-400 text-lg">✦</div>
+              </div>
+              <div className="absolute top-2/3 right-16 sparkle-4">
+                <div className="text-orange-500 text-lg">✦</div>
+              </div>
+              <div className="absolute top-1/2 left-8 sparkle-1">
+                <div className="text-pink-400 text-xl">★</div>
+              </div>
+              <div className="absolute top-1/2 right-8 sparkle-2">
+                <div className="text-purple-500 text-xl">◆</div>
+              </div>
+              <div className="absolute top-1/4 right-20 sparkle-3">
+                <div className="text-red-400 text-sm">✕</div>
+              </div>
+              <div className="absolute top-3/4 left-20 sparkle-3">
+                <div className="text-amber-500 text-sm">○</div>
+              </div>
+              
+              {/* Additional Center Area Elements */}
+              <div className="absolute top-1/3 right-10 sparkle-1">
+                <div className="text-yellow-500 text-base">★</div>
+              </div>
+              <div className="absolute top-2/3 left-10 sparkle-2">
+                <div className="text-orange-400 text-base">✦</div>
+              </div>
               
               {/* Content */}
-              <div className="relative px-6 py-6 sm:px-8 sm:py-7 md:px-10 md:py-8">
-                {/* Award Trophy Icon */}
-                <div className="flex justify-center mb-5">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-amber-500 blur-xl animate-pulse"></div>
-                    <div className="relative bg-gradient-to-br from-amber-500 via-yellow-500 to-amber-600 rounded-full p-4 shadow-2xl">
-                      <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    </div>
+              <div className="relative px-4 sm:px-6">
+                {/* Award Badge Image */}
+                <div className="flex justify-center mb-6">
+                  <div className="float-badge rotate-badge">
+                    <img 
+                      src="/badge.png" 
+                      alt="Best Paper Award Badge" 
+                      className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain drop-shadow-2xl transition-all duration-500 group-hover:scale-110"
+                    />
                   </div>
                 </div>
                 
-                {/* Title with Sparkle Effect */}
-                <h3 className="text-center font-display font-bold text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 mb-4 tracking-wide">
-                  🏆 Best Paper Award 🏆
+                {/* Title */}
+                <h3 className="text-center font-display font-bold text-2xl sm:text-3xl md:text-4xl text-amber-900 mb-2 tracking-wide">
+                  Best Paper Award
                 </h3>
                 
+                {/* Subtitle */}
+                <div className="flex justify-center mb-6">
+                  <div className="h-1 w-24 bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-600 rounded-full"></div>
+                </div>
+                
                 {/* Main Message */}
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-300/20 to-transparent animate-shimmer"></div>
-                  <p className="relative text-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 leading-relaxed">
-                    <span className="inline-block px-2">
-                      The best papers presented in
-                    </span>
-                    <span className="inline-block px-2 text-amber-700 drop-shadow-md">
-                      offline mode
-                    </span>
-                    <span className="inline-block px-2">
-                      will be recognized with
-                    </span>
-                    <span className="inline-block px-2 text-amber-700 drop-shadow-md animate-pulse">
-                      awards
-                    </span>
-                    <span className="inline-block px-2">
-                      during the conference
+                <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-amber-200 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <p className="text-center text-base sm:text-lg md:text-xl font-medium text-gray-700 leading-relaxed">
+                    <span className="typewriter-text">
+                      The best papers presented in <span className="font-bold text-amber-800 bg-amber-50 px-2 py-1 rounded">offline mode</span> will be recognized with <span className="font-bold text-amber-800 bg-amber-50 px-2 py-1 rounded">awards</span> during the conference
                     </span>
                   </p>
                 </div>
                 
-                {/* Decorative Stars */}
-                <div className="flex justify-center gap-3 mt-5">
-                  {[...Array(5)].map((_, i) => (
-                    <svg 
-                      key={i} 
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500" 
-                      fill="currentColor" 
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                
-                {/* Subtle Gradient Underline */}
-                <div className="flex justify-center mt-4">
-                  <div className="w-48 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent rounded-full"></div>
+                {/* Decorative Elements */}
+                <div className="flex justify-center gap-2 mt-6">
+                  <div className="w-2 h-2 rounded-full bg-amber-600"></div>
+                  <div className="w-2 h-2 rounded-full bg-yellow-600"></div>
+                  <div className="w-2 h-2 rounded-full bg-amber-600"></div>
                 </div>
               </div>
-              
-              {/* Bottom Shimmer Border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 animate-shimmer"></div>
             </div>
           </div>
         </div>
@@ -276,7 +443,7 @@ const Registration = () => {
                 <div className="md:col-span-2 bg-transparent">
                   <div className="divide-y divide-slate-100 rounded-lg overflow-hidden border border-slate-100">
                     {[
-                      { label: "Account Name", value: "Profesor and Head, Department of Computer Science" },
+                      { label: "Account Name", value: "PROFESSOR HOD COMPUTER SCIENCE" },
                       { label: "Account Number", value: "8450101001449" },
                       { label: "Bank Name", value: "Canara Bank" },
                       { label: "Branch Name", value: "Periyar University Campus" },
