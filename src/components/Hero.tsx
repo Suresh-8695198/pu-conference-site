@@ -82,8 +82,8 @@ const Hero = () => {
                   {/* Icon Badge */}
                   <div className="flex justify-center mb-4">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gold blur-md animate-pulse"></div>
-                      <div className="relative bg-gradient-to-br from-gold to-amber-600 rounded-full p-3 shadow-lg">
+                      <div className="absolute inset-0  blur-md animate-pulse"></div>
+                      <div className="relative bg-gradient-to-br from-gold to-amber-600 rounded-full p-3 ">
                         <Users className="w-6 h-6 sm:w-7 sm:h-7 text-white animate-bounce" style={{ animationDuration: '2s' }} />
                       </div>
                     </div>
