@@ -508,7 +508,7 @@ const CallForPapers = () => {
               </div>
               
               <a
-                href="https://forms.gle/fBEX117QF3QYBgd7A"
+                href="https://forms.gle/pYJbxmdxAdmNEM4p6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
