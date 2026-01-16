@@ -236,27 +236,270 @@ const CallForPapers = () => {
               </a>
             </div>
           </div>
-          {/* Card 8 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
+          {/* Card 8 - Taylor & Francis Submission */}
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 border-l-4 border-l-orange-600 border-2 border-orange-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-orange-600 to-orange-700 rounded-lg flex items-center justify-center shadow-lg">
                 <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Final Submission Requirements</h3>
-                <p className="text-black text-sm md:text-base">After review process</p>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-orange-900">
+                  Final Camera-Ready Submission
+                </h3>
+                <p className="text-orange-700 text-sm md:text-base font-semibold">Taylor & Francis</p>
               </div>
             </div>
-            <p className="text-black text-base leading-relaxed mb-6 font-medium text-left">
-              After addressing the reviewers' comments, upload a single .zip folder containing the following documents:
-            </p>
-            <ol className="space-y-4 text-base text-black leading-relaxed text-left list-decimal list-inside pl-6">
-              <li className="mb-3 leading-relaxed"><strong>Revised Camera-Ready Paper (PDF)</strong> — Paper_ID_No_Revised_Camera_Ready.pdf</li>
-              <li className="mb-3 leading-relaxed"><strong>Source File (Word or LaTeX)</strong> — Word format: Paper_ID_No_Revised_Camera_Ready.docx</li>
-              <li className="mb-3 leading-relaxed"><strong>Response to Reviewers</strong> — Paper_ID_No_Reviewer_Response.docx</li>
-              <li className="mb-3 leading-relaxed"><strong>Proof of Payment </strong> — Paper_ID_No_Payment_Proof.pdf</li>
-              <li className="mb-3 leading-relaxed"><strong>Copyright Form</strong> — Paper_ID_No_Copyright_Form.pdf</li>
-            </ol>
+            
+            <div className="bg-white/60 rounded-lg p-4 mb-4">
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed font-medium mb-4">
+                All accepted papers recommended for Taylor & Francis publication must submit the final camera-ready package strictly as per the requirements below. Authors must upload <span className="font-bold text-orange-700">one (1) .zip folder</span> containing the following mandatory documents:
+              </p>
+            </div>
+            
+            <div className="flex-1 space-y-4">
+              <ol className="space-y-3 text-sm md:text-base text-gray-800 leading-relaxed">
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">1. Revised Camera-Ready Paper (PDF Format)</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.pdf</code>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">2. Source File (Word Format)</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.docx</code>
+                  <br />
+                  <span className="text-xs text-orange-700 italic">(Word format is compulsory for production processing)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">3. Response to Reviewers</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Reviewer_Response.docx</code>
+                  <br />
+                  <span className="text-xs text-orange-700 italic">(Must include point-wise response to each reviewer comment)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">4. Proof of Payment</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code>
+                  <br />
+                  <span className="text-xs text-orange-700 italic">(Required for corresponding author publication fee and certificate payments)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">5. Academic Integrity Committee (AIC) Form</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AIC.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Compulsory — Submission without AIC form will not be processed for publication</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">6. Plagiarism Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Plagiarism_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Similarity index must meet acceptable academic standards</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-orange-400">
+                  <strong className="text-orange-900">7. AI Content Usage Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AI_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Declare whether AI tools were used in writing, editing, data analysis, coding, graphics, or formatting</span>
+                </li>
+              </ol>
+            </div>
+            
+            <div className="mt-4 bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+              <p className="text-xs md:text-sm text-red-900 font-semibold">
+                <strong>Important Instructions:</strong>
+              </p>
+              <ul className="text-xs md:text-sm text-red-800 mt-2 space-y-1 list-disc list-inside">
+                <li>All files must follow the exact naming convention mentioned above</li>
+                <li>Only one .zip file should be uploaded per paper ID</li>
+                <li>Incomplete submissions or missing files will result in processing delays or technical rejection</li>
+                <li>Formatting must fully comply with Taylor & Francis template and style guidelines</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Card 8B - Wiley Submission */}
+          <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 border-l-4 border-l-emerald-600 border-2 border-emerald-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center shadow-lg">
+                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-emerald-900">
+                  Final Camera-Ready Submission
+                </h3>
+                <p className="text-emerald-700 text-sm md:text-base font-semibold">Wiley Book Chapter</p>
+              </div>
+            </div>
+            
+            <div className="bg-white/60 rounded-lg p-4 mb-4">
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed font-medium mb-4">
+                All accepted papers recommended for Wiley Book Chapter publication must submit the final camera-ready package strictly as per the requirements below. Authors must upload <span className="font-bold text-emerald-700">one (1) .zip folder</span> containing the following mandatory documents:
+              </p>
+            </div>
+            
+            <div className="flex-1 space-y-4">
+              <ol className="space-y-3 text-sm md:text-base text-gray-800 leading-relaxed">
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">1. Revised Camera-Ready Paper (PDF Format)</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.pdf</code>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">2. Source File (Word Format)</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.docx</code>
+                  <br />
+                  <span className="text-xs text-emerald-700 italic">(Word format is compulsory for production processing)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">3. Response to Reviewers</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Reviewer_Response.docx</code>
+                  <br />
+                  <span className="text-xs text-emerald-700 italic">(Must include point-wise response to each reviewer comment)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">4. Proof of Payment</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code>
+                  <br />
+                  <span className="text-xs text-emerald-700 italic">(Required for publication fee and certificate payments)</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">5. Copyright Form</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Copyright_Form.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Compulsory — Submission without copyright form will not be processed for publication</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">6. Plagiarism Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Plagiarism_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Similarity index must meet acceptable academic standards</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-emerald-400">
+                  <strong className="text-emerald-900">7. AI Content Usage Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AI_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Declare whether AI tools were used in writing, editing, data analysis, coding, graphics, or formatting</span>
+                </li>
+              </ol>
+            </div>
+            
+            <div className="mt-4 bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+              <p className="text-xs md:text-sm text-red-900 font-semibold">
+                <strong>Important Instructions:</strong>
+              </p>
+              <ul className="text-xs md:text-sm text-red-800 mt-2 space-y-1 list-disc list-inside">
+                <li>All files must follow the exact naming convention mentioned above</li>
+                <li>Only one .zip file should be uploaded per Paper ID</li>
+                <li>Incomplete submissions or missing files will result in processing delays or technical rejection</li>
+                <li>Manuscripts must fully comply with the Wiley template and formatting style guidelines</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Card 8C - DOI, Copyright & Compliance */}
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-l-purple-600 border-2 border-purple-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-purple-600 to-purple-700 rounded-lg flex items-center justify-center shadow-lg">
+                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-purple-900">
+                  DOI, Copyright, Payment & Compliance
+                </h3>
+                <p className="text-purple-700 text-sm md:text-base font-semibold">Mandatory Requirements</p>
+              </div>
+            </div>
+            
+            <div className="bg-white/60 rounded-lg p-4 mb-4">
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed font-medium mb-4">
+                All accepted papers recommended for publication must complete the required compliance documentation for final processing and DOI assignment. Authors must submit the following mandatory documents in the prescribed formats:
+              </p>
+            </div>
+            
+            <div className="flex-1 space-y-4">
+              <ol className="space-y-3 text-sm md:text-base text-gray-800 leading-relaxed">
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-purple-400">
+                  <strong className="text-purple-900">1. DOI Metadata Template</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_DOI_Metadata.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Used by publisher for DOI registration and indexing. Metadata once submitted cannot be changed after publication</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-purple-400">
+                  <strong className="text-purple-900">2. Copyright Form</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Copyright_Form.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Official publisher copyright form must be completed and signed. Without this, the paper cannot enter production or be assigned a DOI</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-purple-400">
+                  <strong className="text-purple-900">3. Proof of Payment</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Payment confirmation for publication charges and certificates is compulsory. Financial clearance is required before production processing</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-purple-400">
+                  <strong className="text-purple-900">4. Plagiarism Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Plagiarism_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Similarity index must meet academic standards. Reports without full scan or verification will not be accepted</span>
+                </li>
+                
+                <li className="bg-white/70 p-3 rounded-lg border-l-4 border-purple-400">
+                  <strong className="text-purple-900">5. AI Content Usage Report</strong>
+                  <br />
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AI_Report.pdf</code>
+                  <br />
+                  <span className="text-xs font-bold text-red-600">⚠️ Mandatory — Authors must declare whether AI tools were used for writing, editing, analysis, coding, or figure generation</span>
+                </li>
+              </ol>
+            </div>
+            
+            <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg">
+              <p className="text-xs md:text-sm text-amber-900 font-semibold mb-2">
+                <strong>Important Instructions:</strong>
+              </p>
+              <ul className="text-xs md:text-sm text-amber-800 space-y-1 list-disc list-inside mb-3">
+                <li>All documents listed above are compulsory for both Taylor & Francis and Wiley publications</li>
+                <li>Files must follow the exact naming convention specified</li>
+                <li>Documents must be submitted along with the final camera-ready package inside a single .zip file</li>
+                <li>Submissions missing any required document will not be considered for publication</li>
+              </ul>
+              <p className="text-xs md:text-sm text-amber-900 font-semibold mt-3">
+                <strong>Publisher Processing Note:</strong>
+              </p>
+              <ul className="text-xs md:text-sm text-amber-800 space-y-1 list-disc list-inside">
+                <li>DOI assignment and indexing will be done by the respective publisher (Taylor & Francis / Wiley) after production is initiated</li>
+                <li>Metadata (title, authors, affiliations, ORCID, abstract, keywords) must be finalized at camera-ready stage and cannot be modified after DOI release</li>
+              </ul>
+            </div>
           </div>
 
          
