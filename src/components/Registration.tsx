@@ -203,14 +203,6 @@ const Registration = () => {
               0% { left: -150%; }
               100% { left: 150%; }
             }
-            @keyframes typewriter {
-              from { width: 0; }
-              to { width: 100%; }
-            }
-            @keyframes blink {
-              0%, 100% { border-color: transparent; }
-              50% { border-color: #d97706; }
-            }
             .float-badge {
               animation: float 4s ease-in-out infinite;
             }
@@ -248,163 +240,148 @@ const Registration = () => {
               pointer-events: none;
               z-index: 10;
             }
-            .typewriter-text {
-              display: inline-block;
-              overflow: hidden;
-              white-space: nowrap;
-              animation: typewriter 4s steps(80) 0.5s forwards, blink 0.75s step-end infinite;
-              border-right: 3px solid #d97706;
-              width: 0;
-            }
-            .typewriter-text.typed {
-              animation: blink 0.75s step-end infinite;
-              width: 100%;
-              border-right: none;
-            }
           `}</style>
           <div className="relative overflow-hidden group fade-in-card">
-            <div className="relative glare-container bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 border-4 border-amber-600 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 p-8 md:p-12">
+            <div className="relative glare-container bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 border-2 sm:border-4 border-amber-600 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 p-4 sm:p-6 md:p-8 lg:p-12">
               {/* Elegant Corner Decorations */}
-              <div className="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-amber-500 rounded-tl-2xl opacity-30"></div>
-              <div className="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-amber-500 rounded-br-2xl opacity-30"></div>
+              <div className="absolute top-0 left-0 w-16 sm:w-24 md:w-32 h-16 sm:h-24 md:h-32 border-t-2 sm:border-t-4 border-l-2 sm:border-l-4 border-amber-500 rounded-tl-2xl opacity-30"></div>
+              <div className="absolute bottom-0 right-0 w-16 sm:w-24 md:w-32 h-16 sm:h-24 md:h-32 border-b-2 sm:border-b-4 border-r-2 sm:border-r-4 border-amber-500 rounded-br-2xl opacity-30"></div>
               
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-transparent via-amber-600 to-transparent"></div>
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-40 md:w-48 h-1 bg-gradient-to-r from-transparent via-amber-600 to-transparent"></div>
               
-              {/* Decorative Floating Elements */}
+              {/* Decorative Floating Elements - Hidden on mobile for better responsiveness */}
               {/* Top Left Sparkles */}
-              <div className="absolute top-8 left-8 sparkle-1">
-                <div className="text-red-500 text-2xl">✦</div>
+              <div className="hidden md:block absolute top-8 left-8 sparkle-1">
+                <div className="text-red-500 text-xl md:text-2xl">✦</div>
               </div>
-              <div className="absolute top-16 left-20 sparkle-2">
-                <div className="text-orange-400 text-xl">★</div>
+              <div className="hidden lg:block absolute top-16 left-20 sparkle-2">
+                <div className="text-orange-400 text-lg md:text-xl">★</div>
               </div>
-              <div className="absolute top-12 left-32 sparkle-3">
-                <div className="text-purple-500 text-lg">◆</div>
+              <div className="hidden lg:block absolute top-12 left-32 sparkle-3">
+                <div className="text-purple-500 text-base md:text-lg">◆</div>
               </div>
-              <div className="absolute top-20 left-12 sparkle-4">
-                <div className="text-pink-400 text-sm">✕</div>
+              <div className="hidden md:block absolute top-20 left-12 sparkle-4">
+                <div className="text-pink-400 text-xs md:text-sm">✕</div>
               </div>
-              <div className="absolute top-6 left-40 sparkle-1">
-                <div className="text-yellow-500 text-base">○</div>
+              <div className="hidden lg:block absolute top-6 left-40 sparkle-1">
+                <div className="text-yellow-500 text-sm md:text-base">○</div>
               </div>
               
               {/* Top Right Sparkles */}
-              <div className="absolute top-10 right-12 sparkle-2">
-                <div className="text-amber-500 text-2xl">✦</div>
+              <div className="hidden md:block absolute top-10 right-12 sparkle-2">
+                <div className="text-amber-500 text-xl md:text-2xl">✦</div>
               </div>
-              <div className="absolute top-20 right-24 sparkle-1">
-                <div className="text-yellow-400 text-xl">✕</div>
+              <div className="hidden lg:block absolute top-20 right-24 sparkle-1">
+                <div className="text-yellow-400 text-lg md:text-xl">✕</div>
               </div>
-              <div className="absolute top-6 right-32 sparkle-3">
-                <div className="text-orange-400 text-sm">○</div>
+              <div className="hidden lg:block absolute top-6 right-32 sparkle-3">
+                <div className="text-orange-400 text-xs md:text-sm">○</div>
               </div>
-              <div className="absolute top-14 right-8 sparkle-4">
-                <div className="text-red-400 text-lg">★</div>
+              <div className="hidden md:block absolute top-14 right-8 sparkle-4">
+                <div className="text-red-400 text-base md:text-lg">★</div>
               </div>
-              <div className="absolute top-24 right-40 sparkle-2">
-                <div className="text-purple-500 text-base">◆</div>
+              <div className="hidden lg:block absolute top-24 right-40 sparkle-2">
+                <div className="text-purple-500 text-sm md:text-base">◆</div>
               </div>
               
               {/* Bottom Left Sparkles */}
-              <div className="absolute bottom-12 left-16 sparkle-3">
-                <div className="text-red-400 text-lg">○</div>
+              <div className="hidden lg:block absolute bottom-12 left-16 sparkle-3">
+                <div className="text-red-400 text-base md:text-lg">○</div>
               </div>
-              <div className="absolute bottom-20 left-24 sparkle-1">
-                <div className="text-orange-500 text-2xl">✦</div>
+              <div className="hidden md:block absolute bottom-20 left-24 sparkle-1">
+                <div className="text-orange-500 text-xl md:text-2xl">✦</div>
               </div>
-              <div className="absolute bottom-8 left-8 sparkle-2">
-                <div className="text-amber-400 text-xl">★</div>
+              <div className="hidden md:block absolute bottom-8 left-8 sparkle-2">
+                <div className="text-amber-400 text-lg md:text-xl">★</div>
               </div>
-              <div className="absolute bottom-16 left-36 sparkle-4">
-                <div className="text-yellow-400 text-sm">✕</div>
+              <div className="hidden lg:block absolute bottom-16 left-36 sparkle-4">
+                <div className="text-yellow-400 text-xs md:text-sm">✕</div>
               </div>
-              <div className="absolute bottom-24 left-12 sparkle-3">
-                <div className="text-pink-500 text-base">◆</div>
+              <div className="hidden lg:block absolute bottom-24 left-12 sparkle-3">
+                <div className="text-pink-500 text-sm md:text-base">◆</div>
               </div>
               
               {/* Bottom Right Sparkles */}
-              <div className="absolute bottom-16 right-20 sparkle-2">
-                <div className="text-purple-400 text-xl">◆</div>
+              <div className="hidden lg:block absolute bottom-16 right-20 sparkle-2">
+                <div className="text-purple-400 text-lg md:text-xl">◆</div>
               </div>
-              <div className="absolute bottom-8 right-12 sparkle-3">
-                <div className="text-yellow-500 text-2xl">★</div>
+              <div className="hidden md:block absolute bottom-8 right-12 sparkle-3">
+                <div className="text-yellow-500 text-xl md:text-2xl">★</div>
               </div>
-              <div className="absolute bottom-24 right-32 sparkle-1">
-                <div className="text-amber-400 text-sm">✕</div>
+              <div className="hidden lg:block absolute bottom-24 right-32 sparkle-1">
+                <div className="text-amber-400 text-xs md:text-sm">✕</div>
               </div>
-              <div className="absolute bottom-12 right-8 sparkle-4">
-                <div className="text-orange-500 text-lg">✦</div>
+              <div className="hidden md:block absolute bottom-12 right-8 sparkle-4">
+                <div className="text-orange-500 text-base md:text-lg">✦</div>
               </div>
-              <div className="absolute bottom-20 right-36 sparkle-2">
-                <div className="text-red-500 text-base">○</div>
+              <div className="hidden lg:block absolute bottom-20 right-36 sparkle-2">
+                <div className="text-red-500 text-sm md:text-base">○</div>
               </div>
               
               {/* Middle Floating Elements */}
-              <div className="absolute top-1/3 left-12 sparkle-4">
-                <div className="text-yellow-400 text-lg">✦</div>
+              <div className="hidden lg:block absolute top-1/3 left-12 sparkle-4">
+                <div className="text-yellow-400 text-base md:text-lg">✦</div>
               </div>
-              <div className="absolute top-2/3 right-16 sparkle-4">
-                <div className="text-orange-500 text-lg">✦</div>
+              <div className="hidden lg:block absolute top-2/3 right-16 sparkle-4">
+                <div className="text-orange-500 text-base md:text-lg">✦</div>
               </div>
-              <div className="absolute top-1/2 left-8 sparkle-1">
-                <div className="text-pink-400 text-xl">★</div>
+              <div className="hidden lg:block absolute top-1/2 left-8 sparkle-1">
+                <div className="text-pink-400 text-lg md:text-xl">★</div>
               </div>
-              <div className="absolute top-1/2 right-8 sparkle-2">
-                <div className="text-purple-500 text-xl">◆</div>
+              <div className="hidden lg:block absolute top-1/2 right-8 sparkle-2">
+                <div className="text-purple-500 text-lg md:text-xl">◆</div>
               </div>
-              <div className="absolute top-1/4 right-20 sparkle-3">
-                <div className="text-red-400 text-sm">✕</div>
+              <div className="hidden lg:block absolute top-1/4 right-20 sparkle-3">
+                <div className="text-red-400 text-xs md:text-sm">✕</div>
               </div>
-              <div className="absolute top-3/4 left-20 sparkle-3">
-                <div className="text-amber-500 text-sm">○</div>
+              <div className="hidden lg:block absolute top-3/4 left-20 sparkle-3">
+                <div className="text-amber-500 text-xs md:text-sm">○</div>
               </div>
               
               {/* Additional Center Area Elements */}
-              <div className="absolute top-1/3 right-10 sparkle-1">
-                <div className="text-yellow-500 text-base">★</div>
+              <div className="hidden lg:block absolute top-1/3 right-10 sparkle-1">
+                <div className="text-yellow-500 text-sm md:text-base">★</div>
               </div>
-              <div className="absolute top-2/3 left-10 sparkle-2">
-                <div className="text-orange-400 text-base">✦</div>
+              <div className="hidden lg:block absolute top-2/3 left-10 sparkle-2">
+                <div className="text-orange-400 text-sm md:text-base">✦</div>
               </div>
               
               {/* Content */}
-              <div className="relative px-4 sm:px-6">
+              <div className="relative px-2 sm:px-4 md:px-6">
                 {/* Award Badge Image */}
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center mb-4 sm:mb-6">
                   <div className="float-badge rotate-badge">
                     <img 
                       src="/badge.png" 
                       alt="Best Paper Award Badge" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain drop-shadow-2xl transition-all duration-500 group-hover:scale-110"
+                      className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain drop-shadow-2xl transition-all duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-center font-display font-bold text-2xl sm:text-3xl md:text-4xl text-amber-900 mb-2 tracking-wide">
+                <h3 className="text-center font-display font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-amber-900 mb-2 tracking-wide px-2">
                   Best Paper Award
                 </h3>
                 
                 {/* Subtitle */}
-                <div className="flex justify-center mb-6">
-                  <div className="h-1 w-24 bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-600 rounded-full"></div>
+                <div className="flex justify-center mb-4 sm:mb-6">
+                  <div className="h-1 w-16 sm:w-20 md:w-24 bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-600 rounded-full"></div>
                 </div>
                 
                 {/* Main Message */}
-                <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-amber-200 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <p className="text-center text-base sm:text-lg md:text-xl font-medium text-gray-700 leading-relaxed">
-                    <span className="typewriter-text">
-                      The best papers presented in <span className="font-bold text-amber-800 bg-amber-50 px-2 py-1 rounded">offline mode</span> will be recognized with <span className="font-bold text-amber-800 bg-amber-50 px-2 py-1 rounded">awards</span> during the conference
-                    </span>
+                <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 border border-amber-200 sm:border-2 shadow-lg group-hover:shadow-xl transition-all duration-300 mx-2 sm:mx-0">
+                  <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed">
+                    The best papers presented in <span className="font-bold text-amber-800 bg-amber-50 px-1 sm:px-2 py-0.5 sm:py-1 rounded">offline mode</span> will be recognized with <span className="font-bold text-amber-800 bg-amber-50 px-1 sm:px-2 py-0.5 sm:py-1 rounded">awards</span> during the conference
                   </p>
                 </div>
                 
                 {/* Decorative Elements */}
-                <div className="flex justify-center gap-2 mt-6">
-                  <div className="w-2 h-2 rounded-full bg-amber-600"></div>
-                  <div className="w-2 h-2 rounded-full bg-yellow-600"></div>
-                  <div className="w-2 h-2 rounded-full bg-amber-600"></div>
+                <div className="flex justify-center gap-1.5 sm:gap-2 mt-4 sm:mt-6">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-amber-600"></div>
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-600"></div>
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-amber-600"></div>
                 </div>
               </div>
             </div>
