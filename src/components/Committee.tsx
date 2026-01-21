@@ -110,7 +110,7 @@ const Committee = () => {
     { name: "Prof. Lai Khin Wee", university: "University of Malaya", country: "Malaysia", image: "/Lai Khin Wee.jpg" },
     { name: "Prof. Luis Martinez Lopez", university: "University of Jaén", country: "Spain", image: "/Luis Martinez Lopez.jpg" },
     { name: "Prof. Massimo Ficco", university: "University of Campania Luigi Vanvitelli", country: "Italy", image: "/Massimo Ficco.jpg" },
-    { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpg" },
+    { name: "Dr. Muthmainnah Yakin", university: "Universitas Al Asyariah Mandar", country: "Indonesia", image: "/Muthmainnah Yakin.jpeg" },
     { name: "Dr. Nithya Rekha Sivakumar", university: "Princess Nourah Bint Abdulrahman University", country: "Saudi Arabia", image: "/Nithya Rekha Sivakumar.jpg" },
     { name: "Dr. Preethi Ananthachari", university: "Ahlia University", country: "Bahrain", image: "/Preethi Ananthachari.jpg" },
     { name: "Prof. Sudhir Dixit", university: "University of Oulu", country: "Finland", image: "/Sudhir Dixit.jpg" },

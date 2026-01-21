@@ -98,12 +98,12 @@ const Speakers = () => {
           </div>
         </div>
 
-          {/* Speaker 4
+        
           <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
             <div className="flex items-center gap-4">
               <img
-                src="/sowmiya.jpg"
-                alt="Dr. K. S. Sowmiya Rani"
+                src="/Deepak Garg.jpeg"
+                alt="Dr. Deepak Garg"
                 className="w-44 h-52 object-cover shrink-0"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -111,17 +111,18 @@ const Speakers = () => {
                 }}
               />
               <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                <span className="text-primary-foreground font-bold text-xl">SR</span>
+                <span className="text-primary-foreground font-bold text-xl">DG</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. K. S. Sowmiya Rani</h4>
+                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Deepak Garg</h4>
                 <div className="space-y-1 text-sm text-muted-foreground">
-                  <p><strong>Founder Editor & Reviewer</strong></p>
-                  <p>Sowmis_AWW</p>
+                  <p><strong>Vice Chancellor - SR University &</strong></p>
+                  <p>Founder Director of Leadingindia.ai,</p>
+                  <p>Hyderabad, Telangana</p>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div> 
 {/* 
           Speaker 5
           <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:col-span-2 md:max-w-md md:mx-auto">

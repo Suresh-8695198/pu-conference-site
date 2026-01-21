@@ -63,11 +63,11 @@ Selected high-quality papers will be published as book chapters in the Scopus-in
             <button
               onClick={() => {
                 // Open in new tab
-                window.open('/BROCHURE.jpeg', '_blank', 'noopener,noreferrer');
+                window.open('/BROCHURE.pdf', '_blank', 'noopener,noreferrer');
                 // Trigger download
                 const link = document.createElement('a');
-                link.href = '/BROCHURE.jpeg';
-                link.download = 'ICAITSC_2026_Brochure.jpg';
+                link.href = '/BROCHURE.pdf';
+                link.download = 'ICAITSC_2026_Brochure.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
