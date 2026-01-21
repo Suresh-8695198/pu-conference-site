@@ -38,20 +38,20 @@ const CallForPapers = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
           {/* Card 1 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Submission Requirements</h3>
-                <p className="text-black text-sm md:text-base">Basic submission criteria</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission Requirements</h3>
+                <p className="text-gray-600 text-sm">Basic submission criteria</p>
               </div>
             </div>
-            <div className="flex-1">
-            <ul className="space-y-3 text-base text-black leading-relaxed text-justify list-disc list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
               <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
               <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
               <li>Papers must be carefully proofread and written in clear, grammatically correct English; poor language quality may lead to outright rejection.</li>
@@ -59,18 +59,18 @@ const CallForPapers = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Manuscript Preparation</h3>
-                <p className="text-black text-sm md:text-base">Content and formatting guidelines</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Manuscript Preparation</h3>
+                <p className="text-gray-600 text-sm">Content and formatting guidelines</p>
               </div>
             </div>
-            <div className="flex-1">
-            <ul className="space-y-3 text-base text-black leading-relaxed text-justify list-disc list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
               <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
               <li>Authors are required to submit manuscripts with a maximum length of 3,000 words, formatted strictly as per the official conference template available on the conference website.</li>
               <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
@@ -81,18 +81,18 @@ const CallForPapers = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Review and Publication</h3>
-                <p className="text-black text-sm md:text-base">Review process and publication details</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Review and Publication</h3>
+                <p className="text-gray-600 text-sm">Review process and publication details</p>
               </div>
             </div>
-            <div className="flex-1">
-            <ul className="space-y-3 text-base text-black leading-relaxed text-justify list-disc list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
               <li>Each paper may have a maximum of four (4) authors, with full affiliations and the corresponding author clearly identified.</li>
               <li>All manuscripts will undergo a double-blind peer-review process; authors must submit revisions within seven (7) days if requested.</li>
               <li>Only papers that are accepted, registered, and presented will be included in the conference proceedings and considered valid for certificates.</li>
@@ -102,18 +102,18 @@ const CallForPapers = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <CheckCircle className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Ethical Standards</h3>
-                <p className="text-black text-sm md:text-base">Academic integrity guidelines</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Ethical Standards</h3>
+                <p className="text-gray-600 text-sm">Academic integrity guidelines</p>
               </div>
             </div>
-            <div className="flex-1">
-            <ul className="space-y-3 text-base text-black leading-relaxed text-justify list-disc list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
               <li>Authors must adhere to all ethical guidelines, including plagiarism policies, proper citations, and respecting intellectual property.</li>
               <li>Authors must ensure all figures, tables, and data representations are accurate, clear, and scientifically valid.</li>
             </ul>
@@ -121,36 +121,36 @@ const CallForPapers = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center">
-                <Send className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <Send className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Submission</h3>
-                <p className="text-black text-sm md:text-base">Paper submission guidelines</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission</h3>
+                <p className="text-gray-600 text-sm">Paper submission guidelines</p>
               </div>
             </div>
-            <div className="flex-1">
-            <p className="text-black text-base leading-relaxed text-justify">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
               All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to Microsoft CMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft CMT will be considered for review, acceptance, and publication.
             </p>
             </div>
           </div>
 
           {/* Card 6 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-burgundy rounded-lg flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <CheckCircle className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Publication Ethics</h3>
-                <p className="text-black text-sm md:text-base">Ethical guidelines for publication</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Publication Ethics</h3>
+                <p className="text-gray-600 text-sm">Ethical guidelines for publication</p>
               </div>
             </div>
-            <div className="flex-1">
-            <ol className="space-y-3 text-base text-black leading-relaxed text-justify list-decimal list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
               <li>Authors must strictly follow the publication ethics and academic integrity standards before submitting their manuscripts.</li>
               <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
               <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
@@ -162,17 +162,18 @@ const CallForPapers = () => {
           </div>
 
           {/* Card 7 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Initial Submission Rules</h3>
-                <p className="text-black text-sm md:text-base">Guidelines for first-time submission</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Initial Submission Rules</h3>
+                <p className="text-gray-600 text-sm">Guidelines for first-time submission</p>
               </div>
             </div>
-            <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
+            <div className="bg-gray-50 rounded-lg p-5">
+            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
               <li>
                 <strong>Upload three separate files:</strong>
                 <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
@@ -192,20 +193,21 @@ const CallForPapers = () => {
                 </ul>
               </li>
             </ol>
+            </div>
           </div>
            {/* Presentation Guidelines */}
-          <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-purple-600 rounded-lg flex items-center justify-center">
-                <Send className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center shadow-md">
+                <Send className="w-7 h-7 text-white" />
               </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Presentation Guidelines</h3>
-                <p className="text-black text-sm md:text-base">Guidelines for paper presentation</p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Presentation Guidelines</h3>
+                <p className="text-gray-600 text-sm">Guidelines for paper presentation</p>
               </div>
             </div>
-            <div className="flex-1">
-              <ul className="space-y-3 text-sm md:text-base text-black leading-relaxed text-justify list-disc list-inside">
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+              <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
                 <li>Presentations must be prepared strictly using the official conference PPT template and must follow the structure defined in the template.</li>
                 <li>Only registered authors are permitted to present papers.</li>
                 <li>At least one author of each accepted paper must present the paper.</li>
@@ -217,7 +219,7 @@ const CallForPapers = () => {
                 <li>Authors must strictly adhere to the allocated presentation time.</li>
               </ul>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 px-5">
               <a 
                 href="/Presentation_Template.pptx" 
                 download="Presentation_Template.pptx"
@@ -367,7 +369,8 @@ const CallForPapers = () => {
           </div>
 
           {/* Card 10 - DOI, Copyright & Compliance */}
-          <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 border-l-4 border-l-blue-600 border-2 border-blue-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+          <div className="lg:col-span-2 flex justify-center">
+            <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 border-l-4 border-l-blue-600 border-2 border-blue-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full w-full max-w-4xl">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
               <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 text-white" />
@@ -423,363 +426,209 @@ const CallForPapers = () => {
                 </ul>
               </div>
             </div>
-          </div>
-
-         
-          {/* Card 11 - Publication Partner */}
-          <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
-            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Publication Partner</h3>
-                <p className="text-black text-sm md:text-base">Publication opportunities</p>
-              </div>
-            </div>
-            <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
-              <li>Selected high-quality and presented papers will be published as <span className="font-bold text-purple-700">book chapters</span> in the <span className="font-bold text-blue-700">Scopus</span>-indexed edited volumes "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" (<span className="font-bold text-orange-600">CRC Press, Taylor & Francis Group</span> publication) or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications" (<span className="font-bold text-emerald-600">Wiley publication</span>), subject to the respective publisher's scope and editorial policies.</li>
-              <li>Papers not selected for inclusion as <span className="font-bold text-purple-700">book chapters</span> will be considered for publication in the <span className="font-bold text-rose-600">ISBN-registered conference proceedings</span>, with DOI assigned where applicable.</li>
-            </ol>
-          </div>
-
-        </div>
-
-        {/* Centered Paper Submission Format Section */}
-        <div className="flex justify-center mt-8 md:mt-12">
-          <div className="w-full max-w-4xl">
-            {/* Card 12 - Paper Submission Format */}
-            <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
-              <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
-                  <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Paper Submission Format</h3>
-                  <p className="text-black text-sm md:text-base">Download guidelines and templates</p>
-                </div>
-              </div>
-              <p className="text-black mb-6 leading-relaxed text-center md:text-left">
-                Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
-              </p>
-
-              {/* Submission Notice */}
-              <div role="status" aria-live="polite" className="relative bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 border-l-4 border-amber-500 rounded-lg p-4 md:p-6 mb-6 md:mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <style>{`
-                  @keyframes swing {
-                    0%, 100% { transform: rotate(-3deg); }
-                    50% { transform: rotate(3deg); }
-                  }
-                  .swing-badge {
-                    animation: swing 2s ease-in-out infinite;
-                  }
-                `}</style>
-                <div className="flex items-start gap-4 md:gap-5">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shrink-0 text-white font-bold shadow-md">
-                    <AlertCircle className="w-5 h-5 md:w-6 md:h-6" />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-display font-bold text-xl md:text-2xl text-amber-900 mb-3 flex items-center gap-2 flex-wrap">
-                      Submission & Post-Review Formatting
-                      <span className="swing-badge inline-block px-3 py-1 text-xs font-bold bg-gradient-to-r from-red-500 to-red-600 text-white rounded-md shadow-lg">IMPORTANT</span>
-                    </h4>
-                    <p className="text-gray-800 font-medium leading-relaxed text-justify text-sm md:text-base">
-                      Initially, all papers must be submitted in accordance with the <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> or <span className="font-bold text-emerald-700 bg-emerald-100 px-1 rounded">World Scientific / Wiley</span>, as applicable.
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute top-0 right-0 w-20 h-20 bg-amber-200 rounded-bl-full opacity-20"></div>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-                <a 
-                  href="/Abstracts_Guidelines.pdf" 
-                  download="Abstracts_Guidelines.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-gold-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-                >
-                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                  Abstracts Guidelines
-                </a>
-                <a 
-                  href="/Manuscript_Guidelines.pdf" 
-                  download="Manuscript_Guidelines_Taylor_Francis.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-                >
-                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                  Manuscript Guidelines - Taylor & Francis
-                </a>
-                <a 
-                  href="/sample_file.pdf" 
-                  download="Manuscript_Guidelines_Wiley.pdf"
-                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-                >
-                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                  Manuscript Guidelines - Wiley
-                </a>
-                <a 
-                  href="/AIC_docx.docx" 
-                  download="AIC_docx.docx"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-                >
-                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                  Academic Integrity Committee (AIC) - Taylor & Francis
-                </a>
-              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-
-      {/* Refund Policy */}
-      <div className="max-w-6xl mx-auto mt-8 md:mt-12">
-        <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
-          <div className="text-center mb-4 md:mb-6">
-            <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
-              <AlertCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          {/* All Google Forms Section */}
+          <div className="col-span-1 lg:col-span-2">
+            <div className="text-center mb-8 md:mb-10">
+              <h3 className="font-display font-bold text-3xl md:text-4xl text-navy mb-3">
+                Conference <span className="text-gold">Forms</span>
+              </h3>
+              <p className="text-gray-600 text-base md:text-lg">Complete the forms as applicable</p>
+              <div className="w-24 h-1 bg-gold mx-auto mt-4"></div>
             </div>
-            <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Refund and Cancellation Policy</h3>
-            <p className="text-black text-sm md:text-base">Important policy information</p>
-          </div>
-          <p className="text-black text-sm md:text-base leading-relaxed text-justify">
-            Once a candidate has completed registration and paid the applicable registration fee, the registration cannot be cancelled. The registration fee paid for the conference is strictly non-refundable under any circumstances.
-          </p>
-        </div>
-      </div>
-
-      {/* Participation, Presentation & Certificate Rules */}
-      <div className="max-w-6xl mx-auto mt-8 md:mt-12">
-        <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
-          <div className="text-center mb-4 md:mb-6">
-            <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
-              <CheckCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
-            </div>
-            <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Rules for Certificate</h3>
-            <p className="text-black text-sm md:text-base">Guidelines for conference certification</p>
-          </div>
-          <ol className="space-y-3 md:space-y-4 text-sm md:text-base text-black leading-relaxed text-justify list-decimal list-inside">
-            <li><strong>Registration & Payment:</strong> All participants, including authors and co-authors, must register individually and pay the applicable fee to be eligible for participation and certificates.</li>
-            <li><strong>Attendance:</strong> Registered participants must attend all required conference sessions; attendance will be recorded.</li>
-            <li><strong>Presentation Requirement:</strong> For accepted papers, at least one registered author must present the paper in the allotted session and complete the Q&A.</li>
-            <li><strong>Certificates:</strong> Participation and presentation certificates will be issued only after verification of registration, payment, attendance, and presentation.</li>
-            <li><strong>Co-authors:</strong> Co-authors will receive certificates only if they are individually registered, paid, and attend the relevant sessions.</li>
-            <li><strong>Non-Compliance:</strong> No certificate will be issued in cases of non-registration, non-payment, non-attendance, or failure to present the paper.</li>
-          </ol>
-        </div>
-      </div>
-
-     
-      {/* CMT Acknowledgment - Plain HTML, static, outside fancy UI blocks, as per Microsoft rules */}
-      <div style={{width:'100%',background:'#fff',color:'#111',textAlign:'center',padding:'24px 16px 12px 16px',fontSize:'15px',lineHeight:'1.7',boxSizing:'border-box',marginTop:'24px'}}>
-        <p style={{margin:0,padding:0,maxWidth:'700px',marginLeft:'auto',marginRight:'auto'}}>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
-      </div>
-
-      {/* Link to CMT Acknowledgment HTML */}
-      <div style={{textAlign:'center',marginTop:'12px'}}>
-        <a href="/cmt-acknowledgment.html" target="_blank" rel="noopener noreferrer" style={{color:'#b08a2e',fontWeight:600,textDecoration:'underline',fontSize:'14px',display:'block',marginBottom:'14px'}}>View CMT Acknowledgment</a>
-        <a
-          href="https://cmt3.research.microsoft.com/ICAITSC2026"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-5 md:px-7 py-2 md:py-3 rounded-full font-display font-semibold shadow-md hover:shadow-xl transition-all duration-200 text-sm md:text-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-300"
-          style={{marginTop:'6px', letterSpacing: '0.01em'}}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-6 md:h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75V6A2.25 2.25 0 0015 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25h9A2.25 2.25 0 0017.25 18v-.75M15.75 12h5.25m0 0l-2.25-2.25m2.25 2.25l-2.25 2.25" />
-          </svg>
-          Go to Microsoft CMT Portal
-        </a>
-      </div>
-      {/* All Google Forms Section */}
-      <div className="max-w-7xl mx-auto mt-8 md:mt-12">
-        <div className="text-center mb-8">
-          <h3 className="font-display font-bold text-2xl md:text-3xl text-navy mb-2">
-            <span className="text-gold">Conference</span> Forms
-          </h3>
-          <p className="text-black text-sm md:text-base">Complete the forms as applicable</p>
-        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
           {/* Publication Willingness Form */}
-          <div className="bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
-            <div className="text-center mb-4">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full mb-3 shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-blue-50 to-white p-6 text-center border-b-2 border-blue-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h4 className="font-display font-bold text-lg text-blue-900 mb-1">
-                <span className="text-blue-700">Publication Willingness</span> Form
+              <h4 className="font-display font-bold text-xl text-blue-900 mb-2 leading-tight">
+                Publication Willingness
               </h4>
-              <p className="text-gray-600 text-xs">Indicate publication preference</p>
+              <p className="text-gray-600 text-sm font-medium">Indicate publication preference</p>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-blue-200 hover:border-blue-600 hover:scale-105 transition-all duration-300">
-                <img 
-                  src="/publication_willingness_form.png" 
-                  alt="Publication Willingness Form QR" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
-              
-              <div className="flex items-center gap-2 w-full">
-                <div className="flex-1 h-px bg-blue-200"></div>
-                <span className="text-blue-700 font-bold text-xs">OR</span>
-                <div className="flex-1 h-px bg-blue-200"></div>
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-blue-100 hover:border-blue-400 hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/publication_willingness_form.png" 
+                    alt="Publication Willingness Form QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+                  <span className="text-blue-700 font-bold text-sm px-3 py-1 bg-blue-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+                </div>
               </div>
               
               <a
                 href="https://forms.gle/Xbhaofcy8pC5K8zXA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
-                <span className="relative z-10">Fill Form</span>
-                <span className="absolute inset-0 -z-10 bg-blue-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
               </a>
             </div>
           </div>
 
           {/* Certificate Form */}
-          <div className="bg-white border-2 border-amber-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
-            <div className="text-center mb-4">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-amber-600 rounded-full mb-3 shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white border-2 border-amber-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-amber-50 to-white p-6 text-center border-b-2 border-amber-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h4 className="font-display font-bold text-lg text-amber-900 mb-1">
-                <span className="text-amber-700">Certificate</span> Form
+              <h4 className="font-display font-bold text-xl text-amber-900 mb-2 leading-tight">
+                Certificate
               </h4>
-              <p className="text-gray-600 text-xs">After acceptance only</p>
+              <p className="text-gray-600 text-sm font-medium">After acceptance only</p>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-amber-200 hover:border-amber-600 hover:scale-105 transition-all duration-300">
-                <img 
-                  src="/certificate_form.png" 
-                  alt="Certificate Form QR" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
-              
-              <div className="flex items-center gap-2 w-full">
-                <div className="flex-1 h-px bg-amber-200"></div>
-                <span className="text-amber-700 font-bold text-xs">OR</span>
-                <div className="flex-1 h-px bg-amber-200"></div>
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-amber-100 hover:border-amber-400 hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/certificate_form.png" 
+                    alt="Certificate Form QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-amber-300 to-transparent"></div>
+                  <span className="text-amber-700 font-bold text-sm px-3 py-1 bg-amber-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-amber-300 to-transparent"></div>
+                </div>
               </div>
               
               <a
                 href="https://forms.gle/pYJbxmdxAdmNEM4p6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
-                <span className="relative z-10">Fill Form</span>
-                <span className="absolute inset-0 -z-10 bg-amber-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
               </a>
             </div>
           </div>
 
           {/* Presentation Form */}
-          <div className="bg-white border-2 border-purple-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
-            <div className="text-center mb-4">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-purple-600 rounded-full mb-3 shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-purple-50 to-white p-6 text-center border-b-2 border-purple-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                 </svg>
               </div>
-              <h4 className="font-display font-bold text-lg text-purple-900 mb-1">
-                <span className="text-purple-700">Presentation</span> Form
+              <h4 className="font-display font-bold text-xl text-purple-900 mb-2 leading-tight">
+                Presentation
               </h4>
-              <p className="text-gray-600 text-xs">Submit PPT details</p>
+              <p className="text-gray-600 text-sm font-medium">Submit PPT details</p>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-purple-200 hover:border-purple-600 hover:scale-105 transition-all duration-300">
-                <img 
-                  src="/presentation_form.png" 
-                  alt="Presentation Form QR" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
-              
-              <div className="flex items-center gap-2 w-full">
-                <div className="flex-1 h-px bg-purple-200"></div>
-                <span className="text-purple-700 font-bold text-xs">OR</span>
-                <div className="flex-1 h-px bg-purple-200"></div>
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-purple-100 hover:border-purple-400 hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/presentation_form.png" 
+                    alt="Presentation Form QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+                  <span className="text-purple-700 font-bold text-sm px-3 py-1 bg-purple-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+                </div>
               </div>
               
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSczrQD7EnMFrjrceGqUL-7qeX40SGyrMErO3Tm2R6AKESgtDw/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-purple-700 hover:to-purple-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
-                <span className="relative z-10">Fill Form</span>
-                <span className="absolute inset-0 -z-10 bg-purple-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
               </a>
             </div>
           </div>
 
           {/* Feedback Form */}
-          <div className="bg-white border-2 border-green-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
-            <div className="text-center mb-4">
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-green-600 rounded-full mb-3 shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-green-50 to-white p-6 text-center border-b-2 border-green-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
               </div>
-              <h4 className="font-display font-bold text-lg text-green-900 mb-1">
-                <span className="text-green-700">Feedback</span> Form
+              <h4 className="font-display font-bold text-xl text-green-900 mb-2 leading-tight">
+                Feedback
               </h4>
-              <p className="text-gray-600 text-xs">Share your experience</p>
+              <p className="text-gray-600 text-sm font-medium">Share your experience</p>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-white p-3 rounded-lg shadow-md border-2 border-green-200 hover:border-green-600 hover:scale-105 transition-all duration-300">
-                <img 
-                  src="/feedback_form.png" 
-                  alt="Feedback Form QR" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <p className="text-xs text-gray-600 font-semibold">Scan QR Code</p>
-              
-              <div className="flex items-center gap-2 w-full">
-                <div className="flex-1 h-px bg-green-200"></div>
-                <span className="text-green-700 font-bold text-xs">OR</span>
-                <div className="flex-1 h-px bg-green-200"></div>
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-green-100 hover:border-green-400 hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/feedback_form.png" 
+                    alt="Feedback Form QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+                  <span className="text-green-700 font-bold text-sm px-3 py-1 bg-green-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+                </div>
               </div>
               
               <a
                 href="https://forms.gle/yHr3ZpBNcCL5VhzAA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-3 rounded-lg font-display font-semibold text-sm hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 active:rotate-2 w-full overflow-hidden"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <Send className="w-4 h-4 relative z-10 animate-bounce group-hover:rotate-45 group-active:translate-x-1 group-active:-translate-y-1 transition-all duration-300" />
-                <span className="relative z-10">Fill Form</span>
-                <span className="absolute inset-0 -z-10 bg-green-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></span>
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
               </a>
             </div>
           </div>
-        </div>
-      </div>
+            </div>
+          </div>
 
-      {/* Additional Services Section */}
-      <div className="max-w-7xl mx-auto mt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Additional Services Section */}
+          <div className="col-span-1 lg:col-span-2">
+            <div className="text-center mb-8 md:mb-10">
+              <h3 className="font-display font-bold text-3xl md:text-4xl text-navy mb-3">
+                Additional <span className="text-gold">Services</span>
+              </h3>
+              <p className="text-gray-600 text-base md:text-lg">Download request forms for additional services</p>
+              <div className="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+        
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Food Request Form */}
           <div className="group relative bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-4 border-orange-400 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
             {/* Decorative Corner Elements */}
@@ -891,8 +740,169 @@ const CallForPapers = () => {
               </div>
             </div>
           </div>
+            </div>
+          </div>
+
+          {/* Card 11 - Publication Partner */}
+          <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
+                <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Publication Partner</h3>
+                <p className="text-black text-sm md:text-base">Publication opportunities</p>
+              </div>
+            </div>
+            <ol className="space-y-4 text-base text-black leading-relaxed text-justify list-decimal list-inside">
+              <li>Selected high-quality and presented papers will be published as <span className="font-bold text-purple-700">book chapters</span> in the <span className="font-bold text-blue-700">Scopus</span>-indexed edited volumes "Beyond Algorithms: Next-Gen AI for Health, Agriculture, and Humanity" (<span className="font-bold text-orange-600">CRC Press, Taylor & Francis Group</span> publication) or "Computational Intelligence & Knowledge-Based Systems: Models, Algorithms & Applications" (<span className="font-bold text-emerald-600">Wiley publication</span>), subject to the respective publisher's scope and editorial policies.</li>
+              <li>Papers not selected for inclusion as <span className="font-bold text-purple-700">book chapters</span> will be considered for publication in the <span className="font-bold text-rose-600">ISBN-registered conference proceedings</span>, with DOI assigned where applicable.</li>
+            </ol>
+          </div>
+
+          {/* Card 12 - Paper Submission Format */}
+          <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center">
+                  <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Paper Submission Format</h3>
+                  <p className="text-black text-sm md:text-base">Download guidelines and templates</p>
+                </div>
+              </div>
+              <p className="text-black mb-6 leading-relaxed text-center md:text-left">
+                Please download the manuscript and abstract guidelines for proper formatting and submission requirements.
+              </p>
+
+              {/* Submission Notice */}
+              <div role="status" aria-live="polite" className="relative bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 border-l-4 border-amber-500 rounded-lg p-4 md:p-6 mb-6 md:mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <style>{`
+                  @keyframes swing {
+                    0%, 100% { transform: rotate(-3deg); }
+                    50% { transform: rotate(3deg); }
+                  }
+                  .swing-badge {
+                    animation: swing 2s ease-in-out infinite;
+                  }
+                `}</style>
+                <div className="flex items-start gap-4 md:gap-5">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shrink-0 text-white font-bold shadow-md">
+                    <AlertCircle className="w-5 h-5 md:w-6 md:h-6" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-display font-bold text-xl md:text-2xl text-amber-900 mb-3 flex items-center gap-2 flex-wrap">
+                      Submission & Post-Review Formatting
+                      <span className="swing-badge inline-block px-3 py-1 text-xs font-bold bg-gradient-to-r from-red-500 to-red-600 text-white rounded-md shadow-lg">IMPORTANT</span>
+                    </h4>
+                    <p className="text-gray-800 font-medium leading-relaxed text-justify text-sm md:text-base">
+                      Initially, all papers must be submitted in accordance with the <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> manuscript guidelines. After the review process and upon receipt of the reviewers' decision, authors of accepted papers will be required to revise and format their manuscripts as per the specific submission guidelines of <span className="font-bold text-amber-700 bg-amber-100 px-1 rounded">Taylor & Francis</span> or <span className="font-bold text-emerald-700 bg-emerald-100 px-1 rounded">World Scientific / Wiley</span>, as applicable.
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute top-0 right-0 w-20 h-20 bg-amber-200 rounded-bl-full opacity-20"></div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+                <a 
+                  href="/Abstracts_Guidelines.pdf" 
+                  download="Abstracts_Guidelines.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-gold text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-gold-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Abstracts Guidelines
+                </a>
+                <a 
+                  href="/Manuscript_Guidelines.pdf" 
+                  download="Manuscript_Guidelines_Taylor_Francis.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-burgundy text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-burgundy-light transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Manuscript Guidelines - Taylor & Francis
+                </a>
+                <a 
+                  href="/sample_file.pdf" 
+                  download="Manuscript_Guidelines_Wiley.pdf"
+                  className="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Manuscript Guidelines - Wiley
+                </a>
+                <a 
+                  href="/AIC_docx.docx" 
+                  download="AIC_docx.docx"
+                  className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 rounded-lg font-display font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                  Academic Integrity Committee (AIC) - Taylor & Francis
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      {/* Refund Policy */}
+      <div className="max-w-6xl mx-auto mt-8 md:mt-12">
+        <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
+          <div className="text-center mb-4 md:mb-6">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <AlertCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Refund and Cancellation Policy</h3>
+            <p className="text-black text-sm md:text-base">Important policy information</p>
+          </div>
+          <p className="text-black text-sm md:text-base leading-relaxed text-justify">
+            Once a candidate has completed registration and paid the applicable registration fee, the registration cannot be cancelled. The registration fee paid for the conference is strictly non-refundable under any circumstances.
+          </p>
         </div>
       </div>
+
+      {/* Participation, Presentation & Certificate Rules */}
+      <div className="max-w-6xl mx-auto mt-8 md:mt-12">
+        <div className="bg-white border-l-4 border-l-teal border border-slate-700 rounded-lg p-4 md:p-6 lg:p-8 shadow-sm">
+          <div className="text-center mb-4 md:mb-6">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-teal-600 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <CheckCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <h3 className="font-display font-bold text-xl md:text-2xl text-navy">Rules for Certificate</h3>
+            <p className="text-black text-sm md:text-base">Guidelines for conference certification</p>
+          </div>
+          <ol className="space-y-3 md:space-y-4 text-sm md:text-base text-black leading-relaxed text-justify list-decimal list-inside">
+            <li><strong>Registration & Payment:</strong> All participants, including authors and co-authors, must register individually and pay the applicable fee to be eligible for participation and certificates.</li>
+            <li><strong>Attendance:</strong> Registered participants must attend all required conference sessions; attendance will be recorded.</li>
+            <li><strong>Presentation Requirement:</strong> For accepted papers, at least one registered author must present the paper in the allotted session and complete the Q&A.</li>
+            <li><strong>Certificates:</strong> Participation and presentation certificates will be issued only after verification of registration, payment, attendance, and presentation.</li>
+            <li><strong>Co-authors:</strong> Co-authors will receive certificates only if they are individually registered, paid, and attend the relevant sessions.</li>
+            <li><strong>Non-Compliance:</strong> No certificate will be issued in cases of non-registration, non-payment, non-attendance, or failure to present the paper.</li>
+          </ol>
+        </div>
+      </div>
+
+     
+      {/* CMT Acknowledgment - Plain HTML, static, outside fancy UI blocks, as per Microsoft rules */}
+      <div style={{width:'100%',background:'#fff',color:'#111',textAlign:'center',padding:'24px 16px 12px 16px',fontSize:'15px',lineHeight:'1.7',boxSizing:'border-box',marginTop:'24px'}}>
+        <p style={{margin:0,padding:0,maxWidth:'700px',marginLeft:'auto',marginRight:'auto'}}>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+      </div>
+
+      {/* Link to CMT Acknowledgment HTML */}
+      <div style={{textAlign:'center',marginTop:'12px'}}>
+        <a href="/cmt-acknowledgment.html" target="_blank" rel="noopener noreferrer" style={{color:'#b08a2e',fontWeight:600,textDecoration:'underline',fontSize:'14px',display:'block',marginBottom:'14px'}}>View CMT Acknowledgment</a>
+        <a
+          href="https://cmt3.research.microsoft.com/ICAITSC2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-5 md:px-7 py-2 md:py-3 rounded-full font-display font-semibold shadow-md hover:shadow-xl transition-all duration-200 text-sm md:text-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          style={{marginTop:'6px', letterSpacing: '0.01em'}}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-6 md:h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75V6A2.25 2.25 0 0015 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25h9A2.25 2.25 0 0017.25 18v-.75M15.75 12h5.25m0 0l-2.25-2.25m2.25 2.25l-2.25 2.25" />
+          </svg>
+          Go to Microsoft CMT Portal
+        </a>
+      </div>
+     
+
+     
     </section>
     
   );
