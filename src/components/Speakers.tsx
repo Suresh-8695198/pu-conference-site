@@ -16,74 +16,72 @@ const Speakers = () => {
         </div>
 
         {/* Speakers Grid */}
-        <div className="flex flex-col items-center gap-12">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-12">
-            {/* Speaker 2 */}
-            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-                <img
-                  src="/paventhan.jpg"
-                  alt="Dr. A. Paventhan"
-                  className="w-40 h-40 object-cover shrink-0"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
-                  }}
-                />
-                <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                  <span className="text-primary-foreground font-bold text-xl">AP</span>
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. A. Paventhan</h4>
-                  <div className="space-y-1 text-sm text-muted-foreground">
-                    <p><strong>Senior Director, HoD-Research & Development</strong></p>
-                    <p><strong>Scientist-G, ERNET India</strong></p>
-                    <p>Ministry of Electronics & IT, Government of India</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker 3 */}
-            <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-                <img
-                  src="/pisharady.jpg"
-                  alt="Dr. Pramod Pisharady"
-                  className="w-40 h-40 object-cover shrink-0"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
-                  }}
-                />
-                <div className="w-44 h-52 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
-                  <span className="text-primary-foreground font-bold text-xl">PP</span>
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
-                  <div className="space-y-1 text-sm text-muted-foreground">
-                    <p><strong>Associate Professor, Departments of Neurology & Radiology</strong></p>
-                    <p>Center for Magnetic Resonance Research</p>
-                    <p>University of Minnesota, United States</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Speaker 4 */}
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full max-w-md">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-7xl mx-auto">
+          {/* Speaker 1 */}
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors h-full">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left h-full">
               <img
-                src="/shanthababu.jpeg"
-                alt="Shanthababu Pandian"
-                className="w-40 h-40 object-cover shrink-0"
+                src="/paventhan.jpg"
+                alt="Dr. A. Paventhan"
+                className="w-40 h-40 object-cover shrink-0 rounded-lg"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-40 h-40 bg-burgundy rounded-lg flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                <span className="text-primary-foreground font-bold text-xl">AP</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. A. Paventhan</h4>
+                <div className="space-y-1 text-sm text-muted-foreground">
+                  <p><strong>Senior Director, HoD-Research & Development</strong></p>
+                  <p><strong>Scientist-G, ERNET India</strong></p>
+                  <p>Ministry of Electronics & IT, Government of India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Speaker 2 */}
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors h-full">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left h-full">
+              <img
+                src="/pisharady.jpg"
+                alt="Dr. Pramod Pisharady"
+                className="w-40 h-40 object-cover shrink-0 rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                }}
+              />
+              <div className="w-40 h-40 bg-burgundy rounded-lg flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+                <span className="text-primary-foreground font-bold text-xl">PP</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-display font-bold text-xl text-navy mb-2">Dr. Pramod Pisharady</h4>
+                <div className="space-y-1 text-sm text-muted-foreground">
+                  <p><strong>Associate Professor, Departments of Neurology & Radiology</strong></p>
+                  <p>Center for Magnetic Resonance Research</p>
+                  <p>University of Minnesota, United States</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Speaker 3 */}
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors h-full">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left h-full">
+              <img
+                src="/shanthababu.jpeg"
+                alt="Shanthababu Pandian"
+                className="w-40 h-40 object-cover shrink-0 rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                }}
+              />
+              <div className="w-40 h-40 bg-burgundy rounded-lg flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">SP</span>
               </div>
               <div className="flex-1">
@@ -96,21 +94,20 @@ const Speakers = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        
-          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors w-full">
-            <div className="flex items-center gap-4">
+          {/* Speaker 4 */}
+          <div className="bg-slate rounded-2xl p-6 hover:bg-slate-100 transition-colors h-full">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left h-full">
               <img
                 src="/Deepak Garg.jpeg"
                 alt="Dr. Deepak Garg"
-                className="w-44 h-52 object-cover shrink-0"
+                className="w-40 h-40 object-cover shrink-0 rounded-lg"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                 }}
               />
-              <div className="w-40 h-40 bg-burgundy rounded-full flex items-center justify-center shrink-0" style={{ display: 'none' }}>
+              <div className="w-40 h-40 bg-burgundy rounded-lg flex items-center justify-center shrink-0" style={{ display: 'none' }}>
                 <span className="text-primary-foreground font-bold text-xl">DG</span>
               </div>
               <div className="flex-1">
@@ -122,7 +119,8 @@ const Speakers = () => {
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+        </div> 
 {/* 
           Speaker 5
           <div className="bg-slate rounded-2xl p-8 hover:bg-slate-100 transition-colors w-full md:col-span-2 md:max-w-md md:mx-auto">
