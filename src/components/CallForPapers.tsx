@@ -365,17 +365,7 @@ const CallForPapers = () => {
                   <li>Must comply with Wiley template and formatting</li>
                 </ul>
               </div>
-              <div className="mt-6">
-                <a
-                  href="https://forms.gle/vTiNLB6WD1yguzNo9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
-                >
-                  <Send className="w-5 h-5" />
-                  <span>Submit Camera-Ready Package</span>
-                </a>
-              </div>
+            
             </div>
           </div>
 
@@ -436,17 +426,7 @@ const CallForPapers = () => {
                   <li>Submit inside single .zip file with camera-ready package</li>
                 </ul>
               </div>
-              <div className="mt-6">
-                <a
-                  href="https://forms.gle/DwYe1LHpyqQkTUmh7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
-                >
-                  <Send className="w-5 h-5" />
-                  <span>Submit DOI & Compliance Documents</span>
-                </a>
-              </div>
+              
             </div>
             </div>
           </div>
