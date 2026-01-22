@@ -1,6 +1,9 @@
 import { FileText, CheckCircle, AlertCircle, Send, Home } from "lucide-react";
+import { useState } from "react";
 
 const CallForPapers = () => {
+  const [activeTab, setActiveTab] = useState("instructions");
+  
   const guidelines = [
     "Papers must be full-length original research or review articles and must not exceed six (6) pages in length.",
     "The manuscript must clearly present original research ideas, methodology or analysis, results and findings, and conclusions.",
@@ -38,9 +41,244 @@ const CallForPapers = () => {
           </div>
         </div>
 
-        {/* Conference Program & Presentation Instructions */}
+        {/* Tabbed Program Schedule Section */}
         <div className="max-w-6xl mx-auto mb-8 md:mb-12">
-          <div 
+          {/* Tab Navigation */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            <button
+              onClick={() => setActiveTab("instructions")}
+              className={`flex-1 min-w-[120px] px-6 py-3 font-display font-semibold text-sm md:text-base rounded-lg transition-all duration-300 ${
+                activeTab === "instructions"
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              Instructions
+            </button>
+            <button
+              onClick={() => setActiveTab("feb26")}
+              className={`flex-1 min-w-[120px] px-6 py-3 font-display font-semibold text-sm md:text-base rounded-lg transition-all duration-300 ${
+                activeTab === "feb26"
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              FEB 26
+            </button>
+            <button
+              onClick={() => setActiveTab("feb27")}
+              className={`flex-1 min-w-[120px] px-6 py-3 font-display font-semibold text-sm md:text-base rounded-lg transition-all duration-300 ${
+                activeTab === "feb27"
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              FEB 27
+            </button>
+          </div>
+
+          {/* Tab Content */}
+          {activeTab === "instructions" && (
+            <div 
+              className="border-2 border-blue-300 rounded-xl p-6 md:p-8 lg:p-10 shadow-xl relative overflow-hidden"
+              style={{
+                backgroundImage: "url('/guidelines_frame_bg.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat"
+              }}
+            >
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-30/95 via-white/95 to-indigo-50/95 -z-0"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+              <div className="text-center mb-5 md:mb-6 bg-white/80 backdrop-blur-sm rounded-lg p-3 md:p-5">
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl mb-3 shadow-lg">
+                  <svg className="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-display font-bold text-xl md:text-2xl text-navy mb-2">
+                  Conference Program & Presentation Instructions
+                </h3>
+                <p className="text-gray-700 text-xs md:text-sm leading-relaxed max-w-3xl mx-auto">
+                  We are pleased to invite you to participate in the conference, which will be conducted in <strong className="text-blue-700">Hybrid Mode</strong>. This page contains the complete program schedule of the conference. Participants may click on the respective dates to view the detailed daily schedule.
+                </p>
+              </div>
+
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 md:p-6 border-l-4 border-blue-600 shadow-md">
+                <h4 className="font-display font-bold text-lg md:text-xl text-blue-900 mb-4 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                  Technical Session Presentation Instructions
+                </h4>
+                <p className="text-gray-700 text-xs md:text-sm mb-6 leading-relaxed">
+                  All presenters are requested to carefully read the following instructions before joining their respective technical sessions or keynote sessions:
+                </p>
+
+                <div className="space-y-0">
+                  {/* Instruction 1 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        1
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Mode of Presentation</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          All Keynote Talks and Technical Paper Presentations will be conducted in <span className="text-blue-700 font-bold">Hybrid Mode</span> (Online via <span className="text-red-600 font-bold">Google Meet</span> and Offline at the venue on Day-1).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 2 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        2
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Session Access</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          For online attendees, click <span className="inline-block bg-blue-600 text-white px-3 py-1 rounded font-semibold text-xs md:text-sm">"Join"</span> on the respective Date Tab to attend/present in Keynotes (K) and Technical Sessions (TS).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 3 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        3
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Reporting Time</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          Presenters must join their respective Keynotes (K) / Technical Sessions (TS) at least <span className="font-bold">05 minutes before</span> the scheduled time.<br/>
+                          <span className="text-gray-600 italic text-xs md:text-sm mt-1 inline-block">(All timings follow <span className="text-red-600 font-bold not-italic">Indian Standard Time (IST)</span>.)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 4 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        4
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Session Etiquette</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          All participants and presenters must keep their <span className="font-bold">microphones and cameras turned off</span> unless instructed by the Session Chair.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 5 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        5
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Technical Readiness</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          Presenters must be ready with their presentation slides and should verify <span className="font-bold">microphone and camera settings</span> in advance for smooth delivery.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 6 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        6
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Presentation Order</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          Authors (presenters) will be invited <span className="font-bold">one-by-one</span> during their respective Technical Sessions by the designated Session Chairs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 7 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-x border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        7
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Presentation Format</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                          Presentation slides may be prepared in any standard format (PowerPoint, PDF, etc.), following good academic and visual presentation practices.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instruction 8 */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4 md:p-5">
+                    <div className="flex gap-3 md:gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 md:w-9 md:h-9 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow-md">
+                        8
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-sm md:text-base text-navy mb-1.5">Time Allocation</h5>
+                        <p className="text-gray-800 text-sm md:text-base leading-relaxed mb-2">
+                          Each paper will be allotted:
+                        </p>
+                        <ul className="list-disc list-inside ml-3 space-y-1 text-gray-800 text-sm md:text-base">
+                          <li><span className="font-bold">10 Minutes</span> for Presentation</li>
+                          <li><span className="font-bold">2 Minutes</span> for Q&A Interaction</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === "feb26" && (
+            <div className="border-2 border-blue-300 rounded-xl p-6 md:p-8 lg:p-10 shadow-xl bg-white">
+              <div className="text-center py-12">
+                <h3 className="font-display font-bold text-2xl text-navy mb-4">
+                  FEB 26 Schedule
+                </h3>
+                <p className="text-gray-600">
+                  Schedule details coming soon...
+                </p>
+              </div>
+            </div>
+          )}
+
+          {activeTab === "feb27" && (
+            <div className="border-2 border-blue-300 rounded-xl p-6 md:p-8 lg:p-10 shadow-xl bg-white">
+              <div className="text-center py-12">
+                <h3 className="font-display font-bold text-2xl text-navy mb-4">
+                  FEB 27 Schedule
+                </h3>
+                <p className="text-gray-600">
+                  Schedule details coming soon...
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Conference Program & Presentation Instructions */}
+        <div className="max-w-6xl mx-auto mb-8 md:mb-12" style={{ display: 'none' }}>
+          <div  
             className="border-2 border-blue-300 rounded-xl p-6 md:p-8 lg:p-10 shadow-xl relative overflow-hidden"
             style={{
               backgroundImage: "url('/guidelines_frame_bg.jpg')",
