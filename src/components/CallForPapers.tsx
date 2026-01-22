@@ -365,6 +365,17 @@ const CallForPapers = () => {
                   <li>Must comply with Wiley template and formatting</li>
                 </ul>
               </div>
+              <div className="mt-6">
+                <a
+                  href="https://forms.gle/vTiNLB6WD1yguzNo9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
+                >
+                  <Send className="w-5 h-5" />
+                  <span>Submit Camera-Ready Package</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -425,6 +436,17 @@ const CallForPapers = () => {
                   <li>Submit inside single .zip file with camera-ready package</li>
                 </ul>
               </div>
+              <div className="mt-6">
+                <a
+                  href="https://forms.gle/DwYe1LHpyqQkTUmh7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
+                >
+                  <Send className="w-5 h-5" />
+                  <span>Submit DOI & Compliance Documents</span>
+                </a>
+              </div>
             </div>
             </div>
           </div>
@@ -439,7 +461,7 @@ const CallForPapers = () => {
               <div className="w-24 h-1 bg-gold mx-auto mt-4"></div>
             </div>
         
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* Publication Willingness Form */}
           <div className="bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
             <div className="bg-gradient-to-br from-blue-50 to-white p-6 text-center border-b-2 border-blue-100">
@@ -451,7 +473,7 @@ const CallForPapers = () => {
               <h4 className="font-display font-bold text-xl text-blue-900 mb-2 leading-tight">
                 Publication Willingness
               </h4>
-              <p className="text-gray-600 text-sm font-medium">Indicate publication preference</p>
+              <p className="text-gray-600 text-sm font-medium">TAYLOR & FRANCIS BOOK CHAPTER</p>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -477,6 +499,98 @@ const CallForPapers = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
+              >
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Publication Willingness (WILEY PUBLICATION) Form */}
+          <div className="bg-white border-2 border-emerald-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-emerald-50 to-white p-6 text-center border-b-2 border-emerald-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-xl text-emerald-900 mb-2 leading-tight">
+                Publication Willingness
+              </h4>
+              <p className="text-gray-600 text-sm font-medium">WILEY PUBLICATION</p>
+            </div>
+            
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-emerald-100 hover:border-emerald-400 hover:scale-105 transition-all duration-300">
+                  <div className="w-40 h-40 flex items-center justify-center bg-emerald-50 rounded-xl">
+                     <img 
+                    src="/WILEY_PUBLICATION_form.png" 
+                    alt="WILEY PUBLICATION Form QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-emerald-300 to-transparent"></div>
+                  <span className="text-emerald-700 font-bold text-sm px-3 py-1 bg-emerald-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-emerald-300 to-transparent"></div>
+                </div>
+              </div>
+              
+              <a
+                href="https://forms.gle/vTiNLB6WD1yguzNo9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
+              >
+                <Send className="w-5 h-5" />
+                <span>Fill Form Now</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Publication Willingness (DOI INDEXING) Form */}
+          <div className="bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden min-h-[520px]">
+            <div className="bg-gradient-to-br from-indigo-50 to-white p-6 text-center border-b-2 border-indigo-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-2xl mb-4 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h4 className="font-display font-bold text-xl text-indigo-900 mb-2 leading-tight">
+                Publication Willingness
+              </h4>
+              <p className="text-gray-600 text-sm font-medium">DOI INDEXING</p>
+            </div>
+            
+            <div className="flex flex-col items-center justify-between p-6 flex-1">
+              <div className="w-full flex flex-col items-center gap-4">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-md border-2 border-indigo-100 hover:border-indigo-400 hover:scale-105 transition-all duration-300">
+                  <div className="w-40 h-40 flex items-center justify-center bg-indigo-50 rounded-xl">
+                     <img 
+                    src="/DOI_INDEXING_form.png" 
+                    alt="DOI INDEXING FORM QR" 
+                    className="w-40 h-40 object-contain"
+                  />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 font-bold">Scan QR Code</p>
+                
+                <div className="flex items-center gap-3 w-full my-2">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-indigo-300 to-transparent"></div>
+                  <span className="text-indigo-700 font-bold text-sm px-3 py-1 bg-indigo-50 rounded-full">OR</span>
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-indigo-300 to-transparent"></div>
+                </div>
+              </div>
+              
+              <a
+                href="https://forms.gle/DwYe1LHpyqQkTUmh7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-indigo-700 hover:to-indigo-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
                 <Send className="w-5 h-5" />
                 <span>Fill Form Now</span>
@@ -630,15 +744,15 @@ const CallForPapers = () => {
         
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Food Request Form */}
-          <div className="group relative bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 border-4 border-orange-400 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
+          <div className="group relative bg-gradient-to-br from-green-50 via-green-50 to-green-100 border-4 border-green-400 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
             {/* Decorative Corner Elements */}
-            <div className="absolute top-0 right-0 w-20 h-20 bg-orange-300 rounded-bl-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
-            <div className="absolute bottom-0 left-0 w-20 h-20 bg-amber-300 rounded-tr-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute top-0 right-0 w-20 h-20 bg-green-300 rounded-bl-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute bottom-0 left-0 w-20 h-20 bg-green-300 rounded-tr-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
             
             <div className="relative z-10">
               {/* Icon */}
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-600 rounded-full flex items-center justify-center shadow-xl group-hover:rotate-12 transition-transform duration-500">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-xl group-hover:rotate-12 transition-transform duration-500">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                   </svg>
@@ -646,7 +760,7 @@ const CallForPapers = () => {
               </div>
               
               {/* Title */}
-              <h4 className="font-display font-bold text-2xl md:text-3xl text-orange-900 mb-3 text-center">
+              <h4 className="font-display font-bold text-2xl md:text-3xl text-green-900 mb-3 text-center">
                 Food Request Form
               </h4>
               
@@ -657,9 +771,9 @@ const CallForPapers = () => {
               
               {/* Decorative Divider */}
               <div className="flex items-center justify-center gap-2 mb-6">
-                <div className="w-12 h-1 bg-orange-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                <div className="w-12 h-1 bg-orange-400 rounded-full"></div>
+                <div className="w-12 h-1 bg-green-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div className="w-12 h-1 bg-green-400 rounded-full"></div>
               </div>
               
               {/* Download Button */}
@@ -667,7 +781,7 @@ const CallForPapers = () => {
                 href="https://www.periyaruniversity.ac.in/Documents/2024/Food-Request-Form.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/btn inline-flex items-center justify-center gap-3 w-full bg-orange-600 text-white px-6 py-4 rounded-xl font-display font-bold text-base hover:bg-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 border-2 border-orange-700 hover:border-orange-800"
+                className="group/btn inline-flex items-center justify-center gap-3 w-full bg-green-600 text-white px-6 py-4 rounded-xl font-display font-bold text-base hover:bg-green-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 border-2 border-green-700 hover:border-green-800"
               >
                 <FileText className="w-5 h-5 group-hover/btn:scale-110 transition-transform" />
                 <span>Download PDF Form</span>
@@ -677,7 +791,7 @@ const CallForPapers = () => {
               </a>
               
               {/* Info Badge */}
-              <div className="mt-4 flex items-center justify-center gap-2 text-xs text-orange-700 bg-orange-100 px-3 py-2 rounded-full">
+              <div className="mt-4 flex items-center justify-center gap-2 text-xs text-green-700 bg-green-100 px-3 py-2 rounded-full">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                 </svg>
