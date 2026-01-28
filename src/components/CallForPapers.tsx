@@ -844,11 +844,7 @@ const CallForPapers = () => {
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_DOI_Metadata.pdf</code><br/>
                   <span className="text-xs text-gray-600">Used for DOI registration and indexing. Cannot be changed after publication.</span>
                 </li>
-                <li className="mb-2">
-                  <strong className="text-blue-800">Copyright Form — Mandatory</strong><br/>
-                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Copyright_Form.pdf</code><br/>
-                  <span className="text-xs text-gray-600">Official publisher copyright form must be signed. Required for DOI assignment.</span>
-                </li>
+                
                 <li className="mb-2">
                   <strong className="text-blue-800">Proof of Payment — Mandatory</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code><br/>
