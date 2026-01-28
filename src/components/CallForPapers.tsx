@@ -903,6 +903,9 @@ const CallForPapers = () => {
                 Publication Willingness
               </h4>
               <p className="text-gray-600 text-sm font-medium">TAYLOR & FRANCIS BOOK CHAPTER</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">30.01.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -947,6 +950,9 @@ const CallForPapers = () => {
                 Publication Willingness
               </h4>
               <p className="text-gray-600 text-sm font-medium">WILEY PUBLICATION</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">30.01.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -993,6 +999,9 @@ const CallForPapers = () => {
                 Publication Willingness
               </h4>
               <p className="text-gray-600 text-sm font-medium">DOI INDEXING</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">30.01.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -1039,6 +1048,9 @@ const CallForPapers = () => {
                 Certificate
               </h4>
               <p className="text-gray-600 text-sm font-medium">After acceptance only</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">02.02.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -1083,6 +1095,9 @@ const CallForPapers = () => {
                 Presentation
               </h4>
               <p className="text-gray-600 text-sm font-medium">Submit PPT details</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">15.02.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
@@ -1127,6 +1142,9 @@ const CallForPapers = () => {
                 Feedback
               </h4>
               <p className="text-gray-600 text-sm font-medium">Share your experience</p>
+              <div className="mt-3 inline-block bg-red-100 border-2 border-red-500 rounded-lg px-4 py-2">
+                <p className="text-red-700 text-sm font-black tracking-wide"> LAST DATE: <span className="text-red-900">26.02.2026 & 27.02.2026</span></p>
+              </div>
             </div>
             
             <div className="flex flex-col items-center justify-between p-6 flex-1">
