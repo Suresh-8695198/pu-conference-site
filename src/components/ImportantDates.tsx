@@ -20,7 +20,7 @@ const ImportantDates = () => {
       side: "right",
     },
     {
-      date: "30 January 2026",
+      date: "28 January 2026",
       title: "Acceptance Notification",
       description: "Notification of acceptance/rejection",
       icon: Bell,

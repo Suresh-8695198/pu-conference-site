@@ -1,4 +1,4 @@
-import { FileText, CheckCircle, AlertCircle, Send, Home } from "lucide-react";
+import { FileText, CheckCircle, AlertCircle, Send, Home, Download, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const CallForPapers = () => {
@@ -678,11 +678,7 @@ const CallForPapers = () => {
                   <strong className="text-orange-800">Proof of Payment</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code>
                 </li>
-                <li className="mb-2">
-                  <strong className="text-orange-800">Academic Integrity Committee (AIC) Form — Compulsory</strong><br/>
-                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AIC.pdf</code><br/>
-                  <span className="text-xs text-red-600 font-semibold">Submission without AIC form will not be processed</span>
-                </li>
+
                 <li className="mb-2">
                   <strong className="text-orange-800">Plagiarism Report — Mandatory</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Plagiarism_Report.pdf</code><br/>
@@ -702,6 +698,37 @@ const CallForPapers = () => {
                   <li>Incomplete submissions = processing delays/rejection</li>
                   <li>Must comply with Taylor & Francis template</li>
                 </ul>
+              </div>
+              
+              {/* Download Guidelines Section */}
+              <div className="mt-6 p-6 bg-gradient-to-br from-orange-100 via-amber-50 to-orange-100 border-2 border-orange-400 rounded-xl shadow-lg">
+                <div className="flex items-center justify-center gap-2 mb-4">
+                  <p className="text-base text-orange-900 font-bold tracking-wide">
+                    DOWNLOAD SUBMISSION GUIDELINES
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="/Taylor_Francis_Abstracts_Guidelines.pdf"
+                    download="Taylor_Francis_Abstracts_Guidelines.pdf"
+                    className="group flex-1 relative overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 text-center text-sm shadow-xl hover:shadow-2xl hover:scale-105 transform flex items-center justify-center gap-3"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <Download className="w-5 h-5 group-hover:animate-bounce" />
+                    <span className="relative z-10">Abstracts Guidelines</span>
+                    <div className="absolute top-0 right-0 w-8 h-8 bg-white/20 rounded-bl-full"></div>
+                  </a>
+                  <a
+                    href="/Taylor_Francis_Manuscript_Guidelines.pdf"
+                    download="Taylor_Francis_Manuscript_Guidelines.pdf"
+                    className="group flex-1 relative overflow-hidden bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 text-center text-sm shadow-xl hover:shadow-2xl hover:scale-105 transform flex items-center justify-center gap-3"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <Download className="w-5 h-5 group-hover:animate-bounce" />
+                    <span className="relative z-10">Manuscript Guidelines</span>
+                    <div className="absolute top-0 right-0 w-8 h-8 bg-white/20 rounded-bl-full"></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -743,11 +770,7 @@ const CallForPapers = () => {
                   <strong className="text-emerald-800">Proof of Payment</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code>
                 </li>
-                <li className="mb-2">
-                  <strong className="text-emerald-800">Copyright Form — Compulsory</strong><br/>
-                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Copyright_Form.pdf</code><br/>
-                  <span className="text-xs text-red-600 font-semibold">Submission without copyright form will not be processed</span>
-                </li>
+             
                 <li className="mb-2">
                   <strong className="text-emerald-800">Plagiarism Report — Mandatory</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Plagiarism_Report.pdf</code><br/>
@@ -767,6 +790,29 @@ const CallForPapers = () => {
                   <li>Incomplete submissions = processing delays/rejection</li>
                   <li>Must comply with Wiley template and formatting</li>
                 </ul>
+              </div>
+              
+              {/* Download Guidelines Section */}
+              <div className="mt-6 p-6 bg-gradient-to-br from-emerald-100 via-teal-50 to-emerald-100 border-2 border-emerald-400 rounded-xl shadow-lg">
+                <div className="flex items-center justify-center gap-2 mb-4">
+                 
+                  <p className="text-base text-emerald-900 font-bold tracking-wide">
+                     DOWNLOAD SUBMISSION GUIDELINES
+                  </p>
+               
+                </div>
+                <div className="flex justify-center">
+                  <a
+                    href="/Wiley_Book_Chapter_Sample.pdf"
+                    download="Wiley_Book_Chapter_Sample.pdf"
+                    className="group relative overflow-hidden bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-center text-sm shadow-xl hover:shadow-2xl hover:scale-105 transform flex items-center justify-center gap-3"
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <Download className="w-5 h-5 group-hover:animate-bounce" />
+                    <span className="relative z-10">Wiley Book Chapter Sample</span>
+                    <div className="absolute top-0 right-0 w-8 h-8 bg-white/20 rounded-bl-full"></div>
+                  </a>
+                </div>
               </div>
             
             </div>
@@ -1014,13 +1060,13 @@ const CallForPapers = () => {
               </div>
               
               <a
-                href="https://forms.gle/pYJbxmdxAdmNEM4p6"
+                href="https://periyaruniversity.ac.in/icaistconf/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-5 py-3.5 rounded-xl font-display font-bold text-base hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
               >
                 <Send className="w-5 h-5" />
-                <span>Fill Form Now</span>
+                <span>Visit Certificate Portal</span>
               </a>
             </div>
           </div>
@@ -1299,7 +1345,7 @@ const CallForPapers = () => {
                 </div>
                 <div className="absolute top-0 right-0 w-20 h-20 bg-amber-200 rounded-bl-full opacity-20"></div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                 <a 
                   href="/Abstracts_Guidelines.pdf" 
                   download="Abstracts_Guidelines.pdf"
@@ -1332,7 +1378,7 @@ const CallForPapers = () => {
                   <FileText className="w-4 h-4 md:w-5 md:h-5" />
                   Academic Integrity Committee (AIC) - Taylor & Francis
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
