@@ -41,8 +41,298 @@ const CallForPapers = () => {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
+          {/* Card 1 */}
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission Requirements</h3>
+                <p className="text-gray-600 text-sm">Basic submission criteria</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
+              <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
+              <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
+              <li>Papers must be carefully proofread and written in clear, grammatically correct English; poor language quality may lead to outright rejection.</li>
+            </ul>
+            </div>
+          </div>
+          {/* Card 2 */}
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Manuscript Preparation</h3>
+                <p className="text-gray-600 text-sm">Content and formatting guidelines</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
+              <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
+              <li>Authors are required to submit manuscripts with a maximum length of 3,000 words, formatted strictly as per the official conference template available on the conference website.</li>
+              <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
+              <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>
+              <li>All references must be cited correctly in the text, and the reference list must include every cited source and only cited sources.</li>
+            </ul>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Review and Publication</h3>
+                <p className="text-gray-600 text-sm">Review process and publication details</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
+              <li>Each paper may have a maximum of four (4) authors, with full affiliations and the corresponding author clearly identified.</li>
+              <li>All manuscripts will undergo a double-blind peer-review process; authors must submit revisions within seven (7) days if requested.</li>
+              <li>Only papers that are accepted, registered, and presented will be included in the conference proceedings and considered valid for certificates.</li>
+              <li>At least one author must present the paper (online/offline as applicable) for it to be officially accepted.</li>
+            </ul>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <CheckCircle className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Ethical Standards</h3>
+                <p className="text-gray-600 text-sm">Academic integrity guidelines</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
+              <li>Authors must adhere to all ethical guidelines, including plagiarism policies, proper citations, and respecting intellectual property.</li>
+              <li>Authors must ensure all figures, tables, and data representations are accurate, clear, and scientifically valid.</li>
+            </ul>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <Send className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission</h3>
+                <p className="text-gray-600 text-sm">Paper submission guidelines</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+              All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to Microsoft CMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft CMT will be considered for review, acceptance, and publication.
+            </p>
+            </div>
+          </div>
+
+          {/* Card 6 */}
+          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
+                <CheckCircle className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Publication Ethics</h3>
+                <p className="text-gray-600 text-sm">Ethical guidelines for publication</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
+              <li>Authors must strictly follow the publication ethics and academic integrity standards before submitting their manuscripts.</li>
+              <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
+              <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
+              <li>Any paper exceeding the permitted plagiarism or AI-content limits will be outright rejected without review.</li>
+              <li>Authors must upload both Plagiarism Report and AI-Content Detection Report along with the paper. Submissions without these reports will not be considered.</li>
+              <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
+            </ol>
+            </div>
+          </div>
+
+          {/* Card 7 */}
+          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
+                <FileText className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Initial Submission Rules</h3>
+                <p className="text-gray-600 text-sm">Guidelines for first-time submission</p>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5">
+            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
+              <li>
+                <strong>Upload three separate files:</strong>
+                <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                  <li>Main Paper</li>
+                  <li>Plagiarism Report</li>
+                  <li>AI Content Detection Report</li>
+                </ul>
+              </li>
+              <li><strong>ZIP/RAR files are not allowed.</strong></li>
+              <li>
+                <strong>Mandatory file naming format:</strong>
+                <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                  <li>MainPaper.docx</li>
+                  <li>MainPaper.pdf</li>
+                  <li>PlagiarismReport.pdf</li>
+                  <li>AI Report.pdf</li>
+                </ul>
+              </li>
+            </ol>
+            </div>
+          </div>
+           {/* Presentation Guidelines */}
+          <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center shadow-md">
+                <Send className="w-7 h-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-2xl text-navy mb-1">Presentation Guidelines</h3>
+                <p className="text-gray-600 text-sm">Guidelines for paper presentation</p>
+              </div>
+            </div>
+            <div className="flex-1 bg-gray-50 rounded-lg p-5">
+              <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
+                <li>Presentations must be prepared strictly using the official conference PPT template and must follow the structure defined in the template.</li>
+                <li>Only registered authors are permitted to present papers.</li>
+                <li>At least one author of each accepted paper must present the paper.</li>
+                <li>Presentations may be delivered in physical or online (hybrid) mode, as allotted by the organizing committee.</li>
+                <li>The presenting author must attend the entire session, including the question-and-answer segment.</li>
+                <li>Certificates of Presentation will be issued only to authors who present the paper.</li>
+                <li>Failure to present may result in exclusion from the conference proceedings and certification.</li>
+                <li>The presentation schedule and session details will be communicated in advance.</li>
+                <li>Authors must strictly adhere to the allocated presentation time.</li>
+              </ul>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 px-5">
+              <a 
+                href="/Presentation_Template.pptx" 
+                download="Presentation_Template.pptx"
+                className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-purple-700 transition-colors text-sm md:text-base"
+              >
+                <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                PPT Template
+              </a>
+              <a 
+                href="/Presentation_Guidelines.pdf" 
+                download="Presentation_Template.pdf"
+                className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
+              >
+                <FileText className="w-4 h-4 md:w-5 md:h-5" />
+                PDF Template
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Camera & Audio Policy Section */}
+        <div className="max-w-7xl mx-auto mt-12 md:mt-16 mb-8 md:mb-12">
+          <div className="bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 border-2 border-purple-400 rounded-xl shadow-2xl overflow-hidden">
+            {/* Header with Icon */}
+            <div className="bg-gradient-to-r from-purple-800 to-indigo-800 px-6 md:px-8 py-5 md:py-6 border-b-2 border-purple-400">
+              <div className="flex items-center justify-center gap-3 md:gap-4">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 md:w-7 md:h-7 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-display font-bold text-xl md:text-2xl lg:text-3xl text-white text-center">
+                  Camera & Audio Policy
+                </h3>
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 md:w-7 md:h-7 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                </div>
+              </div>
+              <p className="text-center text-purple-200 text-sm md:text-base font-semibold mt-3">
+                Keynote, Inaugural and Valedictory Sessions
+              </p>
+            </div>
+
+            {/* Policy Content */}
+            <div className="p-6 md:p-8 lg:p-10">
+              <div className="bg-white rounded-lg shadow-xl p-6 md:p-8">
+                <div className="space-y-6">
+                  {/* Camera Protocol */}
+                  <div className="relative pl-6 border-l-4 border-purple-600">
+                    <div className="absolute -left-3 top-0 w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-display font-bold text-purple-900 mb-2 text-lg md:text-xl">Camera Protocol</h4>
+                    <p className="text-gray-800 text-sm md:text-base leading-relaxed text-justify">
+                      All participants (authors, delegates, academicians, industry attendees, and students) are <strong className="text-purple-900">required to keep their cameras turned ON</strong> during the Inaugural Session, Keynote Talks, and Valedictory Session. This protocol is mandatory for ensuring visibility, documentation, and academic etiquette.
+                    </p>
+                  </div>
+                  
+                  {/* Audio Protocol */}
+                  <div className="relative pl-6 border-l-4 border-indigo-600">
+                    <div className="absolute -left-3 top-0 w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <h4 className="font-display font-bold text-indigo-900 mb-2 text-lg md:text-xl">Audio Protocol</h4>
+                    <p className="text-gray-800 text-sm md:text-base leading-relaxed text-justify">
+                      Participants must <strong className="text-indigo-900">keep their microphones muted at all times</strong>, and may unmute only when invited by the Session Chair or Event Coordinator.
+                    </p>
+                  </div>
+                  
+                  {/* Compliance Notice */}
+                  <div className="relative pl-6 border-l-4 border-purple-700">
+                    <div className="absolute -left-3 top-0 w-6 h-6 bg-purple-700 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <h4 className="font-display font-bold text-purple-900 mb-2 text-lg md:text-xl">Compliance Notice</h4>
+                    <p className="text-gray-800 text-sm md:text-base leading-relaxed text-justify">
+                      Non-compliance with this instruction will be recorded and may result in <strong className="text-purple-900">removal from the session</strong>. This policy must be <strong className="text-purple-900">strictly followed by all attendees in online mode</strong>.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Important Notice Banner */}
+                <div className="mt-8 bg-gradient-to-r from-purple-700 via-indigo-700 to-purple-700 rounded-lg p-5 md:p-6 shadow-lg">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-center">
+                    <svg className="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    <p className="font-display font-bold text-base md:text-lg text-white">
+                      Strict Compliance Required for All Participants
+                    </p>
+                    <svg className="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Tabbed Program Schedule Section */}
-        <div className="max-w-6xl mx-auto mb-8 md:mb-12">
+        <div className="max-w-7xl mx-auto mb-8 md:mb-12">
           {/* Tab Navigation */}
           <div className="flex flex-wrap gap-2 mb-6">
             <button
@@ -276,371 +566,8 @@ const CallForPapers = () => {
           )}
         </div>
 
-        {/* Conference Program & Presentation Instructions */}
-        <div className="max-w-6xl mx-auto mb-8 md:mb-12" style={{ display: 'none' }}>
-          <div  
-            className="border-2 border-blue-300 rounded-xl p-6 md:p-8 lg:p-10 shadow-xl relative overflow-hidden"
-            style={{
-              backgroundImage: "url('/guidelines_frame_bg.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat"
-            }}
-          >
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-30/95 via-white/95 to-indigo-50/95 -z-0"></div>
-            
-            {/* Content */}
-            <div className="relative z-10">
-            <div className="text-center mb-5 md:mb-6 bg-white/80 backdrop-blur-sm rounded-lg p-3 md:p-5">
-              <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl mb-3 shadow-lg">
-                <svg className="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="font-display font-bold text-xl md:text-2xl text-navy mb-2">
-                Conference Program & Presentation Instructions
-              </h3>
-              <p className="text-gray-700 text-xs md:text-sm leading-relaxed max-w-3xl mx-auto">
-                We are pleased to invite you to participate in the conference, which will be conducted in <strong className="text-blue-700">Hybrid Mode</strong>. This page contains the complete program schedule of the conference. Participants may click on the respective dates to view the detailed daily schedule.
-              </p>
-            </div>
-
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 md:p-6 border-l-4 border-blue-600 shadow-md">
-              <h4 className="font-display font-bold text-lg md:text-xl text-blue-900 mb-4 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-                Technical Session Presentation Instructions
-              </h4>
-              <p className="text-gray-700 text-xs md:text-sm mb-4 leading-relaxed">
-                All presenters are requested to carefully read the following instructions before joining their respective technical sessions or keynote sessions:
-              </p>
-
-              <div className="space-y-3 md:space-y-4">
-                {/* Instruction 1 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    1
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Mode of Presentation</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      All Keynote Talks and Technical Paper Presentations will be conducted in <strong>Hybrid Mode</strong> (Online via Google Meet and Offline at the venue on Day-1).
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 2 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    2
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Session Access</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      For online attendees, click <strong>"Join"</strong> on the respective Date Tab to attend/present in Keynotes (K) and Technical Sessions (TS).
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 3 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    3
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Reporting Time</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      Presenters must join their respective Keynotes (K) / Technical Sessions (TS) at least <strong>05 minutes before</strong> the scheduled time.<br/>
-                      <span className="text-gray-600 italic text-xs">(All timings follow Indian Standard Time (IST).)</span>
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 4 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    4
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Session Etiquette</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      All participants and presenters must keep their microphones and cameras <strong>turned off</strong> unless instructed by the Session Chair.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 5 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    5
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Technical Readiness</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      Presenters must be ready with their presentation slides and should verify <strong>microphone and camera settings</strong> in advance for smooth delivery.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 6 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    6
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Presentation Order</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      Authors (presenters) will be invited <strong>one-by-one</strong> during their respective Technical Sessions by the designated Session Chairs.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 7 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    7
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Presentation Format</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                      Presentation slides may be prepared in any standard format (PowerPoint, PDF, etc.), following good academic and visual presentation practices.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Instruction 8 */}
-                <div className="flex gap-3 items-start">
-                  <div className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
-                    8
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-sm md:text-base text-navy mb-0.5">Time Allocation</h5>
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed mb-1.5">
-                      Each paper will be allotted:
-                    </p>
-                    <ul className="list-disc list-inside ml-3 space-y-0.5 text-gray-700 text-xs md:text-sm">
-                      <li><strong>10 Minutes</strong> for Presentation</li>
-                      <li><strong>2 Minutes</strong> for Q&A Interaction</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-                <p className="text-xs md:text-sm text-blue-900 font-semibold flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                  </svg>
-                  Important: Please ensure you follow all guidelines for a smooth and professional presentation experience.
-                </p>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
-          {/* Card 1 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
-                <FileText className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission Requirements</h3>
-                <p className="text-gray-600 text-sm">Basic submission criteria</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
-              <li>The paper must present original, unpublished research related to the conference themes and must not be under review elsewhere.</li>
-              <li>Authors are responsible for ensuring originality, validity, integrity, and freedom from conflicts with previously published or concurrently submitted work.</li>
-              <li>Papers must be carefully proofread and written in clear, grammatically correct English; poor language quality may lead to outright rejection.</li>
-            </ul>
-            </div>
-          </div>
-          {/* Card 2 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
-                <FileText className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Manuscript Preparation</h3>
-                <p className="text-gray-600 text-sm">Content and formatting guidelines</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
-              <li>Each manuscript must include an abstract (150-200 words) summarizing objectives, methodology, key results, and conclusions, along with 5-6 keywords.</li>
-              <li>Authors are required to submit manuscripts with a maximum length of 3,000 words, formatted strictly as per the official conference template available on the conference website.</li>
-              <li>Figures, tables, graphs, and images must be editable (not inserted as pictures), numbered consecutively, referenced properly, and must have a minimum resolution of 300 DPI.</li>
-              <li>All mathematical equations must be created using a math equation editor and must not be included as images.</li>
-              <li>All references must be cited correctly in the text, and the reference list must include every cited source and only cited sources.</li>
-            </ul>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
-                <FileText className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Review and Publication</h3>
-                <p className="text-gray-600 text-sm">Review process and publication details</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
-              <li>Each paper may have a maximum of four (4) authors, with full affiliations and the corresponding author clearly identified.</li>
-              <li>All manuscripts will undergo a double-blind peer-review process; authors must submit revisions within seven (7) days if requested.</li>
-              <li>Only papers that are accepted, registered, and presented will be included in the conference proceedings and considered valid for certificates.</li>
-              <li>At least one author must present the paper (online/offline as applicable) for it to be officially accepted.</li>
-            </ul>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
-                <CheckCircle className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Ethical Standards</h3>
-                <p className="text-gray-600 text-sm">Academic integrity guidelines</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
-              <li>Authors must adhere to all ethical guidelines, including plagiarism policies, proper citations, and respecting intellectual property.</li>
-              <li>Authors must ensure all figures, tables, and data representations are accurate, clear, and scientifically valid.</li>
-            </ul>
-            </div>
-          </div>
-
-          {/* Card 5 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
-                <Send className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Submission</h3>
-                <p className="text-gray-600 text-sm">Paper submission guidelines</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <p className="text-sm md:text-base text-gray-800 leading-relaxed">
-              All paper submissions must be made ONLY through the Microsoft CMT submission portal. Authors who are new to Microsoft CMT must create a login account before submitting. Please upload your manuscript in Microsoft Word/PDF format strictly following the conference template. Email submissions will NOT be accepted under any circumstances. Only papers submitted through Microsoft CMT will be considered for review, acceptance, and publication.
-            </p>
-            </div>
-          </div>
-
-          {/* Card 6 */}
-          <div className="bg-white border-l-4 border-l-burgundy border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-burgundy rounded-xl flex items-center justify-center shadow-md">
-                <CheckCircle className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Publication Ethics</h3>
-                <p className="text-gray-600 text-sm">Ethical guidelines for publication</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
-              <li>Authors must strictly follow the publication ethics and academic integrity standards before submitting their manuscripts.</li>
-              <li>The manuscript must have a plagiarism ratio below 10% as checked through Turnitin.</li>
-              <li>AI-generated content is not permitted; the manuscript must contain less than 2% AI-detected content.</li>
-              <li>Any paper exceeding the permitted plagiarism or AI-content limits will be outright rejected without review.</li>
-              <li>Authors must upload both Plagiarism Report and AI-Content Detection Report along with the paper. Submissions without these reports will not be considered.</li>
-              <li>An additional plagiarism and AI-content screening will be performed by the conference committee, and discrepancies will lead to rejection.</li>
-            </ol>
-            </div>
-          </div>
-
-          {/* Card 7 */}
-          <div className="bg-white border-l-4 border-l-gold border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center shadow-md">
-                <FileText className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Initial Submission Rules</h3>
-                <p className="text-gray-600 text-sm">Guidelines for first-time submission</p>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5">
-            <ol className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-decimal list-outside ml-5">
-              <li>
-                <strong>Upload three separate files:</strong>
-                <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
-                  <li>Main Paper</li>
-                  <li>Plagiarism Report</li>
-                  <li>AI Content Detection Report</li>
-                </ul>
-              </li>
-              <li><strong>ZIP/RAR files are not allowed.</strong></li>
-              <li>
-                <strong>Mandatory file naming format:</strong>
-                <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
-                  <li>MainPaper.docx</li>
-                  <li>MainPaper.pdf</li>
-                  <li>PlagiarismReport.pdf</li>
-                  <li>AI Report.pdf</li>
-                </ul>
-              </li>
-            </ol>
-            </div>
-          </div>
-           {/* Presentation Guidelines */}
-          <div className="bg-white border-l-4 border-l-purple-500 border border-warm-grey rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center shadow-md">
-                <Send className="w-7 h-7 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-display font-bold text-2xl text-navy mb-1">Presentation Guidelines</h3>
-                <p className="text-gray-600 text-sm">Guidelines for paper presentation</p>
-              </div>
-            </div>
-            <div className="flex-1 bg-gray-50 rounded-lg p-5">
-              <ul className="space-y-4 text-sm md:text-base text-gray-800 leading-relaxed list-disc list-outside ml-5">
-                <li>Presentations must be prepared strictly using the official conference PPT template and must follow the structure defined in the template.</li>
-                <li>Only registered authors are permitted to present papers.</li>
-                <li>At least one author of each accepted paper must present the paper.</li>
-                <li>Presentations may be delivered in physical or online (hybrid) mode, as allotted by the organizing committee.</li>
-                <li>The presenting author must attend the entire session, including the question-and-answer segment.</li>
-                <li>Certificates of Presentation will be issued only to authors who present the paper.</li>
-                <li>Failure to present may result in exclusion from the conference proceedings and certification.</li>
-                <li>The presentation schedule and session details will be communicated in advance.</li>
-                <li>Authors must strictly adhere to the allocated presentation time.</li>
-              </ul>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 px-5">
-              <a 
-                href="/Presentation_Template.pptx" 
-                download="Presentation_Template.pptx"
-                className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-purple-700 transition-colors text-sm md:text-base"
-              >
-                <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                PPT Template
-              </a>
-              <a 
-                href="/Presentation_Guidelines.pdf" 
-                download="Presentation_Template.pdf"
-                className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-display font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base"
-              >
-                <FileText className="w-4 h-4 md:w-5 md:h-5" />
-                PDF Template
-              </a>
-            </div>
-          </div>
+        {/* Grid for Final Camera-Ready Submission Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto mb-8 md:mb-12">
           {/* Card 8 - Taylor & Francis Submission */}
           <div className="bg-gradient-to-br from-orange-50 via-white to-orange-50 border-l-4 border-l-orange-600 border-2 border-orange-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
@@ -817,10 +744,11 @@ const CallForPapers = () => {
             
             </div>
           </div>
+        </div>
 
           {/* Card 10 - DOI, Copyright & Compliance */}
-          <div className="lg:col-span-2 flex justify-center">
-            <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 border-l-4 border-l-blue-600 border-2 border-blue-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full w-full max-w-4xl">
+          <div className="flex justify-center max-w-7xl mx-auto mb-8 md:mb-12">
+            <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 border-l-4 border-l-blue-600 border-2 border-blue-200 rounded-lg p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full w-full max-w-5xl">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
               <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 text-white" />
@@ -864,11 +792,11 @@ const CallForPapers = () => {
               <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
                 <p className="text-sm text-yellow-900 font-semibold">📌 Publisher Processing Note:</p>
                 <ul className="text-xs text-yellow-800 mt-2 space-y-1 list-disc pl-5">
-                  <li>DOI assignment by respective publisher after production initiation</li>
+                  {/* <li>DOI assignment by respective publisher after production initiation</li>
                   <li>Metadata must be finalized at camera-ready stage</li>
-                  <li>All documents compulsory for both Taylor & Francis and Wiley</li>
-                  <li>Files must follow exact naming convention</li>
-                  <li>Submit inside single .zip file with camera-ready package</li>
+                  <li>All documents compulsory for both Taylor & Francis and Wiley</li> */}
+                  <li>DOI assignment and indexing will be done by the respective publisher (Taylor & Francis / Wiley) after production is initiated.</li>
+                  <li>Metadata (title, authors, affiliations, ORCID, abstract, keywords) must be finalized at camera-ready stage and cannot be modified after DOI release.</li>
                 </ul>
               </div>
               
@@ -877,6 +805,7 @@ const CallForPapers = () => {
           </div>
 
           {/* All Google Forms Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto mb-8 md:mb-12">
           <div className="col-span-1 lg:col-span-2">
             <div className="text-center mb-8 md:mb-10">
               <h3 className="font-display font-bold text-3xl md:text-4xl text-navy mb-3">
