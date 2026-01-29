@@ -585,8 +585,7 @@ const CallForPapers = () => {
             </div>
             <div className="flex-1">
               <p className="text-black text-base leading-relaxed mb-6 font-medium bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
-                All accepted papers recommended for Taylor & Francis publication must submit the final camera-ready package. Upload <strong>one (1) .zip folder</strong> containing:
-              </p>
+              Authors whose papers are selected for Taylor & Francis publication are required to submit the final camera-ready version. The complete submission must be uploaded as a single ZIP file containing all the required documents in the prescribed format              </p>
               <ol className="space-y-3 text-sm md:text-base text-black leading-relaxed list-decimal pl-6">
                 <li className="mb-2">
                   <strong className="text-orange-800">Revised Camera-Ready Paper (PDF Format)</strong><br/>
@@ -677,8 +676,7 @@ const CallForPapers = () => {
             </div>
             <div className="flex-1">
               <p className="text-black text-base leading-relaxed mb-6 font-medium bg-teal-50 p-4 rounded-lg border-l-4 border-teal-500">
-                All accepted papers recommended for Wiley Book Chapter publication must submit the final camera-ready package. Upload <strong>one (1) .zip folder</strong> containing:
-              </p>
+Authors whose papers are selected for proceedings of icaitsc2026@are required to submit the final camera-ready version. The complete submission must be uploaded as a single ZIP file containing all the required documents in the prescribed format              </p>
               <ol className="space-y-3 text-sm md:text-base text-black leading-relaxed list-decimal pl-6">
                 <li className="mb-2">
                   <strong className="text-emerald-800">Revised Camera-Ready Paper (PDF Format)</strong><br/>
