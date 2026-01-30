@@ -787,6 +787,21 @@ Authors whose papers are selected for wiley publication are required to submit t
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_AI_Report.pdf</code><br/>
                   <span className="text-xs text-gray-600">Declare AI tool usage for writing, editing, analysis, etc.</span>
                 </li>
+                <li className="mb-2">
+                  <strong className="text-blue-800">Revised Camera-Ready Paper (PDF Format) — Mandatory</strong><br/>
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.pdf</code><br/>
+                  <span className="text-xs text-gray-600">Final version of your paper in PDF format</span>
+                </li>
+                <li className="mb-2">
+                  <strong className="text-blue-800">Source File (Word Format) — Compulsory</strong><br/>
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.docx</code><br/>
+                  <span className="text-xs text-gray-600">Original editable source document</span>
+                </li>
+                <li className="mb-2">
+                  <strong className="text-blue-800">Response to Reviewers — Mandatory</strong><br/>
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Reviewer_Response.docx</code><br/>
+                  <span className="text-xs text-gray-600">Point-wise response to each reviewer comment</span>
+                </li>
               </ol>
               <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
                 <p className="text-sm text-yellow-900 font-semibold">📌 Publisher Processing Note:</p>
