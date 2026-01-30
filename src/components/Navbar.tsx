@@ -109,12 +109,12 @@ const Navbar = () => {
 								{item.name}
 							</a>
 						))}
-						{/* <a
-							href="#registration"
+						<a
+							href="https://periyaruniversity.ac.in/icaistconf/"
 							className="btn-secondary bg-green-700 text-sm px-4 lg:px-6 py-2 lg:py-2.5"
 						>
 							Register Now
-						</a> */}
+						</a>
 					</div>
 
 					{/* Mobile Menu Button */}
@@ -143,15 +143,15 @@ const Navbar = () => {
 									{item.name}
 								</a>
 							))}
-							{/* <div className="pt-4 border-t border-border mt-4">
+							<div className="pt-4 border-t border-border mt-4">
 								<a
-									href="#registration"
+									href="https://periyaruniversity.ac.in/icaistconf/"
 									onClick={() => setIsOpen(false)}
 									className="block btn-secondary bg-green-700 text-center py-3 text-base font-semibold"
 								>
 									Register Now
 								</a>
-							</div> */}
+							</div>
 						</div>
 					</div>
 				)}

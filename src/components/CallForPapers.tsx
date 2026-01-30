@@ -676,8 +676,9 @@ const CallForPapers = () => {
             </div>
             <div className="flex-1">
               <p className="text-black text-base leading-relaxed mb-6 font-medium bg-teal-50 p-4 rounded-lg border-l-4 border-teal-500">
-Authors whose papers are selected for proceedings of icaitsc2026@are required to submit the final camera-ready version. The complete submission must be uploaded as a single ZIP file containing all the required documents in the prescribed format              </p>
-              <ol className="space-y-3 text-sm md:text-base text-black leading-relaxed list-decimal pl-6">
+Authors whose papers are selected for wiley publication are required to submit the final camera-ready version. The complete submission must be uploaded as a single ZIP file containing all the required documents in the prescribed format 
+              </p>
+             <ol className="space-y-3 text-sm md:text-base text-black leading-relaxed list-decimal pl-6">
                 <li className="mb-2">
                   <strong className="text-emerald-800">Revised Camera-Ready Paper (PDF Format)</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Revised_Camera_Ready.pdf</code>
@@ -762,15 +763,15 @@ Authors whose papers are selected for proceedings of icaitsc2026@are required to
             </div>
             <div className="flex-1">
               <p className="text-black text-base leading-relaxed mb-6 font-medium bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-500">
-                All accepted papers must complete required compliance documentation for final processing and DOI assignment. Submit the following <strong>mandatory documents</strong>:
+                Authors whose papers are selected for proceedings of ICAITSC 2026 are required to submit the final camera-ready version. The complete submission must be uploaded as a single ZIP file containing all the required documents in the prescribed format 
               </p>
               <ol className="space-y-3 text-sm md:text-base text-black leading-relaxed list-decimal pl-6">
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <strong className="text-blue-800">DOI Metadata Template — Mandatory</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_DOI_Metadata.pdf</code><br/>
                   <span className="text-xs text-gray-600">Used for DOI registration and indexing. Cannot be changed after publication.</span>
                 </li>
-                
+                 */}
                 <li className="mb-2">
                   <strong className="text-blue-800">Proof of Payment — Mandatory</strong><br/>
                   <code className="text-xs bg-gray-100 px-2 py-1 rounded mt-1 inline-block">Paper_ID_No_Payment_Proof.pdf</code><br/>
