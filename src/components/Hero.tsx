@@ -154,7 +154,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col mb-7 sm:flex-row justify-center gap-4 sm:gap-6 xl:gap-6 2xl:gap-8 animate-fade-in px-4" style={{ animationDelay: "0.5s" }}>
-            <a href="#registration" className="btn-accent flex items-center justify-center gap-2 group text-base sm:text-lg xl:text-lg 2xl:text-xl px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 w-full sm:w-auto">
+            <a href="https://periyaruniversity.ac.in/icaistconf/" className="btn-accent flex items-center justify-center gap-2 group text-base sm:text-lg xl:text-lg 2xl:text-xl px-8 py-4 sm:px-10 sm:py-5 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 w-full sm:w-auto">
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
