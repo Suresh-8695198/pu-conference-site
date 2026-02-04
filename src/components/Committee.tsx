@@ -236,9 +236,9 @@ const Committee = () => {
       icon: Award,
       color: "bg-gold",
       members: [
-        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Convenor, Vice-Chancellor Committee, Periyar University, Salem, TN" },
-        { name: "Prof. R. Subramani", role: "Convenor, Vice-Chancellor Committee, Periyar University, Salem, TN" },
-        { name: "Dr. S. Jayanthi", role: "Member-VC Convenor Committee Syndicate Member, Periyar University, Salem, TN" },
+        { name: "Tmt. E. Sundaravalli, I.A.S.", role: "Member, Vice Chancellor Committee & Syndicate , Periyar University, Salem, TN" },
+        { name: "Prof. R. Subramani", role: "Member, Vice Chancellor Committee & Syndicate , Periyar University, Salem, TN" },
+        { name: "Dr. S. Jayanthi", role: "Member, Vice Chancellor Committee & Syndicate , Periyar University, Salem, TN" },
       ],
     },
     {

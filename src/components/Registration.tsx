@@ -462,7 +462,7 @@ const Registration = () => {
               Complete your registration by filling out the form and making the payment.
             </p>
             <a
-              href="#"
+              href="https://periyaruniversity.ac.in/icaistconf/"
               className="inline-flex items-center gap-2 bg-yellow-600 text-white px-8 py-4 rounded-lg font-display font-bold text-lg hover:bg-burgundy/90 transition-colors"
             >
               Register Now
