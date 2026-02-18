@@ -572,21 +572,22 @@ const ProgramSchedule = () => {
                           </td>
                         </tr>
                         {[
-                          { id: "37", title: "Spacy-Based NER for Medical Documentation" },
-                          { id: "38", title: "Mental Health Support Bot Using NLP and CBT" },
-                          { id: "42", title: "Layered Explainable AI Framework — Dynamo AI" },
-                          { id: "63", title: "Cyberbullying Detection Bot for Social Media" },
-                          { id: "92", title: "Digital Therapeutics and Music Therapy" },
-                          { id: "100", title: "EventQuest — AI-Powered Event Management" },
-                          { id: "109", title: "AI-Enabled HVAC Systems for Predictive Maintenance" },
-                          { id: "114", title: "Explainable AI for Eye Anemia Diagnosis" },
-                          { id: "119", title: "ML Framework for Insurance Claim Fraud Detection" },
-                          { id: "133", title: "Hybrid NLP-Generative AI for SME Customer Support" },
+                          { id: "37", title: "Spacy-Based NER for Medical Documentation", authors: "Vijayarajan K, Sowmiya S, Kanaka Durga S, Vasantha Priya S" },
+                          { id: "38", title: "Mental Health Support Bot Using NLP and CBT", authors: "Vasantha Priya S, Vijayarajan K, Kanaka Durga S, Sowmiya S" },
+                          { id: "42", title: "Layered Explainable AI Framework — Dynamo AI", authors: "Arulmurugan D, Geetha G, Santhosh Kumar M, Abinandhan S" },
+                          { id: "63", title: "Cyberbullying Detection Bot for Social Media", authors: "Sowmiya S, Vasantha Priya S, Vijayarajan K, Kanaka Durga S" },
+                          { id: "92", title: "Digital Therapeutics and Music Therapy", authors: "Varalakshmi M, Maha Lakshmi S, Priyadharshini S, Narmatha C" },
+                          { id: "100", title: "EventQuest — AI-Powered Event Management", authors: "Jegatha Deborah L, Kavisri M, Brindha G, Meena P" },
+                          { id: "109", title: "AI-Enabled HVAC Systems for Predictive Maintenance", authors: "Kishore Kumar P, Siva Prakash R, Arun Mozhi Selvan M, Muthukumar K" },
+                          { id: "114", title: "Explainable AI for Eye Anemia Diagnosis", authors: "Anitha T, Muthu Priya M, Sruthi R, Keerthana K" },
+                          { id: "119", title: "ML Framework for Insurance Claim Fraud Detection", authors: "Keerthiga P, Keerthana K R, Kaviyarasi K, Jayanthi N" },
+                          { id: "133", title: "Hybrid NLP-Generative AI for SME Customer Support", authors: "Karthiga M, Revanth S, Hari Prasath P, Gokul B" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-orange-50" : "bg-orange-50 hover:bg-orange-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-orange-900">ID {p.id}</td>
-                            <td className="px-4 py-3 text-slate-800 font-medium" colSpan={2}>{p.title}</td>
+                            <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
+                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -639,23 +640,24 @@ const ProgramSchedule = () => {
                           </td>
                         </tr>
                         {[
-                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System" },
-                          { id: "84", title: "Augmenting Web3 Development in VS Code" },
-                          { id: "93", title: "Deep Learning Based Algorithm for LED Driver" },
-                          { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring" },
-                          { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance" },
-                          { id: "112", title: "Leopard Optimized Routing Protocol for IoV" },
-                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise" },
-                          { id: "121", title: "IoT-Enabled CNC Machine Health Monitoring" },
-                          { id: "125", title: "Handheld Device for Building Quality Detection" },
-                          { id: "126", title: "Defect Detection in PCB Images Using CNNs" },
-                          { id: "127", title: "Interactive Analytics for Water Quality Intelligence" },
-                          { id: "132", title: "Multi-Scale CNN for PCB Failure Detection" },
+                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System", authors: "Kaviya S, Nivetha M, Balaji R, Surya Prabha S" },
+                          { id: "84", title: "Augmenting Web3 Development in VS Code", authors: "Pradeep Kumar S, Suresh Babu C, Murugan A, Nithya K" },
+                          { id: "93", title: "Deep Learning Based Algorithm for LED Driver", authors: "Logapriya S, Pooja R, Preethi M, Kavitha N" },
+                          { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring", authors: "Arun Kumar R, Manoj S, Prakash V, Karthik T" },
+                          { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance", authors: "Sudharsan K, Gowtham P, Harish R, Divya M" },
+                          { id: "112", title: "Leopard Optimized Routing Protocol for IoV", authors: "Vijayalakshmi M, Santhosh R, Muthukumar P, Anitha S" },
+                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise", authors: "Keerthana S, Dharani P, Priya R, Lavanya M" },
+                          { id: "121", title: "IoT-Enabled CNC Machine Health Monitoring", authors: "Bharath Kumar S, Dinesh R, Suriya P, Murugesan K" },
+                          { id: "125", title: "Handheld Device for Building Quality Detection", authors: "Manikandan S, Suresh P, Karthikeyan R, Balamurugan A" },
+                          { id: "126", title: "Defect Detection in PCB Images Using CNNs", authors: "Priyanka R, Nithya S, Swetha M, Sangeetha K" },
+                          { id: "127", title: "Interactive Analytics for Water Quality Intelligence", authors: "Anand Kumar S, Siva R, Deepak M, Harini P" },
+                          { id: "132", title: "Multi-Scale CNN for PCB Failure Detection", authors: "Ramya S, Kavitha P, Nithyasri M, Preethi R" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-purple-50" : "bg-purple-50 hover:bg-purple-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-purple-900">ID {p.id}</td>
-                            <td className="px-4 py-3 text-slate-800 font-medium" colSpan={2}>{p.title}</td>
+                            <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
+                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -822,19 +824,20 @@ const ProgramSchedule = () => {
                           </td>
                         </tr>
                         {[
-                          { id: "40", title: "Speech-Enabled Email Assistant with Facial Recognition" },
-                          { id: "46", title: "Smart Blood Donor Identification System Using GPS" },
-                          { id: "58", title: "Adversarial Robustness in Federated Learning for IoT" },
-                          { id: "94", title: "Fault Diagnosis in Power Cables Using Neural Networks" },
-                          { id: "99", title: "AI Chatbot for Student Skill Assessment & Career Guidance" },
-                          { id: "120", title: "NLP-Based Campus Asset Recovery System" },
-                          { id: "123", title: "Digital Framework for Waste Segregation in Education" },
-                          { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing" },
+                          { id: "40", title: "Speech-Enabled Email Assistant with Facial Recognition for Secure and Accessible Communication", authors: "K. Muthumayil, D. Mohan Sai Charan, Kotha Ganesh, M. Buvana" },
+                          { id: "46", title: "Smart Blood Donor Identification System Using GPS-Based Location Tracking and Nearest Donor Matching", authors: "Kennady R, Sabarritha I, Rakshana M, Viveka K" },
+                          { id: "58", title: "Adversarial Robustness in Federated Learning Environments for IoT Security", authors: "Kennady R, G. Saikrishnan, O. Pandithurai, J. Praveenkumar" },
+                          { id: "94", title: "Fault Diagnosis in Three-Core Power Cables Utilizing Neural Network Models and Machine Learning", authors: "Arul Thilagavathi M, Karthikeyan M, Naveen Kumar T, Siva Subramanian N" },
+                          { id: "99", title: "AI Based Chatbot for Student Skill Assessment, Career Guidance and Job Recommendation", authors: "Anu T K, Radhika R" },
+                          { id: "120", title: "Design and Implementation of a Proof-Validated NLP-Based Campus Asset Recovery System", authors: "Abhishek Tripathi, R. Arjun Kumar, M. Abhinay Reddy, C. Charan Vignesh, K.V. Rupesh, D. Balakrishnan" },
+                          { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, N. Naga Harshitha" },
+                          { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing", authors: "Abhishek Tripathi, Shubham Anjankar, Y Bala NagiReddy, A Hemanth Kumar Reddy, A Venkata Naga Sai Charan, G Haritha Reddy" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-teal-900">ID {p.id}</td>
-                            <td className="px-4 py-3 text-slate-800 font-medium" colSpan={2}>{p.title}</td>
+                            <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
+                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
