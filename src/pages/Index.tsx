@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import ProgramSchedule from "@/components/ProgramSchedule";
 import CallForPapers from "@/components/CallForPapers";
 import ImportantDates from "@/components/ImportantDates";
 import Tracks from "@/components/Tracks";
@@ -32,6 +33,7 @@ const Index = () => {
         <main>
           <Hero />
           <About />
+          <ProgramSchedule />
           <Tracks />
           <CallForPapers />
           <ImportantDates />

@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 const navItems = [
 	{ name: "Home", href: "#home" },
 	{ name: "About", href: "#about" },
+	{ name: "Schedule", href: "#program-schedule" },
 	{ name: "Tracks", href: "#tracks" },
 	{ name: "Submission", href: "#call-for-papers" },
 	{ name: "Important Dates", href: "#dates" },
