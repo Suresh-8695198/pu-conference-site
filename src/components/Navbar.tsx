@@ -36,11 +36,11 @@ const Navbar = () => {
 			}`}
 		>
 			<div className="container mx-auto px-4">
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between gap-4">
 					{/* Logo */}
 					<a
 						href="#home"
-						className="flex items-center"
+						className="flex items-center shrink-0 min-w-0"
 						style={{ gap: 0 }}
 					>
 						{/* Periyar University Image */}
@@ -96,12 +96,12 @@ const Navbar = () => {
 					</a>
 
 					{/* Desktop Navigation */}
-					<div className="hidden lg:flex items-center gap-4 lg:gap-6">
+				<div className="hidden lg:flex items-center gap-2 xl:gap-4 flex-shrink-0">
 						{navItems.map((item) => (
 							<a
 								key={item.name}
 								href={item.href}
-								className={`nav-link text-sm ${
+								className={`nav-link text-xs xl:text-sm font-medium whitespace-nowrap px-1 ${
 									scrolled
 										? "text-foreground"
 										: "text-primary-foreground"
@@ -112,7 +112,7 @@ const Navbar = () => {
 						))}
 						<a
 							href="https://periyaruniversity.ac.in/icaistconf/"
-							className="btn-secondary bg-green-700 text-sm px-4 lg:px-6 py-2 lg:py-2.5"
+							className="btn-secondary bg-green-700 text-xs xl:text-sm px-3 xl:px-5 py-2 whitespace-nowrap ml-2"
 						>
 							Register Now
 						</a>
