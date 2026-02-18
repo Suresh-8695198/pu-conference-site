@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ProgramSchedule from "@/components/ProgramSchedule";
+import CameraAudioPolicy from "@/components/CameraAudioPolicy";
 import CallForPapers from "@/components/CallForPapers";
 import ImportantDates from "@/components/ImportantDates";
 import Tracks from "@/components/Tracks";
@@ -34,6 +35,7 @@ const Index = () => {
           <Hero />
           <About />
           <ProgramSchedule />
+          <CameraAudioPolicy />
           <Tracks />
           <CallForPapers />
           <ImportantDates />

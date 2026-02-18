@@ -367,7 +367,7 @@ const ProgramSchedule = () => {
               {/* Day Header */}
               <div className="bg-blue-800 px-6 py-5 text-center">
                 <h3 className="font-display font-bold text-2xl md:text-3xl text-white mb-1">
-                  Day 1 — February 26, 2026 (Wednesday)
+                  Day 1 — February 26, 2026 (Thursday)
                 </h3>
                 <p className="text-blue-200 font-medium text-base">Department of Computer Science, Periyar University</p>
               </div>
@@ -677,7 +677,7 @@ const ProgramSchedule = () => {
               {/* Day Header */}
               <div className="bg-violet-800 px-6 py-5 text-center">
                 <h3 className="font-display font-bold text-2xl md:text-3xl text-white mb-1">
-                  Day 2 — February 27, 2026 (Thursday)
+                  Day 2 — February 27, 2026 (Friday)
                 </h3>
                 <p className="text-violet-200 font-medium text-base">Department of Computer Science, Periyar University</p>
               </div>
