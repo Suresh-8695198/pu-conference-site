@@ -435,7 +435,7 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-green-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:00 – 10:05 AM</td>
                           <td className="px-4 py-3 text-slate-700">Welcome Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Dept. of Computer Science</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Department of Computer Science, Periyar University, Salem</td>
                         </tr>
                         <tr className="bg-green-50 hover:bg-green-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:05 – 10:10 AM</td>
@@ -445,12 +445,15 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-green-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:10 – 10:15 AM</td>
                           <td className="px-4 py-3 text-slate-700">Conference Prelude</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. H. Hannah Inbarani, Professor & Conference Chair — ICAITSC 2026</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. H. Hannah Inbarani, Professor & Conference Chair-ICAITSC 2026, Department of Computer Science, Periyar University, Salem</td>
                         </tr>
                         <tr className="bg-green-50 hover:bg-green-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:15 – 10:20 AM</td>
                           <td className="px-4 py-3 text-slate-700">Presidential Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. S. Jayanthi, Member — Vice-Chancellor Convener Committee</td>
+                          <td className="px-4 py-3 text-slate-800">
+                            Dr. S. Jayanthi<br/>
+                            <span className="text-sm text-slate-600">Member- Vice-Chancellor Convener Committee, Syndicate Member, Periyar University, Salem</span>
+                          </td>
                         </tr>
                         <tr className="bg-white hover:bg-green-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:20 – 10:30 AM</td>
@@ -460,7 +463,7 @@ const ProgramSchedule = () => {
                         <tr className="bg-green-50 hover:bg-green-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:30 – 10:35 AM</td>
                           <td className="px-4 py-3 text-slate-700">Vote of Thanks</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. I. Laurence Aroquiaraj, Professor & Organizing Secretary — ICAITSC 2026</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. I. Laurence Aroquiaraj, Professor & Organizing Secretary- ICAITSC 2026, Department of Computer Science, Periyar University, Salem</td>
                         </tr>
                       </tbody>
                     </table>
@@ -494,20 +497,20 @@ const ProgramSchedule = () => {
                       <tbody className="divide-y divide-blue-100">
                         <tr className="bg-white hover:bg-blue-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:45 AM – 11:45 AM</td>
-                          <td className="px-4 py-3 font-semibold text-blue-800">Keynote I</td>
+                          <td className="px-4 py-3 font-semibold text-blue-800">Keynote Address – I</td>
                           <td className="px-4 py-3 text-slate-800">
                             <p className="font-semibold">Mr. Shanthababu Pandian</p>
-                            <p className="text-slate-600 text-sm">Director – Data & AI Engineering, Rolan Software Service, London, UK</p>
-                            <p className="text-blue-700 italic text-sm mt-1">Artificial Intelligence in Healthcare: The Role of Agentic AI in Future Medical Systems</p>
+                            <p className="text-slate-600 text-sm">Director – Data & AI Engineering, Rolan Software Service, London, United Kingdom</p>
+                            <p className="text-blue-700 italic text-sm mt-1">Title of the Talk: Artificial Intelligence in Healthcare: The Role of Agentic AI in Future Medical Systems</p>
                           </td>
                         </tr>
                         <tr className="bg-blue-50 hover:bg-blue-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">11:45 AM – 1:00 PM</td>
-                          <td className="px-4 py-3 font-semibold text-blue-800">Keynote II</td>
+                          <td className="px-4 py-3 font-semibold text-blue-800">Keynote Address – II</td>
                           <td className="px-4 py-3 text-slate-800">
                             <p className="font-semibold">Prof. Deepak Garg</p>
-                            <p className="text-slate-600 text-sm">Vice Chancellor, SR University & Founder, Director of Leadingindia.ai, Hyderabad</p>
-                            <p className="text-blue-700 italic text-sm mt-1">Convergence of Data Science, Computer Vision and Physical AI</p>
+                            <p className="text-slate-600 text-sm">Vice Chancellor, SR University & Founder, Director of Leadingindia.ai, Hyderabad, Telengana</p>
+                            <p className="text-blue-700 italic text-sm mt-1">Title of the Talk: Convergence of Data Science , Computer Vision and Physical AI</p>
                           </td>
                         </tr>
                       </tbody>
@@ -545,7 +548,7 @@ const ProgramSchedule = () => {
                       <tbody className="divide-y divide-orange-100">
                         <tr className="bg-orange-50">
                           <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm uppercase tracking-wide bg-orange-100">
-                            Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: Dr. Preethi Ananthachari, Dr. G. Jothi
+                            Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. Preethi Ananthachari, Assistant Professor, College of IT, Ahila University, Bahrain<br/> Dr. G. Jothi, Assistant Professor, Sona College of Arts and Science, Salem, Tamil Nadu, India
                           </td>
                         </tr>
                         <tr className="bg-white hover:bg-orange-50">
@@ -557,31 +560,31 @@ const ProgramSchedule = () => {
                         <tr className="bg-orange-50 hover:bg-orange-100">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-orange-900">ID 108</td>
-                          <td className="px-4 py-3 text-slate-800 font-medium">AI-Driven Cyberbullying Detection Using NLP</td>
+                          <td className="px-4 py-3 text-slate-800 font-medium">AI – Driven Cyberbullying Detection and Prevention System Using NLP</td>
                           <td className="px-4 py-3 text-slate-600 text-sm">Lalitha K, Nivedha K, Pradeepa M, Sneka R</td>
                         </tr>
                         <tr className="bg-white hover:bg-orange-50">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-orange-900">ID 128</td>
-                          <td className="px-4 py-3 text-slate-800 font-medium">Smart Agricultural Weed Management</td>
+                          <td className="px-4 py-3 text-slate-800 font-medium">Smart Agricultural Weed Management using Image Classification and Automated Actuation</td>
                           <td className="px-4 py-3 text-slate-600 text-sm">Abishek C, Jaivikas S, Shivakumar R, Sampath P S</td>
                         </tr>
                         <tr className="bg-orange-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm uppercase tracking-wide">
-                            Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: Dr. Preethi Ananthachari, Dr. G. Jothi
+                            Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. Preethi Ananthachari, Assistant Professor, College of IT, Ahila University, Bahrain<br/> Dr. G. Jothi, Assistant Professor, Sona College of Arts and Science, Salem, Tamil Nadu, India
                           </td>
                         </tr>
                         {[
-                          { id: "37", title: "Spacy-Based NER for Medical Documentation", authors: "Vijayarajan K, Sowmiya S, Kanaka Durga S, Vasantha Priya S" },
-                          { id: "38", title: "Mental Health Support Bot Using NLP and CBT", authors: "Vasantha Priya S, Vijayarajan K, Kanaka Durga S, Sowmiya S" },
-                          { id: "42", title: "Layered Explainable AI Framework — Dynamo AI", authors: "Arulmurugan D, Geetha G, Santhosh Kumar M, Abinandhan S" },
-                          { id: "63", title: "Cyberbullying Detection Bot for Social Media", authors: "Sowmiya S, Vasantha Priya S, Vijayarajan K, Kanaka Durga S" },
-                          { id: "92", title: "Digital Therapeutics and Music Therapy", authors: "Varalakshmi M, Maha Lakshmi S, Priyadharshini S, Narmatha C" },
-                          { id: "100", title: "EventQuest — AI-Powered Event Management", authors: "Jegatha Deborah L, Kavisri M, Brindha G, Meena P" },
-                          { id: "109", title: "AI-Enabled HVAC Systems for Predictive Maintenance", authors: "Kishore Kumar P, Siva Prakash R, Arun Mozhi Selvan M, Muthukumar K" },
-                          { id: "114", title: "Explainable AI for Eye Anemia Diagnosis", authors: "Anitha T, Muthu Priya M, Sruthi R, Keerthana K" },
-                          { id: "119", title: "ML Framework for Insurance Claim Fraud Detection", authors: "Keerthiga P, Keerthana K R, Kaviyarasi K, Jayanthi N" },
-                          { id: "133", title: "Hybrid NLP-Generative AI for SME Customer Support", authors: "Karthiga M, Revanth S, Hari Prasath P, Gokul B" },
+                          { id: "37", title: "A Novel Spacy-Based Named Entity Recognition for Structured Medical Documentation", authors: "O. Pandithurai, Sridharan. S, Vinamrata Balaji, J. Praveenkumar" },
+                          { id: "38", title: "Designing a Mental Health Support Bot Using NLP and CBT", authors: "O. Pandithurai, G. Annamalai, R. Ajay, S. Ashwin" },
+                          { id: "42", title: "A Layered Explainable AI Framework for Trustworthy Generative Intelligence: The Dynamo AI Approach", authors: "Anish Krisna" },
+                          { id: "63", title: "Cyberbullying and Harassment Detection Bot for Social Media", authors: "Abhishek Tripathi, Vamsi Kandukuru, Sai Pranay Pydimarry, Sai Chaitanya Kola, V. Bhanu Prakash Reddy" },
+                          { id: "92", title: "Digital Therapeutics and Music Therapy: A Computational Perspective", authors: "Pericles, Vijay Arputharaj J, Hubert Shanthan, Ashok Kumar M" },
+                          { id: "100", title: "EventQuest: AI-Powered Event Management", authors: "Satchi Baghla, Shah Riya Pranav, Shah Vansh Paras, Ashok Immanuel, Helen K Joy, Sudhakar T" },
+                          { id: "109", title: "Data-Driven AI-Enabled HVAC Systems for Predictive Maintenance", authors: "Preethi Ananthachari, Mansoor Ahmed Hasan Husain Alaali, Chandrasekar Chellaiya, Santhosh Padmanabhan" },
+                          { id: "114", title: "Explainable AI and Optimized Multi-Branch CNN Model for Eye Anemia Diagnosis", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
+                          { id: "119", title: "A Deployed Machine Learning Framework for Automated Insurance Claim Fraud Detection", authors: "Abhishek Tripathi, P. Ganesh, N. Maheshwar Reddy, M. V. Sumanth Reddy, T. Koushik, D. Balakrishnan" },
+                          { id: "133", title: "A Hybrid NLP-Generative AI Framework for Enhancing SME Customer Support Through Intelligent Multilingual Chatbots", authors: "R. Logesh Babu , Nuzha Razia, Nivetha R, Kathiravel K" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-orange-50" : "bg-orange-50 hover:bg-orange-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
@@ -619,39 +622,39 @@ const ProgramSchedule = () => {
                       <tbody className="divide-y divide-purple-100">
                         <tr className="bg-purple-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm uppercase tracking-wide">
-                            Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: Dr. M. Ashok Kumar, Dr. D. Arul Pon Daniel
+                            Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. M. Ashok Kumar, Controller of Examination & HOD OpenLabs (Associate Professor), Bluecrest University, Liberia, West Africa<br/> Dr. D. Arul Pon Daniel, Assistant Professor, Department of Computer Science, Jayarani College of Arts and Science, Salem
                           </td>
                         </tr>
                         <tr className="bg-white hover:bg-purple-50">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-purple-900">ID 51</td>
-                          <td className="px-4 py-3 text-slate-800 font-medium">Solar Assisted IoT Integrated E-Bike Conversion Kit</td>
+                          <td className="px-4 py-3 text-slate-800 font-medium">Solar Assisted Iot Integrated E-Bike Conversion Kit with Real-Time Battery Health and Power Monitoring System</td>
                           <td className="px-4 py-3 text-slate-600 text-sm">R Ganesan, Amuthan N, Haribaskaran A, Joshua Raj R</td>
                         </tr>
                         <tr className="bg-purple-50 hover:bg-purple-100">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-purple-900">ID 129</td>
-                          <td className="px-4 py-3 text-slate-800 font-medium">Satellite Image Classification using Transfer Learning</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">M Prabhavathy, Valliappan Raman, Putra Sumari, K.R.Shanmuga Priyaa</td>
+                          <td className="px-4 py-3 text-slate-800 font-medium">Satellite Image Classification of Transport Infrastructure using Transfer Learning</td>
+                          <td className="px-4 py-3 text-slate-600 text-sm">M Prabhavathy, Valliappan Raman , Putra Sumari , K.R.Shanmuga Priyaa</td>
                         </tr>
                         <tr className="bg-purple-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm uppercase tracking-wide">
-                            Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: Dr. M. Ashok Kumar, Dr. D. Arul Pon Daniel
+                            Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. M. Ashok Kumar, Controller of Examination & HOD OpenLabs (Associate Professor), Bluecrest University, Liberia, West Africa<br/> Dr. D. Arul Pon Daniel, Assistant Professor, Department of Computer Science, Jayarani College of Arts and Science, Salem
                           </td>
                         </tr>
                         {[
-                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System", authors: "Kaviya S, Nivetha M, Balaji R, Surya Prabha S" },
-                          { id: "84", title: "Augmenting Web3 Development in VS Code", authors: "Pradeep Kumar S, Suresh Babu C, Murugan A, Nithya K" },
-                          { id: "93", title: "Deep Learning Based Algorithm for LED Driver", authors: "Logapriya S, Pooja R, Preethi M, Kavitha N" },
-                          { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring", authors: "Arun Kumar R, Manoj S, Prakash V, Karthik T" },
-                          { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance", authors: "Sudharsan K, Gowtham P, Harish R, Divya M" },
-                          { id: "112", title: "Leopard Optimized Routing Protocol for IoV", authors: "Vijayalakshmi M, Santhosh R, Muthukumar P, Anitha S" },
-                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise", authors: "Keerthana S, Dharani P, Priya R, Lavanya M" },
-                          { id: "121", title: "IoT-Enabled CNC Machine Health Monitoring", authors: "Bharath Kumar S, Dinesh R, Suriya P, Murugesan K" },
-                          { id: "125", title: "Handheld Device for Building Quality Detection", authors: "Manikandan S, Suresh P, Karthikeyan R, Balamurugan A" },
-                          { id: "126", title: "Defect Detection in PCB Images Using CNNs", authors: "Priyanka R, Nithya S, Swetha M, Sangeetha K" },
-                          { id: "127", title: "Interactive Analytics for Water Quality Intelligence", authors: "Anand Kumar S, Siva R, Deepak M, Harini P" },
-                          { id: "132", title: "Multi-Scale CNN for PCB Failure Detection", authors: "Ramya S, Kavitha P, Nithyasri M, Preethi R" },
+                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System for Food Preservation and Storage Safety", authors: "Abhishek Tripathi, Shaik Mahammad Sharook, B Kartheek, K Sai Harsha, P Sumanth Chowdary" },
+                          { id: "84", title: "Augmenting Web3 Development in VS Code Through Prompt Driven Copilot Extensions and Slither-Based Security Analysis", authors: "Josaiah Murfeal Dhkar, Sudhakar T, Logeshwaran J" },
+                          { id: "93", title: "Deep Learning Based Algorithm for LED Driver", authors: "Seshaiah M.A, Ashwanth A, Kesavagurumoorthy J, Tharun Vignesh R" },
+                          { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring and Early Fault Indication System", authors: "Manimegalai M, Jitvan S, GokulKumar M, Arun Kumar M" },
+                          { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance", authors: "Hami Yasir, Christy Jackson J" },
+                          { id: "112", title: "Leopard Optimized Energy-Adaptive Path-Selective Routing Protocol for Reliable and Efficient IoV Communication Networks", authors: "J. Ramkumar, R. Vadivel, R. Karthikeyan, Divya Jose J, S.P. Priyadharshini" },
+                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise in Public Events", authors: "Abhishek Tripathi, Suresh Balpande, Bala Nagireddy, M. Geeta Sai Charan, J. Deny, R Raja Subramanian" },
+                          { id: "121", title: "IoT-Enabled CNC Machine Health Monitoring with Hybrid ML and Adaptive Threshold Control", authors: "Ramya T, Nandakrishna S, Sai Pratap C, Yasvanth Bala G" },
+                          { id: "125", title: "Handheld Device for Apartment Building Quality Detection", authors: "Vinodhini R, Iniyan S K, Naveen Prakash G, Vishal A" },
+                          { id: "126", title: "Defect Detection in PCB Images Using CNNs", authors: "Nirmala Devi K, Ganishkar S B, Mohanan R K" },
+                          { id: "127", title: "Geospatially Driven Interactive Analytics Framework for Multiscale Water Quality Intelligence Systems", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
+                          { id: "132", title: "Multi-Scale CNN with Attention Mechanism for Predictive Printed Circuit Board Failure Detection", authors: "Sabari L, Uma Maheswari, Avinash V, Sanjay S, Hariesh .S" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-purple-50" : "bg-purple-50 hover:bg-purple-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
@@ -763,7 +766,7 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3 text-slate-800">
                             <p className="font-semibold">Dr. A. Paventhan</p>
                             <p className="text-slate-600 text-sm">Senior Director, HoD-Research & Development, Scientist-G, ERNET India, Ministry of Electronics & IT, Government of India</p>
-                            <p className="text-indigo-700 italic text-sm mt-1">Evolving Computing Paradigm in the Era of AI</p>
+                            <p className="text-indigo-700 italic text-sm mt-1">Evolving computing paradigm in the era of AI</p>
                           </td>
                         </tr>
                       </tbody>
@@ -801,15 +804,15 @@ const ProgramSchedule = () => {
                       <tbody className="divide-y divide-teal-100">
                         <tr className="bg-teal-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm uppercase tracking-wide">
-                            Offline Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: Dr. N. Suresh Kumar, Dr. T. Sudhakar
+                            Offline Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. N. Suresh Kumar, Director and Professor, Department of Computer Science, Chettinad Academy of Research and Education (Deemed to be University), Chennai, TamilNadu, India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
                           </td>
                         </tr>
                         {[
-                          { id: "89", title: "Intelligent Renewable-Energy Prioritized Home Automation", authors: "Naveenbalaji Gowthaman, Naveen Aakash S, Vishal M, Suwasthika Sri KV" },
-                          { id: "90", title: "Elliptic Curve Cryptography with ML for Covert Timing Channels", authors: "Abrohneel Roy, Nithin C, Amrutavarshan L" },
-                          { id: "91", title: "Intelligent ML Pipeline Automation for Fraud Detection", authors: "Naveenbalaji Gowthaman G, Sri Vasudevan R, Infant Lydia, Brathika G S" },
-                          { id: "130", title: "PROTECTEST — Unified Framework for Security Monitoring", authors: "Saravanabhavan C, Sibiraj B, Swasthegan S, Vishnuram M D" },
-                          { id: "131", title: "Hybrid Edge-Cloud Facial Emotion Recognition for Elderly Care", authors: "Magesh T, Logadharshini S, T Bhanuja Chowdary, B. Angayarkanni, Shyam D, G Devi" },
+                          { id: "89", title: "Intelligent Renewable-Energy Prioritized Home Automation and Load Balancing Using Raspberry Pi and Predictive AI", authors: "Naveenbalaji Gowthaman, Naveen Aakash S, Vishal M, Suwasthika Sri KV" },
+                          { id: "90", title: "Elliptic Curve Cryptography Enhanced Encryption and Detection of Covert Timing Channels with Machine Learning", authors: "Abrohneel Roy, Nithin C, Amrutavarshan L" },
+                          { id: "91", title: "Intelligent ML Pipeline Automation Using AI for Real-Time Predictive Analytics in Financial Fraud Detection", authors: "Naveenbalaji Gowthaman G, Sri Vasudevan R, Infant Lydia, Brathika G S" },
+                          { id: "130", title: "PROTECTEST: A Unified Framework For Proactive Security Monitoring", authors: "Saravanabhavan C, Sibiraj B, Swasthegan S, Vishnuram M D" },
+                          { id: "131", title: "Hybrid Edge–Cloud Facial Emotion Recognition Framework for Real-Time Elderly Care Environments", authors: "Magesh T, Logadharshini S, T Bhanuja Chowdary, B. Angayarkanni, Shyam D, G Devi" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}>
                             <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
@@ -820,13 +823,13 @@ const ProgramSchedule = () => {
                         ))}
                         <tr className="bg-teal-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm uppercase tracking-wide">
-                            Online Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: Dr. P. Gowthamaraya Thirumal, Dr. T. Sudhakar
+                            Online Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. P. Gowthamaraya Thirumal, Assistant Professor, Department of Computer Science, Government Arts College, Dharamapuri, Tamil Nadu India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
                           </td>
                         </tr>
                         {[
                           { id: "40", title: "Speech-Enabled Email Assistant with Facial Recognition for Secure and Accessible Communication", authors: "K. Muthumayil, D. Mohan Sai Charan, Kotha Ganesh, M. Buvana" },
-                          { id: "46", title: "Smart Blood Donor Identification System Using GPS-Based Location Tracking and Nearest Donor Matching", authors: "Kennady R, Sabarritha I, Rakshana M, Viveka K" },
-                          { id: "58", title: "Adversarial Robustness in Federated Learning Environments for IoT Security", authors: "Kennady R, G. Saikrishnan, O. Pandithurai, J. Praveenkumar" },
+                          { id: "46", title: "Smart Blood Donor Identification System Using GPS-Based Location Tracking and Nearest Donor Matching", authors: "Kennady.R, Sabarritha.I, Rakshana.M, Viveka.K" },
+                          { id: "58", title: "Adversarial Robustness in Federated Learning Environments for IoT Security", authors: "Kennady.R, G. Saikrishnan, O. Pandithurai, J. Praveenkumar" },
                           { id: "94", title: "Fault Diagnosis in Three-Core Power Cables Utilizing Neural Network Models and Machine Learning", authors: "Arul Thilagavathi M, Karthikeyan M, Naveen Kumar T, Siva Subramanian N" },
                           { id: "99", title: "AI Based Chatbot for Student Skill Assessment, Career Guidance and Job Recommendation", authors: "Anu T K, Radhika R" },
                           { id: "120", title: "Design and Implementation of a Proof-Validated NLP-Based Campus Asset Recovery System", authors: "Abhishek Tripathi, R. Arjun Kumar, M. Abhinay Reddy, C. Charan Vignesh, K.V. Rupesh, D. Balakrishnan" },
@@ -868,7 +871,7 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-red-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:00 – 4:10 PM</td>
                           <td className="px-4 py-3 text-slate-700">Welcome Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Dept. of Computer Science</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Department of Computer Science</td>
                         </tr>
                         <tr className="bg-red-50 hover:bg-red-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:10 – 4:20 PM</td>
@@ -878,17 +881,17 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-red-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:20 – 4:30 PM</td>
                           <td className="px-4 py-3 text-slate-700">Valedictory Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. A. Paventhan, Senior Director, ERNET India, Ministry of Electronics & IT, Govt. of India</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. A. Paventhan, Senior Director, HoD- Research & Development, Scientist- G, ERNET India, Ministry of Electronics & IT, Government of India</td>
                         </tr>
                         <tr className="bg-red-50 hover:bg-red-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:30 – 4:45 PM</td>
                           <td className="px-4 py-3 text-slate-700">Certificate Distribution</td>
-                          <td className="px-4 py-3 text-slate-800">Participants Feedback & Distribution of Certificates</td>
+                          <td className="px-4 py-3 text-slate-800">Participants Feedback <br/> Distribution of Certificates</td>
                         </tr>
                         <tr className="bg-white hover:bg-red-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:45 – 5:00 PM</td>
                           <td className="px-4 py-3 text-slate-700">Vote of Thanks & Closing</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. I. Laurence Aroquiaraj, Professor & Conference Chair — ICAITSC 2026</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. I. Laurence Aroquiaraj, Professor & Conference Chair – ICAITSC 2026, Department of Computer Science, Periyar University, Salem</td>
                         </tr>
                       </tbody>
                     </table>
