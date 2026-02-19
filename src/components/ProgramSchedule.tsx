@@ -555,19 +555,19 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-orange-900">ID 13</td>
                           <td className="px-4 py-3 text-slate-800 font-medium">AI-Powered Retinal Disease Detection and Classification</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">B. Jenisha Angel, M S. Sreeleka, A. Gowtham, R. Arun Kumar</td>
+                          <td className="px-4 py-3 text-black text-sm">B. Jenisha Angel, M S. Sreeleka, A. Gowtham, R. Arun Kumar</td>
                         </tr>
                         <tr className="bg-orange-50 hover:bg-orange-100">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-orange-900">ID 108</td>
                           <td className="px-4 py-3 text-slate-800 font-medium">AI – Driven Cyberbullying Detection and Prevention System Using NLP</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">Lalitha K, Nivedha K, Pradeepa M, Sneka R</td>
+                          <td className="px-4 py-3 text-black text-sm">Lalitha K, Nivedha K, Pradeepa M, Sneka R</td>
                         </tr>
                         <tr className="bg-white hover:bg-orange-50">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-orange-900">ID 128</td>
                           <td className="px-4 py-3 text-slate-800 font-medium">Smart Agricultural Weed Management using Image Classification and Automated Actuation</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">Abishek C, Jaivikas S, Shivakumar R, Sampath P S</td>
+                          <td className="px-4 py-3 text-black text-sm">Abishek C, Jaivikas S, Shivakumar R, Sampath P S</td>
                         </tr>
                         <tr className="bg-orange-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm uppercase tracking-wide">
@@ -590,7 +590,7 @@ const ProgramSchedule = () => {
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-orange-900">ID {p.id}</td>
                             <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
-                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
+                            <td className="px-4 py-3 text-black text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -629,13 +629,13 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-purple-900">ID 51</td>
                           <td className="px-4 py-3 text-slate-800 font-medium">Solar Assisted Iot Integrated E-Bike Conversion Kit with Real-Time Battery Health and Power Monitoring System</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">R Ganesan, Amuthan N, Haribaskaran A, Joshua Raj R</td>
+                          <td className="px-4 py-3 text-black text-sm">R Ganesan, Amuthan N, Haribaskaran A, Joshua Raj R</td>
                         </tr>
                         <tr className="bg-purple-50 hover:bg-purple-100">
                           <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                           <td className="px-4 py-3 font-bold text-purple-900">ID 129</td>
                           <td className="px-4 py-3 text-slate-800 font-medium">Satellite Image Classification of Transport Infrastructure using Transfer Learning</td>
-                          <td className="px-4 py-3 text-slate-600 text-sm">M Prabhavathy, Valliappan Raman , Putra Sumari , K.R.Shanmuga Priyaa</td>
+                          <td className="px-4 py-3 text-black text-sm">M Prabhavathy, Valliappan Raman , Putra Sumari , K.R.Shanmuga Priyaa</td>
                         </tr>
                         <tr className="bg-purple-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm uppercase tracking-wide">
@@ -660,7 +660,7 @@ const ProgramSchedule = () => {
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-purple-900">ID {p.id}</td>
                             <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
-                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
+                            <td className="px-4 py-3 text-black text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -818,7 +818,7 @@ const ProgramSchedule = () => {
                             <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
                             <td className="px-4 py-3 font-bold text-teal-900">ID {p.id}</td>
                             <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
-                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
+                            <td className="px-4 py-3 text-black text-sm">{p.authors}</td>
                           </tr>
                         ))}
                         <tr className="bg-teal-100">
@@ -840,7 +840,7 @@ const ProgramSchedule = () => {
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
                             <td className="px-4 py-3 font-bold text-teal-900">ID {p.id}</td>
                             <td className="px-4 py-3 text-slate-800 font-medium">{p.title}</td>
-                            <td className="px-4 py-3 text-slate-600 text-sm">{p.authors}</td>
+                            <td className="px-4 py-3 text-black text-sm">{p.authors}</td>
                           </tr>
                         ))}
                       </tbody>
