@@ -812,7 +812,6 @@ const ProgramSchedule = () => {
                           { id: "90", title: "Elliptic Curve Cryptography Enhanced Encryption and Detection of Covert Timing Channels with Machine Learning", authors: "Abrohneel Roy, Nithin C, Amrutavarshan L" },
                           { id: "91", title: "Intelligent ML Pipeline Automation Using AI for Real-Time Predictive Analytics in Financial Fraud Detection", authors: "Naveenbalaji Gowthaman G, Sri Vasudevan R, Infant Lydia, Brathika G S" },
                           { id: "130", title: "PROTECTEST: A Unified Framework For Proactive Security Monitoring", authors: "Saravanabhavan C, Sibiraj B, Swasthegan S, Vishnuram M D" },
-                          { id: "131", title: "Hybrid Edge–Cloud Facial Emotion Recognition Framework for Real-Time Elderly Care Environments", authors: "Dr. Magesh T, Dr. Logadharshini S, Dr. T Bhanuja Chowdary, Dr. B. Angayarkanni, Dr. Shyam D, Dr. G Devi" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}>
                             <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
@@ -835,6 +834,7 @@ const ProgramSchedule = () => {
                           { id: "120", title: "Design and Implementation of a Proof-Validated NLP-Based Campus Asset Recovery System", authors: "Abhishek Tripathi, R. Arjun Kumar, M. Abhinay Reddy, C. Charan Vignesh, K.V. Rupesh, D. Balakrishnan" },
                           { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, N. Naga Harshitha" },
                           { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing", authors: "Abhishek Tripathi, Shubham Anjankar, Y Bala NagiReddy, A Hemanth Kumar Reddy, A Venkata Naga Sai Charan, G Haritha Reddy" },
+                          { id: "131", title: "Hybrid Edge–Cloud Facial Emotion Recognition Framework for Real-Time Elderly Care Environments", authors: "Dr. Magesh T, Dr. Logadharshini S, Dr. T Bhanuja Chowdary, Dr. B. Angayarkanni, Dr. Shyam D, Dr. G Devi" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
