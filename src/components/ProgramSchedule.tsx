@@ -454,7 +454,7 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-green-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:00 – 10:05 AM</td>
                           <td className="px-4 py-3 text-slate-700">Welcome Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Department of Computer Science, Periyar University, Salem</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Convenor - ICAITSC 2026, Senior Professor & Head, Department of Computer Science, Periyar University, Salem</td>
                         </tr>
                         <tr className="bg-green-50 hover:bg-green-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">10:05 – 10:10 AM</td>
@@ -566,7 +566,7 @@ const ProgramSchedule = () => {
                       </thead>
                       <tbody className="divide-y divide-orange-100">
                         <tr className="bg-orange-50">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm uppercase tracking-wide bg-orange-100">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm tracking-wide bg-orange-100">
                             Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. Preethi Ananthachari, Assistant Professor, College of IT, Ahila University, Bahrain<br/> Dr. G. Jothi, Assistant Professor, Sona College of Arts and Science, Salem, Tamil Nadu, India
                           </td>
                         </tr>
@@ -589,7 +589,7 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3 text-black text-sm">Abishek C, Jaivikas S, Shivakumar R, Sampath P S</td>
                         </tr>
                         <tr className="bg-orange-100">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm uppercase tracking-wide">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-orange-800 text-sm tracking-wide">
                             Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. Preethi Ananthachari, Assistant Professor, College of IT, Ahila University, Bahrain<br/> Dr. G. Jothi, Assistant Professor, Sona College of Arts and Science, Salem, Tamil Nadu, India
                           </td>
                         </tr>
@@ -642,7 +642,7 @@ const ProgramSchedule = () => {
                       </thead>
                       <tbody className="divide-y divide-purple-100">
                         <tr className="bg-purple-100">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm uppercase tracking-wide">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm tracking-wide">
                             Offline Presentations — 2:00 PM to 2:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. M. Ashok Kumar, Controller of Examination & HOD OpenLabs (Associate Professor), Bluecrest University, Liberia, West Africa<br/> Dr. D. Arul Pon Daniel, Assistant Professor, Department of Computer Science, Jayarani College of Arts and Science, Salem
                           </td>
                         </tr>
@@ -659,7 +659,7 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3 text-black text-sm">M Prabhavathy, Valliappan Raman , Putra Sumari , K.R.Shanmuga Priyaa</td>
                         </tr>
                         <tr className="bg-purple-100">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm uppercase tracking-wide">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm tracking-wide">
                             Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. M. Ashok Kumar, Controller of Examination & HOD OpenLabs (Associate Professor), Bluecrest University, Liberia, West Africa<br/> Dr. D. Arul Pon Daniel, Assistant Professor, Department of Computer Science, Jayarani College of Arts and Science, Salem
                           </td>
                         </tr>
@@ -825,7 +825,7 @@ const ProgramSchedule = () => {
                       </thead>
                       <tbody className="divide-y divide-teal-100">
                         <tr className="bg-teal-100">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm uppercase tracking-wide">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm tracking-wide">
                             Offline Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. N. Suresh Kumar, Director and Professor, Department of Computer Science, Chettinad Academy of Research and Education (Deemed to be University), Chennai, TamilNadu, India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
                           </td>
                         </tr>
@@ -843,7 +843,7 @@ const ProgramSchedule = () => {
                           </tr>
                         ))}
                         <tr className="bg-teal-100">
-                          <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm uppercase tracking-wide">
+                          <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm tracking-wide">
                             Online Presentations — 2:30 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. P. Gowthamaraya Thirumal, Assistant Professor, Department of Computer Science, Government Arts College, Dharamapuri, Tamil Nadu India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
                           </td>
                         </tr>
@@ -890,7 +890,7 @@ const ProgramSchedule = () => {
                         <tr className="bg-white hover:bg-red-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:00 – 4:10 PM</td>
                           <td className="px-4 py-3 text-slate-700">Welcome Address</td>
-                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Senior Professor & Head, Department of Computer Science</td>
+                          <td className="px-4 py-3 text-slate-800">Dr. C. Chandrasekar, Convenor - ICAITSC 2026, Senior Professor & Head, Department of Computer Science</td>
                         </tr>
                         <tr className="bg-red-50 hover:bg-red-100">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:10 – 4:20 PM</td>
