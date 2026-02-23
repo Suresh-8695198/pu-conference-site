@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ProgramSchedule from "@/components/ProgramSchedule";
 import CameraAudioPolicy from "@/components/CameraAudioPolicy";
+import Feedback from "@/components/Feedback";
 import CallForPapers from "@/components/CallForPapers";
 import ImportantDates from "@/components/ImportantDates";
 import Tracks from "@/components/Tracks";
@@ -34,8 +35,9 @@ const Index = () => {
         <main>
           <Hero />
           <About />
-          <ProgramSchedule />
+          <Feedback />
           <CameraAudioPolicy />
+          <ProgramSchedule />
           <Tracks />
           <CallForPapers />
           <ImportantDates />

@@ -357,6 +357,25 @@ const ProgramSchedule = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* Instruction 9 */}
+                  <div className="bg-white border-2 border-slate-300 p-6 rounded-lg">
+                    <div className="flex gap-4 items-start">
+                      <div className="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-lg flex items-center justify-center font-bold text-lg">
+                        9
+                      </div>
+                      <div className="flex-1">
+                        <h5 className="font-bold text-lg text-navy mb-2">Google Meet Name Format (Mandatory)</h5>
+                        <p className="text-gray-800 text-base leading-relaxed mb-3">
+                          Participants must rename themselves in Google Meet using the format: <span className="font-bold">PaperID_Name</span>
+                        </p>
+                        <ul className="list-disc list-inside ml-4 space-y-2 text-gray-800 text-base">
+                          <li>Example: <span className="font-mono bg-slate-100 px-2 py-0.5 rounded text-navy">101_RahulSharma</span></li>
+                          <li>This is mandatory for proper identification and session coordination.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -579,12 +598,14 @@ const ProgramSchedule = () => {
                           { id: "38", title: "Designing a Mental Health Support Bot Using NLP and CBT", authors: "O. Pandithurai, G. Annamalai, R. Ajay, S. Ashwin" },
                           { id: "42", title: "A Layered Explainable AI Framework for Trustworthy Generative Intelligence: The Dynamo AI Approach", authors: "Anish Krisna" },
                           { id: "63", title: "Cyberbullying and Harassment Detection Bot for Social Media", authors: "Abhishek Tripathi, Vamsi Kandukuru, Sai Pranay Pydimarry, Sai Chaitanya Kola, V. Bhanu Prakash Reddy" },
+                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System for Food Preservation and Storage Safety", authors: "Abhishek Tripathi, Shaik Mahammad Sharook B Kartheek, K Sai Harsha, P Sumanth Chowdary" },
                           { id: "92", title: "Digital Therapeutics and Music Therapy: A Computational Perspective", authors: "Pericles, Vijay Arputharaj J, Hubert Shanthan, Ashok Kumar M" },
                           { id: "100", title: "EventQuest: AI-Powered Event Management", authors: "Satchi Baghla, Shah Riya Pranav, Shah Vansh Paras, Ashok Immanuel, Helen K Joy, Sudhakar T" },
                           { id: "109", title: "Data-Driven AI-Enabled HVAC Systems for Predictive Maintenance", authors: "Preethi Ananthachari, Mansoor Ahmed Hasan Husain Alaali, Chandrasekar Chellaiya, Santhosh Padmanabhan" },
-                          { id: "114", title: "Explainable AI and Optimized Multi-Branch CNN Model for Eye Anemia Diagnosis", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
                           { id: "119", title: "A Deployed Machine Learning Framework for Automated Insurance Claim Fraud Detection", authors: "Abhishek Tripathi, P. Ganesh, N. Maheshwar Reddy, M. V. Sumanth Reddy, T. Koushik, D. Balakrishnan" },
-                          { id: "133", title: "A Hybrid NLP-Generative AI Framework for Enhancing SME Customer Support Through Intelligent Multilingual Chatbots", authors: "R. Logesh Babu , Nuzha Razia, Nivetha R, Kathiravel K" },
+                          { id: "120", title: "Design and Implementation of a Proof-Validated NLP-Based Campus Asset Recovery System", authors: "Abhishek Tripathi, R. Arjun Kumar, M. Abhinay Reddy, C. Charan Vignesh, K.V. Rupesh, D. Balakrishnan" },
+                          { id: "114", title: "Explainable AI and Optimized Multi-Branch CNN Model for Eye Anemia Diagnosis", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
+                          { id: "127", title: "Geospatially Driven Interactive Analytics Framework for Multiscale Water Quality Intelligence Systems", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-orange-50" : "bg-orange-50 hover:bg-orange-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
@@ -643,18 +664,19 @@ const ProgramSchedule = () => {
                           </td>
                         </tr>
                         {[
-                          { id: "75", title: "Real Time Intelligent Pantry Monitoring System for Food Preservation and Storage Safety", authors: "Abhishek Tripathi, Shaik Mahammad Sharook, B Kartheek, K Sai Harsha, P Sumanth Chowdary" },
                           { id: "84", title: "Augmenting Web3 Development in VS Code Through Prompt Driven Copilot Extensions and Slither-Based Security Analysis", authors: "Josaiah Murfeal Dhkar, Sudhakar T, Logeshwaran J" },
                           { id: "93", title: "Deep Learning Based Algorithm for LED Driver", authors: "Seshaiah M.A, Ashwanth A, Kesavagurumoorthy J, Tharun Vignesh R" },
                           { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring and Early Fault Indication System", authors: "Manimegalai M, Jitvan S, GokulKumar M, Arun Kumar M" },
                           { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance", authors: "Hami Yasir, Christy Jackson J" },
                           { id: "112", title: "Leopard Optimized Energy-Adaptive Path-Selective Routing Protocol for Reliable and Efficient IoV Communication Networks", authors: "J. Ramkumar, R. Vadivel, R. Karthikeyan, Divya Jose J, S.P. Priyadharshini" },
-                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise in Public Events", authors: "Abhishek Tripathi, Suresh Balpande, Bala Nagireddy, M. Geeta Sai Charan, J. Deny, R Raja Subramanian" },
                           { id: "121", title: "IoT-Enabled CNC Machine Health Monitoring with Hybrid ML and Adaptive Threshold Control", authors: "Ramya T, Nandakrishna S, Sai Pratap C, Yasvanth Bala G" },
-                          { id: "125", title: "Handheld Device for Apartment Building Quality Detection", authors: "Vinodhini R, Iniyan S K, Naveen Prakash G, Vishal A" },
+                          { id: "125", title: "Handheld Device for Apartment Building Quality Detection", authors: "Vinodhini R, Iniyan SK, Naveen Prakash G, Vishal A" },
                           { id: "126", title: "Defect Detection in PCB Images Using CNNs", authors: "Nirmala Devi K, Ganishkar S B, Mohanan R K" },
-                          { id: "127", title: "Geospatially Driven Interactive Analytics Framework for Multiscale Water Quality Intelligence Systems", authors: "T. R. Vedhavathy, S. Vishnu Priya, N. Barath Kumar" },
-                          { id: "132", title: "Multi-Scale CNN with Attention Mechanism for Predictive Printed Circuit Board Failure Detection", authors: "Sabari L, Uma Maheswari, Avinash V, Sanjay S, Hariesh .S" },
+                          { id: "132", title: "Multi-Scale CNN with Attention Mechanism for Predictive Printed Circuit Board Failure Detection", authors: "Sabari L Uma Maheswari Avinash V Sanjay S Hariesh.S" },
+                          { id: "133", title: "A Hybrid NLP-Generative AI Framework for Enhancing SME Customer Support Through Intelligent Multilingual Chatbots", authors: "R. Logesh Babu , Nuzha Razia, Nivetha R, Kathiravel K" },
+                          { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise in Public Events", authors: "Abhishek Tripathi, Suresh Balpande, Bala Nagireddy, M. Geeta Sai Charan, J. Deny, R Raja Subramanian" },
+                          { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, N. Naga Harshitha" },
+                          { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing", authors: "Abhishek Tripathi, Shubham Anjankar, Y Bala NagiReddy, A Hemanth Kumar Reddy, A Venkata Naga Sai Charan, G Haritha Reddy" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-purple-50" : "bg-purple-50 hover:bg-purple-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
@@ -822,7 +844,7 @@ const ProgramSchedule = () => {
                         ))}
                         <tr className="bg-teal-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-teal-800 text-sm uppercase tracking-wide">
-                            Online Presentations — 2:00 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. P. Gowthamaraya Thirumal, Assistant Professor, Department of Computer Science, Government Arts College, Dharamapuri, Tamil Nadu India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
+                            Online Presentations — 2:30 PM to 3:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. P. Gowthamaraya Thirumal, Assistant Professor, Department of Computer Science, Government Arts College, Dharamapuri, Tamil Nadu India<br/> Dr. T. Sudhakar, Assistant Professor, Department of Computer Science, CHRIST (Deemed to be University), Bengaluru, India
                           </td>
                         </tr>
                         {[
@@ -831,10 +853,7 @@ const ProgramSchedule = () => {
                           { id: "58", title: "Adversarial Robustness in Federated Learning Environments for IoT Security", authors: "Kennady.R, G. Saikrishnan, O. Pandithurai, J. Praveenkumar" },
                           { id: "94", title: "Fault Diagnosis in Three-Core Power Cables Utilizing Neural Network Models and Machine Learning", authors: "Arul Thilagavathi M, Karthikeyan M, Naveen Kumar T, Siva Subramanian N" },
                           { id: "99", title: "AI Based Chatbot for Student Skill Assessment, Career Guidance and Job Recommendation", authors: "Anu T K, Radhika R" },
-                          { id: "120", title: "Design and Implementation of a Proof-Validated NLP-Based Campus Asset Recovery System", authors: "Abhishek Tripathi, R. Arjun Kumar, M. Abhinay Reddy, C. Charan Vignesh, K.V. Rupesh, D. Balakrishnan" },
-                          { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, N. Naga Harshitha" },
-                          { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing", authors: "Abhishek Tripathi, Shubham Anjankar, Y Bala NagiReddy, A Hemanth Kumar Reddy, A Venkata Naga Sai Charan, G Haritha Reddy" },
-                          { id: "131", title: "Hybrid Edge–Cloud Facial Emotion Recognition Framework for Real-Time Elderly Care Environments", authors: "Dr. Magesh T, Dr. Logadharshini S, Dr. T Bhanuja Chowdary, Dr. B. Angayarkanni, Dr. Shyam D, Dr. G Devi" },
+                          { id: "131", title: "Hybrid Edge–Cloud Facial Emotion Recognition Framework for Real-Time Elderly Care Environments", authors: "Magesh T, Logadharshini S, T Bhanuja Chowdary, B. Angayarkanni, Shyam D, G Devi" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}>
                             <td className="px-4 py-3"><span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Online</span></td>
@@ -878,12 +897,12 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3 text-slate-700">Presidential Address</td>
                           <td className="px-4 py-3 text-slate-800">Prof. Dr. V. Raj, Registrar (FAC), Periyar University, Salem</td>
                         </tr>
-                        <tr className="bg-white hover:bg-red-50">
+                        <tr className="bg-white hover:bg-slate-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:20 – 4:30 PM</td>
                           <td className="px-4 py-3 text-slate-700">Valedictory Address</td>
                           <td className="px-4 py-3 text-slate-800">Dr. A. Paventhan, Senior Director, HoD- Research & Development, Scientist- G, ERNET India, Ministry of Electronics & IT, Government of India</td>
                         </tr>
-                        <tr className="bg-red-50 hover:bg-red-100">
+                        <tr className="bg-red-50 hover:bg-slate-50">
                           <td className="px-4 py-3 font-medium text-slate-700 whitespace-nowrap">4:30 – 4:45 PM</td>
                           <td className="px-4 py-3 text-slate-700">Certificate Distribution</td>
                           <td className="px-4 py-3 text-slate-800">Participants Feedback <br/> Distribution of Certificates</td>
