@@ -242,7 +242,7 @@ const ProgramSchedule = () => {
                       <div className="flex-1">
                         <h5 className="font-bold text-lg text-navy mb-2">Mode of Presentation</h5>
                         <p className="text-gray-800 text-base leading-relaxed">
-                          All Keynote Talks and Technical Paper Presentations will be conducted in <span className="text-navy font-bold">Hybrid Mode</span> (Online via <span className="text-red-700 font-bold">Google Meet</span> and Offline at the venue on Day-1).
+                          All Keynote Talks and Technical Paper Presentations will be conducted in <span className="text-navy font-bold">Hybrid Mode</span> (Online via <span className="text-red-700 font-bold">Google Meet</span> and Offline at the venue on Day-1 and Day-2).<br/>
                         </p>
                       </div>
                     </div>
@@ -552,7 +552,7 @@ const ProgramSchedule = () => {
                 <div>
                   <div className="bg-orange-800 px-5 py-3 rounded-t-lg">
                     <h4 className="font-display font-bold text-xl text-white">Track 1: AI, Machine Learning & Deep Learning Applications</h4>
-                    <p className="text-orange-200 text-sm mt-1">2:00 PM – 5:00 PM &nbsp;|&nbsp; Venue: Smart Class Room, First Floor, Dept. of Computer Science</p>
+                    <p className="text-orange-200 text-sm mt-1">2:00 PM – 5:00 PM &nbsp;|&nbsp; Venue: Smart Class Room 1, First Floor, Dept. of Computer Science</p>
                   </div>
                   <div className="border-2 border-orange-200 rounded-b-lg overflow-x-auto">
                     <table className="w-full text-base">
@@ -628,7 +628,7 @@ const ProgramSchedule = () => {
                 <div>
                   <div className="bg-purple-800 px-5 py-3 rounded-t-lg">
                     <h4 className="font-display font-bold text-xl text-white">Track 2: IoT, Smart Systems & Embedded Intelligence</h4>
-                    <p className="text-purple-200 text-sm mt-1">2:00 PM – 5:00 PM &nbsp;|&nbsp; Venue: Smart Class Room, First Floor, Dept. of Computer Science</p>
+                    <p className="text-purple-200 text-sm mt-1">2:00 PM – 5:00 PM &nbsp;|&nbsp; Venue: Smart Class Room, Second Floor, Dept. of Computer Science</p>
                   </div>
                   <div className="border-2 border-purple-200 rounded-b-lg overflow-x-auto">
                     <table className="w-full text-base">

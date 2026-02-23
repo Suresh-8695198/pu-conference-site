@@ -35,9 +35,9 @@ const Index = () => {
         <main>
           <Hero />
           <About />
-          <Feedback />
           <CameraAudioPolicy />
           <ProgramSchedule />
+          <Feedback />
           <Tracks />
           <CallForPapers />
           <ImportantDates />
