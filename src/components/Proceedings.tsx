@@ -8,6 +8,95 @@ import React from "react";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
+/* ─── Decorative Frame Component ─────────── */
+const DecorativeFrame = ({ className }: { className?: string }) => {
+  return (
+    <div className={`absolute inset-0 pointer-events-none ${className}`}>
+      {/* Top Left Corner */}
+      <svg className="absolute top-0 left-0 w-16 h-16 sm:w-24 sm:h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 100 L0 0 L100 0" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3" />
+        <path d="M10 100 L10 10 L100 10" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+        <circle cx="0" cy="0" r="4" fill="currentColor" fillOpacity="0.5" />
+        <circle cx="10" cy="10" r="2" fill="currentColor" fillOpacity="0.4" />
+        <path d="M0 30 L30 0" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="2 2" />
+      </svg>
+
+      {/* Top Right Corner */}
+      <svg className="absolute top-0 right-0 w-16 h-16 sm:w-24 sm:h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 L100 0 L100 100" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3" />
+        <path d="M0 10 L90 10 L90 100" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+        <circle cx="100" cy="0" r="4" fill="currentColor" fillOpacity="0.5" />
+        <circle cx="90" cy="10" r="2" fill="currentColor" fillOpacity="0.4" />
+        <path d="M70 0 L100 30" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="2 2" />
+      </svg>
+
+      {/* Bottom Left Corner */}
+      <svg className="absolute bottom-0 left-0 w-16 h-16 sm:w-24 sm:h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 L0 100 L100 100" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3" />
+        <path d="M10 0 L10 90 L100 90" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+        <circle cx="0" cy="100" r="4" fill="currentColor" fillOpacity="0.5" />
+        <circle cx="10" cy="90" r="2" fill="currentColor" fillOpacity="0.4" />
+        <path d="M0 70 L30 100" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="2 2" />
+      </svg>
+
+      {/* Bottom Right Corner */}
+      <svg className="absolute bottom-0 right-0 w-16 h-16 sm:w-24 sm:h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 100 L100 100 L100 0" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3" />
+        <path d="M0 90 L90 90 L90 0" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+        <circle cx="100" cy="100" r="4" fill="currentColor" fillOpacity="0.5" />
+        <circle cx="90" cy="90" r="2" fill="currentColor" fillOpacity="0.4" />
+        <path d="M70 100 L100 70" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="2 2" />
+      </svg>
+    </div>
+  );
+};
+
+/* ─── Decorative Center Component ─────────── */
+const DecorativeCenter = ({ className }: { className?: string }) => {
+  return (
+    <svg className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none ${className}`} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="currentColor" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="currentColor" stopOpacity="0.0" />
+        </radialGradient>
+      </defs>
+      
+      {/* Background Glow */}
+      <circle cx="100" cy="100" r="100" fill="url(#centerGrad)" />
+      
+      {/* Outer Rings */}
+      <circle cx="100" cy="100" r="80" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2" strokeDasharray="4 4" />
+      <circle cx="100" cy="100" r="60" stroke="currentColor" strokeWidth="1" strokeOpacity="0.15" />
+      
+      {/* Tech Flower Petals (Center Outward) */}
+      <path d="M100 100 C100 40 130 20 100 0 C70 20 100 40 100 100 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2"/>
+      <path d="M100 100 C100 160 130 180 100 200 C70 180 100 160 100 100 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2"/>
+      <path d="M100 100 C40 100 20 130 0 100 C20 70 40 100 100 100 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2"/>
+      <path d="M100 100 C160 100 180 130 200 100 C180 70 160 100 100 100 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2"/>
+      
+      {/* Diagonal Petals */}
+      <path d="M100 100 C140 60 160 40 170 30 C140 40 120 60 100 100 Z" fill="currentColor" fillOpacity="0.02" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.15"/>
+      <path d="M100 100 C60 140 40 160 30 170 C60 160 80 140 100 100 Z" fill="currentColor" fillOpacity="0.02" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.15"/>
+      <path d="M100 100 C60 60 40 40 30 30 C40 60 60 80 100 100 Z" fill="currentColor" fillOpacity="0.02" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.15"/>
+      <path d="M100 100 C140 140 160 160 170 170 C160 140 140 120 100 100 Z" fill="currentColor" fillOpacity="0.02" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.15"/>
+
+      {/* Circuit Nodes */}
+      <circle cx="100" cy="100" r="6" fill="currentColor" fillOpacity="0.4" />
+      <circle cx="100" cy="100" r="3" fill="currentColor" fillOpacity="0.8" />
+      
+      <circle cx="100" cy="20" r="3" fill="currentColor" fillOpacity="0.5" />
+      <circle cx="100" cy="180" r="3" fill="currentColor" fillOpacity="0.5" />
+      <circle cx="20" cy="100" r="3" fill="currentColor" fillOpacity="0.5" />
+      <circle cx="180" cy="100" r="3" fill="currentColor" fillOpacity="0.5" />
+      
+      {/* Connecting Lines */}
+      <path d="M100 20 L100 180 M20 100 L180 100" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2" strokeDasharray="2 4" />
+      <path d="M43 43 L157 157 M43 157 L157 43" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.15" strokeDasharray="2 4" />
+    </svg>
+  );
+};
+
 /* ─── Per-page wrapper ─────────── */
 interface PDFPageProps {
   pageNumber: number;
@@ -100,7 +189,7 @@ const Proceedings = () => {
   return (
     <section id="proceedings" className="pt-10 pb-16 sm:pt-12 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-[32rem] bg-[#010038] rounded-b-[3rem] sm:rounded-b-[5rem] -z-0 shadow-inner">
+      <div className="absolute top-0 left-0 w-full h-[42rem] bg-[#010038]  -z-0 shadow-inner">
         {/* Abstract Shapes */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl mix-blend-overlay"></div>
         <div className="absolute bottom-10 right-20 w-80 h-80 bg-[#0E7490]/20 rounded-full blur-3xl mix-blend-overlay"></div>
@@ -124,52 +213,66 @@ const Proceedings = () => {
             Conference Proceedings
           </h2>
           <p className="text-lg sm:text-xl md:text-3xl text-white font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-            International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)
+            <span className="text-yellow-300">International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</span>
           </p>
         </div>
 
         {/* ── TOP: Content Section ── */}
-        <div className="bg-[#FFFFFF] rounded-3xl shadow-xl border border-[#E2E8F0] p-6 sm:p-8 lg:p-12 mb-10 sm:mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+        <div className="bg-[#FFFFFF] rounded-3xl shadow-xl border border-[#E2E8F0] p-6 sm:p-8 lg:p-12 mb-10 sm:mb-16 relative overflow-hidden">
+          {/* Decorative Frame */}
+          <DecorativeFrame className="text-[#0E7490]" />
+          
+          {/* Decorative Center */}
+          <DecorativeCenter className="text-[#0E7490] opacity-40 w-[600px] h-[600px]" />
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 relative z-10">
             
             {/* Left Column: Intro & Domains */}
             <div className="space-y-8 sm:space-y-10">
               {/* Intro */}
-              <div>
+              <div className="relative">
+                <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-[#010038] to-[#0E7490] rounded-full hidden sm:block"></div>
                 <h3 className="text-xl sm:text-2xl font-bold text-[#010038] mb-6 flex items-center gap-3 h-10 sm:h-12">
-                  <Book className="w-6 h-6 sm:w-8 sm:h-8 text-[#010038] shrink-0" />
-                  <span className="leading-tight">About the Proceedings</span>
+                  <div className="p-2 bg-[#F1F5F9] rounded-lg shadow-sm border border-[#E2E8F0]">
+                    <Book className="w-6 h-6 sm:w-7 sm:h-7 text-[#0E7490] shrink-0" />
+                  </div>
+                  <span className="leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#010038] to-[#0E7490]">About the Proceedings</span>
                 </h3>
-                <div className="prose prose-gray max-w-none text-black leading-relaxed text-base sm:text-lg text-justify">
+                <div className="prose prose-gray max-w-none text-black leading-relaxed text-base sm:text-lg text-justify bg-white/50 backdrop-blur-sm rounded-2xl p-1">
                   <p>
-                    We are delighted to announce the official release of the Conference Proceedings of the International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026).
+                    We are delighted to announce the official release of the Conference Proceedings of the <span className="text-[#0E7490] font-bold">International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</span>.
                   </p>
                   <p className="mt-4">
                     The proceedings compile the peer-reviewed research papers presented during the conference held on 26–27 February 2026, organized by the Department of Computer Science, Periyar University, Salem, Tamil Nadu, India.
                   </p>
                   <p className="mt-4">
-                    The ICAITSC 2026 proceedings represent significant scholarly contributions in emerging domains including:
+                    The <span className="text-[#0E7490] font-bold">ICAITSC 2026</span> proceedings represent significant scholarly contributions in emerging domains including:
                   </p>
                 </div>
               </div>
 
               {/* Domains */}
-              <div>
+              <div className="relative">
+                <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-[#0E7490] to-[#010038] rounded-full hidden sm:block"></div>
                 <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 sm:mb-6 flex items-center gap-3 h-10 sm:h-12">
-                  <BookOpen className="w-6 h-6 text-[#010038] shrink-0" />
-                  <span className="leading-tight">Research Domains</span>
+                  <div className="p-2 bg-[#F1F5F9] rounded-lg shadow-sm border border-[#E2E8F0]">
+                    <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-[#0E7490] shrink-0" />
+                  </div>
+                  <span className="leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#010038] to-[#0E7490]">Research Domains</span>
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mb-6">
                   {domains.map((domain, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-6 h-6 text-[#010038] shrink-0" />
-                      <span className="text-base sm:text-lg font-medium text-black">{domain}</span>
+                    <div key={idx} className="flex items-start gap-3 group hover:-translate-y-0.5 transition-transform duration-300">
+                      <div className="mt-0.5 bg-[#F1F5F9] rounded-full p-1 group-hover:bg-[#0E7490]/10 transition-colors duration-300">
+                        <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#0E7490] shrink-0" />
+                      </div>
+                      <span className="text-base sm:text-lg font-medium text-black group-hover:text-[#0E7490] transition-colors duration-300">{domain}</span>
                     </div>
                   ))}
                 </div>
-                <div className="border-l-4 border-[#010038] pl-5 py-2">
-                  <p className="text-base sm:text-lg text-black italic">
-                    Each paper has undergone a rigorous peer-review process to ensure academic quality, originality, and research relevance.
+                <div className="border-l-4 border-[#0E7490] pl-5 py-3 bg-gradient-to-r from-[#0E7490]/5 to-transparent rounded-r-xl">
+                  <p className="text-base sm:text-lg text-black italic font-medium">
+                    "Each paper has undergone a rigorous peer-review process to ensure academic quality, originality, and research relevance."
                   </p>
                 </div>
               </div>
@@ -178,75 +281,88 @@ const Proceedings = () => {
             {/* Right Column: Details & Team */}
             <div className="space-y-8 sm:space-y-10">
               {/* Details Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
+              <div className="grid grid-cols-1 gap-8 items-start">
                 {/* Publication Details */}
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 border-b border-[#E2E8F0] pb-3 flex items-center gap-3 h-10 sm:h-12">
-                    <FileText className="w-6 h-6 text-[#010038] shrink-0" />
+                <div className="bg-[#F8FAFC] rounded-2xl p-6 sm:p-8 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden">
+                  {/* Decorative Frame */}
+                  <DecorativeFrame className="text-[#0E7490]" />
+                  
+                  {/* Decorative Center */}
+                  <DecorativeCenter className="text-[#0E7490] opacity-30 w-[300px] h-[300px]" />
+
+                  <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-6 border-b border-[#CBD5E1] pb-4 flex items-center gap-3 relative z-10">
+                    <div className="p-2 bg-white rounded-lg shadow-sm border border-[#E2E8F0]">
+                      <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-[#0E7490] shrink-0" />
+                    </div>
                     <span className="leading-tight">Publication Details</span>
                   </h3>
-                  <dl className="space-y-4 text-base sm:text-lg">
-                    <div className="flex flex-col gap-1.5">
-                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Title</dt>
-                      <dd className="text-black font-semibold">Proceedings of the International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</dd>
+                  <dl className="space-y-5 text-base sm:text-lg relative z-10">
+                    <div className="flex flex-col gap-1.5 group">
+                      <dt className="text-[#64748B] font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0E7490] group-hover:scale-150 transition-transform"></span>
+                        Title
+                      </dt>
+                      <dd className="text-black font-semibold pl-3.5 border-l-2 border-transparent group-hover:border-[#0E7490]/30 transition-colors">Proceedings of the <span className="text-[#0E7490] font-bold">International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</span></dd>
                     </div>
-                    <div className="flex flex-col gap-1.5">
-                      <dt className="text-black font-medium text-sm uppercase tracking-wider">ISBN</dt>
-                      <dd className="text-black font-semibold">978-81-999565-5-1</dd>
+                    <div className="flex flex-col gap-1.5 group">
+                      <dt className="text-[#64748B] font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0E7490] group-hover:scale-150 transition-transform"></span>
+                        ISBN
+                      </dt>
+                      <dd className="text-black font-semibold pl-3.5 border-l-2 border-transparent group-hover:border-[#0E7490]/30 transition-colors"><span className="bg-yellow-200 text-[#010038] px-2.5 py-1 rounded-md shadow-sm border border-yellow-300">978-81-999565-5-1</span></dd>
                     </div>
-                    <div className="flex flex-col gap-1.5">
-                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Publisher</dt>
-                      <dd className="text-black font-medium">Department of Computer Science, Periyar University, Salem -636011</dd>
+                    <div className="flex flex-col gap-1.5 group">
+                      <dt className="text-[#64748B] font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0E7490] group-hover:scale-150 transition-transform"></span>
+                        Publisher
+                      </dt>
+                      <dd className="text-black font-medium pl-3.5 border-l-2 border-transparent group-hover:border-[#0E7490]/30 transition-colors">Department of Computer Science, Periyar University, Salem -636011</dd>
                     </div>
-                    <div className="flex flex-col gap-1.5">
-                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Publication Date</dt>
-                      <dd className="text-black font-medium flex items-center gap-2">
-                        <Calendar className="w-5 h-5 text-black" />
+                    <div className="flex flex-col gap-1.5 group">
+                      <dt className="text-[#64748B] font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0E7490] group-hover:scale-150 transition-transform"></span>
+                        Publication Date
+                      </dt>
+                      <dd className="text-black font-medium flex items-center gap-2 pl-3.5 border-l-2 border-transparent group-hover:border-[#0E7490]/30 transition-colors">
+                        <div className="p-1 bg-white rounded shadow-sm border border-[#E2E8F0]">
+                          <Calendar className="w-4 h-4 text-[#0E7490]" />
+                        </div>
                         26 February 2026
                       </dd>
                     </div>
-                    <div className="flex flex-col gap-1.5">
-                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Language</dt>
-                      <dd className="text-black font-medium">English</dd>
+                    <div className="flex flex-col gap-1.5 group">
+                      <dt className="text-[#64748B] font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0E7490] group-hover:scale-150 transition-transform"></span>
+                        Language
+                      </dt>
+                      <dd className="text-black font-medium pl-3.5 border-l-2 border-transparent group-hover:border-[#0E7490]/30 transition-colors">English</dd>
                     </div>
                   </dl>
-                </div>
-
-                {/* Editorial Team */}
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 border-b border-[#E2E8F0] pb-3 flex items-center gap-3 h-10 sm:h-12">
-                    <Users className="w-6 h-6 text-[#010038] shrink-0" />
-                    <span className="leading-tight">Editorial Team</span>
-                  </h3>
-                  <ul className="space-y-5">
-                    <li className="flex flex-col">
-                      <span className="font-semibold text-black text-base sm:text-lg">Dr. C. Chandrasekar</span>
-                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <span className="font-semibold text-black text-base sm:text-lg">Dr. H. Hannah Inbarani</span>
-                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <span className="font-semibold text-black text-base sm:text-lg">Dr. Laurence Aroquiaraj</span>
-                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
 
               {/* Acknowledgement */}
-              <div className="bg-[#F9FAFB] rounded-2xl p-6 sm:p-8 border border-[#E2E8F0]">
-                <h3 className="flex items-center gap-3 text-lg sm:text-xl font-bold text-[#010038] mb-4">
-                  <Globe className="w-6 h-6 text-[#010038]" />
+              <div className="bg-gradient-to-br from-[#010038] to-[#0E7490] rounded-2xl p-6 sm:p-8 shadow-lg relative overflow-hidden text-white">
+                {/* Decorative Frame */}
+                <DecorativeFrame className="text-white opacity-50" />
+                
+                {/* Decorative Center */}
+                <DecorativeCenter className="text-white opacity-20 w-[300px] h-[300px]" />
+
+                <h3 className="flex items-center gap-3 text-lg sm:text-xl font-bold mb-5 relative z-10">
+                  <div className="p-2 bg-white/20 backdrop-blur-sm rounded-lg">
+                    <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                  </div>
                   Acknowledgement
                 </h3>
-                <p className="text-black leading-relaxed mb-4 text-base sm:text-lg text-justify">
-                  We extend our sincere appreciation to all authors, reviewers, keynote speakers, advisory committee members, session chairs, and organizing committee members for their valuable contributions and dedication in making ICAITSC 2026 a resounding success.
-                </p>
-                <p className="text-black leading-relaxed text-base sm:text-lg font-medium text-justify">
-                  The proceedings stand as a testament to collaborative research excellence and innovation in Artificial Intelligence and Smart Computing.
-                </p>
+                <div className="relative z-10 space-y-4">
+                  <p className="leading-relaxed text-base sm:text-lg text-justify text-white/90">
+                    We extend our sincere appreciation to all authors, reviewers, keynote speakers, advisory committee members, session chairs, and organizing committee members for their valuable contributions and dedication in making <span className="text-yellow-300 font-bold">ICAITSC 2026</span> a resounding success.
+                  </p>
+                  <p className="leading-relaxed text-base sm:text-lg font-medium text-justify text-white">
+                    The proceedings stand as a testament to collaborative research excellence and innovation in Artificial Intelligence and Smart Computing.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -256,8 +372,14 @@ const Proceedings = () => {
         <div className="max-w-5xl mx-auto flex flex-col items-center justify-center">
           
           {/* Download CTA */}
-          <div className="w-full bg-[#FFFFFF] rounded-2xl p-5 sm:p-6 border border-[#E2E8F0] mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
-            <div>
+          <div className="w-full bg-[#FFFFFF] rounded-2xl p-5 sm:p-6 border border-[#E2E8F0] mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left relative overflow-hidden">
+            {/* Decorative Frame */}
+            <DecorativeFrame className="text-[#0E7490]" />
+            
+            {/* Decorative Center */}
+            <DecorativeCenter className="text-[#0E7490] opacity-20 w-[400px] h-[400px]" />
+
+            <div className="relative z-10">
               <h3 className="text-base sm:text-lg font-bold text-[#010038] mb-1">
                 Download Proceedings
               </h3>
@@ -268,7 +390,7 @@ const Proceedings = () => {
             <a
               href="/All.pdf"
               download="ICAITSC_2026_Proceedings.pdf"
-              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-[#010038] to-[#0E7490] hover:from-[#0E7490] hover:to-[#010038] text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(14,116,144,0.3)] hover:shadow-[0_0_30px_rgba(14,116,144,0.5)] hover:-translate-y-1 w-full sm:w-auto whitespace-nowrap overflow-hidden"
+              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-[#010038] to-[#0E7490] hover:from-[#0E7490] hover:to-[#010038] text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(14,116,144,0.3)] hover:shadow-[0_0_30px_rgba(14,116,144,0.5)] hover:-translate-y-1 w-full sm:w-auto whitespace-nowrap overflow-hidden z-10"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out rounded-full"></div>
               <Download className="h-4 w-4 sm:h-5 sm:w-5 relative z-10 group-hover:animate-bounce" />
