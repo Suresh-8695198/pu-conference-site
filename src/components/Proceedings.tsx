@@ -53,9 +53,12 @@ const Proceedings = () => {
   useEffect(() => {
     const calc = () => {
       const vw = window.innerWidth;
-      if (vw < 1024) {
+      if (vw < 640) {
         setIsMobile(true);
-        setPageWidth(Math.min(vw - 48, 600)); // Single page on mobile/tablet
+        setPageWidth(vw - 32); // 16px padding on each side for mobile
+      } else if (vw < 1024) {
+        setIsMobile(true);
+        setPageWidth(Math.min(vw - 64, 600)); // Single page on tablet
       } else if (vw < 1280) {
         setIsMobile(false);
         setPageWidth(450); // 2 pages = 900px total
@@ -95,7 +98,7 @@ const Proceedings = () => {
   ];
 
   return (
-    <section id="proceedings" className="pt-12 pb-24 bg-[#F9FAFB] relative overflow-hidden">
+    <section id="proceedings" className="pt-10 pb-16 sm:pt-12 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-full h-[32rem] bg-[#010038] rounded-b-[3rem] sm:rounded-b-[5rem] -z-0 shadow-inner">
         {/* Abstract Shapes */}
@@ -116,28 +119,28 @@ const Proceedings = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         
         {/* ── Header ── */}
-        <div className="text-center max-w-4xl mx-auto mb-10">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 font-display">
+        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 sm:mb-6 font-display">
             Conference Proceedings
           </h2>
-          <p className="text-xl sm:text-2xl md:text-3xl text-white font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="text-lg sm:text-xl md:text-3xl text-white font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-md">
             International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)
           </p>
         </div>
 
         {/* ── TOP: Content Section ── */}
-        <div className="bg-[#FFFFFF] rounded-3xl shadow-xl border border-[#E2E8F0] p-8 sm:p-12 mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="bg-[#FFFFFF] rounded-3xl shadow-xl border border-[#E2E8F0] p-6 sm:p-8 lg:p-12 mb-10 sm:mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
             
             {/* Left Column: Intro & Domains */}
-            <div className="space-y-10">
+            <div className="space-y-8 sm:space-y-10">
               {/* Intro */}
               <div>
-                <h3 className="text-2xl font-bold text-[#010038] mb-4 flex items-center gap-3">
-                  <Book className="w-6 h-6 text-[#010038]" />
-                  About the Proceedings
+                <h3 className="text-xl sm:text-2xl font-bold text-[#010038] mb-6 flex items-center gap-3 h-10 sm:h-12">
+                  <Book className="w-6 h-6 sm:w-8 sm:h-8 text-[#010038] shrink-0" />
+                  <span className="leading-tight">About the Proceedings</span>
                 </h3>
-                <div className="prose prose-gray max-w-none text-black leading-relaxed">
+                <div className="prose prose-gray max-w-none text-black leading-relaxed text-base sm:text-lg text-justify">
                   <p>
                     We are delighted to announce the official release of the Conference Proceedings of the International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026).
                   </p>
@@ -152,20 +155,20 @@ const Proceedings = () => {
 
               {/* Domains */}
               <div>
-                <h3 className="text-xl font-bold text-[#010038] mb-5 flex items-center gap-3">
-                  <BookOpen className="w-5 h-5 text-[#010038]" />
-                  Research Domains
+                <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 sm:mb-6 flex items-center gap-3 h-10 sm:h-12">
+                  <BookOpen className="w-6 h-6 text-[#010038] shrink-0" />
+                  <span className="leading-tight">Research Domains</span>
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mb-6">
                   {domains.map((domain, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#010038] shrink-0" />
-                      <span className="text-sm font-medium text-black">{domain}</span>
+                      <CheckCircle2 className="w-6 h-6 text-[#010038] shrink-0" />
+                      <span className="text-base sm:text-lg font-medium text-black">{domain}</span>
                     </div>
                   ))}
                 </div>
-                <div className="border-l-4 border-[#010038] pl-4 py-1">
-                  <p className="text-sm text-black italic">
+                <div className="border-l-4 border-[#010038] pl-5 py-2">
+                  <p className="text-base sm:text-lg text-black italic">
                     Each paper has undergone a rigorous peer-review process to ensure academic quality, originality, and research relevance.
                   </p>
                 </div>
@@ -173,37 +176,37 @@ const Proceedings = () => {
             </div>
 
             {/* Right Column: Details & Team */}
-            <div className="space-y-10">
+            <div className="space-y-8 sm:space-y-10">
               {/* Details Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
                 {/* Publication Details */}
                 <div>
-                  <h3 className="text-lg font-bold text-[#010038] mb-4 border-b border-[#E2E8F0] pb-2 flex items-center gap-2">
-                    <FileText className="w-5 h-5 text-[#010038]" />
-                    Publication Details
+                  <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 border-b border-[#E2E8F0] pb-3 flex items-center gap-3 h-10 sm:h-12">
+                    <FileText className="w-6 h-6 text-[#010038] shrink-0" />
+                    <span className="leading-tight">Publication Details</span>
                   </h3>
-                  <dl className="space-y-3 text-sm">
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-black font-medium text-xs uppercase tracking-wider">Title</dt>
+                  <dl className="space-y-4 text-base sm:text-lg">
+                    <div className="flex flex-col gap-1.5">
+                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Title</dt>
                       <dd className="text-black font-semibold">Proceedings of the International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</dd>
                     </div>
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-black font-medium text-xs uppercase tracking-wider">ISBN</dt>
+                    <div className="flex flex-col gap-1.5">
+                      <dt className="text-black font-medium text-sm uppercase tracking-wider">ISBN</dt>
                       <dd className="text-black font-semibold">978-81-999565-5-1</dd>
                     </div>
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-black font-medium text-xs uppercase tracking-wider">Publisher</dt>
+                    <div className="flex flex-col gap-1.5">
+                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Publisher</dt>
                       <dd className="text-black font-medium">Department of Computer Science, Periyar University, Salem -636011</dd>
                     </div>
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-black font-medium text-xs uppercase tracking-wider">Publication Date</dt>
-                      <dd className="text-black font-medium flex items-center gap-1.5">
-                        <Calendar className="w-3.5 h-3.5 text-black" />
+                    <div className="flex flex-col gap-1.5">
+                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Publication Date</dt>
+                      <dd className="text-black font-medium flex items-center gap-2">
+                        <Calendar className="w-5 h-5 text-black" />
                         26 February 2026
                       </dd>
                     </div>
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-black font-medium text-xs uppercase tracking-wider">Language</dt>
+                    <div className="flex flex-col gap-1.5">
+                      <dt className="text-black font-medium text-sm uppercase tracking-wider">Language</dt>
                       <dd className="text-black font-medium">English</dd>
                     </div>
                   </dl>
@@ -211,37 +214,37 @@ const Proceedings = () => {
 
                 {/* Editorial Team */}
                 <div>
-                  <h3 className="text-lg font-bold text-[#010038] mb-4 border-b border-[#E2E8F0] pb-2 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-[#010038]" />
-                    Editorial Team
+                  <h3 className="text-lg sm:text-xl font-bold text-[#010038] mb-5 border-b border-[#E2E8F0] pb-3 flex items-center gap-3 h-10 sm:h-12">
+                    <Users className="w-6 h-6 text-[#010038] shrink-0" />
+                    <span className="leading-tight">Editorial Team</span>
                   </h3>
-                  <ul className="space-y-4">
+                  <ul className="space-y-5">
                     <li className="flex flex-col">
-                      <span className="font-semibold text-black text-sm">Dr. C. Chandrasekar</span>
-                      <span className="text-[#010038] font-medium text-xs uppercase tracking-wider">Editor</span>
+                      <span className="font-semibold text-black text-base sm:text-lg">Dr. C. Chandrasekar</span>
+                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
                     </li>
                     <li className="flex flex-col">
-                      <span className="font-semibold text-black text-sm">Dr. H. Hannah Inbarani</span>
-                      <span className="text-[#010038] font-medium text-xs uppercase tracking-wider">Editor</span>
+                      <span className="font-semibold text-black text-base sm:text-lg">Dr. H. Hannah Inbarani</span>
+                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
                     </li>
                     <li className="flex flex-col">
-                      <span className="font-semibold text-black text-sm">Dr. Laurence Aroquiaraj</span>
-                      <span className="text-[#010038] font-medium text-xs uppercase tracking-wider">Editor</span>
+                      <span className="font-semibold text-black text-base sm:text-lg">Dr. Laurence Aroquiaraj</span>
+                      <span className="text-[#010038] font-medium text-sm uppercase tracking-wider">Editor</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               {/* Acknowledgement */}
-              <div className="bg-[#F9FAFB] rounded-2xl p-6 border border-[#E2E8F0]">
-                <h3 className="flex items-center gap-2 text-lg font-bold text-[#010038] mb-3">
-                  <Globe className="w-5 h-5 text-[#010038]" />
+              <div className="bg-[#F9FAFB] rounded-2xl p-6 sm:p-8 border border-[#E2E8F0]">
+                <h3 className="flex items-center gap-3 text-lg sm:text-xl font-bold text-[#010038] mb-4">
+                  <Globe className="w-6 h-6 text-[#010038]" />
                   Acknowledgement
                 </h3>
-                <p className="text-black leading-relaxed mb-3 text-sm">
+                <p className="text-black leading-relaxed mb-4 text-base sm:text-lg text-justify">
                   We extend our sincere appreciation to all authors, reviewers, keynote speakers, advisory committee members, session chairs, and organizing committee members for their valuable contributions and dedication in making ICAITSC 2026 a resounding success.
                 </p>
-                <p className="text-black leading-relaxed text-sm font-medium">
+                <p className="text-black leading-relaxed text-base sm:text-lg font-medium text-justify">
                   The proceedings stand as a testament to collaborative research excellence and innovation in Artificial Intelligence and Smart Computing.
                 </p>
               </div>
@@ -253,23 +256,23 @@ const Proceedings = () => {
         <div className="max-w-5xl mx-auto flex flex-col items-center justify-center">
           
           {/* Download CTA */}
-          <div className="w-full bg-[#FFFFFF] rounded-2xl p-6 border border-[#E2E8F0] mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="w-full bg-[#FFFFFF] rounded-2xl p-5 sm:p-6 border border-[#E2E8F0] mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
             <div>
-              <h3 className="text-lg font-bold text-[#010038] mb-1">
+              <h3 className="text-base sm:text-lg font-bold text-[#010038] mb-1">
                 Download Proceedings
               </h3>
-              <p className="text-black">
+              <p className="text-sm sm:text-base text-black">
                 The complete proceedings are available in PDF format:
               </p>
             </div>
             <a
               href="/All.pdf"
               download="ICAITSC_2026_Proceedings.pdf"
-              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#010038] to-[#0E7490] hover:from-[#0E7490] hover:to-[#010038] text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(14,116,144,0.3)] hover:shadow-[0_0_30px_rgba(14,116,144,0.5)] hover:-translate-y-1 w-full sm:w-auto whitespace-nowrap overflow-hidden"
+              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-[#010038] to-[#0E7490] hover:from-[#0E7490] hover:to-[#010038] text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(14,116,144,0.3)] hover:shadow-[0_0_30px_rgba(14,116,144,0.5)] hover:-translate-y-1 w-full sm:w-auto whitespace-nowrap overflow-hidden"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out rounded-full"></div>
-              <Download className="h-5 w-5 relative z-10 group-hover:animate-bounce" />
-              <span className="relative z-10">Download ICAITSC 2026 Proceedings (PDF)</span>
+              <Download className="h-4 w-4 sm:h-5 sm:w-5 relative z-10 group-hover:animate-bounce" />
+              <span className="relative z-10 text-sm sm:text-base">Download ICAITSC 2026 Proceedings (PDF)</span>
             </a>
           </div>
 
@@ -365,22 +368,22 @@ const Proceedings = () => {
 
             {/* Modern Controls */}
             {numPages > 0 && (
-              <div className="mt-12 flex items-center justify-center gap-6 bg-white/80 backdrop-blur-md rounded-full px-6 py-3 shadow-lg border border-[#E2E8F0] max-w-md mx-auto">
+              <div className="mt-8 sm:mt-12 flex items-center justify-center gap-4 sm:gap-6 bg-white/80 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg border border-[#E2E8F0] max-w-md mx-auto">
                 <button
                   onClick={prevPage}
                   disabled={currentPage <= 1}
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F1F5F9] text-[#010038] hover:bg-[#010038] hover:text-white disabled:opacity-40 disabled:hover:bg-[#F1F5F9] disabled:hover:text-[#010038] transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#F1F5F9] text-[#010038] hover:bg-[#010038] hover:text-white disabled:opacity-40 disabled:hover:bg-[#F1F5F9] disabled:hover:text-[#010038] transition-all duration-300 shadow-sm hover:shadow-md"
                   aria-label="Previous page"
                 >
-                  <ChevronLeft className="h-5 w-5" />
+                  <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
                 
-                <div className="flex items-center gap-2 px-4 py-1.5 bg-[#FFFFFF] rounded-full shadow-inner border border-[#E2E8F0]">
-                  <span className="text-base font-bold text-[#010038]">
+                <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 bg-[#FFFFFF] rounded-full shadow-inner border border-[#E2E8F0]">
+                  <span className="text-sm sm:text-base font-bold text-[#010038]">
                     {currentPage}
                   </span>
-                  <span className="text-[#0F172A]/40 text-sm font-medium">of</span>
-                  <span className="text-base font-bold text-[#0F172A]/70">
+                  <span className="text-[#0F172A]/40 text-xs sm:text-sm font-medium">of</span>
+                  <span className="text-sm sm:text-base font-bold text-[#0F172A]/70">
                     {numPages}
                   </span>
                 </div>
@@ -388,10 +391,10 @@ const Proceedings = () => {
                 <button
                   onClick={nextPage}
                   disabled={currentPage >= numPages}
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F1F5F9] text-[#010038] hover:bg-[#010038] hover:text-white disabled:opacity-40 disabled:hover:bg-[#F1F5F9] disabled:hover:text-[#010038] transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#F1F5F9] text-[#010038] hover:bg-[#010038] hover:text-white disabled:opacity-40 disabled:hover:bg-[#F1F5F9] disabled:hover:text-[#010038] transition-all duration-300 shadow-sm hover:shadow-md"
                   aria-label="Next page"
                 >
-                  <ChevronRight className="h-5 w-5" />
+                  <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
               </div>
             )}
