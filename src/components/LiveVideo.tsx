@@ -3,14 +3,9 @@ import React from "react";
 const LiveVideo = () => {
   return (
     <section id="live-video" className="pt-16 pb-16 sm:pt-24 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#010038] -z-0 shadow-inner">
-        {/* Abstract Shapes */}
-        <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl mix-blend-overlay"></div>
-        <div className="absolute bottom-10 right-20 w-80 h-80 bg-[#0E7490]/20 rounded-full blur-3xl mix-blend-overlay"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-white/5 rounded-full blur-3xl mix-blend-overlay"></div>
-        
-        {/* Grid Pattern Overlay */}
+      {/* Modern Geometric Background */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[#010038] -z-0">
+        {/* Architectural Grid */}
         <div className="absolute inset-0 opacity-20" 
           style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
@@ -24,22 +19,33 @@ const LiveVideo = () => {
         
         {/* ── Live Video Section ── */}
         <div className="mb-0">
-          <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 font-semibold text-sm mb-4 animate-pulse">
-              <span className="w-2 h-2 rounded-full bg-red-500"></span>
-              LIVE NOW
+          <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-red-600 text-white font-bold text-xs tracking-widest uppercase mb-6 shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
+              <span className="w-2 h-2 bg-white animate-pulse"></span>
+              Live Broadcast
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 sm:mb-6 font-display">
-              Watch ICAITSC 2026 Live
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight mb-4 font-display tracking-tight">
+              WATCH ICAITSC 2026
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
-              Join us live for the International Conference on Artificial Intelligence Techniques and Smart Computing.
+            <div className="w-24 h-1 bg-[#0E7490] mx-auto mb-6"></div>
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto font-medium">
+              Join the International Conference on Artificial Intelligence Techniques and Smart Computing.
             </p>
           </div>
 
-          <div className="bg-[#FFFFFF] rounded-3xl shadow-2xl border border-[#E2E8F0] p-4 sm:p-6 lg:p-8 relative overflow-hidden">
-            <div className="relative z-10">
-              <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-lg bg-black">
+          {/* Modern Frame Container */}
+          <div className="relative max-w-6xl mx-auto">
+            {/* Main Content Box */}
+            <div className="bg-white border-2 border-[#010038] p-2 sm:p-4 relative z-10">
+              
+              {/* Video Wrapper */}
+              <div className="aspect-video w-full bg-black border-2 border-[#010038] relative group">
+                {/* Corner Accents */}
+                <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-[#0E7490] z-20"></div>
+                <div className="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-[#0E7490] z-20"></div>
+                <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-[#0E7490] z-20"></div>
+                <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-[#0E7490] z-20"></div>
+
                 <iframe 
                   width="100%" 
                   height="100%" 
@@ -49,20 +55,21 @@ const LiveVideo = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
                   allowFullScreen
-                  className="w-full h-full"
+                  className="w-full h-full relative z-10"
                 ></iframe>
               </div>
               
-              <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+              {/* Bottom Bar */}
+              <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-6 px-4 pb-4">
+                <div className="flex items-center gap-5 w-full sm:w-auto">
+                  <div className="w-14 h-14 bg-[#010038] flex items-center justify-center shrink-0 border border-gray-200">
+                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#010038]">ICAITSC 2026 Live Stream</h4>
-                    <p className="text-sm text-gray-600">Periyar University, Salem</p>
+                    <h4 className="text-xl font-black text-[#010038] uppercase tracking-wide">Live Stream</h4>
+                    <p className="text-base text-gray-500 font-medium">Periyar University, Salem</p>
                   </div>
                 </div>
                 
@@ -70,9 +77,9 @@ const LiveVideo = () => {
                   href="https://www.youtube.com/live/U-GvpVxd3eM" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg w-full sm:w-auto justify-center"
+                  className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 transition-colors duration-200 w-full sm:w-auto justify-center uppercase tracking-wider text-base border-2 border-transparent hover:border-red-800"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                   </svg>
                   Watch on YouTube
