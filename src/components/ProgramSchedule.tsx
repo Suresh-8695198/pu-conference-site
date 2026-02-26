@@ -680,7 +680,7 @@ const ProgramSchedule = () => {
                           { id: "132", title: "Multi-Scale CNN with Attention Mechanism for Predictive Printed Circuit Board Failure Detection", authors: "Sabari L Uma Maheswari Avinash V Sanjay S Hariesh.S" },
                           { id: "133", title: "A Hybrid NLP-Generative AI Framework for Enhancing SME Customer Support Through Intelligent Multilingual Chatbots", authors: "R. Logesh Babu , Nuzha Razia, Nivetha R, Kathiravel K" },
                           { id: "117", title: "Web-Enabled IoT Monitoring of Dust and Noise in Public Events", authors: "Abhishek Tripathi, Suresh Balpande, Bala Nagireddy, M. Geeta Sai Charan, J. Deny, R Raja Subramanian" },
-                          { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, N. Naga Harshitha" },
+                          { id: "123", title: "Digital Framework for Waste Segregation and Sustainable Resource Management in Educational Institutions", authors: "Abhishek Tripathi, Vishal Rathee, Gayathre Priya T, U Sairam Manikanta and Mandava Lakshmi Kavitha" },
                           { id: "124", title: "Smart Honey Adulteration Detection Using Color Sensing", authors: "Abhishek Tripathi, Shubham Anjankar, Y Bala NagiReddy, A Hemanth Kumar Reddy, A Venkata Naga Sai Charan, G Haritha Reddy" },
                         ].map((p, i) => (
                           <tr key={p.id} className={i % 2 === 0 ? "bg-white hover:bg-purple-50" : "bg-purple-50 hover:bg-purple-100"}>
