@@ -189,7 +189,7 @@ const Proceedings = () => {
   return (
     <section id="proceedings" className="pt-16 pb-16 sm:pt-24 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-[42rem] bg-[#010038]  -z-0 shadow-inner">
+      <div className="absolute top-0 left-0 w-full h-[42rem] bg-[#0D0D2B]  -z-0 shadow-inner">
         {/* Abstract Shapes */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl mix-blend-overlay"></div>
         <div className="absolute bottom-10 right-20 w-80 h-80 bg-[#0E7490]/20 rounded-full blur-3xl mix-blend-overlay"></div>
