@@ -187,7 +187,7 @@ const Proceedings = () => {
   ];
 
   return (
-    <section id="proceedings" className="pt-10 pb-16 sm:pt-12 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
+    <section id="proceedings" className="pt-16 pb-16 sm:pt-24 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-full h-[42rem] bg-[#010038]  -z-0 shadow-inner">
         {/* Abstract Shapes */}
@@ -243,10 +243,10 @@ const Proceedings = () => {
                     We are delighted to announce the official release of the Conference Proceedings of the <span className="text-[#0E7490] font-bold">International Conference on Artificial Intelligence Techniques and Smart Computing (ICAITSC 2026)</span>.
                   </p>
                   <p className="mt-4">
-                    The proceedings compile the peer-reviewed research papers presented during the conference held on 26–27 February 2026, organized by the Department of Computer Science, Periyar University, Salem, Tamil Nadu, India.
+                    The conference was held on <span className="font-bold">26–27 February 2026</span> and was organized by the <span className="font-bold">Department of Computer Science</span>, Periyar University, Salem, Tamil Nadu, India.
                   </p>
                   <p className="mt-4">
-                    The <span className="text-[#0E7490] font-bold">ICAITSC 2026</span> proceedings represent significant scholarly contributions in emerging domains including:
+                    The <span className="text-[#0E7490] font-bold">ICAITSC 2026</span> proceedings compile high-quality research papers presented during the conference in the following emerging domains:
                   </p>
                 </div>
               </div>
@@ -271,8 +271,18 @@ const Proceedings = () => {
                   ))}
                 </div>
                 <div className="border-l-4 border-[#0E7490] pl-5 py-3 bg-gradient-to-r from-[#0E7490]/5 to-transparent rounded-r-xl">
+                  <p className="text-base sm:text-lg text-black italic font-medium mb-2">
+                    "All submitted manuscripts underwent a rigorous double-blind peer-review process, ensuring:"
+                  </p>
+                  <ul className="list-disc list-inside text-base sm:text-lg text-black italic font-medium mb-2 space-y-1 ml-2">
+                    <li>Academic quality</li>
+                    <li>Originality</li>
+                    <li>Technical soundness</li>
+                    <li>Research relevance</li>
+                    <li>Impartial evaluation (reviewers and authors anonymized)</li>
+                  </ul>
                   <p className="text-base sm:text-lg text-black italic font-medium">
-                    "Each paper has undergone a rigorous peer-review process to ensure academic quality, originality, and research relevance."
+                    "This double-blind review model strengthened fairness and minimized bias in the selection process."
                   </p>
                 </div>
               </div>
@@ -357,7 +367,7 @@ const Proceedings = () => {
                 </h3>
                 <div className="relative z-10 space-y-4">
                   <p className="leading-relaxed text-base sm:text-lg text-justify text-white/90">
-                    We extend our sincere appreciation to all authors, reviewers, keynote speakers, advisory committee members, session chairs, and organizing committee members for their valuable contributions and dedication in making <span className="text-yellow-300 font-bold">ICAITSC 2026</span> a resounding success.
+                    We extend our sincere appreciation to all authors, reviewers, keynote speakers, advisory committee members, session chairs, and organizing committee members for their invaluable contributions and dedication in making <span className="text-yellow-300 font-bold">ICAITSC 2026</span> a resounding success.
                   </p>
                   <p className="leading-relaxed text-base sm:text-lg font-medium text-justify text-white">
                     The proceedings stand as a testament to collaborative research excellence and innovation in Artificial Intelligence and Smart Computing.
