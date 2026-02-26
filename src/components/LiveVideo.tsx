@@ -69,7 +69,7 @@ const LiveVideo = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-black text-[#010038] uppercase tracking-wide">Live Stream</h4>
-                    <p className="text-base text-gray-500 font-medium">Periyar University, Salem</p>
+                    <p className="text-base text-gray-500 font-medium">Department of Computer Science, Periyar University, Salem</p>
                   </div>
                 </div>
                 
