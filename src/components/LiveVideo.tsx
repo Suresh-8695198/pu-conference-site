@@ -4,7 +4,7 @@ const LiveVideo = () => {
   return (
     <section id="live-video" className="pt-16 pb-16 sm:pt-24 sm:pb-24 bg-[#F9FAFB] relative overflow-hidden">
       {/* Modern Geometric Background */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#2e0115] -z-0">
+      <div className="absolute top-0 left-0 w-full h-full bg-[#020127] -z-0">
         {/* Architectural Grid */}
         <div className="absolute inset-0 opacity-20" 
           style={{
