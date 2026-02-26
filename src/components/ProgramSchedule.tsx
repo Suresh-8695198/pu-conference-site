@@ -658,6 +658,12 @@ const ProgramSchedule = () => {
                           <td className="px-4 py-3 text-slate-800 font-medium">Satellite Image Classification of Transport Infrastructure using Transfer Learning</td>
                           <td className="px-4 py-3 text-black text-sm">M Prabhavathy, Valliappan Raman , Putra Sumari , K.R.Shanmuga Priyaa</td>
                         </tr>
+                        <tr className="bg-white hover:bg-purple-50">
+                          <td className="px-4 py-3"><span className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-sm font-medium">Offline</span></td>
+                          <td className="px-4 py-3 font-bold text-purple-900">ID 93</td>
+                          <td className="px-4 py-3 text-slate-800 font-medium">Deep Learning Based Algorithm for LED Driver</td>
+                          <td className="px-4 py-3 text-black text-sm">Seshaiah M.A, Ashwanth A, Kesavagurumoorthy J, Tharun Vignesh R</td>
+                        </tr>
                         <tr className="bg-purple-100">
                           <td colSpan={4} className="px-4 py-2 font-bold text-purple-800 text-sm tracking-wide">
                             Online Presentations — 2:30 PM to 4:30 PM &nbsp;|&nbsp; Session Chairs: <br/> Dr. M. Ashok Kumar, Controller of Examination & HOD OpenLabs (Associate Professor), Bluecrest University, Liberia, West Africa<br/> Dr. D. Arul Pon Daniel, Assistant Professor, Department of Computer Science, Jayarani College of Arts and Science, Salem
@@ -665,7 +671,6 @@ const ProgramSchedule = () => {
                         </tr>
                         {[
                           { id: "84", title: "Augmenting Web3 Development in VS Code Through Prompt Driven Copilot Extensions and Slither-Based Security Analysis", authors: "Josaiah Murfeal Dhkar, Sudhakar T, Logeshwaran J" },
-                          { id: "93", title: "Deep Learning Based Algorithm for LED Driver", authors: "Seshaiah M.A, Ashwanth A, Kesavagurumoorthy J, Tharun Vignesh R" },
                           { id: "95", title: "Cloud Integrated Industrial Equipment Monitoring and Early Fault Indication System", authors: "Manimegalai M, Jitvan S, GokulKumar M, Arun Kumar M" },
                           { id: "97", title: "SMARTFORM AI-Powered Exercise Guidance", authors: "Hami Yasir, Christy Jackson J" },
                           { id: "112", title: "Leopard Optimized Energy-Adaptive Path-Selective Routing Protocol for Reliable and Efficient IoV Communication Networks", authors: "J. Ramkumar, R. Vadivel, R. Karthikeyan, Divya Jose J, S.P. Priyadharshini" },
