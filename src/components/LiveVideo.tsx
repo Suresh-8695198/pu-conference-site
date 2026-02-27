@@ -49,7 +49,7 @@ const LiveVideo = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/-d5cDPzDQ7eI?autoplay=1&mute=1" 
+                  src="https://www.youtube.com/embed/-udOwUUcjaHE0z1cu?autoplay=1&mute=1" 
                   title="ICAITSC 2026 Live Stream" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
