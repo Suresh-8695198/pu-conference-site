@@ -49,7 +49,7 @@ const LiveVideo = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/-BGReUIVTSI?autoplay=1&mute=1" 
+                  src="https://www.youtube.com/embed/-d5cDPzDQ7eI?autoplay=1&mute=1" 
                   title="ICAITSC 2026 Live Stream" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -74,7 +74,7 @@ const LiveVideo = () => {
                 </div>
                 
                 <a 
-                  href="https://www.youtube.com/live/-BGReUIVTSI?si=OnyViXnh3nkMSPqj" 
+                  href="https://youtube.com/live/d5cDPzDQ7eI?si=udOwUUcjaHE0z1cu" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 transition-colors duration-200 w-full sm:w-auto justify-center uppercase tracking-wider text-base border-2 border-transparent hover:border-red-800"
